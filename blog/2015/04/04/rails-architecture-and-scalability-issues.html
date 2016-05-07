@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Rails Architecture and Scalability</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../css/asciidoctor.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link href="../../../../css/prettify.css" rel="stylesheet">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../../../">@halyph</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../../../../index.html">Home</a></li>
+            <li><a href="../../../../archive.html">Archive</a></li>
+            <li><a href="../../../../feed.xml">Subscribe</a></li>
+             <!--
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            -->
+          </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://github.com/halyph"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://twitter.com/halyph"><i class="fa fa-twitter"></i></a>
+            </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">	
+	<div class="page-header">
+		<h1>Rails Architecture and Scalability</h1>
+	</div>
+
+	<p><em>04 April 2015</em></p>
+
+	<p><em>Tags: </em>
+		<a href="/tags/ruby.html">ruby</a> | 
+	</em>
+		<a href="/tags/rails.html">rails</a> | 
+	</em>
+		<a href="/tags/architecture.html">architecture</a> | 
+	</p>
+
+	<p><p><img src="/images/blog/ruby.png" alt="blog_post_image""/></p><p>Everybody know when this <em>"Rails doesn't scale"</em> has been begun:</p>
+<ul>
+  <li><strong>2009</strong> <a href="http://www.artima.com/scalazine/articles/twitter_on_scala.html">Twitter message queue back-end moved from Ruby to Scala</a></li>
+  <li><strong>2011</strong> <a href="https://blog.twitter.com/2011/twitter-search-now-3x-faster">Twitter Search is Now 3x Faster</a></li>
+</ul>
+<blockquote><p>Panic, we must not use <strong>Ruby on Rails</strong> because Twitter had scalability problems.</p>
+</blockquote><p>I'm a Java developer who love Ruby language, but don't write anything in Rails. Despite this I've decided to look into this famous <em>"Rails doesn't scale"</em> statement deeper to understand the root cause of this problem.</p><p>So, I <a href="https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies">collected</a> public available Ruby on Rails architecture and scalability case studies (videos of conference talks, reports and blog posts) and tried to extract the general patterns of architecture and scalability issues.</p><p>There are two type of scalability issues:</p>
+<ol>
+  <li><strong>Application performance</strong> - when web application can't handle huge traffic</li>
+  <li><strong>Delivery velocity</strong> - when it's become hard to make changes in big Rails application, run quick tests, deploy it and manage big team</li>
+</ol><p><em>Note</em>: You are not another "twitter" to worry about scalability issues right from beginning of the project (there are fewer web apps on the Internet to get enough traffic to even care about scalability). Your goal is to push your product as quick as possible.<br/>But, in the same time you'd like to use Rails (due to it's productivity) and make you potentially application scalable (in all possible terms)</p><p>The most interesting that scalability is about architecture, databases, caching, event queues, disk IO and less about Rails framework.</p><h2>Rails deployment architecture</h2><p>Let's review the common Rails deployment approaches (see <a href="http://www.slideshare.net/jweiss/deployment-with-ruby-on-rails">Deployment with Ruby on Rails</a>)</p><h3>Simple Rails Setup</h3><p>One Rails instance handles all requests. Rails is single-threaded: There is only one concurrent request.</p><p><img src="/images/posts/2015-04-04/pic1.jpg" alt="blog_post_image_inline_inline""/></p><h3>Typical Rails Setup</h3>
+<ul>
+  <li>A load-balancer distributes the incoming requests</li>
+  <li>Some load-balancers will deliver static requests themselves</li>
+  <li>Several Rails instances handle all requests</li>
+  <li>Number of concurrent requests equals number of Rails instances</li>
+</ul><p><img src="/images/posts/2015-04-04/pic2.jpg" alt="blog_post_image_inline""/></p><h3>Application server (Phusion Passenger)</h3>
+<ul>
+  <li>Involving Phusion Passenger application server</li>
+  <li>Makes setup easier on the single machine level</li>
+  <li>Multiple servers still require load balancer</li>
+  <li>Suitable for mass-hosting</li>
+  <li>upcoming standard way of deploying Rails</li>
+</ul><p><img src="/images/posts/2015-04-04/pic3.jpg" alt="blog_post_image_inline""/></p><h2>Recommended Rails Application Setups</h2><h3>Small Site</h3><p>Apache with mod_rails/Phusion Passenger</p><p><img src="/images/posts/2015-04-04/pic4.jpg" alt="blog_post_image_inline""/></p><h3>Medium Site</h3>
+<ul>
+  <li>Apache/Nginx as frontend proxy</li>
+  <li>Passanger as backend</li>
+  <li>Deliver static files with Apache/Nginx</li>
+</ul><p><img src="/images/posts/2015-04-04/pic5.jpg" alt="blog_post_image_inline""/></p><h3>Large Site</h3>
+<ul>
+  <li>Redundant load-ballancer</li>
+  <li>Redundant proxy</li>
+  <li>Phusion Passenger/mod_rails</li>
+</ul><p><img src="/images/posts/2015-04-04/pic6.jpg" alt="blog_post_image_inline""/></p><h2>Scale up Traditional Rails Application</h2><h3>Caching</h3><p>There might be the cases when it's not enought and in this case we should start looking in "cashing" direction via involving Memcahed and/or Redis <em>(based on Konstantin’s Gredeskoul slides)</em></p><p><img src="/images/posts/2015-04-04/pic7.jpg" alt="blog_post_image_inline""/></p><h3>Long-runnint task scaling</h3><p><em>(based on Konstantin’s Gredeskoul slides)</em></p>
+<ul>
+  <li>Background jobs with Reques (it sits on top of Redis)</li>
+  <li>Use Solr/Elasticsearch instead of doing complex joins</li>
+</ul><p><img src="/images/posts/2015-04-04/pic8.jpg" alt="blog_post_image_inline""/></p><h2>Rails moving towards SOA and micro services</h2><p>The shown above architectures are related to <strong>Monolith Architecture</strong>. This type of architecture has some problems:</p>
+<ul>
+  <li>Development pain points:</li>
+  <li>effective controllers and models have a lot of logic
+  <ul>
+    <li>~1000 Models/Controllers, 200K LOC, 100s of jobs</li>
+  </ul></li>
+  <li>Merge issues arise in big team (20-30+)</li>
+  <li>Lots of contributors and no ownership</li>
+  <li>Difficult deployments with long integration cycles</li>
+  <li>Tests are not green, it's really hard to support stable test quality</li>
+</ul><p>The monolithic Rails app should evolve into ecosystems of connected services. It's becoming quite common for Rails apps to be working mainly as <a href="https://github.com/halyph/architecture-case-study/blob/master/rails-as-an-soa-client-by-pete-hodgson.md">clients</a> to other services.</p><h3>Splitting application into small pieces</h3>
+<ul>
+  <li>Split into smaller applications (based on Konstantin's Gredeskoul <a href="http://www.slideshare.net/kigster/enterprise-architectures-with-ruby-and-rails">slides</a>)
+  <ul>
+    <li>Contains web UI, logic and data
+    <ul>
+      <li>Extract look and feel into gem to share across apps</li>
+    </ul></li>
+    <li>May combine with other apps</li>
+    <li>May rely on common libraries</li>
+    <li>Typically run in their own Ruby VM</li>
+  </ul></li>
+  <li>Extract services and create APIs
+  <ul>
+    <li>Create client API wrapper gems for consumers</li>
+  </ul></li>
+  <li>Extract libraries (gems)
+  <ul>
+    <li>Create shared based client gem library</li>
+  </ul></li>
+</ul><p><img src="/images/posts/2015-04-04/pic9.jpg" alt="blog_post_image_inline""/></p><h3>Reference (sample) service orienter / micro service architecture</h3><p>Now, we have more than one Rails application and many service which are communicating using messaging, distributed cashed, etc. </p><h4><a href="https://github.com/halyph/architecture-case-study/blob/master/groupon.md">Groupon</a></h4><p><img src="/images/posts/2015-04-04/pic10.png" alt="blog_post_image_inline""/></p><h4><a href="https://github.com/halyph/architecture-case-study/blob/master/flipcart.md">Flipcart</a></h4><p><img src="/images/posts/2015-04-04/pic11.jpg" alt="blog_post_image_inline""/></p><h4><a href="https://github.com/halyph/architecture-case-study/blob/master/gilt.md">Gilt</a></h4><p><img src="/images/posts/2015-04-04/pic12.jpg" alt="blog_post_image_inline""/></p><p>I've collect much more case studies, see <a href="https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies">here</a>.</p><h2>Conclusion</h2><p>Moving Monolith Rails application to micro service architecture it's not one shot action. It's long run with lots of trade offs. And more over, micro service architecture is not silver bullet, it's just one alternative way to scale your application (see [Recommended Rails Application Setups][#Recommended.Rails.Application.Setups]).</p><p>The key idea is to develop your application with <a href="http://en.wikipedia.org/wiki/Single_responsibility_principle">SRP (Single responsibility principle)</a> in mind. The more modular your application the more scalable it's.</p><p>I'm planning to add more architecture case studies to my <a href="https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies">collection</a> (not only Rails related). Stay tuned.</p><h2>Rails related tech components</h2><p>Collection of major technology components mentioned in case studies.</p><h3>Web Servers / Proxy</h3>
+<ul>
+  <li><a href="http://httpd.apache.org/">Apache</a></li>
+  <li><a href="http://nginx.org/">Nginx</a></li>
+  <li><a href="http://www.haproxy.org/">HAProxy</a></li>
+</ul><h3>Application Servers</h3>
+<ul>
+  <li><a href="http://unicorn.bogomips.org/">Unicorn</a></li>
+  <li><a href="https://www.phusionpassenger.com">Phusion Passenger</a></li>
+  <li><a href="http://puma.io/">Puma</a></li>
+  <li><a href="http://code.macournoyer.com/thin/">Thin</a></li>
+</ul><h3>Libraries / Tools</h3>
+<ul>
+  <li><a href="http://redis.io/">Redis</a></li>
+  <li><a href="http://memcached.org/">Memcached</a></li>
+  <li><a href="https://github.com/resque/resque">Reque</a></li>
+  <li><a href="http://sidekiq.org/">Sidekiq</a></li>
+  <li><a href="http://lucene.apache.org/solr/">Solr</a></li>
+  <li><a href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a></li>
+</ul><h2>References</h2>
+<ul>
+  <li><a href="https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies">Collection of Ruby on Rails Architecture Case Studies</a>
+  <ul>
+    <li><a href="http://www.slideshare.net/jweiss/deployment-with-ruby-on-rails">Deployment with Ruby on Rails</a></li>
+    <li><a href="http://www.slideshare.net/kigster/enterprise-architectures-with-ruby-and-rails">Enterprise Architectures with Ruby (and Rails)</a></li>
+  </ul></li>
+  <li><a href="http://www.quora.com/Does-Ruby-on-Rails-scale">Does Ruby on Rails scale</a> - Quora</li>
+  <li>"Keeping Your Massive Rails App From Turning Into a S#!t Show with Benjamin Smith" (see <a href="https://vimeo.com/76094344">video</a> and <a href="https://speakerdeck.com/benjaminleesmith/keeping-your-massive-rails-app-from-turning-into-a-s-number-t-show-windycityrails-2013">slides</a>)</li>
+</ul></p>
+
+	<hr />
+	
+		</div>
+		<div id="push"></div>
+    </div>
+    
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.4.0</a></p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../../../js/bootstrap.min.js"></script>
+    <script src="../../../../js/prettify.js"></script>
+    
+  </body>
+</html>

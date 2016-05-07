@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>JBake</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/asciidoctor.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">@halyph</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="feed.xml">Subscribe</a></li>
+             <!--
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            -->
+          </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://github.com/halyph"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://twitter.com/halyph"><i class="fa fa-twitter"></i></a>
+            </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+	<div class="page-header">
+		<h1>Blog</h1>
+	</div>
+
+  			<a href="blog/2015/11/08/java-day-kiev-2015-report.html"><h1>Java Day - Kiev, 2015 - Report</h1></a>
+  			<p>08 November 2015</p>
+  			<p><p><img src="/images/posts/conf/java_day_2015.png" alt="blog_post_image""/></p><p><em>November 6-7, 2015</em> I visited <a href="http://javaday.org.ua/kyiv">Java Day Kyiv</a> conference. This report is for myself just to keep track talks I've attended.</p><h2>Day 1</h2>
+<ul>
+  <li><p><p><strong>Get Past the Syntax, the Real Scare's in the Semantics</strong> by <a href="https://twitter.com/@venkat_s">Venkat Subramaniam</a> </p>
+  <blockquote>We often hear programmers complain about the syntax, especially when learning a new language. It turns out that, while syntax plays a role in our ability to learn and use languages, the real force we have to deal with is in the semantics. Once we get past the syntax, the semantics is where the real power and the real scare is. Curious to learn more?
+  </blockquote></p></li>
+  <li><p><strong>Enterprise Integration Patterns Revisited for the Era of Big Data, Internet of Things and Microservices</strong> by <a href="https://twitter.com/kaiwaehner">Kai Waehner</a> (<a href="http://www.slideshare.net/KaiWaehner/enterprise-integration-patterns-revisited-eip-for-the-era-of-big-data-internet-of-things-iot-and-cloud">slides</a>)</p>
+  <blockquote><p>Data exchanges between companies increase a lot. Hence, the number of applications, which must be integrated increases, too. The realization of these integration scenarios is a complex and time-consuming task because different applications and services do not use the same concepts, interfaces, data formats and technologies. Originated and published over ten years ago by Gregor Hohpe and Bobby Woolf, Enterprise Integration Patterns (EIP) became the world wide de facto standard for describing integration problems. They offer a standardized way to split huge, complex integration scenarios into smaller recurring problems. This session revisits EIPs and gives an overview about the status quo and its relevance regarding modern concepts such as Big Data, Internet of Things or Microservices. Fortunately, EIPs offer more possibilities than just being used for modeling integration problems in a standardized way. Several frameworks and tools already implement these patterns. The developer does not have to implement EIPs on his own. Therefore, the end of the session shows different open source frameworks and proprietary tools available, which can be used for modeling and implementing complex integration scenarios by using the EIPs.</p>
+  </blockquote></li>
+  <li><p><strong>Microservices at Proximus: Netflix OSS and HATEOAS deployed on production</strong> by <a href="https://twitter.com/andreasevers">Andreas Evers</a> (<a href="https://speakerdeck.com/krosan/microservices-with-netflix-oss-and-hypermedia-apis-javaday-kiev">slides</a>)</p>
+  <blockquote><p>At a major telco company in Belgium we have designed and implemented a cutting-edge architecture using microservices and hypermedia (REST level 3 / hateoas) for the entire customer- and business-facing web portfolio. Throughout this session you will learn what the microservices hype is all about, including its benefits and pitfalls based on our experiences of running microservices (including the Netflix OSS) in production at a major company in Belgium. To manage hundreds of microservices you need to apply certain patterns such as circuit breakers, gateways, service registries and so on. You will learn how these patterns work, how they are applied through the Netflix stack and how easy it is to use them in your architecture through code examples and demos. The contracts between these microservices should be well defined and loosely coupled. Using hypermedia as the engine of application state (hateoas), we can benefit from independent evolution and decoupled implementation. How we can implement these using Spring Hateoas, correctly document using Spring Restdocs, integrate with the HAL browser and version using JsonViews will become clear in the second part of this session.</p>
+  </blockquote></li>
+  <li><p><strong>Java in production for Data Mining Research projects</strong> by <a href="https://plus.google.com/110650159101065784429/posts">Alexey Zinoviev</a> (<a href="http://www.slideshare.net/zaleslaw/javadaykiev15-java-in-production-for-data-mining-research-projects">slide</a>)</p>
+  <blockquote><p>Java is often criticized for hard parsing CSV datasets, poor matrix and vectors manipulations. This makes it hard to easy and efficiently implement certain types of machine learning algorithms. In many cases data scientists choose R or Python languages for modeling and problem solution and you as a Java developer should rewrite R algorithms in Java or integrate many small Python scripts in Java application. But why so many highload tools like Cassandra, Hadoop, Giraph, Spark are written in Java or executed on JVM? What the secret of successful implementation and running? Maybe we should forget old manufacturing approach of dividing on developers and research engineers in production projects? During the report, we will discuss how to build full Java-stack Data Mining application, deploy it, make charts, integrate with databases, how to improve performance with JVM tuning and etc. Attendees of my talk will become familiar with the development and deploy of research Java projects, Hadoop/Spark — based Data Mining tools and will get useful tips about possible integration ways.</p>
+  </blockquote></li>
+  <li><p><strong>How Java developers should test their applications</strong> by <a href="https://twitter.com/xpinjection">Mikalai Alimenkou</a> <em>It was a real code sharing session where were demoed and discussed different testing approaches</em></p></li>
+</ul><h2>Day 2</h2>
+<ul>
+  <li><p><p><strong>The Future [Java] Developer</strong> by <a href="https://twitter.com/brjavaman">Bruno Souza</a>. <strong>Keynote</strong></p>
+  <blockquote>What kind of developer do you want to be? The kind that plans, organizes, prepares, and prepares... and prepares... Or the kind that focus on delivering and on transforming your customers' lives? Software development is a creative and complex work. It is trully "Meaningful Work". But... If we do it right! Java has allowed us to adventure into all kinds of new technologies, while improving our core knowledge. But how does the ever changing technology landscape and things like Cloud Computing, Internet of Things, BigData and DevOps impact our ability to deliver? This talk will take a look at the abilities of the Future [Java] Developer, and how open source, startups and containers play a role into our future careers.
+  </blockquote></p></li>
+  <li><p><strong>20 Years of Java</strong> by <a href="https://twitter.com/lagergren">Marcus Lagergren</a>. <strong>Keynote</strong></p>
+  <blockquote><p>This keynote will be a historical trip down memory lane - going through 20 years of Java and JVM implementations. This will be partly from Marcus’s own perspective as one of the architects behind JRockit, with plenty of stories from the trenches, like the benchmarking competitions between BEA/Oracle, Sun and IBM. We will see how Java and the JVM turned into the robust high performance server side platform that it is today, partly through personal observations and partly through a more objective “what a long strange trip this has been”. He will take you back to 1995 in a time machine and slowly bring you to 2014, going over the major Java releases and the runtime innovations made in the JVM side to get us here. Finally, we will do a short trip into the future, even though the future is always fuzzy, to explore what might be coming next. With Java 8, the biggest release in Java history, Java is more vibrant and alive than ever before. This is an evolution that won’t be stopped.</p>
+  </blockquote></li>
+  <li><p><strong>Brand new proximus microservices architecture in production</strong> by <a href="https://twitter.com/andreasevers">Andreas Evers</a> (<a href="https://speakerdeck.com/krosan/lessons-learned-testimonial-of-a-brand-new-microservices-architecture-in-production-javaday-kiev">slides</a>)</p>
+  <blockquote><p>At a major telco company in Belgium we have designed and implemented a cutting-edge architecture using microservices and hypermedia (REST level 3 / hateoas) for the entire customer- and business-facing web portfolio. During this talk we will shed a light on the migration path we went through to get Spring Cloud microservices based on Netflix deployed to production. Migrating from a monolith to containerized microservices doesn't always go smoothly in a rigid regulated enterprise. This is not your regular microservice talk. This is a journey through our struggles to reform both technically and culturally (reverse Conway's law) towards a devops distributed architecture which actually runs on production. E.g. gradually evolving from a manual infrastructure deploying on JBoss and using dedicated apache load balancers, to a PaaS private cloud solution.</p>
+  </blockquote></li>
+  <li><p><strong>One VM To Rule Them All</strong> by <a href="http://www.wuerthinger.net/">Thomas Wuerthinger</a> (<a href="http://www.slideshare.net/ThomasWuerthinger/jazoon2014-slides">slides</a>)</p>
+  <blockquote><p>Running a multitude of programming languages is a common requirement for large scale applications. This talk presents a virtual machine architecture that allows to handle different programming languages and their interoperability while not sacrificing performance. It bases on partial evaluation of AST interpreters to automatically derive compiled code. A prototype of this architecture has been developed as part of the Graal OpenJDK project (<a href="http://openjdk.java.net/projects/graal/">http://openjdk.java.net/projects/graal/</a>) as well as the TruffleRuby, ZipPy, and FastR open source projects. The talk will be about the general principles behind our VM, special aspects of the Ruby, Python, and R implementations, and our vision for making language interoperability work efficiently.</p>
+  </blockquote></li>
+  <li><p><strong>Microservices Design Patterns for Java Application</strong> by <a href="https://twitter.com/arungupta">Arun Gupta</a> (<a href="https://dzone.com/refcardz/getting-started-with-microservices">DZone Refcard</a>)</p>
+  <blockquote><p>Microservices allow to decompose a monolithic application into cohesive and multiple decoupled services. Each service is running in its own process and communicate using lightweight mechanisms, such as HTTP API. These services are built around business capabilities or functional decomposition. Microservice also enables true polyglot architecture – both in terms of language and data. It truly allows you to employ the right tool for the right job. Each service is independently deployable and lends very well to fully automated deployment machinery. Can you take an existing Java EE application and decompose it into microservices? What tools are required to enable CI/CD? What are different design patterns for microservices? What tools do you need to manage such services? Is the complexity being pushed around from service implementation to orchestration? This talk will explain some of these concerns and provide guidance on how to leverage microservices in your Java applications.</p>
+  </blockquote></li>
+  <li><p><strong>Scaling Wix with microservices architecture and multi-cloud platform</strong> by <a href="http://www.aviransplace.com/">Aviran Mordo</a> (<a href="http://www.slideshare.net/aviranwix/scaling-wix-with-microservices-and-multi-cloud-2015">slides</a>)</p>
+  <blockquote><p>Many small startups build their systems on top of a traditional toolset like Tomcat, Hibernate, and MySQL. These systems are used because they facilitate easy development and fast progress, but many of them are monolithic and have limited scalability. So as a startup grows, the team is confronted with the problem of how to evolve the system and make it scalable. Facing the same dilemma, Wix.com grew from 0 to 70 million users in just a few years. Facing some interesting challenges, like performance and availability. Traditional performance solutions, such as caching, would not help due to a very long tail problem which causes caching to be highly inefficient. And because every minute of downtime means customers lose money, the product needed to have near 100% availability. Solving these issues required some interesting and out-of-the-box thinking, and this talk will discuss some of these strategies: building a highly preformant, highly available and highly scalable system; and leveraging microservices architecture and multi-cloud platforms to help build a very efficient and cost-effective system.</p>
+  </blockquote></li>
+  <li><p><strong>From CRUD to Hypermedia APIs with Spring</strong> by <a href="https://twitter.com/flushdia">Vladimir Tsukur</a></p>
+  <blockquote><p>Typical way to design and expose HTTP API today is a so called CRUD approach: come up with URL templates for resources, map create-read-update-delete operations to HTTP verbs and serialize domain model as JSON. Nice and easy, isn't it? This talk will present limitations of CRUD style APIs and how to address them using "real" REST and hypermedia, HAL and ALPS. We'll take a look how a set of libraries and tools from Spring helps building these APIs. All the talking is not worth it without an example, so Spring-based application will be our guide. Amazon, PayPal, GitHub and other API providers have already started embracing hypermedia and linking by enhancing their HTTP interfaces. Are you next? #rest #hypermedia #http #api #design #spring #spring-hateoas #java #hal #alps</p>
+  </blockquote></li>
+</ul><h2>References</h2>
+<ul>
+  <li><a href="https://speakerdeck.com/krosan/spring-rest-docs-documenting-restful-apis-using-your-tests">Spring REST Docs - Documenting RESTful APIs using your tests by Andreas Evers</a></li>
+  <li>Graal Compiler <a href="http://www.slideshare.net/ThomasWuerthinger/2015-cgo-graal">slides</a></li>
+  <li><a href="http://blog.arungupta.me/microservice-design-patterns/">Microservice Design Patterns</a></li>
+</ul></p>
+  			<a href="blog/2015/10/20/using-webrunner.html"><h1>How to run Netflix Eureka via Webapp Runner?</h1></a>
+  			<p>20 October 2015</p>
+  			<p><p><img src="/images/blog/java.png" alt="blog_post_image""/></p><p>Some time ago I had to run <a href="https://github.com/Netflix/eureka">Netflix Eureka server</a> (to be more specific itwas version 1.1.151) not using Spring Boot.</p><p>There were several ways: </p>
+<ul>
+  <li>simply deploy <strong>eureka-server.war</strong> into Tomcat</li>
+  <li><p>use <a href="http://www.eclipse.org/jetty/documentation/current/runner.html">Jetty runner</a>. </p>
+  <blockquote>The idea of the jetty-runner is extremely simple – run a webapp directly from the command line using a single jar and as much default configuration as possible. Of course, if your webapp is not so straightforward, the jetty-runner has command line options which allow you to customize the execution environment.
+  </blockquote></li>
+  <li><p>use <a href="https://github.com/jsimone/webapp-runner">Webapp Runner</a>. </p>
+  <blockquote>Webapp runner is designed to allow you to launch an exploded or compressed war that is on your filesystem into a tomcat container with a simple java -jar command.
+  </blockquote></li>
+</ul><p>I decided to go with <em>Webapp Runner</em>.</p><p>So, here is the list of steps:</p>
+<ol>
+  <li>Download <strong>eureka-server</strong> war from maven central (e.g. <a href="http://mvnrepository.com/artifact/com.netflix.eureka/eureka-server/1.1.151)">http://mvnrepository.com/artifact/com.netflix.eureka/eureka-server/1.1.151)</a>. Also, we can clone the Netflix Eureka github repo and perform build locally. But, our intent is just get ready to use war file as quick as possible.</li>
+  <li>Rename <strong>eureka-server-1.1.151.war</strong> to <strong>eureka-server.war</strong>.</li>
+  <li>Download <strong>webapp-runnner</strong> jar from maven central (e.g. <a href="http://mvnrepository.com/artifact/com.github.jsimone/webapp-runner/8.0.24.0">http://mvnrepository.com/artifact/com.github.jsimone/webapp-runner/8.0.24.0</a>)</li>
+  <li>I assume that <strong>eureka-server.war</strong> and <strong>webapp-runner-8.0.24.0.jar</strong> are located in the same directory. Now we can simply run the <em>eureka-server</em> on port 4000 via <code>runme.bat</code> file:</li>
+</ol>
+<pre><code>$ cat runme.bat
+java -jar webapp-runner-8.0.24.0.jar eureka.war --path /eureka --port 4000
+</code></pre><p>Local directory should have the next files/folders:</p>
+<pre><code>$ dir /b
+eureka-server-1.1.151.war
+eureka.war
+runme.bat
+target/
+webapp-runner-8.0.24.0.jar
+</code></pre><p>The server is up and running: check Eureka UI <a href="http://localhost:4000/eureka/">http://localhost:4000/eureka/</a> or registered apps <a href="http://localhost:4000/eureka/v2/apps/">http://localhost:4000/eureka/v2/apps/</a> XML output.</p><h2>References</h2>
+<ul>
+  <li>Github <a href="https://github.com/jsimone/webapp-runner">Webapp Runner</a></li>
+  <li>Github <a href="https://github.com/Netflix/eureka">Netflix Eureka</a></li>
+  <li><a href="https://github.com/heroku/devcenter-jetty-runner">Deploy a Java Web Application that launches with Jetty Runner</a></li>
+  <li><a href="https://devcenter.heroku.com/articles/java-webapp-runner">Deploying Tomcat-based Java Web Applications with Webapp Runner</a></li>
+  <li><a href="http://www.java-allandsundry.com/2015/02/standing-up-local-netflix-eureka.html">Standing up a local Netflix Eureka</a></li>
+</ul></p>
+  			<a href="blog/2015/09/25/programming-languages-to-native-code.html"><h1>Distribute application as Native Single binary</h1></a>
+  			<p>25 September 2015</p>
+  			<p><div align="center"><span style="align: center; font-size: 64pt">~</span></div><p>Some time ago I had a pleasure to implement Ruby-based tool which theoretically must be easy to install and have no or limited dependencies.<br/>I've picked <code>JRuby</code> and packed/distribute the application as a <code>jar</code>. I.e. JRE was the single dependency I had. In general it was very nice distribution model despite the fact that non-Java users must install JRE (Java SE Runtime Environment) to run the application.</p><p>All other approaches like Ruby, Python, Perl, etc. were not acceptable as they requires additional user's efforts for tool installation and/or package distribution. </p><p>The idea was/is to have single native binary for all major platforms which requires no dependencies. Simply copy and run.</p><p>Now, the question: did I have other alternatives to implement this tool? Could it be implemented as native static binary? - Answer - YES. But, at that time there were only two mature solutions (acceptable for me): C and C++. And neither of them were very good for tool implementation and prototyping at the same time. Also, as far as I know, it's not a simple task to implement really cross-platform app, at least for Windows/Linux/OSX in C/C++. It adds additional maintenance efforts which I tried to avoid.</p><p>Looking now at this task I can say that this king of application is nice to implement in <a href="https://golang.org">Go</a>. Go has everything I need for really cross-platform application development and single static binary output which is awesome for tools/utilities writers.</p><p>I decided to look around and understand which other popular languages support compilation/packaging to native (semi-)single static binary. The term <em>"semi-single"</em> static binary will be explained later.</p><h2>Compilers</h2><p>Quick googling give us the next languages:</p>
+<ul>
+  <li><a href="https://www.rust-lang.org">Rust</a></li>
+  <li><a href="https://www.haskell.org">Haskell</a></li>
+  <li><a href="https://ocaml.org/">OCaml</a></li>
+  <li><a href="http://www.cliki.net/creating%20executables">Lisp</a>
+  <ul>
+    <li><a href="http://www.sbcl.org/">SBCL</a></li>
+    <li><a href="http://ccl.clozure.com/">Clozure CL</a></li>
+  </ul></li>
+  <li><a href="http://dlang.org/">D</a></li>
+</ul><p><strong>Haskell</strong>, <strong>OCaml</strong> and <strong>Lisp</strong> are not widely used. And these langs should be picked carefully due to language specific learning curve.</p><p><strong>D</strong> language is not young and has small community. But it's much simpler and clean compared to C++, IMHO.</p><p><strong>Rust</strong> is the new hype along with <strong>Go</strong>. I guess it will be good alternative to C/C++. Also, the language is much more powerful compared to <strong>Go</strong>, it might be additional selling point.</p><h2>Dynamic Languages</h2><p>There is no direct compilation from interpret/dynamic language to native static binary. But, it's possible to pack application with language runtime into "archive"/executable to behave like static native binary.</p>
+<ul>
+  <li>Python <a href="http://docs.python-guide.org/en/latest/shipping/freezing/">freezing</a> (To <em>"Freeze"</em> your code is to distribute to end-users as an executable which includes a bundled Python interpreter)
+  <ul>
+    <li><a href="https://pypi.python.org/pypi/bbfreeze">bbFreeze</a></li>
+    <li><a href="http://www.py2exe.org">py2exe</a></li>
+    <li><a href="http://www.pyinstaller.org">pyInstaller</a></li>
+    <li><a href="http://cx-freeze.sourceforge.net">cx_Freeze</a></li>
+    <li><a href="https://pythonhosted.org/py2app/">py2app</a></li>
+  </ul></li>
+  <li>Perl
+  <ul>
+    <li><a href="http://search.cpan.org/~rschupp/PAR-Packer-1.026/lib/pp.pm">PAR Packager</a></li>
+    <li><a href="http://www.indigostar.com/perl2exe.php">Perl2Exe</a></li>
+  </ul></li>
+  <li>Node.js, Here is <a href="https://github.com/nwjs/nw.js/wiki/how-to-package-and-distribute-your-apps">sample approaches</a></li>
+  <li>Ruby:
+  <ul>
+    <li><a href="http://www.erikveen.dds.nl/rubyscript2exe/">RubyScript2Exe</a></li>
+    <li><a href="http://ocra.rubyforge.org/">OCRA</a></li>
+  </ul></li>
+</ul><p>Based on the list above, <strong>Python</strong> has many alternatives to accomplish single distribution artifact task. I.e. it's better to pick Python than other alternatives. Also, it looks like <strong>Ruby</strong> has limited and poor choices, i.e. it's not suitable for this kind of task.</p><h2>Summary</h2><p>IMHO, <strong>Go</strong> has the most appealing tool chain for accomplish this task.</p></p>
+  			<a href="blog/2015/09/20/jday-lviv-2015-report.html"><h1>JDay - Lviv, 2015 - Report</h1></a>
+  			<p>20 September 2015</p>
+  			<p><p><img src="/images/posts/conf/jday.png" alt="blog_post_image""/></p><p><em>September 19, 2015</em> I visited <a href="http://www.jday.com.ua">JDay Lviv</a> Java conference. This report is for myself just to keep track talks I've attended.</p>
+<ul>
+  <li><p><p><strong>Put Your Thinking CAP On</strong> by <a href="https://twitter.com/tomerg">Tomer Gabel</a> (<a href="http://www.slideshare.net/holograph/scaling-out-data-stores-and-the-cap-theorem">slides</a>)</p>
+  <blockquote>Consistency, availability and partition tolerance: these seemingly innocuous concepts have been giving engineers and researchers of distributed systems headaches for over 15 years. But despite how important they are to the design and architecture of modern software, they are still poorly understood by many engineers. This session covers the definition and practical ramifications of the CAP theorem; you may think that this has nothing to do with you because you "don't work on distributed systems", or possibly that it doesn't matter because you "run over a local network." Yet even traditional enterprise CRUD applications must obey the laws of physics, which are exactly what the CAP theorem describes. Know the rules of the game and they'll serve you well, or ignore them at your own peril...
+  </blockquote></p></li>
+  <li><p><strong>Microservices and Modularity or the difference between treatment and cure!</strong> by <a href="https://twitter.com/milendyankov">Milen Dyankov</a> (<a href="http://www.slideshare.net/MilenDyankov1/microservices-and-modularity">slides</a>)</p>
+  <blockquote><p>Everyone is talking about microservices these days! So the question is should you also jump on that bandwagon and why those somewhat older colleagues of yours (yep, those that still remember the EJB 2 revolution) are not that enthusiastic? To help you make the right decisions, this talk will first focus on explaining complexity - the problem microservices claim to solve. It then will concentrate on modular architecture and how it compares to what most people understand by microservices! Live demo will present multiple ways to modularize existing JEE application going from "monolithic" Glassfish EJB/JSF style app through SpringBoot and OSGi to reach a distributed system with a portal as front-end.</p>
+  </blockquote></li>
+  <li><p><strong>The modern view on implementation of classic design patterns in Java</strong> by <a href="https://twitter.com/xpinjection">Mikalai Alimenkou</a> (<a href="http://www.slideshare.net/alimenkou/the-modern-view-on-implementation-of-classic-design-patterns-in-java">slides</a>, <a href="https://github.com/xpinjection/design-patterns">github</a>)</p>
+  <blockquote><p>Almost every developer heard about design patterns. They was introduced long time ago to solve particular set of repeating problems in systems of different complexity level and size. But there is an opinion that many design patters just filled holes in the OOP languages of that time. Java as one of them has transformed and improved significantly in the last 10 years. So may be we could review design patterns implementation in modern Java world? Some of them are now may be easily replaced with language idioms, some others may be covered with existing libraries and frameworks. I'm sure you know some design patterns that are dead now or became anti-patterns in their initial implementation. Lets make this fun and useful review together!</p>
+  </blockquote></li>
+  <li><p><strong>Functional programming concepts in Java 8: Lambdas &amp;&amp; Monads</strong> by <a href="https://twitter.com/pivovarit">Grzegorz Piwowarek</a> (<a href="http://www.slideshare.net/pivovarit/confitura2015grzegorzpiwowareklambdasmonads">slides</a>)</p>
+  <blockquote><p>The aim of this presentation is to introduce listener to a functional programming concepts that were introduced in Java 8. Presentation covers lambda expressions, an imperative-programmer-friendly definition of a monad and an application of Java 8 monads in everyday java developer life.</p>
+  </blockquote></li>
+  <li><p><strong>Handling 10k req/sec with 1 core or how you could get even more?</strong> by <a href="https://github.com/doom369">Dmitriy Dumanskiy</a></p>
+  <blockquote><p>For the past 5 years I have been working on highly-loaded systems, solving problems and optimizing them. In my talk I will explain how the IoT has changed the understanding of high-load and why this trend changes the rules. What are asynchronous sockets and how they work. What are the solutions up to date and why Netty has no competitors? How does Netty work, what are its strengths, weaknesses, pitfalls? How to get the most, out of your code, where to look and what to do? And many other tips and advices on how to optimize your code ranging from simple cases up to choosing a JDBC pool.</p>
+  </blockquote></li>
+</ul></p>
+	
+	<hr />
+	
+	<p>Older posts are available in the <a href="archive.html">archive</a>.</p>
+
+		</div>
+		<div id="push"></div>
+    </div>
+    
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.4.0</a></p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prettify.js"></script>
+    
+  </body>
+</html>

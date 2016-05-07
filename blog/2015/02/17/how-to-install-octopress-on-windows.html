@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>How to Install Octopress on Windows?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../css/asciidoctor.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link href="../../../../css/prettify.css" rel="stylesheet">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../../../">@halyph</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../../../../index.html">Home</a></li>
+            <li><a href="../../../../archive.html">Archive</a></li>
+            <li><a href="../../../../feed.xml">Subscribe</a></li>
+             <!--
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            -->
+          </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://github.com/halyph"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://twitter.com/halyph"><i class="fa fa-twitter"></i></a>
+            </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">	
+	<div class="page-header">
+		<h1>How to Install Octopress on Windows?</h1>
+	</div>
+
+	<p><em>17 February 2015</em></p>
+
+	<p><em>Tags: </em>
+		<a href="/tags/octopress.html">octopress</a> | 
+	</em>
+		<a href="/tags/ruby.html">ruby</a> | 
+	</em>
+		<a href="/tags/windows.html">windows</a> | 
+	</p>
+
+	<p><p><img src="/images/blog/ruby.png" alt="blog_post_image_штдшту""/></p><p>I've been using <a href="http://octopress.org/">Octopress</a> on Mac OS X (i.e. have no problem). But, recently I've decided to run my blog on Windows machine and felt pain. Ahh, <a href="http://octopress.org/">Octopress</a> uses bunch of native extentions which actually cause a lot of cross-platform issues. My first attempt was to try <a href="http://jruby.org/">JRuby</a> due to his better Windows support, but got this:</p>
+<pre><code>$ bundle install
+Fetching gem metadata from https://rubygems.org/.........
+Installing rake (10.4.2)
+Installing RedCloth (4.2.9)
+Using blankslate (2.1.2.4)
+Installing hitimes (1.2.2)
+Installing timers (4.0.1)
+Installing celluloid (0.16.0)
+Installing chunky_png (1.3.3)
+Installing fast-stemmer (1.0.2) with native extensions
+Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension
+.
+        D:/Tools/JRuby/jruby-1.7.0/bin/jruby.exe extconf.rb NotImplementedError: C extension support is not enabled. Pass -Xcext.enabled=true to JRuby or set JRUBY_OPTS or modify .jrubyrc to enable.
+
+   (root) at D:/Tools/JRuby/jruby-1.7.0/lib/ruby/shared/mkmf.rb:8  require at org/jruby/RubyKernel.java:1019
+   (root) at D:/Tools/JRuby/jruby-1.7.0/lib/ruby/shared/rubygems/custom_require.rb:1
+   (root) at extconf.rb:1
+
+
+Gem files will remain installed in D:/Tools/JRuby/jruby-1.7.0/lib/ruby/gems/shared/gems/fast-stemmer-1.0.2 for inspection.
+Results logged to D:/Tools/JRuby/jruby-1.7.0/lib/ruby/gems/shared/gems/fast-stemmer-1.0.2/ext/gem_make.out
+An error occurred while installing fast-stemmer (1.0.2), and Bundler cannot continue.
+Make sure that `gem install fast-stemmer -v &#39;1.0.2&#39;` succeeds before bundling.
+</code></pre><p>There is JRuby version of <code>fast-stemmer</code> gem called <a href="https://github.com/caius/jruby-stemmer"><code>jruby-stemmer</code></a>. But, I'm not ready to maitain this. That's why I've decided to use <a href="http://rubyinstaller.org/">RubyInstaller</a>. </p><h2>Install Ruby on Windows and SSL issues</h2>
+<ol>
+  <li><p>Download (<code>rubyinstaller-2.1.5-x64.exe</code> in my case) and install <a href="http://rubyinstaller.org/">RubyInstaller</a>. I installed in <code>d:\Tools\Ruby\Ruby21-x64\</code> folder.</p></li>
+  <li><p>Check <code>rubygems</code> via running <code>gem update</code> and you should get the next error:</p></li>
+</ol>
+<pre><code>$ gem update
+Updating installed gems
+ERROR:  While executing gem ... (Gem::RemoteFetcher::FetchError)
+    SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (https://api.rubygems.org/specs.4.8.gz)
+</code></pre><p>It's well known <code>rubygems</code> issues with ready to use <a href="https://gist.github.com/luislavena/f064211759ee0f806c88">solution</a>:</p>
+<ul>
+  <li>Step 1: Obtain the new trust certificate, download it <a href="https://raw.githubusercontent.com/rubygems/rubygems/master/lib/rubygems/ssl_certs/AddTrustExternalCARoot-2048.pem">AddTrustExternalCARoot-2048.pem</a> in some temp folder</li>
+  <li>Step 2: Locate RubyGems certificate directory in your installation (in my case it's <code>D:/Tools/Ruby/Ruby21-x64/lib/ruby/2.1.0/</code> )</li>
+</ul>
+<pre><code>$ gem which rubygems
+D:/Tools/Ruby/Ruby21-x64/lib/ruby/2.1.0/rubygems.rb
+</code></pre>
+<ul>
+  <li>Step 3: Copy new trust certificate into <code>D:\Tools\Ruby\Ruby21-x64\lib\ruby\2.1.0\rubygems\ssl_certs</code></li>
+</ul>
+<pre><code>$ copy AddTrustExternalCARoot-2048.pem D:\Tools\Ruby\Ruby21-x64\lib\ruby\2.1.0\rubygems\ssl_certs
+</code></pre>
+<ul>
+  <li>Step 4: Now You should be able to run gem update without any issues</li>
+</ul><h2>Prepapre environment for Octopress</h2><p>Now it's time to clone <a href="http://octopress.org/">Octopress</a> blog and run it. Unfortunatelly, there are some minor issues which still must be fixed. </p><h3>Fix <a href="http://octopress.org/">Octopress</a> native extentions issues</h3><p>We know that <a href="http://octopress.org/">Octopress</a> uses native extentions thats why we have to additionally install <a href="http://cdn.rubyinstaller.org/archives/devkits/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe">Development Kit</a></p>
+<ul>
+  <li>Download and unpack it in adjacent to Ruby install folder (<code>d:\Tools\Ruby\DevKit_2.1_x64\</code> in my case)</li>
+  <li>Link <a href="http://cdn.rubyinstaller.org/archives/devkits/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe">Development Kit</a> installation to previously installed Ruby
+  <ul>
+    <li>Go to <a href="http://cdn.rubyinstaller.org/archives/devkits/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe">Development Kit</a> install folder <code>d:\Tools\Ruby\DevKit_2.1_x64\</code></li>
+    <li>Run <code>ruby dk.rb init</code> which generate <code>config.yml</code>. Open <code>config.yml</code> and add <code>- D:/Tools/Ruby/Ruby21-x64</code> to the end of this file.</li>
+    <li>Run <code>ruby dk.rb install</code></li>
+  </ul></li>
+</ul><p>See my <em>Development Kit</em> <code>config.yml</code>:</p>
+<pre><code># This configuration file contains the absolute path locations of all
+# installed Rubies to be enhanced to work with the DevKit. This config
+# file is generated by the &#39;ruby dk.rb init&#39; step and may be modified
+# before running the &#39;ruby dk.rb install&#39; step. To include any installed
+# Rubies that were not automagically discovered, simply add a line below
+# the triple hyphens with the absolute path to the Ruby root directory.
+#
+# Example:
+#
+# ---
+# - C:/ruby19trunk
+# - C:/ruby192dev
+#
+---
+- D:/Tools/Ruby/Ruby21-x64
+</code></pre><h3>Install Python</h3><p>The default syntax highlighting engine in Octopress/Jekyll is <a href="http://pygments.org/">Pygments</a>. It's requires Python v.2.7.x. Simply download <a href="https://www.python.org/downloads/release/python-278/">Python v.2.7.8</a> and add it on system <code>PATH</code>.</p><h3>Final steps</h3><p>I assume that blog was previously cloned. Now, we should perform "traditional" Ruby project ceremony:</p>
+<ul>
+  <li>Install <code>budler</code> via <code>gem install bundler</code></li>
+  <li>Setup all required gems <code>bundle install</code></li>
+  <li>Run <a href="http://octopress.org/">Octopress</a> preview <code>rake preview</code></li>
+</ul><h2>References</h2>
+<ul>
+  <li><a href="http://blog.zerosharp.com/setting-up-octopress-on-windows/">Octopress on Windows and GitHub</a></li>
+  <li><a href="http://thaiat.github.io/blog/2014/03/13/how-to-install-and-use-octopress-on-windows/">How to Install and Use Octopress on Windows</a></li>
+  <li><a href="http://octopress.org/">Octopress</a></li>
+</ul></p>
+
+	<hr />
+	
+		</div>
+		<div id="push"></div>
+    </div>
+    
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.4.0</a></p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../../../js/bootstrap.min.js"></script>
+    <script src="../../../../js/prettify.js"></script>
+    
+  </body>
+</html>

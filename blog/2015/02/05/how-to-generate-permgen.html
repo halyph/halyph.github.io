@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>How to Generate PermGen leak?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../css/asciidoctor.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link href="../../../../css/prettify.css" rel="stylesheet">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../../../">@halyph</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../../../../index.html">Home</a></li>
+            <li><a href="../../../../archive.html">Archive</a></li>
+            <li><a href="../../../../feed.xml">Subscribe</a></li>
+             <!--
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            -->
+          </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://github.com/halyph"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://twitter.com/halyph"><i class="fa fa-twitter"></i></a>
+            </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">	
+	<div class="page-header">
+		<h1>How to Generate PermGen leak?</h1>
+	</div>
+
+	<p><em>05 February 2015</em></p>
+
+	<p><em>Tags: </em>
+		<a href="/tags/java.html">java</a> | 
+	</p>
+
+	<p><p><img src="/images/blog/java.png" alt="blog_post_image""/></p><p>I'm sure that a lot of Java developers experienced <code>java.lang.OutOfMemoryError: PermGen space</code> (OOME PermGen). It was very common to get this error after multiple WAR re-deploys on Tomcat v.6.x. Permanent generation (PermGen) region of memory is used to store the internal representation of loaded classes (and much more, see here [<a href="https://plumbr.eu/blog/what-is-a-permgen-leak">1</a>] and [<a href="https://blogs.oracle.com/jonthecollector/entry/presenting_the_permanent_generation">2</a>]).</p><p>So, we can get <strong>OOME PermGen</strong> when ClassLoader whats to store class definition, but there is not enough space in PermGen - i.e. loaded too many classes. </p><p>Based on this <strong>OOME PermGen</strong> error can be generated via:</p>
+<ul>
+  <li>decreasing PermGen size</li>
+  <li>loading huge amount of classes</li>
+</ul><p>I highly recommend to read <a href="https://plumbr.eu/blog/what-is-a-permgen-leak">What is a PermGen leak?</a> post to get more info about this issue.</p><h3>Disclaimer</h3><p>The current post is totally based on <a href="https://plumbr.eu/blog/how-not-to-create-a-permgen-leak">How (not) to create a permgen leak?</a></p><h2>Generate PermGen leak</h2><p>The main idea is dynamically create a lot of classes via byte code manipulation library. We are going to use <a href="http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/">Javassist</a> as it's the simplest library with nice API.</p>
+<ul>
+  <li>We assume that it's <code>maven</code> based project. So, let's add Javassist to <code>pom.xml</code>.</li>
+</ul>
+<pre><code class="xml">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+  &lt;groupId&gt;com.mycompany.app&lt;/groupId&gt;
+  &lt;artifactId&gt;my-app&lt;/artifactId&gt;
+  &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+  &lt;packaging&gt;jar&lt;/packaging&gt;
+
+  &lt;name&gt;my-app&lt;/name&gt;
+  &lt;url&gt;http://maven.apache.org&lt;/url&gt;
+
+  &lt;properties&gt;
+    &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+    &lt;skipTests&gt;true&lt;/skipTests&gt;
+  &lt;/properties&gt;
+
+  &lt;dependencies&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.javassist&lt;/groupId&gt;
+      &lt;artifactId&gt;javassist&lt;/artifactId&gt;
+      &lt;version&gt;3.15.0-GA&lt;/version&gt;
+    &lt;/dependency&gt;
+  &lt;/dependencies&gt;
+
+  &lt;build&gt;
+    &lt;plugins&gt;
+      &lt;plugin&gt;
+        &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+        &lt;artifactId&gt;appassembler-maven-plugin&lt;/artifactId&gt;
+        &lt;version&gt;1.9&lt;/version&gt;
+        &lt;configuration&gt;
+          &lt;extraJvmArguments&gt;-XX:PermSize=2M -XX:MaxPermSize=4M&lt;/extraJvmArguments&gt;
+          &lt;programs&gt;
+            &lt;program&gt;
+              &lt;mainClass&gt;com.mycompany.app.App&lt;/mainClass&gt;
+              &lt;id&gt;app&lt;/id&gt;
+            &lt;/program&gt;
+          &lt;/programs&gt;
+        &lt;/configuration&gt;
+      &lt;/plugin&gt;
+    &lt;/plugins&gt;
+  &lt;/build&gt;
+&lt;/project&gt;
+</code></pre>
+<ul>
+  <li>Also, we should set <strong>PermGen</strong> and <strong>MaxPermGen</strong> size to 2M and 4M respectively (it gives us a chance to get error as quickly as possible). Maven <code>Appassembler</code> plugin [<a href="http://mojo.codehaus.org/appassembler/appassembler-maven-plugin/usage-program-jvmsettings.html">3</a>] uses <code>extraJvmArguments</code> parameter while generating wrapper scripts: shell and batch (see <code>pom.xml</code> above, <code>&lt;extraJvmArguments&gt;-XX:PermSize=2M -XX:MaxPermSize=2M&lt;/extraJvmArguments&gt;</code>).</li>
+</ul>
+<blockquote><p>--XX:PermSize<size> - Set initial PermGen Size</p><p>--XX:MaxPermSize<size> - Set the maximum PermGen Size</p>
+</blockquote>
+<ul>
+  <li>Below is a simple application which dynamically creates 1000 classes to cause PermGem leak. Class creation is very simple and self explanatory. The main idea is that we should use byte code manipulation library to create classes dynamically.</li>
+</ul><p>See additional comments in the next code snippet</p>
+<pre><code class="java">package com.mycompany.app;
+
+import javassist.CannotCompileException;
+import javassist.ClassPool;
+
+import java.util.concurrent.TimeUnit;
+
+/**
+ * Steps to build and run demo application: &lt;br /&gt;
+ *
+ * &lt;li&gt;mvn clean package appassembler:assemble
+ * &lt;li&gt;target/appassembler/bin/app
+ *
+ */
+public class App {
+    /**
+     * We should use static block for OutOfMemoryError &quot;initialization&quot;
+     * It&#39;s very important to have it. In other case JVM won&#39;t be able to
+     * throw (actually create new OutOfMemoryError) this exception because
+     * there will be no free memory for this. That&#39;s why we creating it beforehand.
+     * As you can see we intentionally added output to highlight that THIS error
+     * was produces by us.
+     */
+    static {
+        new OutOfMemoryError().printStackTrace();
+        try {
+            TimeUnit.SECONDS.sleep(1);
+            System.out.println(&quot;=====================&quot;);
+            System.out.println(&quot;Initialized/created OutOfMemoryError&quot;);
+            System.out.println(&quot;=====================&quot;);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        System.out.println(&quot;Start dynamic class creation.....\n&quot;);
+        for (int i = 0; i &lt; 1000; i++) {
+            Class clazz = createClass(&quot;MyClass&quot; + i);
+            // we use this output as indicator to see the rough number of created classes
+            // it&#39;s not necessary to print every single (just created) class
+            if(i % 50 == 0) System.out.println(clazz);
+        }
+    }
+
+    private static Class createClass(String className) throws CannotCompileException {
+        ClassPool pool = ClassPool.getDefault();
+        return pool.makeClass(className).toClass();
+    }
+}
+</code></pre>
+<ul>
+  <li>Run the application</li>
+</ul>
+<pre><code>$ mvn clean package appassembler:assemble
+$ target/appassembler/bin/app
+java.lang.OutOfMemoryError
+	at com.mycompany.app.App.&lt;clinit&gt;(App.java:15)
+=====================
+Initialized/created OutOfMemoryError
+=====================
+Start dynamic class creation.....
+
+class MyClass0
+class MyClass50
+class MyClass100
+class MyClass150
+class MyClass200
+class MyClass250
+class MyClass300
+class MyClass350
+class MyClass400
+class MyClass450
+class MyClass500
+class MyClass550
+Exception in thread &quot;Reference Handler&quot; java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:140)
+Exception in thread &quot;main&quot; java.lang.OutOfMemoryError: PermGen space
+	at javassist.ClassPool.toClass(ClassPool.java:1089)
+	at javassist.ClassPool.toClass(ClassPool.java:1032)
+	at javassist.ClassPool.toClass(ClassPool.java:990)
+	at javassist.CtClass.toClass(CtClass.java:1125)
+	at com.mycompany.app.App.createClass(App.java:36)
+	at com.mycompany.app.App.main(App.java:29)
+</code></pre><p>The next command runs under the hood:<br/><code>java -XX:PermSize=2M -XX:MaxPermSize=4M -classpath &quot;$CLASSPATH&quot; com.mycompany.app.App</code></p><p>As you can see it was possible to create about 550 <code>MyClass</code> classes before we've got an expected error.</p><h3>Tomcat Leaks</h3><p>Tomcat team created a nice <a href="http://wiki.apache.org/tomcat/MemoryLeakProtection">wiki page</a> where listed and shown the situations where leaks can be detected and fixed.</p><h2>References</h2>
+<ul>
+  <li><a href="https://plumbr.eu/blog/what-is-a-permgen-leak">What is a PermGen leak?</a></li>
+  <li><a href="https://plumbr.eu/blog/how-not-to-create-a-permgen-leak">How (not) to create a permgen leak?</a></li>
+  <li><a href="http://www.infoq.com/articles/Java-PERMGEN-Removed">Where Has the Java PermGen Gone?</a> PermGen is replace with Metaspace in Java 8</li>
+  <li><a href="https://blogs.oracle.com/jonthecollector/entry/presenting_the_permanent_generation">Presenting the Permanent Generation</a> General intro into the subject</li>
+  <li><a href="http://www.javaranch.com/journal/200711/creating_java_classes_runtime_expression_evaluation.html">Javassist - Creating Java classes at runtime for evaluating numerical expressions</a> Small article how to create Java classes dynamically</li>
+  <li><a href="http://wiki.apache.org/tomcat/MemoryLeakProtection">Tomcat Wiki MemoryLeakProtection</a></li>
+</ul></p>
+
+	<hr />
+	
+		</div>
+		<div id="push"></div>
+    </div>
+    
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.4.0</a></p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../../../js/bootstrap.min.js"></script>
+    <script src="../../../../js/prettify.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,1873 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HalypH's Blog</title>
+    <link>http://halyph.com</link>
+    <atom:link href="http://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description>JBake Bootstrap Template</description>
+    <language>en-gb</language>
+    <pubDate>Sat, 7 May 2016 19:31:18 +0300</pubDate>
+    <lastBuildDate>Sat, 7 May 2016 19:31:18 +0300</lastBuildDate>
+
+    <item>
+      <title>Java Day - Kiev, 2015 - Report</title>
+      <link>http://halyph.com/blog/2015/11/08/java-day-kiev-2015-report.html</link>
+      <pubDate>Sun, 8 Nov 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2015/11/08/java-day-kiev-2015-report.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/posts/conf/java_day_2015.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;November 6-7, 2015&lt;/em&gt; I visited &lt;a href=&quot;http://javaday.org.ua/kyiv&quot;&gt;Java Day Kyiv&lt;/a&gt; conference. This report is for myself just to keep track talks I&apos;ve attended.&lt;/p&gt;&lt;h2&gt;Day 1&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;p&gt;&lt;p&gt;&lt;strong&gt;Get Past the Syntax, the Real Scare&apos;s in the Semantics&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/@venkat_s&quot;&gt;Venkat Subramaniam&lt;/a&gt; &lt;/p&gt;
+  &lt;blockquote&gt;We often hear programmers complain about the syntax, especially when learning a new language. It turns out that, while syntax plays a role in our ability to learn and use languages, the real force we have to deal with is in the semantics. Once we get past the syntax, the semantics is where the real power and the real scare is. Curious to learn more?
+  &lt;/blockquote&gt;&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Enterprise Integration Patterns Revisited for the Era of Big Data, Internet of Things and Microservices&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/kaiwaehner&quot;&gt;Kai Waehner&lt;/a&gt; (&lt;a href=&quot;http://www.slideshare.net/KaiWaehner/enterprise-integration-patterns-revisited-eip-for-the-era-of-big-data-internet-of-things-iot-and-cloud&quot;&gt;slides&lt;/a&gt;)&lt;/p&gt;
+  &lt;blockquote&gt;&lt;p&gt;Data exchanges between companies increase a lot. Hence, the number of applications, which must be integrated increases, too. The realization of these integration scenarios is a complex and time-consuming task because different applications and services do not use the same concepts, interfaces, data formats and technologies. Originated and published over ten years ago by Gregor Hohpe and Bobby Woolf, Enterprise Integration Patterns (EIP) became the world wide de facto standard for describing integration problems. They offer a standardized way to split huge, complex integration scenarios into smaller recurring problems. This session revisits EIPs and gives an overview about the status quo and its relevance regarding modern concepts such as Big Data, Internet of Things or Microservices. Fortunately, EIPs offer more possibilities than just being used for modeling integration problems in a standardized way. Several frameworks and tools already implement these patterns. The developer does not have to implement EIPs on his own. Therefore, the end of the session shows different open source frameworks and proprietary tools available, which can be used for modeling and implementing complex integration scenarios by using the EIPs.&lt;/p&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Microservices at Proximus: Netflix OSS and HATEOAS deployed on production&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/andreasevers&quot;&gt;Andreas Evers&lt;/a&gt; (&lt;a href=&quot;https://speakerdeck.com/krosan/microservices-with-netflix-oss-and-hypermedia-apis-javaday-kiev&quot;&gt;slides&lt;/a&gt;)&lt;/p&gt;
+  &lt;blockquote&gt;&lt;p&gt;At a major telco company in Belgium we have designed and implemented a cutting-edge architecture using microservices and hypermedia (REST level 3 / hateoas) for the entire customer- and business-facing web portfolio. Throughout this session you will learn what the microservices hype is all about, including its benefits and pitfalls based on our experiences of running microservices (including the Netflix OSS) in production at a major company in Belgium. To manage hundreds of microservices you need to apply certain patterns such as circuit breakers, gateways, service registries and so on. You will learn how these patterns work, how they are applied through the Netflix stack and how easy it is to use them in your architecture through code examples and demos. The contracts between these microservices should be well defined and loosely coupled. Using hypermedia as the engine of application state (hateoas), we can benefit from independent evolution and decoupled implementation. How we can implement these using Spring Hateoas, correctly document using Spring Restdocs, integrate with the HAL browser and version using JsonViews will become clear in the second part of this session.&lt;/p&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Java in production for Data Mining Research projects&lt;/strong&gt; by &lt;a href=&quot;https://plus.google.com/110650159101065784429/posts&quot;&gt;Alexey Zinoviev&lt;/a&gt; (&lt;a href=&quot;http://www.slideshare.net/zaleslaw/javadaykiev15-java-in-production-for-data-mining-research-projects&quot;&gt;slide&lt;/a&gt;)&lt;/p&gt;
+  &lt;blockquote&gt;&lt;p&gt;Java is often criticized for hard parsing CSV datasets, poor matrix and vectors manipulations. This makes it hard to easy and efficiently implement certain types of machine learning algorithms. In many cases data scientists choose R or Python languages for modeling and problem solution and you as a Java developer should rewrite R algorithms in Java or integrate many small Python scripts in Java application. But why so many highload tools like Cassandra, Hadoop, Giraph, Spark are written in Java or executed on JVM? What the secret of successful implementation and running? Maybe we should forget old manufacturing approach of dividing on developers and research engineers in production projects? During the report, we will discuss how to build full Java-stack Data Mining application, deploy it, make charts, integrate with databases, how to improve performance with JVM tuning and etc. Attendees of my talk will become familiar with the development and deploy of research Java projects, Hadoop/Spark — based Data Mining tools and will get useful tips about possible integration ways.&lt;/p&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;How Java developers should test their applications&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/xpinjection&quot;&gt;Mikalai Alimenkou&lt;/a&gt; &lt;em&gt;It was a real code sharing session where were demoed and discussed different testing approaches&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;Day 2&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;p&gt;&lt;p&gt;&lt;strong&gt;The Future [Java] Developer&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/brjavaman&quot;&gt;Bruno Souza&lt;/a&gt;. &lt;strong&gt;Keynote&lt;/strong&gt;&lt;/p&gt;
+  &lt;blockquote&gt;What kind of developer do you want to be? The kind that plans, organizes, prepares, and prepares... and prepares... Or the kind that focus on delivering and on transforming your customers&apos; lives? Software development is a creative and complex work. It is trully &quot;Meaningful Work&quot;. But... If we do it right! Java has allowed us to adventure into all kinds of new technologies, while improving our core knowledge. But how does the ever changing technology landscape and things like Cloud Computing, Internet of Things, BigData and DevOps impact our ability to deliver? This talk will take a look at the abilities of the Future [Java] Developer, and how open source, startups and containers play a role into our future careers.
+  &lt;/blockquote&gt;&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;20 Years of Java&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/lagergren&quot;&gt;Marcus Lagergren&lt;/a&gt;. &lt;strong&gt;Keynote&lt;/strong&gt;&lt;/p&gt;
+  &lt;blockquote&gt;&lt;p&gt;This keynote will be a historical trip down memory lane - going through 20 years of Java and JVM implementations. This will be partly from Marcus’s own perspective as one of the architects behind JRockit, with plenty of stories from the trenches, like the benchmarking competitions between BEA/Oracle, Sun and IBM. We will see how Java and the JVM turned into the robust high performance server side platform that it is today, partly through personal observations and partly through a more objective “what a long strange trip this has been”. He will take you back to 1995 in a time machine and slowly bring you to 2014, going over the major Java releases and the runtime innovations made in the JVM side to get us here. Finally, we will do a short trip into the future, even though the future is always fuzzy, to explore what might be coming next. With Java 8, the biggest release in Java history, Java is more vibrant and alive than ever before. This is an evolution that won’t be stopped.&lt;/p&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Brand new proximus microservices architecture in production&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/andreasevers&quot;&gt;Andreas Evers&lt;/a&gt; (&lt;a href=&quot;https://speakerdeck.com/krosan/lessons-learned-testimonial-of-a-brand-new-microservices-architecture-in-production-javaday-kiev&quot;&gt;slides&lt;/a&gt;)&lt;/p&gt;
+  &lt;blockquote&gt;&lt;p&gt;At a major telco company in Belgium we have designed and implemented a cutting-edge architecture using microservices and hypermedia (REST level 3 / hateoas) for the entire customer- and business-facing web portfolio. During this talk we will shed a light on the migration path we went through to get Spring Cloud microservices based on Netflix deployed to production. Migrating from a monolith to containerized microservices doesn&apos;t always go smoothly in a rigid regulated enterprise. This is not your regular microservice talk. This is a journey through our struggles to reform both technically and culturally (reverse Conway&apos;s law) towards a devops distributed architecture which actually runs on production. E.g. gradually evolving from a manual infrastructure deploying on JBoss and using dedicated apache load balancers, to a PaaS private cloud solution.&lt;/p&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;One VM To Rule Them All&lt;/strong&gt; by &lt;a href=&quot;http://www.wuerthinger.net/&quot;&gt;Thomas Wuerthinger&lt;/a&gt; (&lt;a href=&quot;http://www.slideshare.net/ThomasWuerthinger/jazoon2014-slides&quot;&gt;slides&lt;/a&gt;)&lt;/p&gt;
+  &lt;blockquote&gt;&lt;p&gt;Running a multitude of programming languages is a common requirement for large scale applications. This talk presents a virtual machine architecture that allows to handle different programming languages and their interoperability while not sacrificing performance. It bases on partial evaluation of AST interpreters to automatically derive compiled code. A prototype of this architecture has been developed as part of the Graal OpenJDK project (&lt;a href=&quot;http://openjdk.java.net/projects/graal/&quot;&gt;http://openjdk.java.net/projects/graal/&lt;/a&gt;) as well as the TruffleRuby, ZipPy, and FastR open source projects. The talk will be about the general principles behind our VM, special aspects of the Ruby, Python, and R implementations, and our vision for making language interoperability work efficiently.&lt;/p&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Microservices Design Patterns for Java Application&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/arungupta&quot;&gt;Arun Gupta&lt;/a&gt; (&lt;a href=&quot;https://dzone.com/refcardz/getting-started-with-microservices&quot;&gt;DZone Refcard&lt;/a&gt;)&lt;/p&gt;
+  &lt;blockquote&gt;&lt;p&gt;Microservices allow to decompose a monolithic application into cohesive and multiple decoupled services. Each service is running in its own process and communicate using lightweight mechanisms, such as HTTP API. These services are built around business capabilities or functional decomposition. Microservice also enables true polyglot architecture – both in terms of language and data. It truly allows you to employ the right tool for the right job. Each service is independently deployable and lends very well to fully automated deployment machinery. Can you take an existing Java EE application and decompose it into microservices? What tools are required to enable CI/CD? What are different design patterns for microservices? What tools do you need to manage such services? Is the complexity being pushed around from service implementation to orchestration? This talk will explain some of these concerns and provide guidance on how to leverage microservices in your Java applications.&lt;/p&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Scaling Wix with microservices architecture and multi-cloud platform&lt;/strong&gt; by &lt;a href=&quot;http://www.aviransplace.com/&quot;&gt;Aviran Mordo&lt;/a&gt; (&lt;a href=&quot;http://www.slideshare.net/aviranwix/scaling-wix-with-microservices-and-multi-cloud-2015&quot;&gt;slides&lt;/a&gt;)&lt;/p&gt;
+  &lt;blockquote&gt;&lt;p&gt;Many small startups build their systems on top of a traditional toolset like Tomcat, Hibernate, and MySQL. These systems are used because they facilitate easy development and fast progress, but many of them are monolithic and have limited scalability. So as a startup grows, the team is confronted with the problem of how to evolve the system and make it scalable. Facing the same dilemma, Wix.com grew from 0 to 70 million users in just a few years. Facing some interesting challenges, like performance and availability. Traditional performance solutions, such as caching, would not help due to a very long tail problem which causes caching to be highly inefficient. And because every minute of downtime means customers lose money, the product needed to have near 100% availability. Solving these issues required some interesting and out-of-the-box thinking, and this talk will discuss some of these strategies: building a highly preformant, highly available and highly scalable system; and leveraging microservices architecture and multi-cloud platforms to help build a very efficient and cost-effective system.&lt;/p&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;From CRUD to Hypermedia APIs with Spring&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/flushdia&quot;&gt;Vladimir Tsukur&lt;/a&gt;&lt;/p&gt;
+  &lt;blockquote&gt;&lt;p&gt;Typical way to design and expose HTTP API today is a so called CRUD approach: come up with URL templates for resources, map create-read-update-delete operations to HTTP verbs and serialize domain model as JSON. Nice and easy, isn&apos;t it? This talk will present limitations of CRUD style APIs and how to address them using &quot;real&quot; REST and hypermedia, HAL and ALPS. We&apos;ll take a look how a set of libraries and tools from Spring helps building these APIs. All the talking is not worth it without an example, so Spring-based application will be our guide. Amazon, PayPal, GitHub and other API providers have already started embracing hypermedia and linking by enhancing their HTTP interfaces. Are you next? #rest #hypermedia #http #api #design #spring #spring-hateoas #java #hal #alps&lt;/p&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://speakerdeck.com/krosan/spring-rest-docs-documenting-restful-apis-using-your-tests&quot;&gt;Spring REST Docs - Documenting RESTful APIs using your tests by Andreas Evers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Graal Compiler &lt;a href=&quot;http://www.slideshare.net/ThomasWuerthinger/2015-cgo-graal&quot;&gt;slides&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.arungupta.me/microservice-design-patterns/&quot;&gt;Microservice Design Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>How to run Netflix Eureka via Webapp Runner?</title>
+      <link>http://halyph.com/blog/2015/10/20/using-webrunner.html</link>
+      <pubDate>Tue, 20 Oct 2015 00:00:00 +0300</pubDate>
+      <guid isPermaLink="false">blog/2015/10/20/using-webrunner.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;Some time ago I had to run &lt;a href=&quot;https://github.com/Netflix/eureka&quot;&gt;Netflix Eureka server&lt;/a&gt; (to be more specific itwas version 1.1.151) not using Spring Boot.&lt;/p&gt;&lt;p&gt;There were several ways: &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;simply deploy &lt;strong&gt;eureka-server.war&lt;/strong&gt; into Tomcat&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;use &lt;a href=&quot;http://www.eclipse.org/jetty/documentation/current/runner.html&quot;&gt;Jetty runner&lt;/a&gt;. &lt;/p&gt;
+  &lt;blockquote&gt;The idea of the jetty-runner is extremely simple – run a webapp directly from the command line using a single jar and as much default configuration as possible. Of course, if your webapp is not so straightforward, the jetty-runner has command line options which allow you to customize the execution environment.
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;use &lt;a href=&quot;https://github.com/jsimone/webapp-runner&quot;&gt;Webapp Runner&lt;/a&gt;. &lt;/p&gt;
+  &lt;blockquote&gt;Webapp runner is designed to allow you to launch an exploded or compressed war that is on your filesystem into a tomcat container with a simple java -jar command.
+  &lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;I decided to go with &lt;em&gt;Webapp Runner&lt;/em&gt;.&lt;/p&gt;&lt;p&gt;So, here is the list of steps:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Download &lt;strong&gt;eureka-server&lt;/strong&gt; war from maven central (e.g. &lt;a href=&quot;http://mvnrepository.com/artifact/com.netflix.eureka/eureka-server/1.1.151)&quot;&gt;http://mvnrepository.com/artifact/com.netflix.eureka/eureka-server/1.1.151)&lt;/a&gt;. Also, we can clone the Netflix Eureka github repo and perform build locally. But, our intent is just get ready to use war file as quick as possible.&lt;/li&gt;
+  &lt;li&gt;Rename &lt;strong&gt;eureka-server-1.1.151.war&lt;/strong&gt; to &lt;strong&gt;eureka-server.war&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Download &lt;strong&gt;webapp-runnner&lt;/strong&gt; jar from maven central (e.g. &lt;a href=&quot;http://mvnrepository.com/artifact/com.github.jsimone/webapp-runner/8.0.24.0&quot;&gt;http://mvnrepository.com/artifact/com.github.jsimone/webapp-runner/8.0.24.0&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;I assume that &lt;strong&gt;eureka-server.war&lt;/strong&gt; and &lt;strong&gt;webapp-runner-8.0.24.0.jar&lt;/strong&gt; are located in the same directory. Now we can simply run the &lt;em&gt;eureka-server&lt;/em&gt; on port 4000 via &lt;code&gt;runme.bat&lt;/code&gt; file:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ cat runme.bat
+java -jar webapp-runner-8.0.24.0.jar eureka.war --path /eureka --port 4000
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Local directory should have the next files/folders:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dir /b
+eureka-server-1.1.151.war
+eureka.war
+runme.bat
+target/
+webapp-runner-8.0.24.0.jar
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The server is up and running: check Eureka UI &lt;a href=&quot;http://localhost:4000/eureka/&quot;&gt;http://localhost:4000/eureka/&lt;/a&gt; or registered apps &lt;a href=&quot;http://localhost:4000/eureka/v2/apps/&quot;&gt;http://localhost:4000/eureka/v2/apps/&lt;/a&gt; XML output.&lt;/p&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Github &lt;a href=&quot;https://github.com/jsimone/webapp-runner&quot;&gt;Webapp Runner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Github &lt;a href=&quot;https://github.com/Netflix/eureka&quot;&gt;Netflix Eureka&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/heroku/devcenter-jetty-runner&quot;&gt;Deploy a Java Web Application that launches with Jetty Runner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://devcenter.heroku.com/articles/java-webapp-runner&quot;&gt;Deploying Tomcat-based Java Web Applications with Webapp Runner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.java-allandsundry.com/2015/02/standing-up-local-netflix-eureka.html&quot;&gt;Standing up a local Netflix Eureka&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>Distribute application as Native Single binary</title>
+      <link>http://halyph.com/blog/2015/09/25/programming-languages-to-native-code.html</link>
+      <pubDate>Fri, 25 Sep 2015 00:00:00 +0300</pubDate>
+      <guid isPermaLink="false">blog/2015/09/25/programming-languages-to-native-code.html</guid>
+      	<description>
+	&lt;div align=&quot;center&quot;&gt;&lt;span style=&quot;align: center; font-size: 64pt&quot;&gt;~&lt;/span&gt;&lt;/div&gt;&lt;p&gt;Some time ago I had a pleasure to implement Ruby-based tool which theoretically must be easy to install and have no or limited dependencies.&lt;br/&gt;I&apos;ve picked &lt;code&gt;JRuby&lt;/code&gt; and packed/distribute the application as a &lt;code&gt;jar&lt;/code&gt;. I.e. JRE was the single dependency I had. In general it was very nice distribution model despite the fact that non-Java users must install JRE (Java SE Runtime Environment) to run the application.&lt;/p&gt;&lt;p&gt;All other approaches like Ruby, Python, Perl, etc. were not acceptable as they requires additional user&apos;s efforts for tool installation and/or package distribution. &lt;/p&gt;&lt;p&gt;The idea was/is to have single native binary for all major platforms which requires no dependencies. Simply copy and run.&lt;/p&gt;&lt;p&gt;Now, the question: did I have other alternatives to implement this tool? Could it be implemented as native static binary? - Answer - YES. But, at that time there were only two mature solutions (acceptable for me): C and C++. And neither of them were very good for tool implementation and prototyping at the same time. Also, as far as I know, it&apos;s not a simple task to implement really cross-platform app, at least for Windows/Linux/OSX in C/C++. It adds additional maintenance efforts which I tried to avoid.&lt;/p&gt;&lt;p&gt;Looking now at this task I can say that this king of application is nice to implement in &lt;a href=&quot;https://golang.org&quot;&gt;Go&lt;/a&gt;. Go has everything I need for really cross-platform application development and single static binary output which is awesome for tools/utilities writers.&lt;/p&gt;&lt;p&gt;I decided to look around and understand which other popular languages support compilation/packaging to native (semi-)single static binary. The term &lt;em&gt;&quot;semi-single&quot;&lt;/em&gt; static binary will be explained later.&lt;/p&gt;&lt;h2&gt;Compilers&lt;/h2&gt;&lt;p&gt;Quick googling give us the next languages:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.haskell.org&quot;&gt;Haskell&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ocaml.org/&quot;&gt;OCaml&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.cliki.net/creating%20executables&quot;&gt;Lisp&lt;/a&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.sbcl.org/&quot;&gt;SBCL&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://ccl.clozure.com/&quot;&gt;Clozure CL&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://dlang.org/&quot;&gt;D&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Haskell&lt;/strong&gt;, &lt;strong&gt;OCaml&lt;/strong&gt; and &lt;strong&gt;Lisp&lt;/strong&gt; are not widely used. And these langs should be picked carefully due to language specific learning curve.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;D&lt;/strong&gt; language is not young and has small community. But it&apos;s much simpler and clean compared to C++, IMHO.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Rust&lt;/strong&gt; is the new hype along with &lt;strong&gt;Go&lt;/strong&gt;. I guess it will be good alternative to C/C++. Also, the language is much more powerful compared to &lt;strong&gt;Go&lt;/strong&gt;, it might be additional selling point.&lt;/p&gt;&lt;h2&gt;Dynamic Languages&lt;/h2&gt;&lt;p&gt;There is no direct compilation from interpret/dynamic language to native static binary. But, it&apos;s possible to pack application with language runtime into &quot;archive&quot;/executable to behave like static native binary.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Python &lt;a href=&quot;http://docs.python-guide.org/en/latest/shipping/freezing/&quot;&gt;freezing&lt;/a&gt; (To &lt;em&gt;&quot;Freeze&quot;&lt;/em&gt; your code is to distribute to end-users as an executable which includes a bundled Python interpreter)
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;https://pypi.python.org/pypi/bbfreeze&quot;&gt;bbFreeze&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.py2exe.org&quot;&gt;py2exe&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.pyinstaller.org&quot;&gt;pyInstaller&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://cx-freeze.sourceforge.net&quot;&gt;cx_Freeze&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://pythonhosted.org/py2app/&quot;&gt;py2app&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Perl
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://search.cpan.org/~rschupp/PAR-Packer-1.026/lib/pp.pm&quot;&gt;PAR Packager&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.indigostar.com/perl2exe.php&quot;&gt;Perl2Exe&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Node.js, Here is &lt;a href=&quot;https://github.com/nwjs/nw.js/wiki/how-to-package-and-distribute-your-apps&quot;&gt;sample approaches&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Ruby:
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.erikveen.dds.nl/rubyscript2exe/&quot;&gt;RubyScript2Exe&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://ocra.rubyforge.org/&quot;&gt;OCRA&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Based on the list above, &lt;strong&gt;Python&lt;/strong&gt; has many alternatives to accomplish single distribution artifact task. I.e. it&apos;s better to pick Python than other alternatives. Also, it looks like &lt;strong&gt;Ruby&lt;/strong&gt; has limited and poor choices, i.e. it&apos;s not suitable for this kind of task.&lt;/p&gt;&lt;h2&gt;Summary&lt;/h2&gt;&lt;p&gt;IMHO, &lt;strong&gt;Go&lt;/strong&gt; has the most appealing tool chain for accomplish this task.&lt;/p&gt;
+	</description>
+    </item>
+    <item>
+      <title>JDay - Lviv, 2015 - Report</title>
+      <link>http://halyph.com/blog/2015/09/20/jday-lviv-2015-report.html</link>
+      <pubDate>Sun, 20 Sep 2015 00:00:00 +0300</pubDate>
+      <guid isPermaLink="false">blog/2015/09/20/jday-lviv-2015-report.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/posts/conf/jday.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;September 19, 2015&lt;/em&gt; I visited &lt;a href=&quot;http://www.jday.com.ua&quot;&gt;JDay Lviv&lt;/a&gt; Java conference. This report is for myself just to keep track talks I&apos;ve attended.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;p&gt;&lt;p&gt;&lt;strong&gt;Put Your Thinking CAP On&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/tomerg&quot;&gt;Tomer Gabel&lt;/a&gt; (&lt;a href=&quot;http://www.slideshare.net/holograph/scaling-out-data-stores-and-the-cap-theorem&quot;&gt;slides&lt;/a&gt;)&lt;/p&gt;
+  &lt;blockquote&gt;Consistency, availability and partition tolerance: these seemingly innocuous concepts have been giving engineers and researchers of distributed systems headaches for over 15 years. But despite how important they are to the design and architecture of modern software, they are still poorly understood by many engineers. This session covers the definition and practical ramifications of the CAP theorem; you may think that this has nothing to do with you because you &quot;don&apos;t work on distributed systems&quot;, or possibly that it doesn&apos;t matter because you &quot;run over a local network.&quot; Yet even traditional enterprise CRUD applications must obey the laws of physics, which are exactly what the CAP theorem describes. Know the rules of the game and they&apos;ll serve you well, or ignore them at your own peril...
+  &lt;/blockquote&gt;&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Microservices and Modularity or the difference between treatment and cure!&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/milendyankov&quot;&gt;Milen Dyankov&lt;/a&gt; (&lt;a href=&quot;http://www.slideshare.net/MilenDyankov1/microservices-and-modularity&quot;&gt;slides&lt;/a&gt;)&lt;/p&gt;
+  &lt;blockquote&gt;&lt;p&gt;Everyone is talking about microservices these days! So the question is should you also jump on that bandwagon and why those somewhat older colleagues of yours (yep, those that still remember the EJB 2 revolution) are not that enthusiastic? To help you make the right decisions, this talk will first focus on explaining complexity - the problem microservices claim to solve. It then will concentrate on modular architecture and how it compares to what most people understand by microservices! Live demo will present multiple ways to modularize existing JEE application going from &quot;monolithic&quot; Glassfish EJB/JSF style app through SpringBoot and OSGi to reach a distributed system with a portal as front-end.&lt;/p&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;The modern view on implementation of classic design patterns in Java&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/xpinjection&quot;&gt;Mikalai Alimenkou&lt;/a&gt; (&lt;a href=&quot;http://www.slideshare.net/alimenkou/the-modern-view-on-implementation-of-classic-design-patterns-in-java&quot;&gt;slides&lt;/a&gt;, &lt;a href=&quot;https://github.com/xpinjection/design-patterns&quot;&gt;github&lt;/a&gt;)&lt;/p&gt;
+  &lt;blockquote&gt;&lt;p&gt;Almost every developer heard about design patterns. They was introduced long time ago to solve particular set of repeating problems in systems of different complexity level and size. But there is an opinion that many design patters just filled holes in the OOP languages of that time. Java as one of them has transformed and improved significantly in the last 10 years. So may be we could review design patterns implementation in modern Java world? Some of them are now may be easily replaced with language idioms, some others may be covered with existing libraries and frameworks. I&apos;m sure you know some design patterns that are dead now or became anti-patterns in their initial implementation. Lets make this fun and useful review together!&lt;/p&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Functional programming concepts in Java 8: Lambdas &amp;amp;&amp;amp; Monads&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/pivovarit&quot;&gt;Grzegorz Piwowarek&lt;/a&gt; (&lt;a href=&quot;http://www.slideshare.net/pivovarit/confitura2015grzegorzpiwowareklambdasmonads&quot;&gt;slides&lt;/a&gt;)&lt;/p&gt;
+  &lt;blockquote&gt;&lt;p&gt;The aim of this presentation is to introduce listener to a functional programming concepts that were introduced in Java 8. Presentation covers lambda expressions, an imperative-programmer-friendly definition of a monad and an application of Java 8 monads in everyday java developer life.&lt;/p&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Handling 10k req/sec with 1 core or how you could get even more?&lt;/strong&gt; by &lt;a href=&quot;https://github.com/doom369&quot;&gt;Dmitriy Dumanskiy&lt;/a&gt;&lt;/p&gt;
+  &lt;blockquote&gt;&lt;p&gt;For the past 5 years I have been working on highly-loaded systems, solving problems and optimizing them. In my talk I will explain how the IoT has changed the understanding of high-load and why this trend changes the rules. What are asynchronous sockets and how they work. What are the solutions up to date and why Netty has no competitors? How does Netty work, what are its strengths, weaknesses, pitfalls? How to get the most, out of your code, where to look and what to do? And many other tips and advices on how to optimize your code ranging from simple cases up to choosing a JDBC pool.&lt;/p&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>Grails 2.x best practices collection</title>
+      <link>http://halyph.com/blog/2015/07/20/grails-best-practices-collection.html</link>
+      <pubDate>Mon, 20 Jul 2015 00:00:00 +0300</pubDate>
+      <guid isPermaLink="false">blog/2015/07/20/grails-best-practices-collection.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/grails.jpg&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;Recently, I had a pleasure to look into several Grails v.2.3+ projects. Despite the fact that I&apos;m not a Grails developer I discovered some anti-patterns.&lt;br/&gt;Then I started looking around to find some &lt;em&gt;Grails projects best practices&lt;/em&gt;. And they are well known and people still doing mistakes.&lt;br/&gt;However, I&apos;ve found several nice resources and I&apos;m (_going to quate_) quoting them here. I keep references back to original source and use &quot;copy-paste&quot; approach to have aggregated post in single place.&lt;/p&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://grails.github.io/grails-howtos/en/pluginDevelopmentBestPractices.html&quot;&gt;Grails Plugin Development Best Practices&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://objectpartners.com/2013/10/15/what-i-wish-i-knew-about-grails-before-my-first-grails-project/&quot;&gt;What I wish I knew about Grails before my first Grails Project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tech-my-talk.blogspot.com/2013/04/groovy-grails-design-best-practices.html&quot;&gt;Groovy &amp;amp; Grails Design Best Practices&lt;/a&gt; very detailed&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tutorials.techmytalk.com/2013/04/01/groovy-grails-design-best-practices-2/&quot;&gt;Grails Design Best Practices, 2013, by Nitin Kumar&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dzone.com/articles/grails-best-practices&quot;&gt;Grails Best Practices, 2013, by Nitin Kumar&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://earlyandoften.wordpress.com/2011/10/11/grails-best-practice-resources/&quot;&gt;Grails Best Practice Resources, 2011&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://grails.1312388.n4.nabble.com/Best-practices-with-services-and-controllers-td4410927.html&quot;&gt;Best practices with services and controllers, 2012&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.infoq.com/articles/grails-best-practices&quot;&gt;InfoQ - Grails Best Practices, 2012&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/6226759/best-practices-to-be-followed-while-developing-grails-application&quot;&gt;SO - Best Practices to be followed while developing Grails Application, 2011&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.catalysts.cc/en/diskussion/grails-in-large-projects-part-2/&quot;&gt;Grails in large projects – Part 2, 2013 by Klaus Lehner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ygrails.com/2013/09/08/grails-best-practices/&quot;&gt;Grails best practices, 2013 by Ashish Joseph&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://talldave.net/2013/06/05/grails-best-practices-presentation/&quot;&gt;Grails Best Practices presentation, 2013&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;Videos&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=LZQ-1f9RGqg&quot;&gt;Cut your Grails application to pieces - build feature plugins&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=-izTlOpZ7VA&quot;&gt;Greach 2014 - Hexagonal Architecture in Grails by David Dawson&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=nx8XMY7evbA&quot;&gt;Philosophical Architecture in Grails by David Dawson&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=wF8gjfh0Kyw&quot;&gt;Experiences Using Grails in a Micro Service Architecture&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=4wuRuC4_G7w&quot;&gt;Application architectures with Grails&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Interesting Grails people&lt;br/&gt;&lt;a href=&quot;http://www.anyware.co.uk/2005/2011/09/12/optimising-your-application-with-grails-resources-plugin/&quot;&gt;http://www.anyware.co.uk/2005/2011/09/12/optimising-your-application-with-grails-resources-plugin/&lt;/a&gt;&lt;br/&gt;&lt;a href=&quot;http://www.bobbywarner.com/&quot;&gt;http://www.bobbywarner.com/&lt;/a&gt; &lt;/p&gt;
+	</description>
+    </item>
+    <item>
+      <title>DevoxxPL - Krakow, 2015 - Report</title>
+      <link>http://halyph.com/blog/2015/06/29/devoxxpl.html</link>
+      <pubDate>Mon, 29 Jun 2015 00:00:00 +0300</pubDate>
+      <guid isPermaLink="false">blog/2015/06/29/devoxxpl.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/posts/2015-06/Devoxx-Poland-2015.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;This summer I&apos;ve decided to attend my 1&lt;sup&gt;st&lt;/sup&gt; foreign conference - &lt;a href=&quot;http://devoxx.pl&quot;&gt;DevoxxPL - Krakow, Poland, 22-25 June 2015&lt;/a&gt;. It was very important experience, because I wanted to compare it with our local Ukrainian conferences. Long story short - the quality is equal. Any conference is based on speakers (I&apos;d like to be &quot;Captain Obvious&quot;). And even awesome conference location can&apos;t make conference &lt;strong&gt;great&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;So, I&apos;ve attended the next talks:&lt;/p&gt;&lt;h2&gt;Day 1&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;The Silver Bullet Syndrome&quot;&lt;/strong&gt; by &lt;a href=&quot;http://hadihariri.com/&quot;&gt;Hadi Hariri&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;Tips and tricks for clean relational db schemas&quot;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/clementd&quot;&gt;Clément Delafargue&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;JRebel under the covers - how is it even possible?&quot;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/sjmaple&quot;&gt;Simon Maple&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;Corporate startup and Scala&quot;&lt;/strong&gt; by &lt;a href=&quot;https://plus.google.com/114974986229567009127/posts&quot;&gt;Filip Rogaczewski&lt;/a&gt; from &lt;a href=&quot;spartez.com&quot;&gt;Spartez&lt;/a&gt;
+  &lt;ul&gt;
+    &lt;li&gt;It was really nice case study about building project with Scala. Pros&amp;amp;cons were &quot;honestly&quot; highlighted.&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;Refactoring to Functional&quot;&lt;/strong&gt; by &lt;a href=&quot;http://hadihariri.com/&quot;&gt;Hadi Hariri&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;You&apos;re an Architect...Now What?&quot;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/ntschutta&quot;&gt;Nathaniel Schutta&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;Day 2&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;Why software developers should care about deployment and monitoring&quot;&lt;/strong&gt; by &lt;a href=&quot;http://allegrotech.io/authors/michal.kosmulski/&quot;&gt;Michał Kosmulski&lt;/a&gt; from Allegro Group&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;Modern Java Component Design with Spring 4.2&quot;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/springjuergen&quot;&gt;Juergen Hoeller&lt;/a&gt; from Pivotal&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;Make sense of your (BIG) data!&quot;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/dadoonet&quot;&gt;David Pilato&lt;/a&gt; from ElasticSearch
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://david.pilato.fr&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;Building an Asynchronous Reactive NoSQL SDK with RxJava&quot;&lt;/strong&gt; by &lt;a href=&quot;https://about.me/simonbasle&quot;&gt;Simon Baslé&lt;/a&gt; from Couchbase&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;Lazy Evaluations&quot;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/venkat_s&quot;&gt;Venkat Subramaniam&lt;/a&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://blog.agiledeveloper.com/2015/06/lazy-in-java_24.html&quot;&gt;Blogpost - Lazy in Java&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;Get Past the Syntax, The Real Scare is in the Semantics&quot;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/venkat_s&quot;&gt;Venkat Subramaniam&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;Day 3&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;PubSub++ - few tips that make your life with kafka easier&quot;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/DebskiChris&quot;&gt;Krzysztof Debski&lt;/a&gt; from Allegro Group&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;Deep dive into Reactive Java&quot;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/tkowalcz&quot;&gt;Tomasz Kowalczewski&lt;/a&gt; from Codewise:
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/tkowalcz/deep-dive-reactive-java-devoxxpl&quot;&gt;Slides&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://github.com/tkowalcz/presentations&quot;&gt;Github&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;Event Sourcing &amp;amp; Functional Programming - a pair made in heaven&quot;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/rabbitonweb&quot;&gt;Paweł Szulc&lt;/a&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.rabbitonweb.com/&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;Functional Programming: Technical Reasons to Adapt&quot;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/venkat_s&quot;&gt;Venkat Subramaniam&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&quot;Why I love Logstash and you should too&quot;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/jsvd&quot;&gt;João Duarte&lt;/a&gt; from ElasticSearch&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;Summary&lt;/h2&gt;&lt;p&gt;This conference had a huge buzz around microservices. I&apos;ve been inspired by some talks and planning to look deeper into:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.elastic.co/products/elasticsearch&quot;&gt;Elasticsearch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.elastic.co/products/logstash&quot;&gt;Logstash&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.elastic.co/products/kibana&quot;&gt;Kibana&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ReactiveX/RxJava&quot;&gt;RxJava&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;and OMG ;-) &lt;a href=&quot;http://www.scala-lang.org/&quot;&gt;Scala&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Allegro
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://allegrotech.io/open-source/&quot;&gt;Open Source&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://allegrotech.io/&quot;&gt;Tech blog&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.elastic.co&quot;&gt;Elastic&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.elastic.co/blog&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Products:
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.elastic.co/products/elasticsearch&quot;&gt;Elasticsearch&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.elastic.co/products/logstash&quot;&gt;Logstash&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.elastic.co/products/kibana&quot;&gt;Kibana&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://babun.github.io/&quot;&gt;Babun - a windows shell you will love&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>Java Day - Kiev, 2015 - Report</title>
+      <link>http://halyph.com/blog/2015/05/25/jeeconf-kiev.html</link>
+      <pubDate>Mon, 25 May 2015 00:00:00 +0300</pubDate>
+      <guid isPermaLink="false">blog/2015/05/25/jeeconf-kiev.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/jeeconf.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;It happened again - I attend &lt;a href=&quot;http://jeeconf.com&quot;&gt;JEEConf&lt;/a&gt;, May 22-23, 2015. And as usual it was inspiring. Also, I can say that &lt;a href=&quot;http://www.scala-lang.org/&quot;&gt;&quot;Scala&quot;&lt;/a&gt; was the most dominated buzz word at this conference.&lt;/p&gt;&lt;p&gt;So, I attended the next talks:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Pragmatic Functional Refactoring with Java 8, by Richard Warburton&lt;/strong&gt; Java 8 functional features were introduced here. And were shown how we can refactor OOP program in functional way. I can say it&apos;s still a new way of thinking for Java developers.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Just what are you doing, HotSpot? by Gleb Smirnov&lt;/strong&gt; - Gleb gave us several advices for understanding tricky HotSpot behavior and why we should read HotSpot sources.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Lessons from Implementing a Modern B2C System in Scala, by Yuriy Guts&lt;/strong&gt; It was a case study talk about starting new project with Scala. The most interesting was the issues appeared during project development, team&apos;s relationship with Scala, and Scala influences on non-Scala developers.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Spring Puzzlers, by Evgeny Borisov and Baruch Sadogursky&lt;/strong&gt; - We can say that this topic is unique. At least I&apos;m not aware of similar talks on other Java conferences. Spring Puzzlers is a variation of classic Java puzzlers, but in Spring. It&apos;s really great collection of tricky Spring parts.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;JVM Languages Q&amp;amp;A Panel with Jacek Laskowski, Baruch Sadogursky, Dmytro Mantula, Alexander Podkhalyuzin, Tomer Gabel&lt;/strong&gt; We can say that this panel was Groovy vs Scala. There are no other &quot;languages&quot; on this talk.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Building an Enterprise-less online bank, Anton Keks&lt;/strong&gt; - Anton doesn&apos;t love bloated Spring and likes simple and clean solution. He doesn&apos;t use Play Framework 2 on Scala because of slow compilation. Instead of this, he told us about his banking platform implemented on &lt;em&gt;Play 1.3&lt;/em&gt; and &lt;em&gt;Java 8&lt;/em&gt;, and all other items included in his stack.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Everything you wanted to know about writing async, high-concurrency HTTP applications in Java, but were afraid to ask, by Baruch Sadogursky&lt;/strong&gt; - Baruch shared his experience about implementing asynchronous file downloader in Java.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Scala Rock-Painting, by Dmytro Mantula&lt;/strong&gt; - This talk was like Scala puzzlers and/or Scala tricky parts. Speaker also gave us several suggesting how we can learn Scala more effectively via practicing &lt;em&gt;code katas&lt;/em&gt; and/or &lt;a href=&quot;http://ankisrs.net&quot;&gt;Anki&lt;/a&gt; flesh cards. This talk highlighted the &quot;dark&quot; side of Scala. Really, recommend it.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Groovy under Macroscope, by Sergei Egorov and Baruch Sadogursky&lt;/strong&gt; - Sergei demoed us very hacky Groovy library &lt;a href=&quot;https://github.com/bsideup/MacroGroovy&quot;&gt;MacroGroovy&lt;/a&gt;. It&apos;s nice to see true Groovy hacker and his creature.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;About concurrency abstractions with Observable’s, Future’s, Akka (actors) in Scala, by Jacek Laskowski&lt;/strong&gt; - Jacek did Scala concurrency overview talk and highlighted other non-Akka libraries. It&apos;s nice to know that there are other &lt;em&gt;&quot;good&quot;&lt;/em&gt; way to do concurrency without Akka.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Node.js and Evented I/O Alternatives on the JVM, by Niko Köbler&lt;/strong&gt; - I definitely heard about &lt;a href=&quot;https://avatar-js.java.net&quot;&gt;Avatar.js&lt;/a&gt;, but Niko told us that &lt;a href=&quot;http://blog.n-k.de/2015/01/is-oracles-avatar-dead.html&quot;&gt;Avatar.js is dead&lt;/a&gt; and &lt;a href=&quot;http://blog.n-k.de/2015/02/current-status-of-oracles-project-avatar.html&quot;&gt;Oracle put development of Avatar on hold&lt;/a&gt;, i.e. full stop. As alternative were mentioned two solutions: &lt;strong&gt;&lt;a href=&quot;http://dynjs.org&quot;&gt;DynJS&lt;/a&gt;&lt;/strong&gt; an ECMAScript runtime for the JVM and &lt;strong&gt;&lt;a href=&quot;http://nodyn.io/&quot;&gt;Nodyn&lt;/a&gt;&lt;/strong&gt; - Node.js compatible framework on JVM. It&apos;s very interesting to see what will happen with them. &lt;em&gt;Nodyn&lt;/em&gt; has strong RedHat support. Let&apos;s hope it&apos;s much stronger than Avatar.js had from Oracle.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Do we need JMS in 21st century? by Mikalai Alimenkou&lt;/strong&gt; - The simple statements can be extracted from this talk: a) there are other non-JMS Message queues (MQs); b) we don&apos;t need bloated JMS for every tasks; c) use right MQ for right job&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;p&gt;JEEConf has dedicated JVM track: 50% of this track was occupied by Scala (7 talks). As for me this is the sign ;-) Scala bandwagon reached Ukraine.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;em&gt;Microservices&lt;/em&gt; everywhere. If you are not doing &lt;em&gt;microservices&lt;/em&gt; - you should :-)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Yes, JEEConf is simply the best. &lt;a href=&quot;http://xpinjection.com/&quot;&gt;XP Injection&lt;/a&gt; did amazing work.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Have fun, love Java!&lt;/strong&gt;&lt;/p&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://halyph.com/2014/05/jeeconf-kiev-2014-report.html&quot;&gt;JEEConf - Kiev, 2014 - Report&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://halyph.blogspot.com/2013/05/jeeconf-kiev-2013-report.html&quot;&gt;JEEConf - Kiev, 2013 - Report&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://halyph.blogspot.com/2012/05/this-year-we-had-second-jeeconf.html&quot;&gt;JEEConf - Kiev, 2012 - Report&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://halyph.blogspot.com/2011/05/jeeconf-kiev-2011-report.html&quot;&gt;JEEConf - Kiev, 2011 - Report&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>Grails 2.5.0 debug in IntelliJ IDEA</title>
+      <link>http://halyph.com/blog/2015/05/19/grails-2-dot-5-0-debug-in-intellij-idea.html</link>
+      <pubDate>Tue, 19 May 2015 00:00:00 +0300</pubDate>
+      <guid isPermaLink="false">blog/2015/05/19/grails-2-dot-5-0-debug-in-intellij-idea.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/grails.jpg&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;I&apos;ve been using Grails v.2.5.0 and tried to debug Grails app via traditional Intellij IDEA 14 Debug with no success.&lt;/p&gt;&lt;p&gt;&lt;em&gt;To be short&lt;/em&gt;: using IDEA &lt;em&gt;Debug&lt;/em&gt; allows us debug Grails build system &lt;strong&gt;only&lt;/strong&gt;. Why?&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;Forked execution is configured via the &lt;code&gt;grails-app/conf/BuildConfig.groovy&lt;/code&gt; file. The following is the default configuration:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;grails.project.fork = [
+ ...
+   run: [maxMemory: 768, minMemory: 64, debug: false, maxPerm: 256], // configure settings for the run-app JVM
+ ...
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;Based on this we should create two IDEA Run/Debug Configurations:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create simple Grails &lt;em&gt;Run&lt;/em&gt; configuration with &lt;code&gt;--debug-fork&lt;/code&gt; parameter: &lt;code&gt;run-app --debug-fork&lt;/code&gt;.&lt;br/&gt;E.g.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-05-19/idea1.png&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;And run this Configuration. We should get the next output &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Listening for transport dt_socket at address: 5005
+|Server running. Browse to http://localhost:8080/TekDays
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This socket address will be used for &lt;em&gt;Remote&lt;/em&gt; connection.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create IDEA &lt;code&gt;Remote&lt;/code&gt; Configuration (*Run/Debug Configuration* -&amp;gt; &lt;em&gt;Remote&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-05-19/idea2.png&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;And run this Configuation. Now, we are able to &lt;em&gt;debug&lt;/em&gt; our application.&lt;/p&gt;&lt;p&gt;The main idea is that we should have two running &lt;em&gt;Configurations&lt;/em&gt;!&lt;/p&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mrhaki.blogspot.com/2013/12/grails-goodness-debugging-app-in-forked.html&quot;&gt;Grails Goodness: Debugging App in Forked Mode&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://grails.github.io/grails-doc/2.5.0/guide/single.html#forkedMode&quot;&gt;Grails 2.5 Forked Execution&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/19247944/intellij-idea-debugger-isnt-working-on-a-grails-project&quot;&gt;Stackoverflow - IntelliJ IDEA Debugger isn&apos;t working on a Grails Project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://grails.io/post/43484836985/road-to-grails-2-3-forked-execution&quot;&gt;Road to Grails 2.3: Forked Execution&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>Go presentation tool</title>
+      <link>http://halyph.com/blog/2015/05/18/golang-presentation-tool.html</link>
+      <pubDate>Mon, 18 May 2015 00:00:00 +0300</pubDate>
+      <guid isPermaLink="false">blog/2015/05/18/golang-presentation-tool.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/gopher.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;Have you ever noticed how Go community presents Go-related talks? Their slides are very simple and without any fancy animation features: see &lt;a href=&quot;http://talks.golang.org&quot;&gt;Go talks&lt;/a&gt;. You might say that they are no so feature-rich as &lt;a href=&quot;https://github.com/hakimel/reveal.js/&quot;&gt;Reveal.js&lt;/a&gt;. And it&apos;s true. But, simplicity is beauty, as for me. Also, it&apos;s very well aligned with Go language philosophy.&lt;/p&gt;&lt;p&gt;So, here is listed steps required to &lt;em&gt;setup&lt;/em&gt; and &lt;em&gt;run&lt;/em&gt; Go &lt;strong&gt;present&lt;/strong&gt; tool.&lt;/p&gt;&lt;h2&gt;Install Go&lt;/h2&gt;&lt;p&gt;I use Mac OS X in this tutorial (see the next &lt;a href=&quot;https://golang.org/doc/install&quot;&gt;article&lt;/a&gt; to install Go on other *OS*es).&lt;/p&gt;&lt;p&gt;Install Go:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ brew install go
+
+==&amp;gt; Downloading https://homebrew.bintray.com/bottles/go-1.4.2.yosemite.bottle.1.
+######################################################################## 100.0%
+==&amp;gt; Pouring go-1.4.2.yosemite.bottle.1.tar.gz
+==&amp;gt; Caveats
+As of go 1.2, a valid GOPATH is required to use the `go get` command:   https://golang.org/doc/code.html#GOPATH  
+
+You may wish to add the GOROOT-based install location to your PATH:
+  export PATH=$PATH:/usr/local/opt/go/libexec/bin
+==&amp;gt; Summary
+🍺  /usr/local/Cellar/go/1.4.2: 4566 files, 155M
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;Define Go workspace&lt;/h2&gt;&lt;p&gt;Let&apos;s assume that our Go language workspace will be located at &lt;code&gt;/Users/halyph/Projects/go&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash &quot;&gt;$ mkdir go
+$ pwd
+/Users/halyph/Projects/go
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;Configure &lt;code&gt;PATH&lt;/code&gt; variable&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ cat .bash_profile
+
+#Golang settings
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=$HOME/Projects/go  #/Users/halyph/Projects/go
+export PATH=$PATH:$GOPATH/bin
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;Install Go present tool&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;present&lt;/strong&gt; tool is located in separate package &lt;code&gt;golang.org/x/tools&lt;/code&gt; which depends on &lt;code&gt;golang.org/x/net&lt;/code&gt; package:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ go get golang.org/x/net
+$ go get golang.org/x/tools
+$ go install golang.org/x/tools/cmd/present
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now, we can find &lt;strong&gt;present&lt;/strong&gt; tool here:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ which present
+/Users/halyph/Projects/go/bin/present
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;Run present tool&lt;/h2&gt;&lt;p&gt;The easiest way to test &lt;strong&gt;present&lt;/strong&gt; tool is to render some slides:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create sample &lt;code&gt;slide&lt;/code&gt; file (see &lt;code&gt;.slide&lt;/code&gt; &lt;a href=&quot;http://godoc.org/golang.org/x/tools/present&quot;&gt;file format&lt;/a&gt;) in any folder:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ cat sample.slide
+
+Title of document
+Subtitle of document
+15:04 2 Jan 2006
+Tags: foo, bar, baz
+
+Author Name
+Job title, Company
+joe@example.com
+http://url/
+@twitter_name
+Some Text
+
+* Title of slide or section (must have asterisk)
+
+Some Text
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;Run &lt;strong&gt;present&lt;/strong&gt; in this folder:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ present
+2015/05/19 00:55:33 Open your web browser and visit http://127.0.0.1:3999
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You should see something like this:&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-05-19/pic1.png&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-05-19/pic2.png&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;Go &lt;strong&gt;present&lt;/strong&gt; works and you are ready to produce &lt;em&gt;Go-fashion&lt;/em&gt; slides.&lt;/p&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://godoc.org/golang.org/x/tools/present&quot;&gt;Go present package documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/hakimel/reveal.js/&quot;&gt;Reveal.js - The HTML Presentation Framework&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://talks.golang.org&quot;&gt;Go talks - slides&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cmars/represent&quot;&gt;Go tool Represent - Static slide presentation and article pages, generated from text&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=83JBmS8WpHM&quot;&gt;Video - go present - create html slides with extractable, executable go code&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pythonadventures.wordpress.com/2014/02/14/using-gos-present-with-python-code-snippets/&quot;&gt;Using Go’s present with Python code snippets&lt;/a&gt; and &lt;a href=&quot;https://groups.google.com/forum/#!topic/golang-nuts/BdgXMRqjGqk&quot;&gt;Go-nuts discussion - how to embed runnable code snippets in a presentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.joshsoftware.com/2014/03/10/how-do-i-create-a-presentation-using-go/&quot;&gt;How Do I Create A Presentation Using Go?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>Java full stack web framework</title>
+      <link>http://halyph.com/blog/2015/04/06/java-full-stack-web-framework.html</link>
+      <pubDate>Mon, 6 Apr 2015 00:00:00 +0300</pubDate>
+      <guid isPermaLink="false">blog/2015/04/06/java-full-stack-web-framework.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;I believe that everybody knows the most popular full-stack web framework - &lt;a href=&quot;http://rubyonrails.org&quot;&gt;Ruby on Rails&lt;/a&gt;. Of course there are other frameworks for Ruby language, but Rails is the number one. Now, the question: how many full-stack web frameworks exist for Java?&lt;/p&gt;&lt;h2&gt;Overview&lt;/h2&gt;&lt;p&gt;Let&apos;s define the desired items for full-stack web framework:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;CoC - &lt;a href=&quot;http://en.wikipedia.org/wiki/Convention_over_configuration&quot;&gt;Convention over configuration&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;MVC - &lt;a href=&quot;http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller&quot;&gt;Model-view-controller&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;DRY - &lt;a href=&quot;http://en.wikipedia.org/wiki/Don%27t_repeat_yourself&quot;&gt;Don&apos;t repeat yourself&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Scaffolding (_it was one of the major selling point on the early stage of Rails_)
+  &lt;ul&gt;
+    &lt;li&gt;Easy prototyping&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Data/Persistent Layer / ORM&lt;/li&gt;
+  &lt;li&gt;DB schema migration&lt;/li&gt;
+  &lt;li&gt;URI Routing&lt;/li&gt;
+  &lt;li&gt;HTML Rendering / Template engines&lt;/li&gt;
+  &lt;li&gt;Testing&lt;/li&gt;
+  &lt;li&gt;REST API&lt;/li&gt;
+  &lt;li&gt;Security&lt;/li&gt;
+  &lt;li&gt;Caching&lt;/li&gt;
+  &lt;li&gt;Request Filtering&lt;/li&gt;
+  &lt;li&gt;Session Management&lt;/li&gt;
+  &lt;li&gt;Form Validation&lt;/li&gt;
+  &lt;li&gt;i18n/l10n&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;Grails&lt;/h2&gt;&lt;p&gt;I think &lt;a href=&quot;https://grails.org&quot;&gt;Grails&lt;/a&gt; was and is the single &quot;true&quot; Rails reincarnation on JVM. Grails is based on &lt;a href=&quot;http://www.groovy-lang.org/&quot;&gt;Groovy&lt;/a&gt; language. It support all concepts Rails supports. It&apos;s based on Spring/Hibernate and Gradle since v.3.0 (Grails v.3.0.0 was released on &lt;strong&gt;Mar 31, 2015&lt;/strong&gt;).&lt;/p&gt;&lt;p&gt;Grails v.3 is build on &lt;a href=&quot;http://projects.spring.io/spring-boot/&quot;&gt;Spring Boot&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Some people arguing that Grails v.3 acts as simple wrapper on top of Spring Boot and now it does not worth any investments. But, we must not agree as CoC and DRY principles are very vague.&lt;/p&gt;&lt;h2&gt;Play Framework 2&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.playframework.com/&quot;&gt;Play Framework 2&lt;/a&gt; is a special player. It has two implementations: Java and Scala. Actually Java version is not as powerful as Scala due to Java, as a language, &quot;limitation&quot;. This framework lives under &lt;a href=&quot;http://typesafe.com/&quot;&gt;Typesafe&lt;/a&gt; umbrella, aka &lt;strong&gt;&quot;Typesafe Reactive Platform&quot;&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;Play is just different. It&apos;s not Servlet-based and is built on &lt;a href=&quot;http://netty.io/&quot;&gt;Netty&lt;/a&gt; async framework. A lot of people claiming that Play is very cool and productive. I haven&apos;t tried it yet. But it looks promising and interesting.&lt;/p&gt;&lt;h2&gt;Code Generation Frameworks&lt;/h2&gt;&lt;p&gt;I decided to define the special category &quot;Code Generation&quot;. Frameworks which are related to this category are not full stack, but can be called as RAD (Rapid Application Development) frameworks.&lt;/p&gt;&lt;h3&gt;Spring Roo&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://projects.spring.io/spring-roo/&quot;&gt;Spring Roo&lt;/a&gt; was very popular some time ago and had a lot of investments from VMWare (former Spring stack owner). Later, the ownership was transferred to &lt;a href=&quot;http://www.disid.com&quot;&gt;DISIG&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Spring Roo is code generation framework, built on top of Spring stack. It&apos;s useful for quick prototyping.&lt;/p&gt;&lt;h3&gt;JBoss Forge&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://forge.jboss.org/&quot;&gt;JBoss Forge&lt;/a&gt; is conceptually equal to Spring Roo, but linked to Java EE stack (like &lt;a href=&quot;http://wildfly.org/&quot;&gt;Wildfly&lt;/a&gt;, &lt;a href=&quot;http://tomee.apache.org/apache-tomee.html&quot;&gt;TomEE&lt;/a&gt;) and Maven. It&apos;s relly cool if you work with Java EE a lot. Forge is shine in prototyping and code generation. Community looks vibrant and active.&lt;/p&gt;&lt;h3&gt;AppFuse&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://appfuse.org/&quot;&gt;AppFuse&lt;/a&gt; can be called as ramp-up framework. The main goal is to quickly generate project with pre-onfigured functionality (see &lt;code&gt;mvn archetype:generate&lt;/code&gt;).&lt;/p&gt;&lt;h3&gt;JHipster&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://jhipster.github.io/&quot;&gt;JHipster&lt;/a&gt; is brand new and based on Spring Boot and Angular.js v.1.x. Classical code generation like in Forge or Spring Roo. But, code generation is build on top of node.js tool &lt;a href=&quot;http://yeoman.io/&quot;&gt;Yeoman&lt;/a&gt;. Concept is very interesting, especially when it uses so hipster&apos;s technologies ;-).&lt;br/&gt;It can generate both back-end (REST endpoint) and front-end (Angular.js Single-page application), even &lt;a href=&quot;http://www.liquibase.org/&quot;&gt;Liquibase&lt;/a&gt; migrations (which is cool too).&lt;/p&gt;&lt;h2&gt;Domain-driven Frameworks&lt;/h2&gt;&lt;p&gt;There is a very special category Domain-driven frameworks. For this category I&apos;ve selected two most popular frameworks: &lt;a href=&quot;http://www.openxava.org/&quot;&gt;OpenXava&lt;/a&gt; and &lt;a href=&quot;http://isis.apache.org/&quot;&gt;Apache Isis&lt;/a&gt;. The main idea is that they can generate views and RESTs based on domain entities. Both frameworks have active community. They have &quot;own&quot; concepts and no hipsters technologies. The usage domain is very narrow, I guess they can be easily used to quickly general application&apos;s back-offices (aka admin pages) and prototyping.&lt;/p&gt;&lt;h2&gt;Others&lt;/h2&gt;&lt;p&gt;There are several others frameworks &lt;a href=&quot;http://www.ninjaframework.org/&quot;&gt;Ninja&lt;/a&gt;, &lt;a href=&quot;http://javalite.io/&quot;&gt;Javalight&lt;/a&gt;, &lt;a href=&quot;http://joddframework.org/&quot;&gt;Jodd&lt;/a&gt;, &lt;a href=&quot;http://jooby.org/&quot;&gt;Jobby&lt;/a&gt; and &lt;a href=&quot;https://github.com/airlift/airlift&quot;&gt;airlift&lt;/a&gt;. They are build by small communities (or my single developer) and have some applications. But, it&apos;s risky to invest in them. You can look into because of curiosity, but not more. As for me it&apos;s much safe to use Play/Grails than some unpopular frameworks.&lt;/p&gt;&lt;h2&gt;Summary&lt;/h2&gt;&lt;p&gt;So, Java ecosystem has two full stack frameworks which use Java language minimally: &lt;strong&gt;Grails&lt;/strong&gt; (Groovy/Java) and &lt;strong&gt;Play&lt;/strong&gt; (Scala/Java). Also, we have a bunch of code generation frameworks and domain-driven frameworks (which occupy really special niche).&lt;/p&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Full stack
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;https://grails.org/&quot;&gt;Grails&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.playframework.com/&quot;&gt;Play Framework 2&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Code Generation
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://projects.spring.io/spring-roo/&quot;&gt;Spring Roo&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://forge.jboss.org/&quot;&gt;JBoss Forge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://appfuse.org/&quot;&gt;AppFuse&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://jhipster.github.io/&quot;&gt;JHipster&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;DD Frameworks
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.openxava.org/&quot;&gt;OpenXava&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.cuba-platform.com&quot;&gt;Cuba-platform&lt;/a&gt; - CUBA Platform is free for applications with up to 5 concurrent sessions.&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://isis.apache.org/&quot;&gt;Apache Isis&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Others
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.ninjaframework.org/&quot;&gt;Ninja&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://javalite.io/&quot;&gt;Javalight&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://jodd.org/&quot;&gt;Jodd&lt;/a&gt; and &lt;a href=&quot;http://joddframework.org/&quot;&gt;Jodd µicro frameworks&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://jooby.org/&quot;&gt;Jobby&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://github.com/airlift/airlift&quot;&gt;airlift&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.web4j.com/&quot;&gt;Web4j&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://rifers.org/&quot;&gt;Rife&lt;/a&gt; - dead&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>Rails Architecture and Scalability</title>
+      <link>http://halyph.com/blog/2015/04/04/rails-architecture-and-scalability-issues.html</link>
+      <pubDate>Sat, 4 Apr 2015 00:00:00 +0300</pubDate>
+      <guid isPermaLink="false">blog/2015/04/04/rails-architecture-and-scalability-issues.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/ruby.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;Everybody know when this &lt;em&gt;&quot;Rails doesn&apos;t scale&quot;&lt;/em&gt; has been begun:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;2009&lt;/strong&gt; &lt;a href=&quot;http://www.artima.com/scalazine/articles/twitter_on_scala.html&quot;&gt;Twitter message queue back-end moved from Ruby to Scala&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;2011&lt;/strong&gt; &lt;a href=&quot;https://blog.twitter.com/2011/twitter-search-now-3x-faster&quot;&gt;Twitter Search is Now 3x Faster&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;&lt;p&gt;Panic, we must not use &lt;strong&gt;Ruby on Rails&lt;/strong&gt; because Twitter had scalability problems.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;I&apos;m a Java developer who love Ruby language, but don&apos;t write anything in Rails. Despite this I&apos;ve decided to look into this famous &lt;em&gt;&quot;Rails doesn&apos;t scale&quot;&lt;/em&gt; statement deeper to understand the root cause of this problem.&lt;/p&gt;&lt;p&gt;So, I &lt;a href=&quot;https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies&quot;&gt;collected&lt;/a&gt; public available Ruby on Rails architecture and scalability case studies (videos of conference talks, reports and blog posts) and tried to extract the general patterns of architecture and scalability issues.&lt;/p&gt;&lt;p&gt;There are two type of scalability issues:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Application performance&lt;/strong&gt; - when web application can&apos;t handle huge traffic&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Delivery velocity&lt;/strong&gt; - when it&apos;s become hard to make changes in big Rails application, run quick tests, deploy it and manage big team&lt;/li&gt;
+&lt;/ol&gt;&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: You are not another &quot;twitter&quot; to worry about scalability issues right from beginning of the project (there are fewer web apps on the Internet to get enough traffic to even care about scalability). Your goal is to push your product as quick as possible.&lt;br/&gt;But, in the same time you&apos;d like to use Rails (due to it&apos;s productivity) and make you potentially application scalable (in all possible terms)&lt;/p&gt;&lt;p&gt;The most interesting that scalability is about architecture, databases, caching, event queues, disk IO and less about Rails framework.&lt;/p&gt;&lt;h2&gt;Rails deployment architecture&lt;/h2&gt;&lt;p&gt;Let&apos;s review the common Rails deployment approaches (see &lt;a href=&quot;http://www.slideshare.net/jweiss/deployment-with-ruby-on-rails&quot;&gt;Deployment with Ruby on Rails&lt;/a&gt;)&lt;/p&gt;&lt;h3&gt;Simple Rails Setup&lt;/h3&gt;&lt;p&gt;One Rails instance handles all requests. Rails is single-threaded: There is only one concurrent request.&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-04-04/pic1.jpg&quot; alt=&quot;blog_post_image_inline_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;h3&gt;Typical Rails Setup&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;A load-balancer distributes the incoming requests&lt;/li&gt;
+  &lt;li&gt;Some load-balancers will deliver static requests themselves&lt;/li&gt;
+  &lt;li&gt;Several Rails instances handle all requests&lt;/li&gt;
+  &lt;li&gt;Number of concurrent requests equals number of Rails instances&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-04-04/pic2.jpg&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;h3&gt;Application server (Phusion Passenger)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Involving Phusion Passenger application server&lt;/li&gt;
+  &lt;li&gt;Makes setup easier on the single machine level&lt;/li&gt;
+  &lt;li&gt;Multiple servers still require load balancer&lt;/li&gt;
+  &lt;li&gt;Suitable for mass-hosting&lt;/li&gt;
+  &lt;li&gt;upcoming standard way of deploying Rails&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-04-04/pic3.jpg&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;h2&gt;Recommended Rails Application Setups&lt;/h2&gt;&lt;h3&gt;Small Site&lt;/h3&gt;&lt;p&gt;Apache with mod_rails/Phusion Passenger&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-04-04/pic4.jpg&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;h3&gt;Medium Site&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Apache/Nginx as frontend proxy&lt;/li&gt;
+  &lt;li&gt;Passanger as backend&lt;/li&gt;
+  &lt;li&gt;Deliver static files with Apache/Nginx&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-04-04/pic5.jpg&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;h3&gt;Large Site&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Redundant load-ballancer&lt;/li&gt;
+  &lt;li&gt;Redundant proxy&lt;/li&gt;
+  &lt;li&gt;Phusion Passenger/mod_rails&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-04-04/pic6.jpg&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;h2&gt;Scale up Traditional Rails Application&lt;/h2&gt;&lt;h3&gt;Caching&lt;/h3&gt;&lt;p&gt;There might be the cases when it&apos;s not enought and in this case we should start looking in &quot;cashing&quot; direction via involving Memcahed and/or Redis &lt;em&gt;(based on Konstantin’s Gredeskoul slides)&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-04-04/pic7.jpg&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;h3&gt;Long-runnint task scaling&lt;/h3&gt;&lt;p&gt;&lt;em&gt;(based on Konstantin’s Gredeskoul slides)&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Background jobs with Reques (it sits on top of Redis)&lt;/li&gt;
+  &lt;li&gt;Use Solr/Elasticsearch instead of doing complex joins&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-04-04/pic8.jpg&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;h2&gt;Rails moving towards SOA and micro services&lt;/h2&gt;&lt;p&gt;The shown above architectures are related to &lt;strong&gt;Monolith Architecture&lt;/strong&gt;. This type of architecture has some problems:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Development pain points:&lt;/li&gt;
+  &lt;li&gt;effective controllers and models have a lot of logic
+  &lt;ul&gt;
+    &lt;li&gt;~1000 Models/Controllers, 200K LOC, 100s of jobs&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Merge issues arise in big team (20-30+)&lt;/li&gt;
+  &lt;li&gt;Lots of contributors and no ownership&lt;/li&gt;
+  &lt;li&gt;Difficult deployments with long integration cycles&lt;/li&gt;
+  &lt;li&gt;Tests are not green, it&apos;s really hard to support stable test quality&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;The monolithic Rails app should evolve into ecosystems of connected services. It&apos;s becoming quite common for Rails apps to be working mainly as &lt;a href=&quot;https://github.com/halyph/architecture-case-study/blob/master/rails-as-an-soa-client-by-pete-hodgson.md&quot;&gt;clients&lt;/a&gt; to other services.&lt;/p&gt;&lt;h3&gt;Splitting application into small pieces&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Split into smaller applications (based on Konstantin&apos;s Gredeskoul &lt;a href=&quot;http://www.slideshare.net/kigster/enterprise-architectures-with-ruby-and-rails&quot;&gt;slides&lt;/a&gt;)
+  &lt;ul&gt;
+    &lt;li&gt;Contains web UI, logic and data
+    &lt;ul&gt;
+      &lt;li&gt;Extract look and feel into gem to share across apps&lt;/li&gt;
+    &lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;May combine with other apps&lt;/li&gt;
+    &lt;li&gt;May rely on common libraries&lt;/li&gt;
+    &lt;li&gt;Typically run in their own Ruby VM&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Extract services and create APIs
+  &lt;ul&gt;
+    &lt;li&gt;Create client API wrapper gems for consumers&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Extract libraries (gems)
+  &lt;ul&gt;
+    &lt;li&gt;Create shared based client gem library&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-04-04/pic9.jpg&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;h3&gt;Reference (sample) service orienter / micro service architecture&lt;/h3&gt;&lt;p&gt;Now, we have more than one Rails application and many service which are communicating using messaging, distributed cashed, etc. &lt;/p&gt;&lt;h4&gt;&lt;a href=&quot;https://github.com/halyph/architecture-case-study/blob/master/groupon.md&quot;&gt;Groupon&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-04-04/pic10.png&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;h4&gt;&lt;a href=&quot;https://github.com/halyph/architecture-case-study/blob/master/flipcart.md&quot;&gt;Flipcart&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-04-04/pic11.jpg&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;h4&gt;&lt;a href=&quot;https://github.com/halyph/architecture-case-study/blob/master/gilt.md&quot;&gt;Gilt&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2015-04-04/pic12.jpg&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;I&apos;ve collect much more case studies, see &lt;a href=&quot;https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;Conclusion&lt;/h2&gt;&lt;p&gt;Moving Monolith Rails application to micro service architecture it&apos;s not one shot action. It&apos;s long run with lots of trade offs. And more over, micro service architecture is not silver bullet, it&apos;s just one alternative way to scale your application (see [Recommended Rails Application Setups][#Recommended.Rails.Application.Setups]).&lt;/p&gt;&lt;p&gt;The key idea is to develop your application with &lt;a href=&quot;http://en.wikipedia.org/wiki/Single_responsibility_principle&quot;&gt;SRP (Single responsibility principle)&lt;/a&gt; in mind. The more modular your application the more scalable it&apos;s.&lt;/p&gt;&lt;p&gt;I&apos;m planning to add more architecture case studies to my &lt;a href=&quot;https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies&quot;&gt;collection&lt;/a&gt; (not only Rails related). Stay tuned.&lt;/p&gt;&lt;h2&gt;Rails related tech components&lt;/h2&gt;&lt;p&gt;Collection of major technology components mentioned in case studies.&lt;/p&gt;&lt;h3&gt;Web Servers / Proxy&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://httpd.apache.org/&quot;&gt;Apache&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://nginx.org/&quot;&gt;Nginx&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.haproxy.org/&quot;&gt;HAProxy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;Application Servers&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://unicorn.bogomips.org/&quot;&gt;Unicorn&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.phusionpassenger.com&quot;&gt;Phusion Passenger&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://puma.io/&quot;&gt;Puma&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://code.macournoyer.com/thin/&quot;&gt;Thin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;Libraries / Tools&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://redis.io/&quot;&gt;Redis&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://memcached.org/&quot;&gt;Memcached&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/resque/resque&quot;&gt;Reque&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://sidekiq.org/&quot;&gt;Sidekiq&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lucene.apache.org/solr/&quot;&gt;Solr&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.elastic.co/products/elasticsearch&quot;&gt;Elasticsearch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies&quot;&gt;Collection of Ruby on Rails Architecture Case Studies&lt;/a&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/jweiss/deployment-with-ruby-on-rails&quot;&gt;Deployment with Ruby on Rails&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/kigster/enterprise-architectures-with-ruby-and-rails&quot;&gt;Enterprise Architectures with Ruby (and Rails)&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.quora.com/Does-Ruby-on-Rails-scale&quot;&gt;Does Ruby on Rails scale&lt;/a&gt; - Quora&lt;/li&gt;
+  &lt;li&gt;&quot;Keeping Your Massive Rails App From Turning Into a S#!t Show with Benjamin Smith&quot; (see &lt;a href=&quot;https://vimeo.com/76094344&quot;&gt;video&lt;/a&gt; and &lt;a href=&quot;https://speakerdeck.com/benjaminleesmith/keeping-your-massive-rails-app-from-turning-into-a-s-number-t-show-windycityrails-2013&quot;&gt;slides&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>How to download jars from Maven Central</title>
+      <link>http://halyph.com/blog/2015/03/17/how-to-download-jars-from-maven-central.html</link>
+      <pubDate>Tue, 17 Mar 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2015/03/17/how-to-download-jars-from-maven-central.html</guid>
+      	<description>
+	&lt;p&gt;We know how to download Java libraries with it&apos;s dependencies (transitive included) via Maven &lt;em&gt;pom.xml&lt;/em&gt;, Ant/Ivy &lt;em&gt;build.xml&lt;/em&gt; script, Gradle &lt;em&gt;build.gradle&lt;/em&gt; script etc.&lt;br/&gt;But what if we need to download them without these scripts.&lt;/p&gt;&lt;p&gt;There are several ways to do this.&lt;br/&gt;Assume that we&apos;d like to download &lt;code&gt;spark-core&lt;/code&gt; library (&lt;code&gt;groupId=com.sparkjava, artifactId=spark-core, version=2.1&lt;/code&gt;) with all dependencies from &lt;a href=&quot;http://search.maven.org/#artifactdetails%7Ccom.sparkjava%7Cspark-core%7C2.1%7Cjar&quot;&gt;Maven Central&lt;/a&gt; into &lt;code&gt;lib&lt;/code&gt; folder.&lt;/p&gt;&lt;h2&gt;Use Maven3 dependency plugin&lt;/h2&gt;&lt;p&gt;Here is there variants for lib download:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash Download library with all dependencies&quot;&gt;# Specify repoUrl (it&amp;#39;s optional)
+mvn dependency:get -DrepoUrl=http://download.java.net/maven/2/ -DgroupId=com.sparkjava -DartifactId=spark-core -Dversion=2.1
+
+# OR use default repoUrl
+mvn dependency:get -DgroupId=com.sparkjava -DartifactId=spark-core -Dversion=2.1
+
+# OR use parameter artifact as groupId:artifactId:version
+mvn dependency:get -Dartifact=com.sparkjava:spark-core:2.1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now we need to copy just downloaded artifacts in our working directory:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash Copy jars from local maven repo&quot;&gt;mvn dependency:copy-dependencies -f $HOME/.m2/repository/com/sparkjava/spark-core/2.1/spark-core-2.1.pom -DoutputDirectory=$(pwd)/lib
+# the previous command doesn&amp;#39;t copy spark-core-x.x.jar, that&amp;#39;s why we should copy it manually
+cp $HOME/.m2/repository/com/sparkjava/spark-core/2.1/spark-core-2.1.jar $(pwd)/lib
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;Use standalone Ivy&lt;/h2&gt;&lt;p&gt;We can use Ivy as standalone jar to download Maven dependencies without creating Ant build file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;# 1. Download the latest ivy jar (currently it&amp;#39;s v.2.4.0)
+curl -L -O http://search.maven.org/remotecontent?filepath=org/apache/ivy/ivy/2.4.0/ivy-2.4.0.jar
+
+# 2. Run ivy.jar to retrieve all dependencies
+java -jar ivy-2.4.0.jar -dependency com.sparkjava spark-core 2.1 -retrieve &amp;quot;lib/[artifact]-[revision](-[classifier]).[ext]&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As you can see Ivy downloads approach is much simpler. The only cons (or pros, it depends) that &lt;strong&gt;ivy.jar&lt;/strong&gt; should be additionally downloaded.&lt;/p&gt;&lt;h2&gt;Calling Ivy from Groovy or Java&lt;/h2&gt;&lt;p&gt;Here I&apos;ve decided to store &lt;a href=&quot;http://makandracards.com/evgeny-goldin/5817-calling-ivy-from-groovy-or-java&quot;&gt;Evgeny&apos;s Goldin&lt;/a&gt; code snippet as a reference for myself. Programmatic artifacts downloads is not a common operation. It&apos;s alway nice to know the general concept how it can be done. Especially when Ivy documentation is not very informative.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;java Groovy snippet of calling Ivy&quot;&gt;import org.apache.ivy.Ivy
+import org.apache.ivy.core.module.descriptor.DefaultDependencyDescriptor
+import org.apache.ivy.core.module.descriptor.DefaultModuleDescriptor
+import org.apache.ivy.core.module.id.ModuleRevisionId
+import org.apache.ivy.core.resolve.ResolveOptions
+import org.apache.ivy.core.settings.IvySettings
+import org.apache.ivy.plugins.resolver.URLResolver
+import org.apache.ivy.core.report.ResolveReport
+import org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriter
+
+
+public File resolveArtifact(String groupId, String artifactId, String version) {
+        //creates clear ivy settings
+        IvySettings ivySettings = new IvySettings();
+        //url resolver for configuration of maven repo
+        URLResolver resolver = new URLResolver();
+        resolver.setM2compatible(true);
+        resolver.setName(&amp;#39;central&amp;#39;);
+        //you can specify the url resolution pattern strategy
+        resolver.addArtifactPattern(
+            &amp;#39;http://repo1.maven.org/maven2/[organisation]/[module]/[revision]/[artifact](-[revision]).[ext]&amp;#39;);
+        //adding maven repo resolver
+        ivySettings.addResolver(resolver);
+        //set to the default resolver
+        ivySettings.setDefaultResolver(resolver.getName());
+        //creates an Ivy instance with settings
+        Ivy ivy = Ivy.newInstance(ivySettings);
+
+        File ivyfile = File.createTempFile(&amp;#39;ivy&amp;#39;, &amp;#39;.xml&amp;#39;);
+        ivyfile.deleteOnExit();
+
+        String[] dep = [groupId, artifactId, version]
+
+        DefaultModuleDescriptor md =
+                DefaultModuleDescriptor.newDefaultInstance(ModuleRevisionId.newInstance(dep[0],
+                dep[1] + &amp;#39;-caller&amp;#39;, &amp;#39;working&amp;#39;));
+
+        DefaultDependencyDescriptor dd = new DefaultDependencyDescriptor(md,
+                ModuleRevisionId.newInstance(dep[0], dep[1], dep[2]), false, false, true);
+        md.addDependency(dd);
+
+        //creates an ivy configuration file
+        XmlModuleDescriptorWriter.write(md, ivyfile);
+
+        String[] confs = [&amp;#39;default&amp;#39;];
+        ResolveOptions resolveOptions = new ResolveOptions().setConfs(confs);
+
+        //init resolve report
+        ResolveReport report = ivy.resolve(ivyfile.toURL(), resolveOptions);
+
+        //so you can get the jar library
+        File jarArtifactFile = report.getAllArtifactsReports()[0].getLocalFile();
+
+        return jarArtifactFile;
+}
+
+resolveArtifact( &amp;#39;log4j&amp;#39;, &amp;#39;log4j&amp;#39;, &amp;#39;1.2.16&amp;#39; )
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/15450383/using-maven-to-download-dependencies-to-a-directory-on-the-command-line/15456621&quot;&gt;Using Maven to download dependencies to a directory on the command line - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/15598612/simplest-ivy-code-to-programmatically-retrieve-dependency-from-maven-central&quot;&gt;Simplest Ivy code to programmatically retrieve dependency from Maven Central - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://makandracards.com/evgeny-goldin/5817-calling-ivy-from-groovy-or-java&quot;&gt;Calling Ivy from Groovy or Java&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>How to Install Octopress on Windows?</title>
+      <link>http://halyph.com/blog/2015/02/17/how-to-install-octopress-on-windows.html</link>
+      <pubDate>Tue, 17 Feb 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2015/02/17/how-to-install-octopress-on-windows.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/ruby.png&quot; alt=&quot;blog_post_image_штдшту&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;I&apos;ve been using &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; on Mac OS X (i.e. have no problem). But, recently I&apos;ve decided to run my blog on Windows machine and felt pain. Ahh, &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; uses bunch of native extentions which actually cause a lot of cross-platform issues. My first attempt was to try &lt;a href=&quot;http://jruby.org/&quot;&gt;JRuby&lt;/a&gt; due to his better Windows support, but got this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ bundle install
+Fetching gem metadata from https://rubygems.org/.........
+Installing rake (10.4.2)
+Installing RedCloth (4.2.9)
+Using blankslate (2.1.2.4)
+Installing hitimes (1.2.2)
+Installing timers (4.0.1)
+Installing celluloid (0.16.0)
+Installing chunky_png (1.3.3)
+Installing fast-stemmer (1.0.2) with native extensions
+Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension
+.
+        D:/Tools/JRuby/jruby-1.7.0/bin/jruby.exe extconf.rb NotImplementedError: C extension support is not enabled. Pass -Xcext.enabled=true to JRuby or set JRUBY_OPTS or modify .jrubyrc to enable.
+
+   (root) at D:/Tools/JRuby/jruby-1.7.0/lib/ruby/shared/mkmf.rb:8  require at org/jruby/RubyKernel.java:1019
+   (root) at D:/Tools/JRuby/jruby-1.7.0/lib/ruby/shared/rubygems/custom_require.rb:1
+   (root) at extconf.rb:1
+
+
+Gem files will remain installed in D:/Tools/JRuby/jruby-1.7.0/lib/ruby/gems/shared/gems/fast-stemmer-1.0.2 for inspection.
+Results logged to D:/Tools/JRuby/jruby-1.7.0/lib/ruby/gems/shared/gems/fast-stemmer-1.0.2/ext/gem_make.out
+An error occurred while installing fast-stemmer (1.0.2), and Bundler cannot continue.
+Make sure that `gem install fast-stemmer -v &amp;#39;1.0.2&amp;#39;` succeeds before bundling.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;There is JRuby version of &lt;code&gt;fast-stemmer&lt;/code&gt; gem called &lt;a href=&quot;https://github.com/caius/jruby-stemmer&quot;&gt;&lt;code&gt;jruby-stemmer&lt;/code&gt;&lt;/a&gt;. But, I&apos;m not ready to maitain this. That&apos;s why I&apos;ve decided to use &lt;a href=&quot;http://rubyinstaller.org/&quot;&gt;RubyInstaller&lt;/a&gt;. &lt;/p&gt;&lt;h2&gt;Install Ruby on Windows and SSL issues&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;p&gt;Download (&lt;code&gt;rubyinstaller-2.1.5-x64.exe&lt;/code&gt; in my case) and install &lt;a href=&quot;http://rubyinstaller.org/&quot;&gt;RubyInstaller&lt;/a&gt;. I installed in &lt;code&gt;d:\Tools\Ruby\Ruby21-x64\&lt;/code&gt; folder.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Check &lt;code&gt;rubygems&lt;/code&gt; via running &lt;code&gt;gem update&lt;/code&gt; and you should get the next error:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ gem update
+Updating installed gems
+ERROR:  While executing gem ... (Gem::RemoteFetcher::FetchError)
+    SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (https://api.rubygems.org/specs.4.8.gz)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It&apos;s well known &lt;code&gt;rubygems&lt;/code&gt; issues with ready to use &lt;a href=&quot;https://gist.github.com/luislavena/f064211759ee0f806c88&quot;&gt;solution&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Step 1: Obtain the new trust certificate, download it &lt;a href=&quot;https://raw.githubusercontent.com/rubygems/rubygems/master/lib/rubygems/ssl_certs/AddTrustExternalCARoot-2048.pem&quot;&gt;AddTrustExternalCARoot-2048.pem&lt;/a&gt; in some temp folder&lt;/li&gt;
+  &lt;li&gt;Step 2: Locate RubyGems certificate directory in your installation (in my case it&apos;s &lt;code&gt;D:/Tools/Ruby/Ruby21-x64/lib/ruby/2.1.0/&lt;/code&gt; )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ gem which rubygems
+D:/Tools/Ruby/Ruby21-x64/lib/ruby/2.1.0/rubygems.rb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;Step 3: Copy new trust certificate into &lt;code&gt;D:\Tools\Ruby\Ruby21-x64\lib\ruby\2.1.0\rubygems\ssl_certs&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ copy AddTrustExternalCARoot-2048.pem D:\Tools\Ruby\Ruby21-x64\lib\ruby\2.1.0\rubygems\ssl_certs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;Step 4: Now You should be able to run gem update without any issues&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;Prepapre environment for Octopress&lt;/h2&gt;&lt;p&gt;Now it&apos;s time to clone &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; blog and run it. Unfortunatelly, there are some minor issues which still must be fixed. &lt;/p&gt;&lt;h3&gt;Fix &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; native extentions issues&lt;/h3&gt;&lt;p&gt;We know that &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; uses native extentions thats why we have to additionally install &lt;a href=&quot;http://cdn.rubyinstaller.org/archives/devkits/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe&quot;&gt;Development Kit&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Download and unpack it in adjacent to Ruby install folder (&lt;code&gt;d:\Tools\Ruby\DevKit_2.1_x64\&lt;/code&gt; in my case)&lt;/li&gt;
+  &lt;li&gt;Link &lt;a href=&quot;http://cdn.rubyinstaller.org/archives/devkits/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe&quot;&gt;Development Kit&lt;/a&gt; installation to previously installed Ruby
+  &lt;ul&gt;
+    &lt;li&gt;Go to &lt;a href=&quot;http://cdn.rubyinstaller.org/archives/devkits/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe&quot;&gt;Development Kit&lt;/a&gt; install folder &lt;code&gt;d:\Tools\Ruby\DevKit_2.1_x64\&lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;Run &lt;code&gt;ruby dk.rb init&lt;/code&gt; which generate &lt;code&gt;config.yml&lt;/code&gt;. Open &lt;code&gt;config.yml&lt;/code&gt; and add &lt;code&gt;- D:/Tools/Ruby/Ruby21-x64&lt;/code&gt; to the end of this file.&lt;/li&gt;
+    &lt;li&gt;Run &lt;code&gt;ruby dk.rb install&lt;/code&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;See my &lt;em&gt;Development Kit&lt;/em&gt; &lt;code&gt;config.yml&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# This configuration file contains the absolute path locations of all
+# installed Rubies to be enhanced to work with the DevKit. This config
+# file is generated by the &amp;#39;ruby dk.rb init&amp;#39; step and may be modified
+# before running the &amp;#39;ruby dk.rb install&amp;#39; step. To include any installed
+# Rubies that were not automagically discovered, simply add a line below
+# the triple hyphens with the absolute path to the Ruby root directory.
+#
+# Example:
+#
+# ---
+# - C:/ruby19trunk
+# - C:/ruby192dev
+#
+---
+- D:/Tools/Ruby/Ruby21-x64
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;Install Python&lt;/h3&gt;&lt;p&gt;The default syntax highlighting engine in Octopress/Jekyll is &lt;a href=&quot;http://pygments.org/&quot;&gt;Pygments&lt;/a&gt;. It&apos;s requires Python v.2.7.x. Simply download &lt;a href=&quot;https://www.python.org/downloads/release/python-278/&quot;&gt;Python v.2.7.8&lt;/a&gt; and add it on system &lt;code&gt;PATH&lt;/code&gt;.&lt;/p&gt;&lt;h3&gt;Final steps&lt;/h3&gt;&lt;p&gt;I assume that blog was previously cloned. Now, we should perform &quot;traditional&quot; Ruby project ceremony:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Install &lt;code&gt;budler&lt;/code&gt; via &lt;code&gt;gem install bundler&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Setup all required gems &lt;code&gt;bundle install&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Run &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; preview &lt;code&gt;rake preview&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.zerosharp.com/setting-up-octopress-on-windows/&quot;&gt;Octopress on Windows and GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://thaiat.github.io/blog/2014/03/13/how-to-install-and-use-octopress-on-windows/&quot;&gt;How to Install and Use Octopress on Windows&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>Maven Flow for Simple App Creation</title>
+      <link>http://halyph.com/blog/2015/02/13/maven-flow-for-simple-app-creation.html</link>
+      <pubDate>Fri, 13 Feb 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2015/02/13/maven-flow-for-simple-app-creation.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;I provided my reflections about &lt;em&gt;&quot;Java for Everything&quot;&lt;/em&gt; in the previous &lt;a href=&quot;/blog/2015/02/13/do-we-need-java-for-everything&quot;&gt;post&lt;/a&gt;.&lt;br/&gt;Here we will review other implementation of this concept.&lt;/p&gt;&lt;p&gt;I have the next concerns about any Java application (big or small):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;library dependency management must be simple&lt;/li&gt;
+  &lt;li&gt;it&apos;s very bad practice to distribute sources along with libraries (dependency management tools must be used instead: Ivy, Maven, Gradle, etc.)&lt;/li&gt;
+  &lt;li&gt;small application might have a little bit different project layout (not equals to traditional Maven layout)&lt;/li&gt;
+  &lt;li&gt;we should be able to setup IDE (in my case &lt;a href=&quot;https://www.jetbrains.com/idea/&quot;&gt;Intellij IDEA&lt;/a&gt;) as quick a possible. I hate editing Java programs in plain text editor&lt;/li&gt;
+  &lt;li&gt;it must be a convenient way to run Java application with different arguments in &lt;em&gt;production&lt;/em&gt; and &lt;em&gt;development&lt;/em&gt; modes&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;Use Case&lt;/h2&gt;&lt;p&gt;We have to create simple and small REST application based on &lt;a href=&quot;https://github.com/perwendel/spark&quot;&gt;Spark Java framework&lt;/a&gt; (A Sinatra inspired framework for Java).&lt;/p&gt;&lt;p&gt;Here is the source:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;import static spark.Spark.get;
+import static spark.SparkBase.port;
+
+public class App {
+    public static void main( String[] args ) throws NumberFormatException {
+        
+        for(String arg: args) System.out.printf(&amp;quot;&amp;gt; %s&amp;quot;, arg);
+        
+        get(&amp;quot;/hello&amp;quot;, (request, response) -&amp;gt; {
+            return &amp;quot;Hello World!&amp;quot;;
+        });
+    }
+}   
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;So, here is the list of issues:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;get Spark dependency with all transitive dependencies&lt;/li&gt;
+  &lt;li&gt;pass command-line arguments into the app&lt;/li&gt;
+  &lt;li&gt;use this application in development mode and in &quot;production&quot; (packed in jar)&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;Traditional Maven Way&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Generate empty project via Maven archetype&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;mvn archetype:generate \
+-DgroupId=com.halyph \ 
+-DartifactId=sparkblog \ 
+-Dpackage=com.halyph.blog \ 
+-Dversion=1.0-SNAPSHOT \
+-DarchetypeGroupId=org.apache.maven.archetypes \ 
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DinteractiveMode=false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;p&gt;Open this in IDEA (I don&apos;t use other IDEs) via &quot;Open File or Project&quot; and select folder with generated &lt;strong&gt;pom.xml&lt;/strong&gt; file. We don&apos;t need tests, so we can delete &lt;em&gt;src-&amp;gt;test&lt;/em&gt; folder and remove junit dependency from &lt;strong&gt;pom.xml&lt;/strong&gt; file. Now, we can easily run our application via IDE.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Add Spark framework dependency to &lt;strong&gt;pom.xml&lt;/strong&gt; and update our &lt;strong&gt;App&lt;/strong&gt; class&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;&amp;lt;project xmlns=&amp;quot;http://maven.apache.org/POM/4.0.0&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;
+         xsi:schemaLocation=&amp;quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&amp;quot;&amp;gt;
+  &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt;
+
+  &amp;lt;groupId&amp;gt;com.halyph&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;sparkblog&amp;lt;/artifactId&amp;gt;
+  &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt;
+  &amp;lt;packaging&amp;gt;jar&amp;lt;/packaging&amp;gt;
+
+  &amp;lt;name&amp;gt;sparkblog&amp;lt;/name&amp;gt;
+  &amp;lt;url&amp;gt;http://maven.apache.org&amp;lt;/url&amp;gt;
+
+  &amp;lt;properties&amp;gt;
+    &amp;lt;project.build.sourceEncoding&amp;gt;UTF-8&amp;lt;/project.build.sourceEncoding&amp;gt;
+  &amp;lt;/properties&amp;gt;
+
+  &amp;lt;dependencies&amp;gt;
+    &amp;lt;dependency&amp;gt;
+      &amp;lt;groupId&amp;gt;com.sparkjava&amp;lt;/groupId&amp;gt;
+      &amp;lt;artifactId&amp;gt;spark-core&amp;lt;/artifactId&amp;gt;
+      &amp;lt;version&amp;gt;2.1&amp;lt;/version&amp;gt;
+    &amp;lt;/dependency&amp;gt;
+  &amp;lt;/dependencies&amp;gt;
+
+  &amp;lt;build&amp;gt;
+    &amp;lt;plugins&amp;gt;
+      &amp;lt;plugin&amp;gt;
+        &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+        &amp;lt;artifactId&amp;gt;maven-compiler-plugin&amp;lt;/artifactId&amp;gt;
+        &amp;lt;version&amp;gt;3.1&amp;lt;/version&amp;gt;
+        &amp;lt;configuration&amp;gt;
+          &amp;lt;target&amp;gt;1.8&amp;lt;/target&amp;gt;
+          &amp;lt;source&amp;gt;1.8&amp;lt;/source&amp;gt;
+        &amp;lt;/configuration&amp;gt;
+      &amp;lt;/plugin&amp;gt;
+    &amp;lt;/plugins&amp;gt;
+  &amp;lt;/build&amp;gt;
+&amp;lt;/project&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;package com.halyph.blog;
+
+import static spark.Spark.get;
+
+public class App {
+    public static void main(String[] args) throws NumberFormatException {
+
+        String myArgs = &amp;quot;&amp;quot;;
+        for (String arg : args) {
+            System.out.printf(&amp;quot;&amp;gt; %s&amp;quot;, arg);
+            myArgs += arg + &amp;quot; : &amp;quot;;
+        }
+        System.out.println();
+        final String finalMyArgs = myArgs;
+        get(&amp;quot;/hello&amp;quot;, (request, response) -&amp;gt; {
+            return &amp;quot;Hello World!\n args = &amp;quot; + finalMyArgs;
+        });
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This application can be easily run via IDE, but lets run it via Maven&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;We should use &lt;a href=&quot;http://mojo.codehaus.org/exec-maven-plugin/usage.html&quot;&gt;Exec Maven Plugin&lt;/a&gt; to run the app with all dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ mvn clean compile exec:java -Dexec.mainClass=&amp;quot;com.halyph.blog.App&amp;quot;  -Dexec.args=&amp;quot;9090 one 1 2&amp;quot;
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sparkblog 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ sparkblog ---
+[INFO] Deleting d:\MyProjects\jwrapper\bloggg\sparkblog\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ sparkblog ---
+[debug] execute contextualize
+[INFO] Using &amp;#39;UTF-8&amp;#39; encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory d:\MyProjects\sparkblog\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ sparkblog ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to d:\MyProjects\jwrapper\bloggg\sparkblog\target\classes
+[INFO]
+[INFO] &amp;gt;&amp;gt;&amp;gt; exec-maven-plugin:1.2.1:java (default-cli) @ sparkblog &amp;gt;&amp;gt;&amp;gt;
+[INFO]
+[INFO] &amp;lt;&amp;lt;&amp;lt; exec-maven-plugin:1.2.1:java (default-cli) @ sparkblog &amp;lt;&amp;lt;&amp;lt;
+[INFO]
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ sparkblog ---
+&amp;gt; 9090&amp;gt; one&amp;gt; 1&amp;gt; 2
+[Thread-1] INFO spark.webserver.SparkServer - == Spark has ignited ...
+[Thread-1] INFO spark.webserver.SparkServer - &amp;gt;&amp;gt; Listening on 0.0.0.0:4567
+[Thread-1] INFO org.eclipse.jetty.server.Server - jetty-9.0.2.v20130417
+[Thread-1] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@4afe75c9{HTTP/1.1}{0.0.0.0:4567}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In case the application run configurations is persistent (&quot;main&quot; class and CLI arguments are changing rarely) we can configure it in &lt;strong&gt;pom.xml&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt; &amp;lt;build&amp;gt;
+    &amp;lt;plugins&amp;gt;
+      ...
+      &amp;lt;plugin&amp;gt;
+        &amp;lt;groupId&amp;gt;org.codehaus.mojo&amp;lt;/groupId&amp;gt;
+        &amp;lt;artifactId&amp;gt;exec-maven-plugin&amp;lt;/artifactId&amp;gt;
+        &amp;lt;version&amp;gt;1.3.2&amp;lt;/version&amp;gt;
+        &amp;lt;executions&amp;gt;
+          &amp;lt;execution&amp;gt;
+            &amp;lt;goals&amp;gt;
+              &amp;lt;goal&amp;gt;java&amp;lt;/goal&amp;gt;
+            &amp;lt;/goals&amp;gt;
+          &amp;lt;/execution&amp;gt;
+        &amp;lt;/executions&amp;gt;
+        &amp;lt;configuration&amp;gt;
+          &amp;lt;mainClass&amp;gt;com.halyph.blog.App&amp;lt;/mainClass&amp;gt;
+          &amp;lt;arguments&amp;gt;
+            &amp;lt;argument&amp;gt;9090&amp;lt;/argument&amp;gt;
+            &amp;lt;argument&amp;gt;one&amp;lt;/argument&amp;gt;
+            &amp;lt;argument&amp;gt;1&amp;lt;/argument&amp;gt;
+            &amp;lt;argument&amp;gt;2&amp;lt;/argument&amp;gt;
+          &amp;lt;/arguments&amp;gt;
+        &amp;lt;/configuration&amp;gt;
+      &amp;lt;/plugin&amp;gt;
+    &amp;lt;/plugins&amp;gt;
+  &amp;lt;/build&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;It&apos;s nice idea to use &lt;code&gt;mvn exec:java&lt;/code&gt;, but it might be a little bit slow. So, we might decide to use some shell script which increase compiled application ramp up time. The problem is that the application have dependencies (which have transitive dependencies). I.e. &lt;code&gt;java&lt;/code&gt; classpath have to be configured somehow.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Well, I borrowed the ideas from &quot;&lt;a href=&quot;http://saltnlight5.blogspot.com/2012/08/a-better-java-shell-script-wrapper.html&quot;&gt;A better java shell script wrapper&lt;/a&gt;&quot; script. Here it is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;#!/usr/bin/env bash
+#
+# Copyright 2012 Zemian Deng
+#
+# A wrapper script that run any Java application in unix/cygwin bash env.
+#
+# This script is assumed to be located in an application&amp;#39;s &amp;quot;bin&amp;quot; directory. It will
+# auto resolve its directory location relative to the application path (which is one
+# parent up from the script.) Therefore, this script can be run any where in the file
+# system and it will still reference the same application directory.
+#
+# This script will by default auto setup a Java classpath that picks up any &amp;quot;config&amp;quot;
+# and &amp;quot;lib&amp;quot; directories under the application directory. It also will also add a
+# any typical Maven project output directories such as &amp;quot;target/test-classes&amp;quot;,
+# &amp;quot;target/classes&amp;quot;, and &amp;quot;target/dependency&amp;quot; into classpath. This can be disable by
+# setting RUN_JAVA_NO_AUTOCP=1.
+#
+# If the &amp;quot;Default parameters&amp;quot; section bellow doesn&amp;#39;t match to user&amp;#39;s env, then user
+# may override these variables in their terminal session or preset them in shell&amp;#39;s
+# profile startup script. The values of all path should be in cygwin/unix path,
+# and this script will auto convert them into Windows path where is needed.
+#
+# User may customize the Java classpath by setting RUN_JAVA_CP, which will prefix to existing
+# classpath, or use the &amp;quot;-cp&amp;quot; option, which will postfix to existing classpath.
+#
+# Usage:
+#   run-java [java_opts] &amp;lt;java_main_class&amp;gt; [-cp /more/classpath] [-Dsysprop=value]
+#
+# Example:
+#   run-java example.Hello
+#   run-java example.Hello -Dname=World
+#   run-java org.junit.runner.JUnitCore example.HelloTest -cp &amp;quot;$HOME/apps/junit/lib/*&amp;quot;
+#
+# Created by: Zemian Deng 03/09/2012
+
+# This run script dir (resolve to absolute path)
+SCRIPT_DIR=$(cd $(dirname $0) &amp;amp;&amp;amp; pwd)    # This dir is where this script live.
+APP_DIR=$(cd $SCRIPT_DIR/.. &amp;amp;&amp;amp; pwd)      # Assume the application dir is one level up from script dir.
+
+# Default parameters
+JAVA_HOME=${JAVA_HOME:=$HOME/apps/jdk}     # This is the home directory of Java development kit.
+RUN_JAVA_CP=${RUN_JAVA_CP:=$CLASSPATH}     # A classpath prefix before -classpath option, default to $CLASSPATH
+RUN_JAVA_OPTS=${RUN_JAVA_OPTS:=}           # Java options (-Xmx512m -XX:MaxPermSize=128m etc)
+RUN_JAVA_DEBUG=${RUN_JAVA_DEBUG:=}         # If not empty, print the full java command line before executing it.
+RUN_JAVA_NO_PARSE=${RUN_JAVA_NO_PARSE:=}   # If not empty, skip the auto parsing of -D and -cp options from script arguments.
+RUN_JAVA_NO_AUTOCP=${RUN_JAVA_NO_AUTOCP:=} # If not empty, do not auto setup Java classpath
+RUN_JAVA_DRY=${RUN_JAVA_DRY:=}             # If not empty, do not exec Java command, but just print
+
+# OS specific support.  $var _must_ be set to either true or false.
+CYGWIN=false;
+case &amp;quot;`uname`&amp;quot; in
+  CYGWIN*) CYGWIN=true ;;
+esac
+
+# Define where is the java executable is
+JAVA_CMD=java
+if [ -d &amp;quot;$JAVA_HOME&amp;quot; ]; then
+	JAVA_CMD=&amp;quot;$JAVA_HOME/bin/java&amp;quot;
+fi
+
+# Auto setup applciation&amp;#39;s Java Classpath (only if they exists)
+if [ -z &amp;quot;$RUN_JAVA_NO_AUTOCP&amp;quot; ]; then
+	if [ -d &amp;quot;$APP_DIR/config&amp;quot; ]; then RUN_JAVA_CP=&amp;quot;$RUN_JAVA_CP:$APP_DIR/config&amp;quot; ; fi
+	if [ -d &amp;quot;$APP_DIR/target/test-classes&amp;quot; ]; then RUN_JAVA_CP=&amp;quot;$RUN_JAVA_CP:$APP_DIR/target/test-classes&amp;quot; ; fi
+	if [ -d &amp;quot;$APP_DIR/target/classes&amp;quot; ]; then RUN_JAVA_CP=&amp;quot;$RUN_JAVA_CP:$APP_DIR/target/classes&amp;quot; ; fi
+	if [ -d &amp;quot;$APP_DIR/target/dependency&amp;quot; ]; then RUN_JAVA_CP=&amp;quot;$RUN_JAVA_CP:$APP_DIR/target/dependency/*&amp;quot; ; fi
+	if [ -d &amp;quot;$APP_DIR/lib&amp;quot; ]; then RUN_JAVA_CP=&amp;quot;$RUN_JAVA_CP:$APP_DIR/lib/*&amp;quot; ; fi
+fi
+
+ARGS=&amp;quot;$@&amp;quot;
+# Parse addition &amp;quot;-cp&amp;quot; and &amp;quot;-D&amp;quot; after the Java main class from script arguments
+#   This is done for convenient sake so users do not have to export RUN_JAVA_CP and RUN_JAVA_OPTS
+#   saparately, but now they can pass into end of this run-java script instead.
+#   This can be disable by setting RUN_JAVA_NO_PARSE=1.
+if [ -z &amp;quot;$RUN_JAVA_NO_PARSE&amp;quot; ]; then
+	# Prepare variables for parsing
+	FOUND_CP=
+	NEW_ARGS[0]=&amp;#39;&amp;#39;
+	IDX=0
+
+	# Parse all arguments and look for &amp;quot;-cp&amp;quot; and &amp;quot;-D&amp;quot;
+	for ARG in &amp;quot;$@&amp;quot;; do
+		if [[ -n $FOUND_CP ]]; then
+			RUN_JAVA_CP=&amp;quot;$RUN_JAVA_CP:$ARG&amp;quot;
+			FOUND_CP=
+		else
+			case $ARG in
+			&amp;#39;-cp&amp;#39;)
+				FOUND_CP=1
+				;;
+			&amp;#39;-D&amp;#39;*)
+				RUN_JAVA_OPTS=&amp;quot;$RUN_JAVA_OPTS $ARG&amp;quot;
+				;;
+			*)
+				NEW_ARGS[$IDX]=&amp;quot;$ARG&amp;quot;
+				let IDX=$IDX+1
+				;;
+			esac
+		fi
+	done
+	ARGS=&amp;quot;${NEW_ARGS[@]}&amp;quot;
+fi
+
+# Convert Windows Java Classpath
+if $CYGWIN; then
+	RUN_JAVA_CP=$(cygpath -mp $RUN_JAVA_CP)
+fi
+
+# Display full Java command.
+if [ -n &amp;quot;$RUN_JAVA_DEBUG&amp;quot; ] || [ -n &amp;quot;$RUN_JAVA_DRY&amp;quot; ]; then
+	echo &amp;quot;$JAVA_CMD&amp;quot; $RUN_JAVA_OPTS -cp &amp;quot;$RUN_JAVA_CP&amp;quot; $ARGS
+fi
+
+# Run Java Main class
+if [ -z &amp;quot;$RUN_JAVA_DRY&amp;quot; ]; then
+	&amp;quot;$JAVA_CMD&amp;quot; $RUN_JAVA_OPTS -cp &amp;quot;$RUN_JAVA_CP&amp;quot; $ARGS
+fi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The main idea is to run &lt;code&gt;mvn dependency:copy-dependencies&lt;/code&gt;, this will generate all the jar files into &lt;code&gt;target/dependency&lt;/code&gt; folder&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ mvn dependency:copy-dependencies
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sparkblog 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-dependency-plugin:2.1:copy-dependencies (default-cli) @ sparkblog ---
+[INFO] Copying spark-core-2.1.jar to d:\MyProjects\jwrapper\bloggg\sparkblog\target\dependency\spark-core-2.1.jar
+[INFO] Copying jetty-http-9.0.2.v20130417.jar to d:\MyProjects\jwrapper\bloggg\sparkblog\target\dependency\jetty-http-9.0.2.v20130417.jar
+[INFO] Copying jetty-io-9.0.2.v20130417.jar to d:\MyProjects\jwrapper\bloggg\sparkblog\target\dependency\jetty-io-9.0.2.v20130417.jar
+[INFO] Copying jetty-security-9.0.2.v20130417.jar to d:\MyProjects\jwrapper\bloggg\sparkblog\target\dependency\jetty-security-9.0.2.v20130417.jar
+[INFO] Copying jetty-server-9.0.2.v20130417.jar to d:\MyProjects\jwrapper\bloggg\sparkblog\target\dependency\jetty-server-9.0.2.v20130417.jar
+[INFO] Copying jetty-servlet-9.0.2.v20130417.jar to d:\MyProjects\jwrapper\bloggg\sparkblog\target\dependency\jetty-servlet-9.0.2.v20130417.jar
+[INFO] Copying jetty-util-9.0.2.v20130417.jar to d:\MyProjects\jwrapper\bloggg\sparkblog\target\dependency\jetty-util-9.0.2.v20130417.jar
+[INFO] Copying jetty-webapp-9.0.2.v20130417.jar to d:\MyProjects\jwrapper\bloggg\sparkblog\target\dependency\jetty-webapp-9.0.2.v20130417.jar
+[INFO] Copying jetty-xml-9.0.2.v20130417.jar to d:\MyProjects\jwrapper\bloggg\sparkblog\target\dependency\jetty-xml-9.0.2.v20130417.jar
+[INFO] Copying javax.servlet-3.0.0.v201112011016.jar to d:\MyProjects\jwrapper\bloggg\sparkblog\target\dependency\javax.servlet-3.0.0.v201112011016.jar
+[INFO] Copying slf4j-api-1.7.7.jar to d:\MyProjects\jwrapper\bloggg\sparkblog\target\dependency\slf4j-api-1.7.7.jar
+[INFO] Copying slf4j-simple-1.7.7.jar to d:\MyProjects\jwrapper\bloggg\sparkblog\target\dependency\slf4j-simple-1.7.7.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.978s
+[INFO] Finished at: Thu Feb 12 18:22:54 EET 2015
+[INFO] Final Memory: 9M/243M
+[INFO] ------------------------------------------------------------------------
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now, we can reuse the provided &lt;em&gt;above&lt;/em&gt; script &lt;strong&gt;or&lt;/strong&gt; use the provided &lt;em&gt;below&lt;/em&gt; one-liner:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;java -cp target\classes;target\dependency\* com.halyph.blog.App 9090 one 1 2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This one-liner is very simple and can be transformed to shell/batch scripts depending on the level of re-use you&apos;d like to implement.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Now, it&apos;s time to created pre-packed application bundle which can be easily distributed. We will use &lt;a href=&quot;http://mojo.codehaus.org/appassembler/appassembler-maven-plugin/usage-program.html&quot;&gt;Maven Application Assembler Plugin&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt; &amp;lt;build&amp;gt;
+    &amp;lt;plugins&amp;gt;
+     ...
+      &amp;lt;plugin&amp;gt;
+        &amp;lt;groupId&amp;gt;org.codehaus.mojo&amp;lt;/groupId&amp;gt;
+        &amp;lt;artifactId&amp;gt;appassembler-maven-plugin&amp;lt;/artifactId&amp;gt;
+        &amp;lt;version&amp;gt;1.9&amp;lt;/version&amp;gt;
+        &amp;lt;!--
+        This (executions) section can be omitted.
+        In case it&amp;#39;s omitted we should call the next command to generate wrapper:
+        mvn package appassembler:assemble
+        --&amp;gt;
+        &amp;lt;executions&amp;gt;
+          &amp;lt;execution&amp;gt;
+            &amp;lt;phase&amp;gt;package&amp;lt;/phase&amp;gt;
+            &amp;lt;goals&amp;gt;
+              &amp;lt;goal&amp;gt;assemble&amp;lt;/goal&amp;gt;
+            &amp;lt;/goals&amp;gt;
+          &amp;lt;/execution&amp;gt;
+        &amp;lt;/executions&amp;gt;
+        &amp;lt;configuration&amp;gt;
+          &amp;lt;programs&amp;gt;
+            &amp;lt;program&amp;gt;
+              &amp;lt;mainClass&amp;gt;com.halyph.blog.App&amp;lt;/mainClass&amp;gt;
+              &amp;lt;id&amp;gt;app&amp;lt;/id&amp;gt;
+            &amp;lt;/program&amp;gt;
+          &amp;lt;/programs&amp;gt;
+        &amp;lt;/configuration&amp;gt;
+      &amp;lt;/plugin&amp;gt;
+    &amp;lt;/plugins&amp;gt;
+  &amp;lt;/build&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;The Application Assembler Plugin is a Maven plugin for generating scripts for starting java applications. All dependencies and the artifact of the project itself are placed in a generated Maven repository in a defined assemble directory. All artifacts (dependencies + the artifact from the project) are added to the classpath in the generated bin scripts.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://mojo.codehaus.org/appassembler/appassembler-maven-plugin/usage-program.html&quot;&gt;Maven Application Assembler Plugin&lt;/a&gt; usage:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash  &quot;&gt;$ mvn package
+$ target/appassembler/bin/app
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;p&gt;All dependencies and the artifact itself are placed in the defined assemble directory (defaults to &lt;code&gt;$project.build.directory/appassembler&lt;/code&gt;).&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;A &lt;code&gt;bin/&lt;/code&gt; directory is created in the assemble directory and the generated bin scripts are placed in that directory (defaults to both unix shell scripts and Windows bat files).&lt;/p&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;&lt;p&gt;Note: &lt;a href=&quot;http://mojo.codehaus.org/appassembler/appassembler-maven-plugin/usage-program.html&quot;&gt;Maven Application Assembler Plugin&lt;/a&gt; have a lot of customization options, just check the documentation. &lt;/p&gt;&lt;h2&gt;Summary&lt;/h2&gt;&lt;p&gt;Here was shown that using such tool as Maven you can be productive and &quot;agile&quot; (use &lt;a href=&quot;http://gradle.org&quot;&gt;Gradle&lt;/a&gt; if you&apos;d like to be in trend):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;generate project skeleton from scratch&lt;/li&gt;
+  &lt;li&gt;open it in IDE without ceremony&lt;/li&gt;
+  &lt;li&gt;call the app via Maven plugin&lt;/li&gt;
+  &lt;li&gt;call it as plain CLI application, but with small ceremony (need to run &lt;em&gt;dependency:copy-dependencies&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;package the app for further distribution&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Yes, it&apos;s not a simple &lt;em&gt;write-one&lt;/em&gt; Java &quot;script&quot;, but it&apos;s flexible enough to feel like it is.&lt;/p&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/2015/02/13/do-we-need-java-for-everything&quot;&gt;Do We Need Java for Everything?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://saltnlight5.blogspot.com/2012/08/a-better-java-shell-script-wrapper.html&quot;&gt;A better java shell script wrapper&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mojo.codehaus.org/exec-maven-plugin/usage.html&quot;&gt;Exec Maven Plugin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mojo.codehaus.org/appassembler/appassembler-maven-plugin/usage-program.html&quot;&gt;Maven Application Assembler Plugin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.plesslweb.ch/post/6628462331/wrapper-script-for-java-command-line-applications&quot;&gt;Wrapper Script for Java Command-Line Applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>Do We Need Java for Everything?</title>
+      <link>http://halyph.com/blog/2015/02/12/do-we-need-java-for-everything.html</link>
+      <pubDate>Thu, 12 Feb 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2015/02/12/do-we-need-java-for-everything.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;Some time ago one guy wrote a post &lt;a href=&quot;http://www.teamten.com/lawrence/writings/java-for-everything.html&quot;&gt;Java for Everything&lt;/a&gt;. The main idea is to use Java even for shell scripting.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;I’m even taking this to an extreme and using Java for shell scripts. I’ve found that anything other than a simple wrapper shell script eventually grows to the point where I’m looking up the arcane syntax for removing some middle element from an array in bash ... Write it in Java to start with. If shelling out to run commands is clumsy, write a utility function to make it easy.&lt;br/&gt;I’ve also written a &lt;em&gt;java_launcher&lt;/em&gt; shell script that allows me to write this at the top of Java programs:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;#!/usr/bin/env java_launcher
+# vim:ft=java
+# lib:/home/lk/lib/teamten.jar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;I can make the Java programs executable and drop the .java extension. The script strips the header, compiles and caches the class file, and runs the result with the specified jars. It provides one of the big advantages of Python: the lack of build scripts for simple one-off programs.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;Here is the actual source of &lt;a href=&quot;https://github.com/lkesteloot/java_launcher&quot;&gt;java_launcher&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;#!/bin/bash
+
+# Put this script in your path and write the following line at the top of an
+# executable Java source program:
+#
+#   #!/usr/bin/env java_launcher
+#
+# Additional documentation here: https://github.com/lkesteloot/java_launcher
+
+# Quit on error.
+set -e
+
+# Get the name of the script, which the shell passes to us automatically.
+SOURCE_PATHNAME=$1
+if [ &amp;quot;$SOURCE_PATHNAME&amp;quot; = &amp;quot;&amp;quot; ]; then
+    echo &amp;quot;java_launcher: Must supply name of script as first argument.&amp;quot;
+    exit 1
+fi
+
+# Skip the script name.
+shift
+
+# Compute the MD5 of both the source file and this script.
+if [ -f /sbin/md5 ]; then
+    # Mac OS/X.
+    SUM=$(cat &amp;quot;$SOURCE_PATHNAME&amp;quot; $0 | md5)
+else
+    # Linux.
+    SUM=$(cat &amp;quot;$SOURCE_PATHNAME&amp;quot; $0 | md5sum | cut -d&amp;#39; &amp;#39; -f1)
+fi
+SOURCE_FILENAME=$(basename &amp;quot;$SOURCE_PATHNAME&amp;quot;)
+SOURCE_DIR=$(dirname &amp;quot;$SOURCE_PATHNAME&amp;quot;)
+CLASS_NAME=$(echo $SOURCE_FILENAME | sed -e &amp;#39;s/\.*//&amp;#39;)
+CACHE_DIR=$HOME/.java_launcher_cache
+CLASS_DIR=$CACHE_DIR/$SUM
+PROCESSED_SOURCE=$CLASS_DIR/${SOURCE_FILENAME}.java
+PROCESSED_CLASS=$CLASS_DIR/${SOURCE_FILENAME}.class
+
+# Process source to find libs for classpath. Relative jars are made relative to the
+# source file.
+export CLASSPATH=$(awk &amp;#39;BEGIN { CLASSPATH=&amp;quot;&amp;quot; } /^# lib:(.*)$/ { jar = substr($0, 7); if (substr(jar, 1, 1) != &amp;quot;/&amp;quot;) jar = SOURCE_DIR &amp;quot;/&amp;quot; jar; if (CLASSPATH != &amp;quot;&amp;quot;) CLASSPATH = CLASSPATH &amp;quot;:&amp;quot;; CLASSPATH = CLASSPATH jar } END { print CLASSPATH }&amp;#39; SOURCE_DIR=&amp;quot;$SOURCE_DIR&amp;quot; &amp;lt; &amp;quot;$SOURCE_PATHNAME&amp;quot;)
+
+# Default libraries. Put default ones last.
+SCRIPT_DIR=$(dirname $0)
+LIB_DIR=$SCRIPT_DIR/java_lib
+export CLASSPATH=$CLASSPATH:$LIB_DIR/\*
+
+# Compile if necessary.
+if [ -f &amp;quot;$PROCESSED_CLASS&amp;quot; ]; then
+    # Refresh the dir so that we know we&amp;#39;ve used it recently.
+    touch &amp;quot;$CLASS_DIR&amp;quot;
+else
+    mkdir -p &amp;quot;$CLASS_DIR&amp;quot;
+
+    # Remove header. That&amp;#39;s anything that starts with #. Replace the lines with
+    # an empty line so the line numbers don&amp;#39;t get thrown off.
+    sed -e &amp;#39;s/^#.*//&amp;#39; &amp;lt; &amp;quot;$SOURCE_PATHNAME&amp;quot; &amp;gt; &amp;quot;$PROCESSED_SOURCE&amp;quot;
+
+    # Compile real source to our cache.
+    javac -d &amp;quot;$CLASS_DIR&amp;quot; &amp;quot;$PROCESSED_SOURCE&amp;quot;
+fi
+
+# Run the program, passing on arguments from command line.
+export CLASSPATH=$CLASS_DIR:$CLASSPATH
+java -Xmx1024m $CLASS_NAME $*
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And suppose we&apos;d like to run &lt;strong&gt;helloworld&lt;/strong&gt; Java &quot;script&quot; using different jars located in default library location (**java_lib/**) and custom (**/home/username/mylib1.jar** and &lt;strong&gt;/home/username/mylib2.jar&lt;/strong&gt;)&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;#!/usr/bin/env java_launcher
+# vim:ft=java
+# lib:/home/username/mylib1.jar:/home/username/mylib2.jar
+
+public class helloworld {
+    public static void main(String[] args) {
+        System.out.println(&amp;quot;Hello world!&amp;quot;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It can be run like this: &lt;code&gt;$ ./helloworld&lt;/code&gt;&lt;/p&gt;&lt;h3&gt;So, how does java_launcher work?&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;This launcher script works on Linux/MacOSX only. We should have additional &lt;strong&gt;java_launcher.bat&lt;/strong&gt; script for Windows (cygwin and msys are not native Windows solution).&lt;/li&gt;
+  &lt;li&gt;It supports two types of CLASSPATH lib folders
+  &lt;ul&gt;
+    &lt;li&gt;&lt;em&gt;default&lt;/em&gt; &lt;strong&gt;$SCRIPT_DIR/java_lib&lt;/strong&gt; located in the same folder where the actual Java script located&lt;/li&gt;
+    &lt;li&gt;&lt;em&gt;custom&lt;/em&gt; libs, they should be listed at the head &lt;strong&gt;lib&lt;/strong&gt; section of the script (see sample above). The script uses AWK to extract jars from &lt;strong&gt;lib&lt;/strong&gt; section&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;java_launcher&lt;/strong&gt; uses MD5 hashing to track source changes and (re)compile the source script only when it has been changed. See MD5 calculated &lt;code&gt;SUM&lt;/code&gt; variable above&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;launcher&lt;/em&gt; has dedicated folder where it stores the processed and compiled script (based on MD5 hash changes). See the next variables: &lt;code&gt;CACHE_DIR&lt;/code&gt;, &lt;code&gt;PROCESSED_SOURCE&lt;/code&gt; and &lt;code&gt;PROCESSED_CLASS&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Then it combines the &lt;em&gt;default&lt;/em&gt; and &lt;em&gt;custom&lt;/em&gt; libs in resulted CLASSPATH&lt;/li&gt;
+&lt;/ol&gt;&lt;h3&gt;Drawbacks&lt;/h3&gt;&lt;p&gt;I see the next drawbacks:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;libs should be distributed along with actual &quot;script&quot;. The common use case is to have minimal required script, which downloads all required dependencies by yourself&lt;/li&gt;
+  &lt;li&gt;launcher is not cross-platform&lt;/li&gt;
+  &lt;li&gt;Java script requires additional configuration to be opened/edited in IDE (project file, adjust all dependencies, etc.)&lt;/li&gt;
+  &lt;li&gt;it&apos;s very hard to edit Java code in plain editor (Java language is verbose). Scripting in Java without IDE might be real pain&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;Why not Groovy?&lt;/h2&gt;&lt;p&gt;I don&apos;t think that Java is &quot;good&quot; language for scripting (see drawbacks above). Groovy is much better language with nice scripting capabilities. Every Groovy script might be treated like a Java code snippet (with some exceptions &lt;a href=&quot;http://groovy.codehaus.org/Differences+from+Java&quot;&gt;[1]&lt;/a&gt; and &lt;a href=&quot;http://groovy-lang.org/differences.html&quot;&gt;[2]&lt;/a&gt;). But, the most important is that Groovy has build-in &lt;a href=&quot;http://groovy-lang.org/grape.html&quot;&gt;Grape dependency manager&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;Grape (The Groovy Adaptable Packaging Engine or Groovy Advanced Packaging Engine) is the infrastructure enabling the grab() calls in Groovy, a set of classes leveraging Ivy to allow for a repository driven module system for Groovy. This allows a developer to write a script with an essentially arbitrary library requirement, and ship just the script. Grape will, at runtime, download as needed and link the named libraries and all dependencies forming a transitive closure when the script is run from existing repositories such as JCenter, Ibiblio, Codehaus, and java.net.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;Sample usage:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;@Grapes([
+   @Grab(group=&amp;#39;commons-primitives&amp;#39;, module=&amp;#39;commons-primitives&amp;#39;, version=&amp;#39;1.0&amp;#39;),
+   @Grab(group=&amp;#39;org.ccil.cowan.tagsoup&amp;#39;, module=&amp;#39;tagsoup&amp;#39;, version=&amp;#39;0.9.7&amp;#39;)])
+class Example {
+// ...
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;One or more &lt;code&gt;groovy.lang.Grab&lt;/code&gt; annotations can be added at any place that annotations are accepted to tell the compiler that this code relies on the specific library. This will have the effect of adding the library to the classloader of the groovy compiler. This annotation is detected and evaluated before any other resolution of classes in the script, so imported classes can be properly resolved by a @Grab annotation.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;&lt;strong&gt;So, I have no idea why to reinvent the wheel.&lt;/strong&gt; Use Groovy for scripting and Java for everything else.&lt;/p&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.teamten.com/lawrence/writings/java-for-everything.html&quot;&gt;Java for Everything&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Some reflections to the original post &lt;a href=&quot;http://www.teamten.com/lawrence/writings/java-for-everything.html&quot;&gt;Java for Everything&lt;/a&gt;:
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=8677556&quot;&gt;Hacker News&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/duplicates/2nvybk/java_for_everything&quot;&gt;Reddit&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/lkesteloot/java_launcher&quot;&gt;java_launcher&lt;/a&gt; source code&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://groovy.codehaus.org/Differences+from+Java&quot;&gt;Groovy Differences from Java&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://groovy-lang.org/grape.html&quot;&gt;Grape dependency manager&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>How to Generate PermGen leak?</title>
+      <link>http://halyph.com/blog/2015/02/05/how-to-generate-permgen.html</link>
+      <pubDate>Thu, 5 Feb 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2015/02/05/how-to-generate-permgen.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;I&apos;m sure that a lot of Java developers experienced &lt;code&gt;java.lang.OutOfMemoryError: PermGen space&lt;/code&gt; (OOME PermGen). It was very common to get this error after multiple WAR re-deploys on Tomcat v.6.x. Permanent generation (PermGen) region of memory is used to store the internal representation of loaded classes (and much more, see here [&lt;a href=&quot;https://plumbr.eu/blog/what-is-a-permgen-leak&quot;&gt;1&lt;/a&gt;] and [&lt;a href=&quot;https://blogs.oracle.com/jonthecollector/entry/presenting_the_permanent_generation&quot;&gt;2&lt;/a&gt;]).&lt;/p&gt;&lt;p&gt;So, we can get &lt;strong&gt;OOME PermGen&lt;/strong&gt; when ClassLoader whats to store class definition, but there is not enough space in PermGen - i.e. loaded too many classes. &lt;/p&gt;&lt;p&gt;Based on this &lt;strong&gt;OOME PermGen&lt;/strong&gt; error can be generated via:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;decreasing PermGen size&lt;/li&gt;
+  &lt;li&gt;loading huge amount of classes&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;I highly recommend to read &lt;a href=&quot;https://plumbr.eu/blog/what-is-a-permgen-leak&quot;&gt;What is a PermGen leak?&lt;/a&gt; post to get more info about this issue.&lt;/p&gt;&lt;h3&gt;Disclaimer&lt;/h3&gt;&lt;p&gt;The current post is totally based on &lt;a href=&quot;https://plumbr.eu/blog/how-not-to-create-a-permgen-leak&quot;&gt;How (not) to create a permgen leak?&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;Generate PermGen leak&lt;/h2&gt;&lt;p&gt;The main idea is dynamically create a lot of classes via byte code manipulation library. We are going to use &lt;a href=&quot;http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/&quot;&gt;Javassist&lt;/a&gt; as it&apos;s the simplest library with nice API.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;We assume that it&apos;s &lt;code&gt;maven&lt;/code&gt; based project. So, let&apos;s add Javassist to &lt;code&gt;pom.xml&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;&amp;lt;project xmlns=&amp;quot;http://maven.apache.org/POM/4.0.0&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;
+         xsi:schemaLocation=&amp;quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&amp;quot;&amp;gt;
+  &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt;
+
+  &amp;lt;groupId&amp;gt;com.mycompany.app&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;my-app&amp;lt;/artifactId&amp;gt;
+  &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt;
+  &amp;lt;packaging&amp;gt;jar&amp;lt;/packaging&amp;gt;
+
+  &amp;lt;name&amp;gt;my-app&amp;lt;/name&amp;gt;
+  &amp;lt;url&amp;gt;http://maven.apache.org&amp;lt;/url&amp;gt;
+
+  &amp;lt;properties&amp;gt;
+    &amp;lt;project.build.sourceEncoding&amp;gt;UTF-8&amp;lt;/project.build.sourceEncoding&amp;gt;
+    &amp;lt;skipTests&amp;gt;true&amp;lt;/skipTests&amp;gt;
+  &amp;lt;/properties&amp;gt;
+
+  &amp;lt;dependencies&amp;gt;
+    &amp;lt;dependency&amp;gt;
+      &amp;lt;groupId&amp;gt;org.javassist&amp;lt;/groupId&amp;gt;
+      &amp;lt;artifactId&amp;gt;javassist&amp;lt;/artifactId&amp;gt;
+      &amp;lt;version&amp;gt;3.15.0-GA&amp;lt;/version&amp;gt;
+    &amp;lt;/dependency&amp;gt;
+  &amp;lt;/dependencies&amp;gt;
+
+  &amp;lt;build&amp;gt;
+    &amp;lt;plugins&amp;gt;
+      &amp;lt;plugin&amp;gt;
+        &amp;lt;groupId&amp;gt;org.codehaus.mojo&amp;lt;/groupId&amp;gt;
+        &amp;lt;artifactId&amp;gt;appassembler-maven-plugin&amp;lt;/artifactId&amp;gt;
+        &amp;lt;version&amp;gt;1.9&amp;lt;/version&amp;gt;
+        &amp;lt;configuration&amp;gt;
+          &amp;lt;extraJvmArguments&amp;gt;-XX:PermSize=2M -XX:MaxPermSize=4M&amp;lt;/extraJvmArguments&amp;gt;
+          &amp;lt;programs&amp;gt;
+            &amp;lt;program&amp;gt;
+              &amp;lt;mainClass&amp;gt;com.mycompany.app.App&amp;lt;/mainClass&amp;gt;
+              &amp;lt;id&amp;gt;app&amp;lt;/id&amp;gt;
+            &amp;lt;/program&amp;gt;
+          &amp;lt;/programs&amp;gt;
+        &amp;lt;/configuration&amp;gt;
+      &amp;lt;/plugin&amp;gt;
+    &amp;lt;/plugins&amp;gt;
+  &amp;lt;/build&amp;gt;
+&amp;lt;/project&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;Also, we should set &lt;strong&gt;PermGen&lt;/strong&gt; and &lt;strong&gt;MaxPermGen&lt;/strong&gt; size to 2M and 4M respectively (it gives us a chance to get error as quickly as possible). Maven &lt;code&gt;Appassembler&lt;/code&gt; plugin [&lt;a href=&quot;http://mojo.codehaus.org/appassembler/appassembler-maven-plugin/usage-program-jvmsettings.html&quot;&gt;3&lt;/a&gt;] uses &lt;code&gt;extraJvmArguments&lt;/code&gt; parameter while generating wrapper scripts: shell and batch (see &lt;code&gt;pom.xml&lt;/code&gt; above, &lt;code&gt;&amp;lt;extraJvmArguments&amp;gt;-XX:PermSize=2M -XX:MaxPermSize=2M&amp;lt;/extraJvmArguments&amp;gt;&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;&lt;p&gt;--XX:PermSize&lt;size&gt; - Set initial PermGen Size&lt;/p&gt;&lt;p&gt;--XX:MaxPermSize&lt;size&gt; - Set the maximum PermGen Size&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+  &lt;li&gt;Below is a simple application which dynamically creates 1000 classes to cause PermGem leak. Class creation is very simple and self explanatory. The main idea is that we should use byte code manipulation library to create classes dynamically.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;See additional comments in the next code snippet&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;package com.mycompany.app;
+
+import javassist.CannotCompileException;
+import javassist.ClassPool;
+
+import java.util.concurrent.TimeUnit;
+
+/**
+ * Steps to build and run demo application: &amp;lt;br /&amp;gt;
+ *
+ * &amp;lt;li&amp;gt;mvn clean package appassembler:assemble
+ * &amp;lt;li&amp;gt;target/appassembler/bin/app
+ *
+ */
+public class App {
+    /**
+     * We should use static block for OutOfMemoryError &amp;quot;initialization&amp;quot;
+     * It&amp;#39;s very important to have it. In other case JVM won&amp;#39;t be able to
+     * throw (actually create new OutOfMemoryError) this exception because
+     * there will be no free memory for this. That&amp;#39;s why we creating it beforehand.
+     * As you can see we intentionally added output to highlight that THIS error
+     * was produces by us.
+     */
+    static {
+        new OutOfMemoryError().printStackTrace();
+        try {
+            TimeUnit.SECONDS.sleep(1);
+            System.out.println(&amp;quot;=====================&amp;quot;);
+            System.out.println(&amp;quot;Initialized/created OutOfMemoryError&amp;quot;);
+            System.out.println(&amp;quot;=====================&amp;quot;);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        System.out.println(&amp;quot;Start dynamic class creation.....\n&amp;quot;);
+        for (int i = 0; i &amp;lt; 1000; i++) {
+            Class clazz = createClass(&amp;quot;MyClass&amp;quot; + i);
+            // we use this output as indicator to see the rough number of created classes
+            // it&amp;#39;s not necessary to print every single (just created) class
+            if(i % 50 == 0) System.out.println(clazz);
+        }
+    }
+
+    private static Class createClass(String className) throws CannotCompileException {
+        ClassPool pool = ClassPool.getDefault();
+        return pool.makeClass(className).toClass();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;Run the application&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ mvn clean package appassembler:assemble
+$ target/appassembler/bin/app
+java.lang.OutOfMemoryError
+	at com.mycompany.app.App.&amp;lt;clinit&amp;gt;(App.java:15)
+=====================
+Initialized/created OutOfMemoryError
+=====================
+Start dynamic class creation.....
+
+class MyClass0
+class MyClass50
+class MyClass100
+class MyClass150
+class MyClass200
+class MyClass250
+class MyClass300
+class MyClass350
+class MyClass400
+class MyClass450
+class MyClass500
+class MyClass550
+Exception in thread &amp;quot;Reference Handler&amp;quot; java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:140)
+Exception in thread &amp;quot;main&amp;quot; java.lang.OutOfMemoryError: PermGen space
+	at javassist.ClassPool.toClass(ClassPool.java:1089)
+	at javassist.ClassPool.toClass(ClassPool.java:1032)
+	at javassist.ClassPool.toClass(ClassPool.java:990)
+	at javassist.CtClass.toClass(CtClass.java:1125)
+	at com.mycompany.app.App.createClass(App.java:36)
+	at com.mycompany.app.App.main(App.java:29)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The next command runs under the hood:&lt;br/&gt;&lt;code&gt;java -XX:PermSize=2M -XX:MaxPermSize=4M -classpath &amp;quot;$CLASSPATH&amp;quot; com.mycompany.app.App&lt;/code&gt;&lt;/p&gt;&lt;p&gt;As you can see it was possible to create about 550 &lt;code&gt;MyClass&lt;/code&gt; classes before we&apos;ve got an expected error.&lt;/p&gt;&lt;h3&gt;Tomcat Leaks&lt;/h3&gt;&lt;p&gt;Tomcat team created a nice &lt;a href=&quot;http://wiki.apache.org/tomcat/MemoryLeakProtection&quot;&gt;wiki page&lt;/a&gt; where listed and shown the situations where leaks can be detected and fixed.&lt;/p&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://plumbr.eu/blog/what-is-a-permgen-leak&quot;&gt;What is a PermGen leak?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://plumbr.eu/blog/how-not-to-create-a-permgen-leak&quot;&gt;How (not) to create a permgen leak?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.infoq.com/articles/Java-PERMGEN-Removed&quot;&gt;Where Has the Java PermGen Gone?&lt;/a&gt; PermGen is replace with Metaspace in Java 8&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blogs.oracle.com/jonthecollector/entry/presenting_the_permanent_generation&quot;&gt;Presenting the Permanent Generation&lt;/a&gt; General intro into the subject&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.javaranch.com/journal/200711/creating_java_classes_runtime_expression_evaluation.html&quot;&gt;Javassist - Creating Java classes at runtime for evaluating numerical expressions&lt;/a&gt; Small article how to create Java classes dynamically&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wiki.apache.org/tomcat/MemoryLeakProtection&quot;&gt;Tomcat Wiki MemoryLeakProtection&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>Scripting in Scala</title>
+      <link>http://halyph.com/blog/2015/02/03/scripting-in-scala.html</link>
+      <pubDate>Mon, 2 Feb 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2015/02/03/scripting-in-scala.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/scala.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;Scala language compiles sources code to Java bytecode. But, it has some nice scripting facilities. Let&apos;s review them.&lt;/p&gt;&lt;p&gt;So, the &lt;code&gt;scala&lt;/code&gt; command is also a shell-script wrapper around the java command.&lt;/p&gt;&lt;p&gt;According to official &lt;a href=&quot;http://www.scala-lang.org/files/archive/nightly/docs-2.10.1/manual/html/scala.html&quot;&gt;scala utility&lt;/a&gt; documentation (here highlighted only post-related notes):&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;code&gt;scala [ &amp;lt;option&amp;gt; ]... [ &amp;lt;torun&amp;gt; &amp;lt;argument&amp;gt;... ]&lt;/code&gt;&lt;/p&gt;&lt;p&gt;The &lt;code&gt;scala&lt;/code&gt; utility runs Scala code using a Java runtime environment. &lt;/p&gt;&lt;p&gt;If a &lt;strong&gt;script&lt;/strong&gt; file is specified to run, then the file is read and all Scala statements and declarations in the file are processed in order. Any arguments specified will be available via the argsvariable. &lt;/p&gt;&lt;p&gt;Script files may have an &lt;strong&gt;optional header&lt;/strong&gt; that is ignored if present. There are two ways to format the header: either beginning with #! and ending with !#, or beginning with ::#! and ending with ::!#.&lt;/p&gt;&lt;p&gt;Such a header must have each header boundary start at the beginning of a line. Headers can be used to make stand-alone script files, as shown in the examples below.&lt;/p&gt;&lt;p&gt;Here is a complete Scala script (**check.sh**) for Unix:&lt;/p&gt;
+  &lt;pre&gt;&lt;code&gt;#!/bin/sh
+exec scala &amp;quot;$0&amp;quot; &amp;quot;$@&amp;quot;
+!#
+Console.println(&amp;quot;Hello, world!&amp;quot;)
+argv.toList foreach Console.println
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here is a complete Scala script (**check.bat**) for MS Windows:&lt;/p&gt;
+  &lt;pre&gt;&lt;code&gt;::#!
+@echo off
+call scala %0 %*
+goto :eof
+::!#
+Console.println(&amp;quot;Hello, world!&amp;quot;)
+argv.toList foreach Console.println
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you want to use the compilation cache to speed up multiple executions of the script (**check.sh**), then add &lt;strong&gt;-savecompiled&lt;/strong&gt; to the scala command:&lt;/p&gt;
+  &lt;pre&gt;&lt;code&gt;#!/bin/sh
+exec scala -savecompiled &amp;quot;$0&amp;quot; &amp;quot;$@&amp;quot;
+!#
+Console.println(&amp;quot;Hello, world!&amp;quot;)
+argv.toList foreach Console.println
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;&lt;p&gt;These tricks give us an ability to run Scala script as plain shell script. Also, based on the setting above this script can have input parameters and &lt;em&gt;almost&lt;/em&gt; cross-platform (see script header differences for Linux &lt;strong&gt;.vs.&lt;/strong&gt; Windows).&lt;/p&gt;&lt;p&gt;Now, we should save the mentioned above code snippet in some file (e.g. &lt;strong&gt;check.sh&lt;/strong&gt;) and make it executable. This script can be run as any Linux shell script &lt;code&gt;./check.sh&lt;/code&gt; (&lt;code&gt;check.bat&lt;/code&gt; - Windows). &lt;/p&gt;&lt;h2&gt;Scala utility internals&lt;/h2&gt;&lt;h3&gt;Linux&lt;/h3&gt;&lt;p&gt;Linux script header uses the next items:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;#!&lt;/code&gt; it&apos;s &lt;a href=&quot;http://en.wikipedia.org/wiki/Shebang_(Unix)&quot;&gt;shebang&lt;/a&gt; interpreter directive&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;exec&lt;/code&gt; is used to run &lt;code&gt;scala&lt;/code&gt; without creation new process. Commands which go right after &lt;code&gt;exec&lt;/code&gt; will not be executed&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;!#&lt;/code&gt; is simple marker for &lt;code&gt;scala&lt;/code&gt; utility (see notes below)&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;E.g.&lt;br/&gt;This script &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#! /bin/sh
+echo Header
+exec echo
+!#
+echo Body
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;will have the next output&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./test.sh
+Header
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We will get error in case &lt;code&gt;exec&lt;/code&gt; is removed:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#! /bin/sh
+echo Header
+!#
+echo Body
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Output&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./test.sh
+Header
+./test.sh: line 4: !#: command not found
+Body
+
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;Windows&lt;/h3&gt;&lt;p&gt;Windows batch script header uses the next items:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;::&lt;/code&gt; is a remark without displaying or executing that line when the batch file is run (see &lt;a href=&quot;http://www.computerhope.com/batch.htm&quot;&gt;Information on batch files&lt;/a&gt;).&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;::#!&lt;/code&gt; is simple marker for &lt;code&gt;scala&lt;/code&gt; utility (see notes below)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;@echo off&lt;/code&gt; disable echo&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;call&lt;/code&gt; calls one batch program from another.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;goto :eof&lt;/code&gt; go to end of file&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;::!#&lt;/code&gt; is simple marker for &lt;code&gt;scala&lt;/code&gt; utility (see notes below)&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;The OS-specific script settings were identified, now let&apos;s dive deeper to understand how &lt;code&gt;scala&lt;/code&gt; utility works.&lt;/p&gt;&lt;h3&gt;&lt;code&gt;scala&lt;/code&gt; internals&lt;/h3&gt;&lt;p&gt;This utility performs the next flow to run script:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Run &lt;code&gt;scala.tools.nsc.MainGenericRunner#process&lt;/code&gt; and identify run target &quot;as Script&quot; (there are other targets) &lt;code&gt;ScriptRunner.runScriptAndCatch(settings, thingToRun, command.arguments)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;ScriptRunner&lt;/code&gt; creates temp file &lt;code&gt;File.makeTemp(&amp;quot;scalacmd&amp;quot;, &amp;quot;.scala&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Run compiler and clean script header&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;class ScriptRunner extends HasCompileSocket {
+...
+  private def withCompiledScript(
+      settings: GenericRunnerSettings,
+      scriptFile: String)
+      (handler: String =&amp;gt; Boolean): Boolean =
+    {
+      def mainClass = scriptMain(settings)
+  
+         val compiler = newGlobal(settings, reporter)
+         new compiler.Run compile List(scriptFile)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;class Global
+    /** If this compilation is scripted, convert the source to a script source. */
+    private def scripted(s: SourceFile) = s match {
+      case b: BatchSourceFile if settings.script.isSetByUser =&amp;gt; ScriptSourceFile(b)
+      case _ =&amp;gt; s
+    }
+
+    /** Compile abstract file until `globalPhase`, but at least
+     *  to phase &amp;quot;namer&amp;quot;.
+     */
+    def compileLate(file: AbstractFile) {
+      if (!compiledFiles(file.path))
+        compileLate(new CompilationUnit(scripted(getSourceFile(file))))
+    }
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+  &lt;li&gt;Cleanup shell script (remove header) via &lt;code&gt;SourceFile&lt;/code&gt;. Now, it&apos;s clear why script&apos;s header have such &lt;em&gt;strange&lt;/em&gt; closing markers (see line 21, &lt;code&gt;content drop headerLen&lt;/code&gt; - actual header remove)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;object ScriptSourceFile {
+  /** Length of the script header from the given content, if there is one.
+   *  The header begins with &amp;quot;#!&amp;quot; or &amp;quot;::#!&amp;quot; and ends with a line starting
+   *  with &amp;quot;!#&amp;quot; or &amp;quot;::!#&amp;quot;.
+   */
+  def headerLength(cs: Array[Char]): Int = {
+    val headerPattern = Pattern.compile(&amp;quot;&amp;quot;&amp;quot;((?m)^(::)?!#.*|^.*/env .*)(\r|\n|\r\n)&amp;quot;&amp;quot;&amp;quot;)
+    val headerStarts  = List(&amp;quot;#!&amp;quot;, &amp;quot;::#!&amp;quot;)
+
+    if (headerStarts exists (cs startsWith _)) {
+      val matcher = headerPattern matcher cs.mkString
+      if (matcher.find) matcher.end
+      else throw new IOException(&amp;quot;script file does not close its header with !# or ::!#&amp;quot;)
+    }
+    else 0
+  }
+
+  def apply(file: AbstractFile, content: Array[Char]) = {
+    val underlying = new BatchSourceFile(file, content)
+    val headerLen = headerLength(content)
+    val stripped = new ScriptSourceFile(underlying, content drop headerLen, headerLen)
+
+    stripped
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;Add libraries to Scala script&lt;/h2&gt;&lt;p&gt;Scala script libraries (**jar**s) can be added in script&apos;s header section:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/sh
+exec scala -classpath &amp;quot;lib/lib.1.jar:lib/lib.2.jar&amp;quot; &amp;quot;$0&amp;quot; &amp;quot;$@&amp;quot;
+!#
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;Summary&lt;/h2&gt;&lt;p&gt;There is nothing magical in Scala interpretation. Every single peace of code must be compiled. Such interesting &lt;em&gt;scripting&lt;/em&gt; approach can be applied to Java as well.&lt;/p&gt;&lt;p&gt;Unfortunately, Scala is not looks like nice scripting language (because it&apos;s &lt;strong&gt;not&lt;/strong&gt; designed for this use case). It will be uncomfortable &quot;scripting&quot; in Scala without IDE.&lt;/p&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://timperrett.com/2011/08/01/system-scripting-with-scala/&quot;&gt;System Scripting with Scala&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.scala-lang.org/files/archive/nightly/docs-2.10.1/manual/html/scala.html&quot;&gt;scala utility&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Shebang_(Unix)&quot;&gt;shebang&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.computerhope.com/batch.htm&quot;&gt;Information on batch files&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Scala Sources:
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;https://github.com/scala/scala/blob/v2.11.5/src/compiler/scala/tools/nsc/ScriptRunner.scala#&quot;&gt;ScriptRunner.scala&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://github.com/scala/scala/blob/v2.11.5/src/reflect/scala/reflect/internal/util/SourceFile.scala&quot;&gt;SourceFile.scala&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://github.com/scala/scala/blob/v2.11.5/src/compiler/scala/tools/nsc/Global.scala&quot;&gt;Global.scala&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>How to Use Embedded H2 with web Console?</title>
+      <link>http://halyph.com/blog/2015/01/22/how-to-use-embedded-h2-with-h2-console.html</link>
+      <pubDate>Thu, 22 Jan 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2015/01/22/how-to-use-embedded-h2-with-h2-console.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;There are several Java SQL databases which supports both server and embedded modes: &lt;a href=&quot;http://www.h2database.com/&quot;&gt;H2&lt;/a&gt;, &lt;a href=&quot;http://hsqldb.org/&quot;&gt;HSQLDB&lt;/a&gt; and &lt;a href=&quot;http://db.apache.org/derby/&quot;&gt;Derby&lt;/a&gt;. The most interesting for me is H2 with own web &lt;a href=&quot;http://www.h2database.com/html/quickstart.html#h2_console&quot;&gt;Console&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;The aim of this post is to show how to connect from H2 Console to embedded in-memory H2.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;H2 currently supports three servers: a web server (for the H2 Console), a TCP server (for client/server connections) and an PG server (for PostgreSQL clients). &lt;strong&gt;Please note that only the web server supports browser connections.&lt;/strong&gt; The servers can be started in different ways, one is using the Server tool. Starting the server doesn&apos;t open a database - databases are opened as soon as a client connects.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;The next steps have to be performed to connect to embedded DB and populate initial data:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Load DB driver&lt;/li&gt;
+  &lt;li&gt;Get &lt;code&gt;Connection&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Create &lt;code&gt;Statement&lt;/code&gt; and &lt;code&gt;executeUpate&lt;/code&gt; queries&lt;/li&gt;
+  &lt;li&gt;Create TCP &lt;code&gt;Server&lt;/code&gt;. &lt;em&gt;We should start serve to make in-memory DB available for another process&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;h3&gt;Let&apos;s try to implement this:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Run sample application&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;br/&gt;public class App {
+    private static final String DBNAME = &amp;quot;mytest&amp;quot;;
+
+    public static void main(String[] args) throws ClassNotFoundException, SQLException, IOException {
+        // open the in-memory database within a VM
+
+        Class.forName(&amp;quot;org.h2.Driver&amp;quot;); // (1)
+        Connection conn 
+			= DriverManager.getConnection(&amp;quot;jdbc:h2:mem:&amp;quot; + DBNAME, &amp;quot;sa&amp;quot;, &amp;quot;sa&amp;quot;); // (2)
+        // username:password are very important and must be used for connecting via H2 Console
+
+        Statement stat = conn.createStatement(); // (3)
+        stat.executeUpdate(&amp;quot;create table mytbl(id int primary key, name varchar(255))&amp;quot;);
+        stat.executeUpdate(&amp;quot;insert into mytbl values(1, &amp;#39;Hello&amp;#39;)&amp;quot;);
+        stat.executeUpdate(&amp;quot;insert into mytbl values(2, &amp;#39;World&amp;#39;)&amp;quot;);
+
+        // Verify that sample data was really inserted
+        ResultSet rs = stat.executeQuery(&amp;quot;select * from mytbl&amp;quot;);
+        System.out.println(&amp;quot;ResultSet output:&amp;quot;);
+        while (rs.next()) {
+            System.out.println(&amp;quot;&amp;gt; &amp;quot; + rs.getString(&amp;quot;name&amp;quot;));
+        }
+
+        // start a TCP server
+        Server server = Server.createTcpServer().start(); // (4)
+        // .. use in embedded mode ..
+
+        // or use it from another process:
+        System.out.println(&amp;quot;Server started and connection is open.&amp;quot;);
+        System.out.println(&amp;quot;URL: jdbc:h2:&amp;quot; + server.getURL() + &amp;quot;/mem:&amp;quot; + DBNAME);
+
+        System.out.println(&amp;quot;\n&amp;quot;);
+        System.out.println(
+                &amp;quot;now start the H2 Console in another process using:\n&amp;quot; +
+                &amp;quot;$ cd h2/bin; java -cp h2-1.4.185.jar org.h2.tools.Console -web -browser&amp;quot;);
+
+        System.out.println(&amp;quot;Press [Enter] to stop.&amp;quot;);
+        System.in.read();
+
+        System.out.println(&amp;quot;Stopping server and closing the connection&amp;quot;);
+
+        rs.close();
+        server.stop();
+        conn.close();
+        System.out.println(&amp;quot;Server is STOPPED&amp;quot;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;Output for previous run:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;ResultSet output:
+&amp;gt; Hello
+&amp;gt; World
+Server started and connection is open.
+URL: jdbc:h2:tcp://192.168.1.100:9092/mem:mytest
+
+
+now start the H2 Console in another process using:
+$ cd h2/bin; java -cp h2-1.4.185.jar org.h2.tools.Console -web -browser
+Press [Enter] to stop.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;We assume that h2 installation bundle (zip file) was downloaded (from &lt;a href=&quot;http://www.h2database.com/html/download.html&quot;&gt;http://www.h2database.com/html/download.html&lt;/a&gt;) beforehand and unpacked in some folder&lt;/li&gt;
+  &lt;li&gt;Go into H2 &quot;install/unpack&quot; folder and run the next command &lt;code&gt;cd h2/bin; java -cp h2-1.4.185.jar org.h2.tools.Console -web -browser&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Now we should copy URL (from sample App output) and credentials sa/sa to login into Console
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;URL:&lt;/strong&gt; jdbc:h2:&lt;a href=&quot;tcp://192.168.1.100:9092/mem:mytest&quot;&gt;tcp://192.168.1.100:9092/mem:mytest&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Username:&lt;/strong&gt; sa&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Password:&lt;/strong&gt; sa&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Login window (opened from shell by &lt;code&gt;org.h2.tools.Console&lt;/code&gt;)&lt;br/&gt;&lt;img src=&quot;/images/posts/h2console_login.png&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Verify that our custom table contains just inserted values&lt;br/&gt;&lt;img src=&quot;/images/posts/h2console_sqlwindow.png&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;h3&gt;Add Embedded TCP and Web Servers&lt;/h3&gt;&lt;p&gt;Now, it&apos;s time to add small improvements.&lt;br/&gt;The idea is to switch &lt;em&gt;on&lt;/em&gt; H2 Console &lt;strong&gt;Web Server&lt;/strong&gt; and &lt;strong&gt;TCP Server&lt;/strong&gt; to have external access.&lt;br/&gt;We should add/update item (4) in previous code snippets like this &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;public class App {
+    private static final String DBNAME = &amp;quot;mytest&amp;quot;;
+
+    public static void main(String[] args) throws ClassNotFoundException, SQLException, IOException {
+...
+
+        Server webServer = Server.createWebServer(&amp;quot;-webAllowOthers&amp;quot;,&amp;quot;-webPort&amp;quot;,&amp;quot;8082&amp;quot;).start(); // (4a)
+        Server server = Server.createTcpServer(&amp;quot;-tcpAllowOthers&amp;quot;,&amp;quot;-tcpPort&amp;quot;,&amp;quot;9092&amp;quot;).start();    // (4b)
+        // .. use in embedded mode ..
+...
+        server.stop();
+        webServer.stop();
+        conn.close();
+        System.out.println(&amp;quot;Server is STOPPED&amp;quot;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;After this we can access to Web Console without running external service
+  &lt;ul&gt;
+    &lt;li&gt;Simply use URL in browser (access to &lt;strong&gt;Web Server&lt;/strong&gt;): &lt;a href=&quot;http://localhost:8082/&quot;&gt;http://localhost:8082/&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Use any JDBC client (see IntelliJ IDEA as a sample below)
+  &lt;ul&gt;
+    &lt;li&gt;access to &lt;strong&gt;TCP Server&lt;/strong&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/h2console_idea.png&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;h2&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/5077584/h2-database-in-memory-mode-cannot-be-accessed-by-console&quot;&gt;H2 database in memory mode cannot be accessed by Console&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.h2database.com/html/tutorial.html&quot;&gt;Official H2 Tutorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://h2database.com/javadoc/org/h2/tools/Server.html&quot;&gt;H2 Server methods&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/halyph/tutorials/tree/master/h2-embedded-console&quot;&gt;GitHub Sources&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+	</description>
+    </item>
+    <item>
+      <title>How to Fix Textmate OSX Yosemite ruby 1.8 issues?</title>
+      <link>http://halyph.com/blog/2014/11/16/how-to-fix-textmate-osx-yosemite-ruby-1-dot-8-issues.html</link>
+      <pubDate>Sun, 16 Nov 2014 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2014/11/16/how-to-fix-textmate-osx-yosemite-ruby-1-dot-8-issues.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/textmate.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;Textmate 2.0 is using Ruby 1.8 in own bundles. OSX Yosemite dropped Ruby 1.8 as default Ruby implementation, now it&apos;s Ruby 2.0. Based on this all Textmate ruby-based (legacy) bundles do not work. It can be fixed in several steps:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Install Ruby 1.8.x via some Ruby version manager (e.g. rvm)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ rvm install 1.8
+Warning! Requested ruby installation which requires another ruby available - installing ruby-1.8.7-p374 first.
+
+Checking requirements for osx.
+Installing requirements for osx.
+Updating system...........
+Installing required custom packages: homebrew/versions homebrew/versions.
+Installing required packages: libtool, gcc48, libyaml, libksba, openssl098.....-Certificates in &amp;#39;/usr/local/etc/openssl/cert.pem&amp;#39; are already up to date.
+Requirements installation successful.
+Installing Ruby from source to: /Users/halyph/.rvm/rubies/ruby-1.8.7-p374, this may take a while depending on your cpu(s)...
+ruby-1.8.7-p374 - #downloading ruby-1.8.7-p374, this may take a while depending on your connection...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 4150k  100 4150k    0     0   279k      0  0:00:14  0:00:14 --:--:--  326k
+ruby-1.8.7-p374 - #extracting ruby-1.8.7-p374 to /Users/halyph/.rvm/src/ruby-1.8.7-p374....
+ruby-1.8.7-p374 - #applying patch /Users/halyph/.rvm/patches/ruby/1.8.7/stdout-rouge-fix.patch.
+ruby-1.8.7-p374 - #applying patch /Users/halyph/.rvm/patches/ruby/1.8.7/no_sslv2.diff.
+ruby-1.8.7-p374 - #applying patch /Users/halyph/.rvm/patches/ruby/GH-488.patch.
+ruby-1.8.7-p374 - #applying patch /Users/halyph/.rvm/patches/ruby/ssl_no_ec2m.patch.
+ruby-1.8.7-p374 - #configuring...............................
+ruby-1.8.7-p374 - #post-configuration.
+ruby-1.8.7-p374 - #compiling....................................................
+ruby-1.8.7-p374 - #installing.
+ruby-1.8.7-p374 - #making binaries executable..
+ruby-1.8.7-p374 - #downloading rubygems-2.0.14
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  329k  100  329k    0     0   108k      0  0:00:03  0:00:03 --:--:--  108k
+ruby-1.8.7-p374 - #extracting rubygems-2.0.14....
+ruby-1.8.7-p374 - #removing old rubygems.........
+ruby-1.8.7-p374 - #installing rubygems-2.0.14..................................|
+ruby-1.8.7-p374 - #gemset created /Users/halyph/.rvm/gems/ruby-1.8.7-p374@global
+ruby-1.8.7-p374 - #importing gemset /Users/halyph/.rvm/gemsets/ruby/1.8.7/global.gems..............................................................
+ruby-1.8.7-p374 - #generating global wrappers........
+ruby-1.8.7-p374 - #gemset created /Users/halyph/.rvm/gems/ruby-1.8.7-p374
+ruby-1.8.7-p374 - #importing gemsetfile /Users/halyph/.rvm/gemsets/default.gems evaluated to empty gem list
+ruby-1.8.7-p374 - #generating default wrappers........
+ruby-1.8.7-p374 - #adjusting #shebangs for (gem irb erb ri rdoc testrb rake).
+Install of ruby-1.8.7-p374 - #complete
+WARNING: Please be aware that you just installed a ruby that is no longer maintained (2014-02-23), for a list of maintained rubies visit:
+
+    http://bugs.ruby-lang.org/projects/ruby/wiki/ReleaseEngineering
+
+Please consider upgrading to ruby-2.1.4 which will have all of the latest security patches.
+Ruby was built without documentation, to build it run: rvm docs generate-ri
+Checking requirements for osx.
+Certificates in &amp;#39;/usr/local/etc/openssl/cert.pem&amp;#39; are already up to date.
+Requirements installation successful.
+Installing Ruby from source to: /Users/halyph/.rvm/rubies/ruby-1.8.7-head, this may take a while depending on your cpu(s)...
+Cloning from git://github.com/ruby/ruby.git, this may take a while depending on your connection.
+HEAD is now at 2a9ea11 * lib/webrick/server.rb (initialize): Initialize shutdown pipe here
+Branch ruby_1_8_7 set up to track remote branch ruby_1_8_7 from origin.
+Switched to a new branch &amp;#39;ruby_1_8_7&amp;#39;
+Copying from repo to src path...
+ruby-1.8.7-head - #applying patch /Users/halyph/.rvm/patches/ruby/1.8.7/stdout-rouge-fix.patch.
+ruby-1.8.7-head - #applying patch /Users/halyph/.rvm/patches/ruby/1.8.7/no_sslv2.diff.
+ruby-1.8.7-head - #applying patch /Users/halyph/.rvm/patches/ruby/ssl_no_ec2m.patch.
+ruby-1.8.7-head - #autoreconf.
+ruby-1.8.7-head - #configuring...............................
+ruby-1.8.7-head - #post-configuration.
+ruby-1.8.7-head - #compiling...................................................|
+ruby-1.8.7-head - #installing.
+ruby-1.8.7-head - #making binaries executable..
+ruby-1.8.7-head - #downloading rubygems-2.0.14
+ruby-1.8.7-head - #extracting rubygems-2.0.14.....
+ruby-1.8.7-head - #removing old rubygems.........
+ruby-1.8.7-head - #installing rubygems-2.0.14..................................|
+ruby-1.8.7-head - #gemset created /Users/halyph/.rvm/gems/ruby-1.8.7-head@global
+ruby-1.8.7-head - #importing gemset /Users/halyph/.rvm/gemsets/ruby/1.8.7/global.gems..............................................................
+ruby-1.8.7-head - #generating global wrappers........
+ruby-1.8.7-head - #gemset created /Users/halyph/.rvm/gems/ruby-1.8.7-head
+ruby-1.8.7-head - #importing gemsetfile /Users/halyph/.rvm/gemsets/default.gems evaluated to empty gem list
+ruby-1.8.7-head - #generating default wrappers........
+ruby-1.8.7-head - #adjusting #shebangs for (gem irb erb ri rdoc testrb rake).
+Install of ruby-1.8.7-head - #complete
+Please be aware that you just installed a ruby that requires        3 patches just to be compiled on an up to date linux system.
+This may have known and unaccounted for security vulnerabilities.
+Please consider upgrading to ruby-2.1.4 which will have all of the latest security patches.
+Ruby was built without documentation, to build it run: rvm docs generate-ri
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;p&gt;Update Textmate preferences&lt;br/&gt;&lt;img src=&quot;/images/posts/textmate_prefs_ruby.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Verify &quot;updated&quot; Textmate settings via some ruby-based bundles,&lt;br/&gt;e.g. &lt;code&gt;Bundles-&amp;gt;Text-&amp;gt;Duplicate Line&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</description>
+    </item>
+    <item>
+      <title>Switching to Textmate 2</title>
+      <link>http://halyph.com/blog/2014/10/20/switching-to-textmate-2.html</link>
+      <pubDate>Mon, 20 Oct 2014 00:00:00 +0300</pubDate>
+      <guid isPermaLink="false">blog/2014/10/20/switching-to-textmate-2.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/textmate.png&quot; alt=&quot;blog_post_image&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;Recently I&apos;ve decided to switch from Sublime Text editor to &lt;a href=&quot;http://macromates.com&quot;&gt;TextMate 2&lt;/a&gt;. At the beginning of &lt;a href=&quot;http://rubyonrails.org/&quot;&gt;Rails&lt;/a&gt; &quot;era&quot; it was the sexiest text editor in the world. But, at that time, I was a Windows user ;-)&lt;/p&gt;&lt;p&gt;I was inspired by &lt;a href=&quot;http://blog.agiledeveloper.com/&quot;&gt;Venkat Subramaniam&lt;/a&gt; to make this switch in 2014. Dr. Venkant is using Textmate during his conference live coding for years. &lt;/p&gt;&lt;p&gt;Additional argument for switching is the fact that Textmate 2 is &lt;a href=&quot;https://github.com/textmate/textmate&quot;&gt;open sourced&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Here is the list of articles which I highly recommend for Textmate newcomers:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://hiltmon.com/blog/2013/11/09/textmate-2-basics/&quot;&gt;TextMate 2 Basics&lt;/a&gt; it&apos;s basic tips for using TextMate&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://hiltmon.com/blog/2014/01/20/more-textmate-2-basics/&quot;&gt;More TextMate 2 Basics&lt;/a&gt; additional usage tips&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://hiltmon.com/blog/2013/04/15/my-textmate-2-setup/&quot;&gt;My TextMate 2 Setup&lt;/a&gt; shows how to tweak TextMate properties per user or per project&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://nofluffjuststuff.com/blog/venkat_subramaniam/2007/10/tweaking_textmate_groovy_bundle&quot;&gt;Tweaking TextMate Groovy Bundle&lt;/a&gt; and &lt;a href=&quot;http://nofluffjuststuff.com/blog/venkat_subramaniam/2008/02/tweaking_textmate_ruby_bundle_run_command&quot;&gt;Tweaking TextMate Ruby Bundle Run Command&lt;/a&gt; it&apos;s famous Dr. Venkat TextMate setting for showing program run results as tooltips (highly recommended settings). Also, you can see how to configure these setting in this screencast &lt;a href=&quot;https://www.agilelearner.com/presentation/5&quot;&gt;Running in TextMate&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://manual.macromates.com/en/&quot;&gt;TextMate Manual&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Don&apos;t forget to share your TextMate links, article, tips, hacks, etc.&lt;/p&gt;
+	</description>
+    </item>
+    <item>
+      <title>How to use block comments in Bash Script</title>
+      <link>http://halyph.com/blog/2014/10/09/bash-block-comments.html</link>
+      <pubDate>Thu, 9 Oct 2014 00:00:00 +0300</pubDate>
+      <guid isPermaLink="false">blog/2014/10/09/bash-block-comments.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/bash.png&quot; alt=&quot;blog_post_image_inline&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;What is the simplest way to define block comment in Bash script?&lt;/p&gt;&lt;p&gt;I&apos;ve selected two approaches for myself:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Use here document&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;#!/usr/bin/env bash
+
+echo &amp;quot;before block comment&amp;quot;
+: &amp;lt;&amp;lt;&amp;#39;END&amp;#39;
+Some long 
+myltiline 
+text
+END
+echo &amp;quot;after block comment&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;Use &lt;strong&gt;&quot;if&quot;&lt;/strong&gt; false block&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;#!/usr/bin/env bash
+
+echo &amp;quot;before block comment&amp;quot;
+if [ ]; then 
+Some long 
+myltiline 
+text
+fi
+echo &amp;quot;after block comment&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+	</description>
+    </item>
+    <item>
+      <title>Migration to Octopress</title>
+      <link>http://halyph.com/blog/2014/09/07/migration-to-octopress.html</link>
+      <pubDate>Sun, 7 Sep 2014 00:00:00 +0300</pubDate>
+      <guid isPermaLink="false">blog/2014/09/07/migration-to-octopress.html</guid>
+      	<description>
+	&lt;h2&gt;Objectives&lt;/h2&gt;&lt;p&gt;I&apos;ve been blogging for several years (2009-2014) using Google Blogger &lt;a href=&quot;http://halyph.blogspot.com&quot;&gt;My old blogspot blog&lt;/a&gt;. It was a great experience. But, I always felt some discomfort.&lt;br/&gt;I couldn&apos;t simply write without thinking how it will be rendered. I was distracted by blog engine. &lt;/p&gt;&lt;h2&gt;Moving away&lt;/h2&gt;&lt;p&gt;Additional inspiration for moving away came from the essay &lt;a href=&quot;http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html&quot;&gt;Blogging Like a Hacker&lt;/a&gt;.&lt;br/&gt;Finally, I made a decision to use GitHub Pages for blogging. There were two choices: &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; or &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt;.&lt;br/&gt;I picked Octopress because of the pre-bundled minimal required blogging features. &lt;em&gt;I.e.&lt;/em&gt; it&apos;s not required the additional configuration to start blogging right away.&lt;/p&gt;&lt;p&gt;The official Octopress &lt;a href=&quot;http://octopress.org/docs/&quot;&gt;documentation&lt;/a&gt; has step-by-step guide for blog setup. It&apos;s very convenient and transparent.&lt;/p&gt;&lt;h2&gt;Theme&lt;/h2&gt;&lt;p&gt;I didn&apos;t want to use the default Octopress theme (it&apos;s boring). Theme customization required some time. All others free themes are too complex, IMHO.&lt;/p&gt;&lt;p&gt;At the end I found this &lt;a href=&quot;http://blog.justin.kelly.org.au/octopress-theme/&quot;&gt;theme&lt;/a&gt; and applied it to my &lt;em&gt;new&lt;/em&gt; blog. &lt;/p&gt;&lt;h2&gt;Main features&lt;/h2&gt;&lt;p&gt;Here I selected the main features which I like the most:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;markdown for blogging&lt;/li&gt;
+  &lt;li&gt;simple code snippets insertion&lt;/li&gt;
+  &lt;li&gt;full blog customization&lt;/li&gt;
+  &lt;li&gt;Ruby at the bottom (I love this language)&lt;/li&gt;
+  &lt;li&gt;ability to use your favorite text editor (Textmate in my case) for blogging&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;Minor Issues&lt;/h3&gt;&lt;p&gt;I&apos;ve tried to migrate posts form my old blog to Octopress, tried different approaches. But, I had no success. Actually, I had ugly results, which should be manually fixed.&lt;/p&gt;&lt;h3&gt;P.S.&lt;/h3&gt;&lt;p&gt;There are tons of different Static Site Generators, see the next resources:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.staticgen.com/&quot;&gt;Top Open-Source Static Site Generators&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://staticsitegenerators.net/&quot;&gt;Static Site Generators, The definitive listing of Static Site Generators — all 298 of them!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;But, Jekyll and Octopress are at the top.&lt;/p&gt;
+	</description>
+    </item>
+
+  </channel> 
+</rss>

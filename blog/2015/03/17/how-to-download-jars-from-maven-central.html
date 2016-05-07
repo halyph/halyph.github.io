@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>How to download jars from Maven Central</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../css/asciidoctor.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link href="../../../../css/prettify.css" rel="stylesheet">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../../../">@halyph</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../../../../index.html">Home</a></li>
+            <li><a href="../../../../archive.html">Archive</a></li>
+            <li><a href="../../../../feed.xml">Subscribe</a></li>
+             <!--
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            -->
+          </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://github.com/halyph"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://twitter.com/halyph"><i class="fa fa-twitter"></i></a>
+            </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">	
+	<div class="page-header">
+		<h1>How to download jars from Maven Central</h1>
+	</div>
+
+	<p><em>17 March 2015</em></p>
+
+	<p><em>Tags: </em>
+		<a href="/tags/maven.html">maven</a> | 
+	</em>
+		<a href="/tags/ivy.html">ivy</a> | 
+	</em>
+		<a href="/tags/java.html">java</a> | 
+	</p>
+
+	<p><p>We know how to download Java libraries with it's dependencies (transitive included) via Maven <em>pom.xml</em>, Ant/Ivy <em>build.xml</em> script, Gradle <em>build.gradle</em> script etc.<br/>But what if we need to download them without these scripts.</p><p>There are several ways to do this.<br/>Assume that we'd like to download <code>spark-core</code> library (<code>groupId=com.sparkjava, artifactId=spark-core, version=2.1</code>) with all dependencies from <a href="http://search.maven.org/#artifactdetails%7Ccom.sparkjava%7Cspark-core%7C2.1%7Cjar">Maven Central</a> into <code>lib</code> folder.</p><h2>Use Maven3 dependency plugin</h2><p>Here is there variants for lib download:</p>
+<pre><code class="bash Download library with all dependencies"># Specify repoUrl (it&#39;s optional)
+mvn dependency:get -DrepoUrl=http://download.java.net/maven/2/ -DgroupId=com.sparkjava -DartifactId=spark-core -Dversion=2.1
+
+# OR use default repoUrl
+mvn dependency:get -DgroupId=com.sparkjava -DartifactId=spark-core -Dversion=2.1
+
+# OR use parameter artifact as groupId:artifactId:version
+mvn dependency:get -Dartifact=com.sparkjava:spark-core:2.1
+</code></pre><p>Now we need to copy just downloaded artifacts in our working directory:</p>
+<pre><code class="bash Copy jars from local maven repo">mvn dependency:copy-dependencies -f $HOME/.m2/repository/com/sparkjava/spark-core/2.1/spark-core-2.1.pom -DoutputDirectory=$(pwd)/lib
+# the previous command doesn&#39;t copy spark-core-x.x.jar, that&#39;s why we should copy it manually
+cp $HOME/.m2/repository/com/sparkjava/spark-core/2.1/spark-core-2.1.jar $(pwd)/lib
+</code></pre><h2>Use standalone Ivy</h2><p>We can use Ivy as standalone jar to download Maven dependencies without creating Ant build file:</p>
+<pre><code class="bash"># 1. Download the latest ivy jar (currently it&#39;s v.2.4.0)
+curl -L -O http://search.maven.org/remotecontent?filepath=org/apache/ivy/ivy/2.4.0/ivy-2.4.0.jar
+
+# 2. Run ivy.jar to retrieve all dependencies
+java -jar ivy-2.4.0.jar -dependency com.sparkjava spark-core 2.1 -retrieve &quot;lib/[artifact]-[revision](-[classifier]).[ext]&quot;
+</code></pre><p>As you can see Ivy downloads approach is much simpler. The only cons (or pros, it depends) that <strong>ivy.jar</strong> should be additionally downloaded.</p><h2>Calling Ivy from Groovy or Java</h2><p>Here I've decided to store <a href="http://makandracards.com/evgeny-goldin/5817-calling-ivy-from-groovy-or-java">Evgeny's Goldin</a> code snippet as a reference for myself. Programmatic artifacts downloads is not a common operation. It's alway nice to know the general concept how it can be done. Especially when Ivy documentation is not very informative.</p>
+<pre><code class="java Groovy snippet of calling Ivy">import org.apache.ivy.Ivy
+import org.apache.ivy.core.module.descriptor.DefaultDependencyDescriptor
+import org.apache.ivy.core.module.descriptor.DefaultModuleDescriptor
+import org.apache.ivy.core.module.id.ModuleRevisionId
+import org.apache.ivy.core.resolve.ResolveOptions
+import org.apache.ivy.core.settings.IvySettings
+import org.apache.ivy.plugins.resolver.URLResolver
+import org.apache.ivy.core.report.ResolveReport
+import org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriter
+
+
+public File resolveArtifact(String groupId, String artifactId, String version) {
+        //creates clear ivy settings
+        IvySettings ivySettings = new IvySettings();
+        //url resolver for configuration of maven repo
+        URLResolver resolver = new URLResolver();
+        resolver.setM2compatible(true);
+        resolver.setName(&#39;central&#39;);
+        //you can specify the url resolution pattern strategy
+        resolver.addArtifactPattern(
+            &#39;http://repo1.maven.org/maven2/[organisation]/[module]/[revision]/[artifact](-[revision]).[ext]&#39;);
+        //adding maven repo resolver
+        ivySettings.addResolver(resolver);
+        //set to the default resolver
+        ivySettings.setDefaultResolver(resolver.getName());
+        //creates an Ivy instance with settings
+        Ivy ivy = Ivy.newInstance(ivySettings);
+
+        File ivyfile = File.createTempFile(&#39;ivy&#39;, &#39;.xml&#39;);
+        ivyfile.deleteOnExit();
+
+        String[] dep = [groupId, artifactId, version]
+
+        DefaultModuleDescriptor md =
+                DefaultModuleDescriptor.newDefaultInstance(ModuleRevisionId.newInstance(dep[0],
+                dep[1] + &#39;-caller&#39;, &#39;working&#39;));
+
+        DefaultDependencyDescriptor dd = new DefaultDependencyDescriptor(md,
+                ModuleRevisionId.newInstance(dep[0], dep[1], dep[2]), false, false, true);
+        md.addDependency(dd);
+
+        //creates an ivy configuration file
+        XmlModuleDescriptorWriter.write(md, ivyfile);
+
+        String[] confs = [&#39;default&#39;];
+        ResolveOptions resolveOptions = new ResolveOptions().setConfs(confs);
+
+        //init resolve report
+        ResolveReport report = ivy.resolve(ivyfile.toURL(), resolveOptions);
+
+        //so you can get the jar library
+        File jarArtifactFile = report.getAllArtifactsReports()[0].getLocalFile();
+
+        return jarArtifactFile;
+}
+
+resolveArtifact( &#39;log4j&#39;, &#39;log4j&#39;, &#39;1.2.16&#39; )
+</code></pre><h2>References</h2>
+<ul>
+  <li><a href="http://stackoverflow.com/questions/15450383/using-maven-to-download-dependencies-to-a-directory-on-the-command-line/15456621">Using Maven to download dependencies to a directory on the command line - Stack Overflow</a></li>
+  <li><a href="http://stackoverflow.com/questions/15598612/simplest-ivy-code-to-programmatically-retrieve-dependency-from-maven-central">Simplest Ivy code to programmatically retrieve dependency from Maven Central - Stack Overflow</a></li>
+  <li><a href="http://makandracards.com/evgeny-goldin/5817-calling-ivy-from-groovy-or-java">Calling Ivy from Groovy or Java</a></li>
+</ul></p>
+
+	<hr />
+	
+		</div>
+		<div id="push"></div>
+    </div>
+    
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.4.0</a></p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../../../js/bootstrap.min.js"></script>
+    <script src="../../../../js/prettify.js"></script>
+    
+  </body>
+</html>
