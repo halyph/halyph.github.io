@@ -15,7 +15,7 @@
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>index.html">Home</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>archive.html">Archive</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.feed_file}">Subscribe</a></li>
-            <!--
+             <!--
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -30,6 +30,10 @@
             </li>
             -->
           </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://github.com/halyph"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://twitter.com/halyph"><i class="fa fa-twitter"></i></a>
+            </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
