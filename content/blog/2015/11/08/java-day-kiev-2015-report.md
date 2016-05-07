@@ -5,7 +5,7 @@ tags=conference, java
 status=published
 ~~~~~~
 
-![javaday conf logo](/images/posts/conf/java_day_2015.png)
+![blog_post_image](/images/posts/conf/java_day_2015.png)
 
 
 *November 6-7, 2015* I visited [Java Day Kyiv](http://javaday.org.ua/kyiv) conference. This report is for myself just to keep track talks I've attended.
