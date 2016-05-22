@@ -1,4 +1,4 @@
-title=Java Day - Kiev, 2015 - Report
+title=JEEConf - Kiev, 2015 - Report
 date=2015-05-25
 type=post
 tags=conference, java
