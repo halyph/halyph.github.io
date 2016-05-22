@@ -6,8 +6,8 @@
     <atom:link href="http://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sun, 8 May 2016 14:39:35 +0300</pubDate>
-    <lastBuildDate>Sun, 8 May 2016 14:39:35 +0300</lastBuildDate>
+    <pubDate>Sun, 22 May 2016 16:37:23 +0300</pubDate>
+    <lastBuildDate>Sun, 22 May 2016 16:37:23 +0300</lastBuildDate>
 
     <item>
       <title>Java Day - Kiev, 2015 - Report</title>
@@ -271,7 +271,7 @@ webapp-runner-8.0.24.0.jar
 	</description>
     </item>
     <item>
-      <title>Java Day - Kiev, 2015 - Report</title>
+      <title>JEEConf - Kiev, 2015 - Report</title>
       <link>http://halyph.com/blog/2015/05/25/jeeconf-kiev.html</link>
       <pubDate>Mon, 25 May 2015 00:00:00 +0300</pubDate>
       <guid isPermaLink="false">blog/2015/05/25/jeeconf-kiev.html</guid>
