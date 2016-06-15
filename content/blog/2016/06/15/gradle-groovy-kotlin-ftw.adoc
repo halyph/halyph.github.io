@@ -1,0 +1,77 @@
+= Gradle, Groovy, Kotlin. FTW?
+Orest Ivasiv
+2016-06-15
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: gradle,groovy,kotlin
+:source-highlighter: prettify
+:icons: font
+:toc: 
+:my-image-dir: /images
+:my-link-gradle-kotlin: http://gradle.org/blog/kotlin-meets-gradle/
+:my-link-cedric: http://melix.github.io/blog/2016/05/gradle-kotlin.html
+
+image::{my-image-dir}/blog/gradle.png[float="right"]
+
+You've porbaply heared about {my-link-gradle-kotlin}[_"Kotlin-based approach to writing Gradle build scripts"_]. A lot of noise was produced by Groovy community and Cédric Champeau tried to explain the real state of {my-link-cedric}[Groovy, Gradle and their future relationship].
+
+Just to avoid different speculation about _"Gradle is written in Groovy"_ and now _"it will be re-written in Kotlin"_ here are some *numbers*:
+
+* Let's check the https://github.com/gradle/gradle[Gradle repo] language statistic provided by  GitHub
+
+image::{my-image-dir}/posts/2016-06-15/gradle-github.jpg[]
+
+* Now, count the language stats by cloc tool:
+
+----
+$ cloc-1.66.exe .
+   11538 text files.
+   11172 unique files.
+Complex regular subexpression recursion limit (32766) exceeded at script/cloc line 6909.
+    7179 files ignored.
+
+https://github.com/AlDanial/cloc v 1.66  T=73.75 s (142.9 files/s, 13238.0 lines/s)
+-----------------------------------------------------------------------------------
+Language                         files          blank        comment           code
+-----------------------------------------------------------------------------------
+Groovy                            3841          71051          55629         318724
+Java                              5980          62528         135340         261707
+XML                                471            842           2950          32913
+C/C++ Header                        49           2272           6500          14253
+JavaScript                          16            181            286           4732
+CSS                                 15            256            150           1785
+Maven                               30             62             28            799
+XSLT                                 9            107            170            620
+HTML                                22             45             27            592
+Scala                               46            122            179            379
+C++                                 20             29              0            155
+Bourne Again Shell                   1             20             21            128
+C                                   15             36             22            113
+DOS Batch                            1             23              2             59
+DTD                                  1             54            164             33
+YAML                                 2              0              0             26
+CoffeeScript                         3              8              8             20
+Objective C++                        2              7              0             18
+Assembly                             2              1              0             17
+Bourne Shell                         2              4              0             16
+IDL                                  1              2              0             14
+JSP                                  3              0              0             14
+Ant                                  1              0              0              9
+Objective C                          1              3              0              7
+Windows Resource File                1              1              0              5
+SQL                                  1              2              1              2
+-----------------------------------------------------------------------------------
+SUM:                             10536         137656         201477         637140
+-----------------------------------------------------------------------------------
+----
+Based on this raw analysis we have that *56%* of Gradle code base is related to *Java* files and *36%* to *Groovy* files. But, let's filter of _test_ folders from our statistic:
+
+
+
+
+
+
+
+== References
+* {my-link-cedric}[Cédric Champeau's blog - Gradle and Kotlin, a personal perspective]
+* {my-link-gradle-kotlin}[Gradle Blog - Kotlin Meets Gradle]
