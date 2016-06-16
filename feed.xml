@@ -6,8 +6,8 @@
     <atom:link href="http://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Thu, 16 Jun 2016 18:01:14 +0300</pubDate>
-    <lastBuildDate>Thu, 16 Jun 2016 18:01:14 +0300</lastBuildDate>
+    <pubDate>Thu, 16 Jun 2016 18:18:17 +0300</pubDate>
+    <lastBuildDate>Thu, 16 Jun 2016 18:18:17 +0300</lastBuildDate>
 
     <item>
       <title>Gradle, Groovy, Kotlin. FTW?</title>
@@ -23,7 +23,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;You&amp;#8217;ve porbaply heared about &lt;a href=&quot;http://gradle.org/blog/kotlin-meets-gradle/&quot;&gt;&lt;em&gt;&quot;Kotlin-based approach to writing Gradle build scripts&quot;&lt;/em&gt;&lt;/a&gt;. A lot of noise was produced based on this announcement and Cédric Champeau tried to explain the real state of &lt;a href=&quot;http://melix.github.io/blog/2016/05/gradle-kotlin.html&quot;&gt;Groovy, Gradle and their future relationship&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You’ve probably heard about &lt;a href=&quot;http://gradle.org/blog/kotlin-meets-gradle/&quot;&gt;&lt;em&gt;&quot;Kotlin-based approach to writing Gradle build scripts&quot;&lt;/em&gt;&lt;/a&gt;. A lot of noise was produced based on this announcement and Cédric Champeau tried to explain the real state of &lt;a href=&quot;http://melix.github.io/blog/2016/05/gradle-kotlin.html&quot;&gt;Groovy, Gradle and their future relationship&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Just to avoid different speculation about &lt;em&gt;&quot;Gradle is written in Groovy&quot;&lt;/em&gt; and now &lt;em&gt;&quot;it will be re-written in Kotlin&quot;&lt;/em&gt; here are some &lt;strong&gt;numbers&lt;/strong&gt;:&lt;/p&gt;
@@ -59,7 +59,7 @@
 &lt;p&gt;&lt;code&gt;gradle&lt;/code&gt; - Gradle scripts&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;subprojects&lt;/code&gt; - Gradle sources. It&amp;#8217;s our goal to analyse this folder and understand the language statistics&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;subprojects&lt;/code&gt; - Gradle sources. It&amp;#8217;s our goal to analyze this folder and understand the language statistics&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
