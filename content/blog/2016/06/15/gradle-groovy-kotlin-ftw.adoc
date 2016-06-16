@@ -12,7 +12,7 @@ Orest Ivasiv
 
 image::{my-image-dir}/blog/gradle.png[float="right"]
 
-You've porbaply heared about {my-link-gradle-kotlin}[_"Kotlin-based approach to writing Gradle build scripts"_]. A lot of noise was produced based on this announcement and Cédric Champeau tried to explain the real state of {my-link-cedric}[Groovy, Gradle and their future relationship].
+You’ve probably heard about {my-link-gradle-kotlin}[_"Kotlin-based approach to writing Gradle build scripts"_]. A lot of noise was produced based on this announcement and Cédric Champeau tried to explain the real state of {my-link-cedric}[Groovy, Gradle and their future relationship].
 
 Just to avoid different speculation about _"Gradle is written in Groovy"_ and now _"it will be re-written in Kotlin"_ here are some *numbers*:
 
@@ -25,7 +25,7 @@ image::{my-image-dir}/posts/2016-06-15/gradle-github.jpg[]
 ** `config` - nothing interesting: `condenarc` and `checkstyle` configs
 ** `design-docs` - markdown documentation
 ** `gradle` - Gradle scripts
-** `subprojects` - Gradle sources. It's our goal to analyse this folder and understand the language statistics
+** `subprojects` - Gradle sources. It's our goal to analyze this folder and understand the language statistics
 
 * `*subprojects*` contains several interesting sub-folders:
 ** `src/main` - actual "gradle" source code
