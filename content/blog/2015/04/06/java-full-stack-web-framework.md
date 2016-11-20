@@ -9,6 +9,8 @@ status=published
 
 I believe that everybody knows the most popular full-stack web framework - [Ruby on Rails](http://rubyonrails.org). Of course there are other frameworks for Ruby language, but Rails is the number one. Now, the question: how many full-stack web frameworks exist for Java?
 
+**UPDATE (2016-11-20)**: [CUDA Platform is open sourced under Apache License 2.0](https://www.cuba-platform.com/blog-tags/open-source)
+
 ## Overview
 
 Let's define the desired items for full-stack web framework:
@@ -85,6 +87,7 @@ So, Java ecosystem has two full stack frameworks which use Java language minimal
 - Full stack
     - [Grails](https://grails.org/)
     - [Play Framework 2](https://www.playframework.com/)
+    - [Cuba-platform](https://www.cuba-platform.com) - CUBA Platform (Apache License 2.0)
 - Code Generation
     - [Spring Roo](http://projects.spring.io/spring-roo/)
     - [JBoss Forge](http://forge.jboss.org/)
@@ -92,7 +95,7 @@ So, Java ecosystem has two full stack frameworks which use Java language minimal
     - [JHipster](https://jhipster.github.io/)
 - DD Frameworks
     - [OpenXava](http://www.openxava.org/)
-    - [Cuba-platform](https://www.cuba-platform.com) - CUBA Platform is free for applications with up to 5 concurrent sessions.
+    - ~~[Cuba-platform](https://www.cuba-platform.com) - CUBA Platform is free for applications with up to 5 concurrent sessions.~~
     - [Apache Isis](http://isis.apache.org/)
 - Others
     - [Ninja](http://www.ninjaframework.org/)  
