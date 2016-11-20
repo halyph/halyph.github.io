@@ -83,13 +83,21 @@
 		<a href="/tags/java.html">java</a> | 
 	</p>
 
-	<p><p><img src="/images/blog/java.png" alt="blog_post_image""/></p><p>I'm sure that a lot of Java developers experienced <code>java.lang.OutOfMemoryError: PermGen space</code> (OOME PermGen). It was very common to get this error after multiple WAR re-deploys on Tomcat v.6.x. Permanent generation (PermGen) region of memory is used to store the internal representation of loaded classes (and much more, see here [<a href="https://plumbr.eu/blog/what-is-a-permgen-leak">1</a>] and [<a href="https://blogs.oracle.com/jonthecollector/entry/presenting_the_permanent_generation">2</a>]).</p><p>So, we can get <strong>OOME PermGen</strong> when ClassLoader whats to store class definition, but there is not enough space in PermGen - i.e. loaded too many classes. </p><p>Based on this <strong>OOME PermGen</strong> error can be generated via:</p>
+	<p><p><img src="/images/blog/java.png" alt="blog_post_image" /></p>
+<p>I&rsquo;m sure that a lot of Java developers experienced <code>java.lang.OutOfMemoryError: PermGen space</code> (OOME PermGen). It was very common to get this error after multiple WAR re-deploys on Tomcat v.6.x. Permanent generation (PermGen) region of memory is used to store the internal representation of loaded classes (and much more, see here <a href="./1.html">1</a> and <a href="./2.html">2</a>).</p>
+<p>So, we can get <strong>OOME PermGen</strong> when ClassLoader whats to store class definition, but there is not enough space in PermGen - i.e. loaded too many classes. </p>
+<p>Based on this <strong>OOME PermGen</strong> error can be generated via:</p>
 <ul>
   <li>decreasing PermGen size</li>
   <li>loading huge amount of classes</li>
-</ul><p>I highly recommend to read <a href="https://plumbr.eu/blog/what-is-a-permgen-leak">What is a PermGen leak?</a> post to get more info about this issue.</p><h3>Disclaimer</h3><p>The current post is totally based on <a href="https://plumbr.eu/blog/how-not-to-create-a-permgen-leak">How (not) to create a permgen leak?</a></p><h2>Generate PermGen leak</h2><p>The main idea is dynamically create a lot of classes via byte code manipulation library. We are going to use <a href="http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/">Javassist</a> as it's the simplest library with nice API.</p>
+</ul>
+<p>I highly recommend to read <a href="https://plumbr.eu/blog/what-is-a-permgen-leak">What is a PermGen leak?</a> post to get more info about this issue.</p>
+<h3><a href="#disclaimer" name="disclaimer">Disclaimer</a></h3>
+<p>The current post is totally based on <a href="https://plumbr.eu/blog/how-not-to-create-a-permgen-leak">How (not) to create a permgen leak?</a></p>
+<h2><a href="#generate-permgen-leak" name="generate-permgen-leak">Generate PermGen leak</a></h2>
+<p>The main idea is dynamically create a lot of classes via byte code manipulation library. We are going to use <a href="http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/">Javassist</a> as it&rsquo;s the simplest library with nice API.</p>
 <ul>
-  <li>We assume that it's <code>maven</code> based project. So, let's add Javassist to <code>pom.xml</code>.</li>
+  <li>We assume that it&rsquo;s <code>maven</code> based project. So, let&rsquo;s add Javassist to <code>pom.xml</code>.</li>
 </ul>
 <pre><code class="xml">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
          xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
@@ -137,13 +145,16 @@
 &lt;/project&gt;
 </code></pre>
 <ul>
-  <li>Also, we should set <strong>PermGen</strong> and <strong>MaxPermGen</strong> size to 2M and 4M respectively (it gives us a chance to get error as quickly as possible). Maven <code>Appassembler</code> plugin [<a href="http://mojo.codehaus.org/appassembler/appassembler-maven-plugin/usage-program-jvmsettings.html">3</a>] uses <code>extraJvmArguments</code> parameter while generating wrapper scripts: shell and batch (see <code>pom.xml</code> above, <code>&lt;extraJvmArguments&gt;-XX:PermSize=2M -XX:MaxPermSize=2M&lt;/extraJvmArguments&gt;</code>).</li>
+  <li>Also, we should set <strong>PermGen</strong> and <strong>MaxPermGen</strong> size to 2M and 4M respectively (it gives us a chance to get error as quickly as possible). Maven <code>Appassembler</code> plugin <a href="./3.html">3</a> uses <code>extraJvmArguments</code> parameter while generating wrapper scripts: shell and batch (see <code>pom.xml</code> above, <code>&lt;extraJvmArguments&gt;-XX:PermSize=2M -XX:MaxPermSize=2M&lt;/extraJvmArguments&gt;</code>).</li>
 </ul>
-<blockquote><p>--XX:PermSize<size> - Set initial PermGen Size</p><p>--XX:MaxPermSize<size> - Set the maximum PermGen Size</p>
+<blockquote>
+  <p>&ndash;XX:PermSize<size> - Set initial PermGen Size</p>
+  <p>&ndash;XX:MaxPermSize<size> - Set the maximum PermGen Size</p>
 </blockquote>
 <ul>
   <li>Below is a simple application which dynamically creates 1000 classes to cause PermGem leak. Class creation is very simple and self explanatory. The main idea is that we should use byte code manipulation library to create classes dynamically.</li>
-</ul><p>See additional comments in the next code snippet</p>
+</ul>
+<p>See additional comments in the next code snippet</p>
 <pre><code class="java">package com.mycompany.app;
 
 import javassist.CannotCompileException;
@@ -228,7 +239,12 @@ Exception in thread &quot;main&quot; java.lang.OutOfMemoryError: PermGen space
 	at javassist.CtClass.toClass(CtClass.java:1125)
 	at com.mycompany.app.App.createClass(App.java:36)
 	at com.mycompany.app.App.main(App.java:29)
-</code></pre><p>The next command runs under the hood:<br/><code>java -XX:PermSize=2M -XX:MaxPermSize=4M -classpath &quot;$CLASSPATH&quot; com.mycompany.app.App</code></p><p>As you can see it was possible to create about 550 <code>MyClass</code> classes before we've got an expected error.</p><h3>Tomcat Leaks</h3><p>Tomcat team created a nice <a href="http://wiki.apache.org/tomcat/MemoryLeakProtection">wiki page</a> where listed and shown the situations where leaks can be detected and fixed.</p><h2>References</h2>
+</code></pre>
+<p>The next command runs under the hood:<br/><code>java -XX:PermSize=2M -XX:MaxPermSize=4M -classpath &quot;$CLASSPATH&quot; com.mycompany.app.App</code></p>
+<p>As you can see it was possible to create about 550 <code>MyClass</code> classes before we&rsquo;ve got an expected error.</p>
+<h3><a href="#tomcat-leaks" name="tomcat-leaks">Tomcat Leaks</a></h3>
+<p>Tomcat team created a nice <a href="http://wiki.apache.org/tomcat/MemoryLeakProtection">wiki page</a> where listed and shown the situations where leaks can be detected and fixed.</p>
+<h2><a href="#references" name="references">References</a></h2>
 <ul>
   <li><a href="https://plumbr.eu/blog/what-is-a-permgen-leak">What is a PermGen leak?</a></li>
   <li><a href="https://plumbr.eu/blog/how-not-to-create-a-permgen-leak">How (not) to create a permgen leak?</a></li>
@@ -262,7 +278,7 @@ Exception in thread &quot;main&quot; java.lang.OutOfMemoryError: PermGen space
     
     <div id="footer">
       <div class="container">
-        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.4.0</a></p>
+        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.0</a></p>
       </div>
     </div>
     

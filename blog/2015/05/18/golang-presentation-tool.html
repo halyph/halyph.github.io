@@ -83,7 +83,12 @@
 		<a href="/tags/golang.html">golang</a> | 
 	</p>
 
-	<p><p><img src="/images/blog/gopher.png" alt="blog_post_image""/></p><p>Have you ever noticed how Go community presents Go-related talks? Their slides are very simple and without any fancy animation features: see <a href="http://talks.golang.org">Go talks</a>. You might say that they are no so feature-rich as <a href="https://github.com/hakimel/reveal.js/">Reveal.js</a>. And it's true. But, simplicity is beauty, as for me. Also, it's very well aligned with Go language philosophy.</p><p>So, here is listed steps required to <em>setup</em> and <em>run</em> Go <strong>present</strong> tool.</p><h2>Install Go</h2><p>I use Mac OS X in this tutorial (see the next <a href="https://golang.org/doc/install">article</a> to install Go on other *OS*es).</p><p>Install Go:</p>
+	<p><p><img src="/images/blog/gopher.png" alt="blog_post_image" /></p>
+<p>Have you ever noticed how Go community presents Go-related talks? Their slides are very simple and without any fancy animation features: see <a href="http://talks.golang.org">Go talks</a>. You might say that they are no so feature-rich as <a href="https://github.com/hakimel/reveal.js/">Reveal.js</a>. And it&rsquo;s true. But, simplicity is beauty, as for me. Also, it&rsquo;s very well aligned with Go language philosophy.</p>
+<p>So, here is listed steps required to <em>setup</em> and <em>run</em> Go <strong>present</strong> tool.</p>
+<h2><a href="#install-go" name="install-go">Install Go</a></h2>
+<p>I use Mac OS X in this tutorial (see the next <a href="https://golang.org/doc/install">article</a> to install Go on other *OS*es).</p>
+<p>Install Go:</p>
 <pre><code class="bash">$ brew install go
 
 ==&gt; Downloading https://homebrew.bintray.com/bottles/go-1.4.2.yosemite.bottle.1.
@@ -96,25 +101,33 @@ You may wish to add the GOROOT-based install location to your PATH:
   export PATH=$PATH:/usr/local/opt/go/libexec/bin
 ==&gt; Summary
 🍺  /usr/local/Cellar/go/1.4.2: 4566 files, 155M
-</code></pre><h2>Define Go workspace</h2><p>Let's assume that our Go language workspace will be located at <code>/Users/halyph/Projects/go</code>:</p>
+</code></pre>
+<h2><a href="#define-go-workspace" name="define-go-workspace">Define Go workspace</a></h2>
+<p>Let&rsquo;s assume that our Go language workspace will be located at <code>/Users/halyph/Projects/go</code>:</p>
 <pre><code class="bash ">$ mkdir go
 $ pwd
 /Users/halyph/Projects/go
-</code></pre><h3>Configure <code>PATH</code> variable</h3>
+</code></pre>
+<h3>Configure <code>PATH</code> variable</h3>
 <pre><code class="bash">$ cat .bash_profile
 
 #Golang settings
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=$HOME/Projects/go  #/Users/halyph/Projects/go
 export PATH=$PATH:$GOPATH/bin
-</code></pre><h2>Install Go present tool</h2><p><strong>present</strong> tool is located in separate package <code>golang.org/x/tools</code> which depends on <code>golang.org/x/net</code> package:</p>
+</code></pre>
+<h2><a href="#install-go-present-tool" name="install-go-present-tool">Install Go present tool</a></h2>
+<p><strong>present</strong> tool is located in separate package <code>golang.org/x/tools</code> which depends on <code>golang.org/x/net</code> package:</p>
 <pre><code class="bash">$ go get golang.org/x/net
 $ go get golang.org/x/tools
 $ go install golang.org/x/tools/cmd/present
-</code></pre><p>Now, we can find <strong>present</strong> tool here:</p>
+</code></pre>
+<p>Now, we can find <strong>present</strong> tool here:</p>
 <pre><code>$ which present
 /Users/halyph/Projects/go/bin/present
-</code></pre><h2>Run present tool</h2><p>The easiest way to test <strong>present</strong> tool is to render some slides:</p>
+</code></pre>
+<h2><a href="#run-present-tool" name="run-present-tool">Run present tool</a></h2>
+<p>The easiest way to test <strong>present</strong> tool is to render some slides:</p>
 <ul>
   <li>Create sample <code>slide</code> file (see <code>.slide</code> <a href="http://godoc.org/golang.org/x/tools/present">file format</a>) in any folder:</li>
 </ul>
@@ -141,7 +154,12 @@ Some Text
 </ul>
 <pre><code>$ present
 2015/05/19 00:55:33 Open your web browser and visit http://127.0.0.1:3999
-</code></pre><p>You should see something like this:</p><p><img src="/images/posts/2015-05-19/pic1.png" alt="blog_post_image_inline""/></p><p><img src="/images/posts/2015-05-19/pic2.png" alt="blog_post_image_inline""/></p><p>Go <strong>present</strong> works and you are ready to produce <em>Go-fashion</em> slides.</p><h2>References</h2>
+</code></pre>
+<p>You should see something like this:</p>
+<p><img src="/images/posts/2015-05-19/pic1.png" alt="blog_post_image_inline" /></p>
+<p><img src="/images/posts/2015-05-19/pic2.png" alt="blog_post_image_inline" /></p>
+<p>Go <strong>present</strong> works and you are ready to produce <em>Go-fashion</em> slides.</p>
+<h2><a href="#references" name="references">References</a></h2>
 <ul>
   <li><a href="http://godoc.org/golang.org/x/tools/present">Go present package documentation</a></li>
   <li><a href="https://github.com/hakimel/reveal.js/">Reveal.js - The HTML Presentation Framework</a></li>
@@ -176,7 +194,7 @@ Some Text
     
     <div id="footer">
       <div class="container">
-        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.4.0</a></p>
+        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.0</a></p>
       </div>
     </div>
     

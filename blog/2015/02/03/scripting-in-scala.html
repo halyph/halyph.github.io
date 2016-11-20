@@ -89,14 +89,24 @@
 		<a href="/tags/shell.html">shell</a> | 
 	</p>
 
-	<p><p><img src="/images/blog/scala.png" alt="blog_post_image""/></p><p>Scala language compiles sources code to Java bytecode. But, it has some nice scripting facilities. Let's review them.</p><p>So, the <code>scala</code> command is also a shell-script wrapper around the java command.</p><p>According to official <a href="http://www.scala-lang.org/files/archive/nightly/docs-2.10.1/manual/html/scala.html">scala utility</a> documentation (here highlighted only post-related notes):</p>
-<blockquote><p><code>scala [ &lt;option&gt; ]... [ &lt;torun&gt; &lt;argument&gt;... ]</code></p><p>The <code>scala</code> utility runs Scala code using a Java runtime environment. </p><p>If a <strong>script</strong> file is specified to run, then the file is read and all Scala statements and declarations in the file are processed in order. Any arguments specified will be available via the argsvariable. </p><p>Script files may have an <strong>optional header</strong> that is ignored if present. There are two ways to format the header: either beginning with #! and ending with !#, or beginning with ::#! and ending with ::!#.</p><p>Such a header must have each header boundary start at the beginning of a line. Headers can be used to make stand-alone script files, as shown in the examples below.</p><p>Here is a complete Scala script (**check.sh**) for Unix:</p>
+	<p><p><img src="/images/blog/scala.png" alt="blog_post_image" /></p>
+<p>Scala language compiles sources code to Java bytecode. But, it has some nice scripting facilities. Let&rsquo;s review them.</p>
+<p>So, the <code>scala</code> command is also a shell-script wrapper around the java command.</p>
+<p>According to official <a href="http://www.scala-lang.org/files/archive/nightly/docs-2.10.1/manual/html/scala.html">scala utility</a> documentation (here highlighted only post-related notes):</p>
+<blockquote>
+  <p><code>scala [ &lt;option&gt; ]... [ &lt;torun&gt; &lt;argument&gt;... ]</code></p>
+  <p>The <code>scala</code> utility runs Scala code using a Java runtime environment. </p>
+  <p>If a <strong>script</strong> file is specified to run, then the file is read and all Scala statements and declarations in the file are processed in order. Any arguments specified will be available via the argsvariable. </p>
+  <p>Script files may have an <strong>optional header</strong> that is ignored if present. There are two ways to format the header: either beginning with #! and ending with !#, or beginning with ::#! and ending with ::!#.</p>
+  <p>Such a header must have each header boundary start at the beginning of a line. Headers can be used to make stand-alone script files, as shown in the examples below.</p>
+  <p>Here is a complete Scala script (**check.sh**) for Unix:</p>
   <pre><code>#!/bin/sh
 exec scala &quot;$0&quot; &quot;$@&quot;
 !#
 Console.println(&quot;Hello, world!&quot;)
 argv.toList foreach Console.println
-</code></pre><p>Here is a complete Scala script (**check.bat**) for MS Windows:</p>
+</code></pre>
+  <p>Here is a complete Scala script (**check.bat**) for MS Windows:</p>
   <pre><code>::#!
 @echo off
 call scala %0 %*
@@ -104,39 +114,51 @@ goto :eof
 ::!#
 Console.println(&quot;Hello, world!&quot;)
 argv.toList foreach Console.println
-</code></pre><p>If you want to use the compilation cache to speed up multiple executions of the script (**check.sh**), then add <strong>-savecompiled</strong> to the scala command:</p>
+</code></pre>
+  <p>If you want to use the compilation cache to speed up multiple executions of the script (**check.sh**), then add <strong>-savecompiled</strong> to the scala command:</p>
   <pre><code>#!/bin/sh
 exec scala -savecompiled &quot;$0&quot; &quot;$@&quot;
 !#
 Console.println(&quot;Hello, world!&quot;)
 argv.toList foreach Console.println
 </code></pre>
-</blockquote><p>These tricks give us an ability to run Scala script as plain shell script. Also, based on the setting above this script can have input parameters and <em>almost</em> cross-platform (see script header differences for Linux <strong>.vs.</strong> Windows).</p><p>Now, we should save the mentioned above code snippet in some file (e.g. <strong>check.sh</strong>) and make it executable. This script can be run as any Linux shell script <code>./check.sh</code> (<code>check.bat</code> - Windows). </p><h2>Scala utility internals</h2><h3>Linux</h3><p>Linux script header uses the next items:</p>
+</blockquote>
+<p>These tricks give us an ability to run Scala script as plain shell script. Also, based on the setting above this script can have input parameters and <em>almost</em> cross-platform (see script header differences for Linux <strong>.vs.</strong> Windows).</p>
+<p>Now, we should save the mentioned above code snippet in some file (e.g. <strong>check.sh</strong>) and make it executable. This script can be run as any Linux shell script <code>./check.sh</code> (<code>check.bat</code> - Windows). </p>
+<h2><a href="#scala-utility-internals" name="scala-utility-internals">Scala utility internals</a></h2>
+<h3><a href="#linux" name="linux">Linux</a></h3>
+<p>Linux script header uses the next items:</p>
 <ul>
-  <li><code>#!</code> it's <a href="http://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a> interpreter directive</li>
+  <li><code>#!</code> it&rsquo;s <a href="http://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a> interpreter directive</li>
   <li><code>exec</code> is used to run <code>scala</code> without creation new process. Commands which go right after <code>exec</code> will not be executed</li>
   <li><code>!#</code> is simple marker for <code>scala</code> utility (see notes below)</li>
-</ul><p>E.g.<br/>This script </p>
+</ul>
+<p>E.g.<br/>This script </p>
 <pre><code>#! /bin/sh
 echo Header
 exec echo
 !#
 echo Body
-</code></pre><p>will have the next output</p>
+</code></pre>
+<p>will have the next output</p>
 <pre><code>$ ./test.sh
 Header
-</code></pre><p>We will get error in case <code>exec</code> is removed:</p>
+</code></pre>
+<p>We will get error in case <code>exec</code> is removed:</p>
 <pre><code>#! /bin/sh
 echo Header
 !#
 echo Body
-</code></pre><p>Output</p>
+</code></pre>
+<p>Output</p>
 <pre><code>$ ./test.sh
 Header
 ./test.sh: line 4: !#: command not found
 Body
 
-</code></pre><h3>Windows</h3><p>Windows batch script header uses the next items:</p>
+</code></pre>
+<h3><a href="#windows" name="windows">Windows</a></h3>
+<p>Windows batch script header uses the next items:</p>
 <ul>
   <li><code>::</code> is a remark without displaying or executing that line when the batch file is run (see <a href="http://www.computerhope.com/batch.htm">Information on batch files</a>).</li>
   <li><code>::#!</code> is simple marker for <code>scala</code> utility (see notes below)</li>
@@ -144,9 +166,12 @@ Body
   <li><code>call</code> calls one batch program from another.</li>
   <li><code>goto :eof</code> go to end of file</li>
   <li><code>::!#</code> is simple marker for <code>scala</code> utility (see notes below)</li>
-</ul><p>The OS-specific script settings were identified, now let's dive deeper to understand how <code>scala</code> utility works.</p><h3><code>scala</code> internals</h3><p>This utility performs the next flow to run script:</p>
+</ul>
+<p>The OS-specific script settings were identified, now let&rsquo;s dive deeper to understand how <code>scala</code> utility works.</p>
+<h3><code>scala</code> internals</h3>
+<p>This utility performs the next flow to run script:</p>
 <ol>
-  <li>Run <code>scala.tools.nsc.MainGenericRunner#process</code> and identify run target "as Script" (there are other targets) <code>ScriptRunner.runScriptAndCatch(settings, thingToRun, command.arguments)</code></li>
+  <li>Run <code>scala.tools.nsc.MainGenericRunner#process</code> and identify run target &ldquo;as Script&rdquo; (there are other targets) <code>ScriptRunner.runScriptAndCatch(settings, thingToRun, command.arguments)</code></li>
   <li><code>ScriptRunner</code> creates temp file <code>File.makeTemp(&quot;scalacmd&quot;, &quot;.scala&quot;)</code></li>
   <li>Run compiler and clean script header</li>
 </ol>
@@ -179,7 +204,7 @@ Body
 
 </code></pre>
 <ol>
-  <li>Cleanup shell script (remove header) via <code>SourceFile</code>. Now, it's clear why script's header have such <em>strange</em> closing markers (see line 21, <code>content drop headerLen</code> - actual header remove)</li>
+  <li>Cleanup shell script (remove header) via <code>SourceFile</code>. Now, it&rsquo;s clear why script&rsquo;s header have such <em>strange</em> closing markers (see line 21, <code>content drop headerLen</code> - actual header remove)</li>
 </ol>
 <pre><code>object ScriptSourceFile {
   /** Length of the script header from the given content, if there is one.
@@ -205,22 +230,29 @@ Body
 
     stripped
   }
-</code></pre><h2>Add libraries to Scala script</h2><p>Scala script libraries (**jar**s) can be added in script's header section:</p>
+</code></pre>
+<h2><a href="#add-libraries-to-scala-script" name="add-libraries-to-scala-script">Add libraries to Scala script</a></h2>
+<p>Scala script libraries (**jar**s) can be added in script&rsquo;s header section:</p>
 <pre><code>#!/bin/sh
 exec scala -classpath &quot;lib/lib.1.jar:lib/lib.2.jar&quot; &quot;$0&quot; &quot;$@&quot;
 !#
-</code></pre><h2>Summary</h2><p>There is nothing magical in Scala interpretation. Every single peace of code must be compiled. Such interesting <em>scripting</em> approach can be applied to Java as well.</p><p>Unfortunately, Scala is not looks like nice scripting language (because it's <strong>not</strong> designed for this use case). It will be uncomfortable "scripting" in Scala without IDE.</p><h2>References</h2>
+</code></pre>
+<h2><a href="#summary" name="summary">Summary</a></h2>
+<p>There is nothing magical in Scala interpretation. Every single peace of code must be compiled. Such interesting <em>scripting</em> approach can be applied to Java as well.</p>
+<p>Unfortunately, Scala is not looks like nice scripting language (because it&rsquo;s <strong>not</strong> designed for this use case). It will be uncomfortable &ldquo;scripting&rdquo; in Scala without IDE.</p>
+<h2><a href="#references" name="references">References</a></h2>
 <ul>
   <li><a href="http://timperrett.com/2011/08/01/system-scripting-with-scala/">System Scripting with Scala</a></li>
   <li><a href="http://www.scala-lang.org/files/archive/nightly/docs-2.10.1/manual/html/scala.html">scala utility</a></li>
   <li><a href="http://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a></li>
   <li><a href="http://www.computerhope.com/batch.htm">Information on batch files</a></li>
   <li>Scala Sources:
-  <ul>
-    <li><a href="https://github.com/scala/scala/blob/v2.11.5/src/compiler/scala/tools/nsc/ScriptRunner.scala#">ScriptRunner.scala</a></li>
-    <li><a href="https://github.com/scala/scala/blob/v2.11.5/src/reflect/scala/reflect/internal/util/SourceFile.scala">SourceFile.scala</a></li>
-    <li><a href="https://github.com/scala/scala/blob/v2.11.5/src/compiler/scala/tools/nsc/Global.scala">Global.scala</a></li>
-  </ul></li>
+    <ul>
+      <li><a href="https://github.com/scala/scala/blob/v2.11.5/src/compiler/scala/tools/nsc/ScriptRunner.scala#">ScriptRunner.scala</a></li>
+      <li><a href="https://github.com/scala/scala/blob/v2.11.5/src/reflect/scala/reflect/internal/util/SourceFile.scala">SourceFile.scala</a></li>
+      <li><a href="https://github.com/scala/scala/blob/v2.11.5/src/compiler/scala/tools/nsc/Global.scala">Global.scala</a></li>
+    </ul>
+  </li>
 </ul></p>
 
 	<hr />
@@ -247,7 +279,7 @@ exec scala -classpath &quot;lib/lib.1.jar:lib/lib.2.jar&quot; &quot;$0&quot; &qu
     
     <div id="footer">
       <div class="container">
-        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.4.0</a></p>
+        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.0</a></p>
       </div>
     </div>
     

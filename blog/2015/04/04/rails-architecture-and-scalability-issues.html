@@ -87,86 +87,145 @@
 		<a href="/tags/architecture.html">architecture</a> | 
 	</p>
 
-	<p><p><img src="/images/blog/ruby.png" alt="blog_post_image""/></p><p>Everybody know when this <em>"Rails doesn't scale"</em> has been begun:</p>
+	<p><p><img src="/images/blog/ruby.png" alt="blog_post_image" /></p>
+<p>Everybody know when this <em>&ldquo;Rails doesn&rsquo;t scale&rdquo;</em> has been begun:</p>
 <ul>
   <li><strong>2009</strong> <a href="http://www.artima.com/scalazine/articles/twitter_on_scala.html">Twitter message queue back-end moved from Ruby to Scala</a></li>
   <li><strong>2011</strong> <a href="https://blog.twitter.com/2011/twitter-search-now-3x-faster">Twitter Search is Now 3x Faster</a></li>
 </ul>
-<blockquote><p>Panic, we must not use <strong>Ruby on Rails</strong> because Twitter had scalability problems.</p>
-</blockquote><p>I'm a Java developer who love Ruby language, but don't write anything in Rails. Despite this I've decided to look into this famous <em>"Rails doesn't scale"</em> statement deeper to understand the root cause of this problem.</p><p>So, I <a href="https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies">collected</a> public available Ruby on Rails architecture and scalability case studies (videos of conference talks, reports and blog posts) and tried to extract the general patterns of architecture and scalability issues.</p><p>There are two type of scalability issues:</p>
+<blockquote>
+  <p>Panic, we must not use <strong>Ruby on Rails</strong> because Twitter had scalability problems.</p>
+</blockquote>
+<p>I&rsquo;m a Java developer who love Ruby language, but don&rsquo;t write anything in Rails. Despite this I&rsquo;ve decided to look into this famous <em>&ldquo;Rails doesn&rsquo;t scale&rdquo;</em> statement deeper to understand the root cause of this problem.</p>
+<p>So, I <a href="https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies">collected</a> public available Ruby on Rails architecture and scalability case studies (videos of conference talks, reports and blog posts) and tried to extract the general patterns of architecture and scalability issues.</p>
+<p>There are two type of scalability issues:</p>
 <ol>
-  <li><strong>Application performance</strong> - when web application can't handle huge traffic</li>
-  <li><strong>Delivery velocity</strong> - when it's become hard to make changes in big Rails application, run quick tests, deploy it and manage big team</li>
-</ol><p><em>Note</em>: You are not another "twitter" to worry about scalability issues right from beginning of the project (there are fewer web apps on the Internet to get enough traffic to even care about scalability). Your goal is to push your product as quick as possible.<br/>But, in the same time you'd like to use Rails (due to it's productivity) and make you potentially application scalable (in all possible terms)</p><p>The most interesting that scalability is about architecture, databases, caching, event queues, disk IO and less about Rails framework.</p><h2>Rails deployment architecture</h2><p>Let's review the common Rails deployment approaches (see <a href="http://www.slideshare.net/jweiss/deployment-with-ruby-on-rails">Deployment with Ruby on Rails</a>)</p><h3>Simple Rails Setup</h3><p>One Rails instance handles all requests. Rails is single-threaded: There is only one concurrent request.</p><p><img src="/images/posts/2015-04-04/pic1.jpg" alt="blog_post_image_inline_inline""/></p><h3>Typical Rails Setup</h3>
+  <li><strong>Application performance</strong> - when web application can&rsquo;t handle huge traffic</li>
+  <li><strong>Delivery velocity</strong> - when it&rsquo;s become hard to make changes in big Rails application, run quick tests, deploy it and manage big team</li>
+</ol>
+<p><em>Note</em>: You are not another &ldquo;twitter&rdquo; to worry about scalability issues right from beginning of the project (there are fewer web apps on the Internet to get enough traffic to even care about scalability). Your goal is to push your product as quick as possible.<br/>But, in the same time you&rsquo;d like to use Rails (due to it&rsquo;s productivity) and make you potentially application scalable (in all possible terms)</p>
+<p>The most interesting that scalability is about architecture, databases, caching, event queues, disk IO and less about Rails framework.</p>
+<h2><a href="#rails-deployment-architecture" name="rails-deployment-architecture">Rails deployment architecture</a></h2>
+<p>Let&rsquo;s review the common Rails deployment approaches (see <a href="http://www.slideshare.net/jweiss/deployment-with-ruby-on-rails">Deployment with Ruby on Rails</a>)</p>
+<h3><a href="#simple-rails-setup" name="simple-rails-setup">Simple Rails Setup</a></h3>
+<p>One Rails instance handles all requests. Rails is single-threaded: There is only one concurrent request.</p>
+<p><img src="/images/posts/2015-04-04/pic1.jpg" alt="blog_post_image_inline_inline" /></p>
+<h3><a href="#typical-rails-setup" name="typical-rails-setup">Typical Rails Setup</a></h3>
 <ul>
   <li>A load-balancer distributes the incoming requests</li>
   <li>Some load-balancers will deliver static requests themselves</li>
   <li>Several Rails instances handle all requests</li>
   <li>Number of concurrent requests equals number of Rails instances</li>
-</ul><p><img src="/images/posts/2015-04-04/pic2.jpg" alt="blog_post_image_inline""/></p><h3>Application server (Phusion Passenger)</h3>
+</ul>
+<p><img src="/images/posts/2015-04-04/pic2.jpg" alt="blog_post_image_inline" /></p>
+<h3>Application server (Phusion Passenger)</h3>
 <ul>
   <li>Involving Phusion Passenger application server</li>
   <li>Makes setup easier on the single machine level</li>
   <li>Multiple servers still require load balancer</li>
   <li>Suitable for mass-hosting</li>
   <li>upcoming standard way of deploying Rails</li>
-</ul><p><img src="/images/posts/2015-04-04/pic3.jpg" alt="blog_post_image_inline""/></p><h2>Recommended Rails Application Setups</h2><h3>Small Site</h3><p>Apache with mod_rails/Phusion Passenger</p><p><img src="/images/posts/2015-04-04/pic4.jpg" alt="blog_post_image_inline""/></p><h3>Medium Site</h3>
+</ul>
+<p><img src="/images/posts/2015-04-04/pic3.jpg" alt="blog_post_image_inline" /></p>
+<h2><a href="#recommended-rails-application-setups" name="recommended-rails-application-setups">Recommended Rails Application Setups</a></h2>
+<h3><a href="#small-site" name="small-site">Small Site</a></h3>
+<p>Apache with mod_rails/Phusion Passenger</p>
+<p><img src="/images/posts/2015-04-04/pic4.jpg" alt="blog_post_image_inline" /></p>
+<h3><a href="#medium-site" name="medium-site">Medium Site</a></h3>
 <ul>
   <li>Apache/Nginx as frontend proxy</li>
   <li>Passanger as backend</li>
   <li>Deliver static files with Apache/Nginx</li>
-</ul><p><img src="/images/posts/2015-04-04/pic5.jpg" alt="blog_post_image_inline""/></p><h3>Large Site</h3>
+</ul>
+<p><img src="/images/posts/2015-04-04/pic5.jpg" alt="blog_post_image_inline" /></p>
+<h3><a href="#large-site" name="large-site">Large Site</a></h3>
 <ul>
   <li>Redundant load-ballancer</li>
   <li>Redundant proxy</li>
   <li>Phusion Passenger/mod_rails</li>
-</ul><p><img src="/images/posts/2015-04-04/pic6.jpg" alt="blog_post_image_inline""/></p><h2>Scale up Traditional Rails Application</h2><h3>Caching</h3><p>There might be the cases when it's not enought and in this case we should start looking in "cashing" direction via involving Memcahed and/or Redis <em>(based on Konstantin’s Gredeskoul slides)</em></p><p><img src="/images/posts/2015-04-04/pic7.jpg" alt="blog_post_image_inline""/></p><h3>Long-runnint task scaling</h3><p><em>(based on Konstantin’s Gredeskoul slides)</em></p>
+</ul>
+<p><img src="/images/posts/2015-04-04/pic6.jpg" alt="blog_post_image_inline" /></p>
+<h2><a href="#scale-up-traditional-rails-application" name="scale-up-traditional-rails-application">Scale up Traditional Rails Application</a></h2>
+<h3><a href="#caching" name="caching">Caching</a></h3>
+<p>There might be the cases when it&rsquo;s not enought and in this case we should start looking in &ldquo;cashing&rdquo; direction via involving Memcahed and/or Redis <em>(based on Konstantin’s Gredeskoul slides)</em></p>
+<p><img src="/images/posts/2015-04-04/pic7.jpg" alt="blog_post_image_inline" /></p>
+<h3>Long-runnint task scaling</h3>
+<p><em>(based on Konstantin’s Gredeskoul slides)</em></p>
 <ul>
   <li>Background jobs with Reques (it sits on top of Redis)</li>
   <li>Use Solr/Elasticsearch instead of doing complex joins</li>
-</ul><p><img src="/images/posts/2015-04-04/pic8.jpg" alt="blog_post_image_inline""/></p><h2>Rails moving towards SOA and micro services</h2><p>The shown above architectures are related to <strong>Monolith Architecture</strong>. This type of architecture has some problems:</p>
+</ul>
+<p><img src="/images/posts/2015-04-04/pic8.jpg" alt="blog_post_image_inline" /></p>
+<h2><a href="#rails-moving-towards-soa-and-micro-services" name="rails-moving-towards-soa-and-micro-services">Rails moving towards SOA and micro services</a></h2>
+<p>The shown above architectures are related to <strong>Monolith Architecture</strong>. This type of architecture has some problems:</p>
 <ul>
   <li>Development pain points:</li>
   <li>effective controllers and models have a lot of logic
-  <ul>
-    <li>~1000 Models/Controllers, 200K LOC, 100s of jobs</li>
-  </ul></li>
+    <ul>
+      <li>~1000 Models/Controllers, 200K LOC, 100s of jobs</li>
+    </ul>
+  </li>
   <li>Merge issues arise in big team (20-30+)</li>
   <li>Lots of contributors and no ownership</li>
   <li>Difficult deployments with long integration cycles</li>
-  <li>Tests are not green, it's really hard to support stable test quality</li>
-</ul><p>The monolithic Rails app should evolve into ecosystems of connected services. It's becoming quite common for Rails apps to be working mainly as <a href="https://github.com/halyph/architecture-case-study/blob/master/rails-as-an-soa-client-by-pete-hodgson.md">clients</a> to other services.</p><h3>Splitting application into small pieces</h3>
+  <li>Tests are not green, it&rsquo;s really hard to support stable test quality</li>
+</ul>
+<p>The monolithic Rails app should evolve into ecosystems of connected services. It&rsquo;s becoming quite common for Rails apps to be working mainly as <a href="https://github.com/halyph/architecture-case-study/blob/master/rails-as-an-soa-client-by-pete-hodgson.md">clients</a> to other services.</p>
+<h3><a href="#splitting-application-into-small-pieces" name="splitting-application-into-small-pieces">Splitting application into small pieces</a></h3>
 <ul>
-  <li>Split into smaller applications (based on Konstantin's Gredeskoul <a href="http://www.slideshare.net/kigster/enterprise-architectures-with-ruby-and-rails">slides</a>)
-  <ul>
-    <li>Contains web UI, logic and data
+  <li>Split into smaller applications (based on Konstantin&rsquo;s Gredeskoul <a href="http://www.slideshare.net/kigster/enterprise-architectures-with-ruby-and-rails">slides</a>)
     <ul>
-      <li>Extract look and feel into gem to share across apps</li>
-    </ul></li>
-    <li>May combine with other apps</li>
-    <li>May rely on common libraries</li>
-    <li>Typically run in their own Ruby VM</li>
-  </ul></li>
+      <li>Contains web UI, logic and data
+        <ul>
+          <li>Extract look and feel into gem to share across apps</li>
+        </ul>
+      </li>
+      <li>May combine with other apps</li>
+      <li>May rely on common libraries</li>
+      <li>Typically run in their own Ruby VM</li>
+    </ul>
+  </li>
   <li>Extract services and create APIs
-  <ul>
-    <li>Create client API wrapper gems for consumers</li>
-  </ul></li>
+    <ul>
+      <li>Create client API wrapper gems for consumers</li>
+    </ul>
+  </li>
   <li>Extract libraries (gems)
-  <ul>
-    <li>Create shared based client gem library</li>
-  </ul></li>
-</ul><p><img src="/images/posts/2015-04-04/pic9.jpg" alt="blog_post_image_inline""/></p><h3>Reference (sample) service orienter / micro service architecture</h3><p>Now, we have more than one Rails application and many service which are communicating using messaging, distributed cashed, etc. </p><h4><a href="https://github.com/halyph/architecture-case-study/blob/master/groupon.md">Groupon</a></h4><p><img src="/images/posts/2015-04-04/pic10.png" alt="blog_post_image_inline""/></p><h4><a href="https://github.com/halyph/architecture-case-study/blob/master/flipcart.md">Flipcart</a></h4><p><img src="/images/posts/2015-04-04/pic11.jpg" alt="blog_post_image_inline""/></p><h4><a href="https://github.com/halyph/architecture-case-study/blob/master/gilt.md">Gilt</a></h4><p><img src="/images/posts/2015-04-04/pic12.jpg" alt="blog_post_image_inline""/></p><p>I've collect much more case studies, see <a href="https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies">here</a>.</p><h2>Conclusion</h2><p>Moving Monolith Rails application to micro service architecture it's not one shot action. It's long run with lots of trade offs. And more over, micro service architecture is not silver bullet, it's just one alternative way to scale your application (see [Recommended Rails Application Setups][#Recommended.Rails.Application.Setups]).</p><p>The key idea is to develop your application with <a href="http://en.wikipedia.org/wiki/Single_responsibility_principle">SRP (Single responsibility principle)</a> in mind. The more modular your application the more scalable it's.</p><p>I'm planning to add more architecture case studies to my <a href="https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies">collection</a> (not only Rails related). Stay tuned.</p><h2>Rails related tech components</h2><p>Collection of major technology components mentioned in case studies.</p><h3>Web Servers / Proxy</h3>
+    <ul>
+      <li>Create shared based client gem library</li>
+    </ul>
+  </li>
+</ul>
+<p><img src="/images/posts/2015-04-04/pic9.jpg" alt="blog_post_image_inline" /></p>
+<h3>Reference (sample) service orienter / micro service architecture</h3>
+<p>Now, we have more than one Rails application and many service which are communicating using messaging, distributed cashed, etc. </p>
+<h4><a href="https://github.com/halyph/architecture-case-study/blob/master/groupon.md">Groupon</a></h4>
+<p><img src="/images/posts/2015-04-04/pic10.png" alt="blog_post_image_inline" /></p>
+<h4><a href="https://github.com/halyph/architecture-case-study/blob/master/flipcart.md">Flipcart</a></h4>
+<p><img src="/images/posts/2015-04-04/pic11.jpg" alt="blog_post_image_inline" /></p>
+<h4><a href="https://github.com/halyph/architecture-case-study/blob/master/gilt.md">Gilt</a></h4>
+<p><img src="/images/posts/2015-04-04/pic12.jpg" alt="blog_post_image_inline" /></p>
+<p>I&rsquo;ve collect much more case studies, see <a href="https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies">here</a>.</p>
+<h2><a href="#conclusion" name="conclusion">Conclusion</a></h2>
+<p>Moving Monolith Rails application to micro service architecture it&rsquo;s not one shot action. It&rsquo;s long run with lots of trade offs. And more over, micro service architecture is not silver bullet, it&rsquo;s just one alternative way to scale your application (see [Recommended Rails Application Setups][#Recommended.Rails.Application.Setups]).</p>
+<p>The key idea is to develop your application with <a href="http://en.wikipedia.org/wiki/Single_responsibility_principle">SRP (Single responsibility principle)</a> in mind. The more modular your application the more scalable it&rsquo;s.</p>
+<p>I&rsquo;m planning to add more architecture case studies to my <a href="https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies">collection</a> (not only Rails related). Stay tuned.</p>
+<h2><a href="#rails-related-tech-components" name="rails-related-tech-components">Rails related tech components</a></h2>
+<p>Collection of major technology components mentioned in case studies.</p>
+<h3><a href="#web-servers-proxy" name="web-servers-proxy">Web Servers / Proxy</a></h3>
 <ul>
   <li><a href="http://httpd.apache.org/">Apache</a></li>
   <li><a href="http://nginx.org/">Nginx</a></li>
   <li><a href="http://www.haproxy.org/">HAProxy</a></li>
-</ul><h3>Application Servers</h3>
+</ul>
+<h3><a href="#application-servers" name="application-servers">Application Servers</a></h3>
 <ul>
   <li><a href="http://unicorn.bogomips.org/">Unicorn</a></li>
   <li><a href="https://www.phusionpassenger.com">Phusion Passenger</a></li>
   <li><a href="http://puma.io/">Puma</a></li>
   <li><a href="http://code.macournoyer.com/thin/">Thin</a></li>
-</ul><h3>Libraries / Tools</h3>
+</ul>
+<h3><a href="#libraries-tools" name="libraries-tools">Libraries / Tools</a></h3>
 <ul>
   <li><a href="http://redis.io/">Redis</a></li>
   <li><a href="http://memcached.org/">Memcached</a></li>
@@ -174,15 +233,17 @@
   <li><a href="http://sidekiq.org/">Sidekiq</a></li>
   <li><a href="http://lucene.apache.org/solr/">Solr</a></li>
   <li><a href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a></li>
-</ul><h2>References</h2>
+</ul>
+<h2><a href="#references" name="references">References</a></h2>
 <ul>
   <li><a href="https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies">Collection of Ruby on Rails Architecture Case Studies</a>
-  <ul>
-    <li><a href="http://www.slideshare.net/jweiss/deployment-with-ruby-on-rails">Deployment with Ruby on Rails</a></li>
-    <li><a href="http://www.slideshare.net/kigster/enterprise-architectures-with-ruby-and-rails">Enterprise Architectures with Ruby (and Rails)</a></li>
-  </ul></li>
+    <ul>
+      <li><a href="http://www.slideshare.net/jweiss/deployment-with-ruby-on-rails">Deployment with Ruby on Rails</a></li>
+      <li><a href="http://www.slideshare.net/kigster/enterprise-architectures-with-ruby-and-rails">Enterprise Architectures with Ruby (and Rails)</a></li>
+    </ul>
+  </li>
   <li><a href="http://www.quora.com/Does-Ruby-on-Rails-scale">Does Ruby on Rails scale</a> - Quora</li>
-  <li>"Keeping Your Massive Rails App From Turning Into a S#!t Show with Benjamin Smith" (see <a href="https://vimeo.com/76094344">video</a> and <a href="https://speakerdeck.com/benjaminleesmith/keeping-your-massive-rails-app-from-turning-into-a-s-number-t-show-windycityrails-2013">slides</a>)</li>
+  <li>&ldquo;Keeping Your Massive Rails App From Turning Into a S#!t Show with Benjamin Smith&rdquo; (see <a href="https://vimeo.com/76094344">video</a> and <a href="https://speakerdeck.com/benjaminleesmith/keeping-your-massive-rails-app-from-turning-into-a-s-number-t-show-windycityrails-2013">slides</a>)</li>
 </ul></p>
 
 	<hr />
@@ -209,7 +270,7 @@
     
     <div id="footer">
       <div class="container">
-        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.4.0</a></p>
+        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.0</a></p>
       </div>
     </div>
     

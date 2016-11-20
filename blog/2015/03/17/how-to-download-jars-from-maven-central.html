@@ -87,7 +87,10 @@
 		<a href="/tags/java.html">java</a> | 
 	</p>
 
-	<p><p>We know how to download Java libraries with it's dependencies (transitive included) via Maven <em>pom.xml</em>, Ant/Ivy <em>build.xml</em> script, Gradle <em>build.gradle</em> script etc.<br/>But what if we need to download them without these scripts.</p><p>There are several ways to do this.<br/>Assume that we'd like to download <code>spark-core</code> library (<code>groupId=com.sparkjava, artifactId=spark-core, version=2.1</code>) with all dependencies from <a href="http://search.maven.org/#artifactdetails%7Ccom.sparkjava%7Cspark-core%7C2.1%7Cjar">Maven Central</a> into <code>lib</code> folder.</p><h2>Use Maven3 dependency plugin</h2><p>Here is there variants for lib download:</p>
+	<p><p>We know how to download Java libraries with it&rsquo;s dependencies (transitive included) via Maven <em>pom.xml</em>, Ant/Ivy <em>build.xml</em> script, Gradle <em>build.gradle</em> script etc.<br/>But what if we need to download them without these scripts.</p>
+<p>There are several ways to do this.<br/>Assume that we&rsquo;d like to download <code>spark-core</code> library (<code>groupId=com.sparkjava, artifactId=spark-core, version=2.1</code>) with all dependencies from <a href="http://search.maven.org/#artifactdetails%7Ccom.sparkjava%7Cspark-core%7C2.1%7Cjar">Maven Central</a> into <code>lib</code> folder.</p>
+<h2><a href="#use-maven3-dependency-plugin" name="use-maven3-dependency-plugin">Use Maven3 dependency plugin</a></h2>
+<p>Here is there variants for lib download:</p>
 <pre><code class="bash Download library with all dependencies"># Specify repoUrl (it&#39;s optional)
 mvn dependency:get -DrepoUrl=http://download.java.net/maven/2/ -DgroupId=com.sparkjava -DartifactId=spark-core -Dversion=2.1
 
@@ -96,17 +99,23 @@ mvn dependency:get -DgroupId=com.sparkjava -DartifactId=spark-core -Dversion=2.1
 
 # OR use parameter artifact as groupId:artifactId:version
 mvn dependency:get -Dartifact=com.sparkjava:spark-core:2.1
-</code></pre><p>Now we need to copy just downloaded artifacts in our working directory:</p>
+</code></pre>
+<p>Now we need to copy just downloaded artifacts in our working directory:</p>
 <pre><code class="bash Copy jars from local maven repo">mvn dependency:copy-dependencies -f $HOME/.m2/repository/com/sparkjava/spark-core/2.1/spark-core-2.1.pom -DoutputDirectory=$(pwd)/lib
 # the previous command doesn&#39;t copy spark-core-x.x.jar, that&#39;s why we should copy it manually
 cp $HOME/.m2/repository/com/sparkjava/spark-core/2.1/spark-core-2.1.jar $(pwd)/lib
-</code></pre><h2>Use standalone Ivy</h2><p>We can use Ivy as standalone jar to download Maven dependencies without creating Ant build file:</p>
+</code></pre>
+<h2><a href="#use-standalone-ivy" name="use-standalone-ivy">Use standalone Ivy</a></h2>
+<p>We can use Ivy as standalone jar to download Maven dependencies without creating Ant build file:</p>
 <pre><code class="bash"># 1. Download the latest ivy jar (currently it&#39;s v.2.4.0)
 curl -L -O http://search.maven.org/remotecontent?filepath=org/apache/ivy/ivy/2.4.0/ivy-2.4.0.jar
 
 # 2. Run ivy.jar to retrieve all dependencies
 java -jar ivy-2.4.0.jar -dependency com.sparkjava spark-core 2.1 -retrieve &quot;lib/[artifact]-[revision](-[classifier]).[ext]&quot;
-</code></pre><p>As you can see Ivy downloads approach is much simpler. The only cons (or pros, it depends) that <strong>ivy.jar</strong> should be additionally downloaded.</p><h2>Calling Ivy from Groovy or Java</h2><p>Here I've decided to store <a href="http://makandracards.com/evgeny-goldin/5817-calling-ivy-from-groovy-or-java">Evgeny's Goldin</a> code snippet as a reference for myself. Programmatic artifacts downloads is not a common operation. It's alway nice to know the general concept how it can be done. Especially when Ivy documentation is not very informative.</p>
+</code></pre>
+<p>As you can see Ivy downloads approach is much simpler. The only cons (or pros, it depends) that <strong>ivy.jar</strong> should be additionally downloaded.</p>
+<h2><a href="#calling-ivy-from-groovy-or-java" name="calling-ivy-from-groovy-or-java">Calling Ivy from Groovy or Java</a></h2>
+<p>Here I&rsquo;ve decided to store <a href="http://makandracards.com/evgeny-goldin/5817-calling-ivy-from-groovy-or-java">Evgeny&rsquo;s Goldin</a> code snippet as a reference for myself. Programmatic artifacts downloads is not a common operation. It&rsquo;s alway nice to know the general concept how it can be done. Especially when Ivy documentation is not very informative.</p>
 <pre><code class="java Groovy snippet of calling Ivy">import org.apache.ivy.Ivy
 import org.apache.ivy.core.module.descriptor.DefaultDependencyDescriptor
 import org.apache.ivy.core.module.descriptor.DefaultModuleDescriptor
@@ -164,7 +173,8 @@ public File resolveArtifact(String groupId, String artifactId, String version) {
 }
 
 resolveArtifact( &#39;log4j&#39;, &#39;log4j&#39;, &#39;1.2.16&#39; )
-</code></pre><h2>References</h2>
+</code></pre>
+<h2><a href="#references" name="references">References</a></h2>
 <ul>
   <li><a href="http://stackoverflow.com/questions/15450383/using-maven-to-download-dependencies-to-a-directory-on-the-command-line/15456621">Using Maven to download dependencies to a directory on the command line - Stack Overflow</a></li>
   <li><a href="http://stackoverflow.com/questions/15598612/simplest-ivy-code-to-programmatically-retrieve-dependency-from-maven-central">Simplest Ivy code to programmatically retrieve dependency from Maven Central - Stack Overflow</a></li>
@@ -195,7 +205,7 @@ resolveArtifact( &#39;log4j&#39;, &#39;log4j&#39;, &#39;1.2.16&#39; )
     
     <div id="footer">
       <div class="container">
-        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.4.0</a></p>
+        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.0</a></p>
       </div>
     </div>
     
