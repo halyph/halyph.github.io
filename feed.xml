@@ -6,8 +6,8 @@
     <atom:link href="http://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sun, 20 Nov 2016 17:52:06 +0200</pubDate>
-    <lastBuildDate>Sun, 20 Nov 2016 17:52:06 +0200</lastBuildDate>
+    <pubDate>Mon, 21 Nov 2016 10:49:56 +0200</pubDate>
+    <lastBuildDate>Mon, 21 Nov 2016 10:49:56 +0200</lastBuildDate>
 
     <item>
       <title>Gradle, Groovy, Kotlin. FTW?</title>
@@ -745,7 +745,7 @@ Some Text
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/java.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;I believe that everybody knows the most popular full-stack web framework - &lt;a href=&quot;http://rubyonrails.org&quot;&gt;Ruby on Rails&lt;/a&gt;. Of course there are other frameworks for Ruby language, but Rails is the number one. Now, the question: how many full-stack web frameworks exist for Java?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;UPDATE (2016-11-20)&lt;/strong&gt;: &lt;a href=&quot;https://www.cuba-platform.com/blog-tags/open-source&quot;&gt;CUDA Platform is open sourced under Apache License 2.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE (2016-11-20)&lt;/strong&gt;: &lt;a href=&quot;https://www.cuba-platform.com/blog-tags/open-source&quot;&gt;CUBA Platform is open sourced under Apache License 2.0&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;&lt;a href=&quot;#overview&quot; name=&quot;overview&quot;&gt;Overview&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Let&amp;rsquo;s define the desired items for full-stack web framework:&lt;/p&gt;
 &lt;ul&gt;
