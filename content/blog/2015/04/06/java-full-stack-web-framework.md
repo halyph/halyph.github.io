@@ -9,7 +9,7 @@ status=published
 
 I believe that everybody knows the most popular full-stack web framework - [Ruby on Rails](http://rubyonrails.org). Of course there are other frameworks for Ruby language, but Rails is the number one. Now, the question: how many full-stack web frameworks exist for Java?
 
-**UPDATE (2016-11-20)**: [CUDA Platform is open sourced under Apache License 2.0](https://www.cuba-platform.com/blog-tags/open-source)
+**UPDATE (2016-11-20)**: [CUBA Platform is open sourced under Apache License 2.0](https://www.cuba-platform.com/blog-tags/open-source)
 
 ## Overview
 
