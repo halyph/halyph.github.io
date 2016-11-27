@@ -6,9 +6,118 @@
     <atom:link href="http://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Mon, 21 Nov 2016 10:49:56 +0200</pubDate>
-    <lastBuildDate>Mon, 21 Nov 2016 10:49:56 +0200</lastBuildDate>
+    <pubDate>Sun, 27 Nov 2016 18:36:33 +0200</pubDate>
+    <lastBuildDate>Sun, 27 Nov 2016 18:36:33 +0200</lastBuildDate>
 
+    <item>
+      <title>Who left Ruby Community?</title>
+      <link>http://halyph.com/blog/2016/11/27/who-left-ruby-community.html</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2016/11/27/who-left-ruby-community.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/images/blog/ruby.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been listening &lt;a href=&quot;https://devchat.tv/ruby-rogues&quot;&gt;The Ruby Rogues&lt;/a&gt; podcast for several years. Despite the fact the I&amp;rsquo;m not a Ruby developer ;-). I&amp;rsquo;m Ruby user if You will.&lt;/p&gt;
+&lt;p&gt;So, there was one very interesting episode &lt;a href=&quot;https://devchat.tv/ruby-rogues/283-rr-is-ruby-dying&quot;&gt;&amp;ldquo;#283 - Is Ruby Dying?&amp;rdquo;&lt;/a&gt;.&lt;br/&gt;I&amp;rsquo;m in Java community and it&amp;rsquo;s very common to hear that &lt;em&gt;&amp;ldquo;Java is Dying&amp;rdquo;&lt;/em&gt; ;-). But, it&amp;rsquo;s very uncommon to hear such statement in Ruby-related podcast. &lt;/p&gt;
+&lt;p&gt;The most interesting part is:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Charles: Yeah, it’s really interesting too. This goes back, you talking about people coming in,&lt;br/&gt;it comes back at least for me to the people who say that the Ruby community is shrinking.&lt;br/&gt;They see &lt;strong&gt;prominent members of the community leaving&lt;/strong&gt; but at the same time they’re typically doing Ruby and something else.&lt;br/&gt;If they’re going and picking up JavaScript, they’re picking up a front-end framework or something&lt;br/&gt;and occasionally they’ll move off to express or something instead of Rails.&lt;/p&gt;
+  &lt;p&gt;But yeah, is the Ruby community really shrinking? Well, the ticket for Rails Conf and Ruby Conf as far as I can tell are getting harder and harder to get. The conference really isn’t getting bigger or smaller, it’s harder and harder to get because more and more people want to go.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And, I&amp;rsquo;ve decided to find out who are from &lt;em&gt;prominent members&lt;/em&gt; of the community leaving:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name &lt;/th&gt;
+      &lt;th&gt;Info &lt;/th&gt;
+      &lt;th&gt;Ruby Community &lt;/th&gt;
+      &lt;th&gt;Alt/New Community &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Yehuda Katz &lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/wycats&quot;&gt;github&lt;/a&gt;, &lt;a href=&quot;http://yehudakatz.com/&quot;&gt;site&lt;/a&gt; &lt;/td&gt;
+      &lt;td&gt;Merb, Ruby on Rails, Bundler, Thor &lt;/td&gt;
+      &lt;td&gt;Rust &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Steve Klabnik &lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/steveklabnik&quot;&gt;github&lt;/a&gt;, &lt;a href=&quot;http://www.steveklabnik.com/&quot;&gt;site&lt;/a&gt; &lt;/td&gt;
+      &lt;td&gt;Ruby on Rails &lt;/td&gt;
+      &lt;td&gt;Rust &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;José Valim &lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/josevalim&quot;&gt;github&lt;/a&gt; &lt;/td&gt;
+      &lt;td&gt;Ruby on Rails &lt;/td&gt;
+      &lt;td&gt;Elixir &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Dave Thomas &lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/pragdave&quot;&gt;github&lt;/a&gt;, &lt;a href=&quot;https://pragdave.me/&quot;&gt;blog&lt;/a&gt; &lt;/td&gt;
+      &lt;td&gt;wrote the 1st English Ruby Book in 2000 &lt;/td&gt;
+      &lt;td&gt;Elixir &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Matt Aimonetti &lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/mattetti&quot;&gt;github&lt;/a&gt;, &lt;a href=&quot;https://matt.aimonetti.net/&quot;&gt;site&lt;/a&gt; &lt;/td&gt;
+      &lt;td&gt;Merb, MacRuby &lt;/td&gt;
+      &lt;td&gt;Golang &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mark Bates &lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/markbates&quot;&gt;github&lt;/a&gt;, &lt;a href=&quot;http://www.metabates.com/&quot;&gt;site&lt;/a&gt; &lt;/td&gt;
+      &lt;td&gt;Ruby Conf Speacker, Screencast &lt;/td&gt;
+      &lt;td&gt;Golang &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Blake Mizerany &lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/bmizerany&quot;&gt;github&lt;/a&gt; &lt;/td&gt;
+      &lt;td&gt;Sinatra &lt;/td&gt;
+      &lt;td&gt;Golang &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ron Evans &lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/deadprogram&quot;&gt;github&lt;/a&gt; &lt;/td&gt;
+      &lt;td&gt;KidsRuby &lt;/td&gt;
+      &lt;td&gt;Ruby, Golang &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Katrina Owen &lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/kytrinyx&quot;&gt;github&lt;/a&gt;, &lt;a href=&quot;http://www.kytrinyx.com/&quot;&gt;site&lt;/a&gt; &lt;/td&gt;
+      &lt;td&gt;Ruby Conf Speacker &lt;/td&gt;
+      &lt;td&gt;Golang, Ruby &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bryan Liles &lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/bryanl&quot;&gt;github&lt;/a&gt; &lt;/td&gt;
+      &lt;td&gt;Ruby Conf Speacker &lt;/td&gt;
+      &lt;td&gt;Golang &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Chad Fowler &lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/chad&quot;&gt;github&lt;/a&gt;, &lt;a href=&quot;http://chadfowler.com/&quot;&gt;site&lt;/a&gt; &lt;/td&gt;
+      &lt;td&gt;Ruby Conf orginizer, Ruby Books writer &lt;/td&gt;
+      &lt;td&gt;Ruby, Scala, Clojure &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;David Chelimsky &lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/dchelimsky&quot;&gt;github&lt;/a&gt; &lt;/td&gt;
+      &lt;td&gt;RSpec &lt;/td&gt;
+      &lt;td&gt;Ruby, Clojure &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Chris McCord &lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/chrismccord&quot;&gt;github&lt;/a&gt; &lt;/td&gt;
+      &lt;td&gt;Ruby on Rails &lt;/td&gt;
+      &lt;td&gt;Elixir &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;It&amp;rsquo;s very interesting aspect of any community.&lt;/p&gt;
+&lt;p&gt;Please comment/correct me if this table has incorrect info.&lt;/p&gt;
+	</description>
+    </item>
     <item>
       <title>Gradle, Groovy, Kotlin. FTW?</title>
       <link>http://halyph.com/blog/2016/06/15/gradle-groovy-kotlin-ftw.html</link>
