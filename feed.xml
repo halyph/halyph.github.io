@@ -6,9 +6,157 @@
     <atom:link href="http://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sun, 27 Nov 2016 18:36:33 +0200</pubDate>
-    <lastBuildDate>Sun, 27 Nov 2016 18:36:33 +0200</lastBuildDate>
+    <pubDate>Sun, 27 Nov 2016 20:22:48 +0200</pubDate>
+    <lastBuildDate>Sun, 27 Nov 2016 20:22:48 +0200</lastBuildDate>
 
+    <item>
+      <title>Programming language reserved words statistics</title>
+      <link>http://halyph.com/blog/2016/11/28/prog-lang-reserved-words.html</link>
+      <pubDate>Mon, 28 Nov 2016 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2016/11/28/prog-lang-reserved-words.html</guid>
+      	<description>
+	&lt;p&gt;Languges reserved words statistics:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;C++&lt;/strong&gt; 92&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;C89&lt;/strong&gt; 32&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;C99&lt;/strong&gt; 37&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;C11&lt;/strong&gt; 42&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Python 2&lt;/strong&gt; 31&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Python 3&lt;/strong&gt; 33&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ruby&lt;/strong&gt; 41&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Golang&lt;/strong&gt; 25&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Java&lt;/strong&gt; 53&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Scala&lt;/strong&gt; 50&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a href=&quot;http://en.cppreference.com/w/cpp/keyword&quot;&gt;C++ keywords&lt;/a&gt;: 92 words&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;alignas (since C++11)    dynamic_cast           reinterpret_cast
+alignof (since C++11)    else                   requires (concepts TS)
+and                      enum                   return
+and_eq                   explicit               short
+asm                      export(1)              signed
+atomic_cancel (TM TS)    extern(1)              sizeof(1)
+atomic_commit (TM TS)    false                  static
+atomic_noexcept (TM TS)  float                  static_assert (since C++11)
+auto(1)                  for                    static_cast
+bitand                   friend                 struct(1)
+bitor                    goto                   switch
+bool                     if                     synchronized (TM TS)
+break                    import (modules TS)    template
+case                     inline(1)              this
+catch                    int                    thread_local (since C++11)
+char                     long                   throw
+char16_t (since C++11)   module (modules TS)    true
+char32_t (since C++11)   mutable(1)             try
+class(1)                 namespace              typedef
+compl                    new                    typeid
+concept (concepts TS)    noexcept (since C++11) typename
+const                    not                    union
+constexpr (since C++11)  not_eq                 unsigned
+const_cast               nullptr (since C++11)  using(1)
+continue                 operator               virtual
+decltype (since C++11)   or                     void
+default(1)               or_eq                  volatile
+delete(1)                private                wchar_t
+do                       protected              while
+double                   public                 xor
+                         register(2)            xor_eq
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a href=&quot;http://en.cppreference.com/w/c/keyword&quot;&gt;C keywords&lt;/a&gt;&lt;/h2&gt;
+&lt;h3&gt;C89: 32 words&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;auto         goto         
+break        if           
+case         int          
+char         long         
+const        register     
+continue     return       
+default      short        
+do           signed       
+double       sizeof       
+else         static       
+enum         struct       
+extern       switch       
+float        typedef      
+for          union        
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;C99: C89 + 5 words&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;_Bool
+_Complex
+_Imaginary
+inline
+restrict
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;C11: C99 + 5 words&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;_Alignas        _Noreturn
+_Alignof        _Static_assert
+_Atomic         _Thread_local
+_Generic        _Noreturn
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a href=&quot;https://docs.python.org/2/reference/lexical_analysis.html#keywords&quot;&gt;Python 2&lt;/a&gt;: 31 words&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;and       del       from      not       while
+as        elif      global    or        with
+assert    else      if        pass      yield
+break     except    import    print
+class     exec      in        raise
+continue  finally   is        return
+def       for       lambda    try
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a href=&quot;https://docs.python.org/3/reference/lexical_analysis.html#keywords&quot;&gt;Python 3&lt;/a&gt;: 33 words&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;False      class      finally    is         return
+None       continue   for        lambda     try
+True       def        from       nonlocal   while
+and        del        global     not        with
+as         elif       if         or         yield
+assert     else       import     pass
+break      except     in         raise
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a href=&quot;https://docs.ruby-lang.org/en/2.3.0/keywords_rdoc.html&quot;&gt;Ruby&lt;/a&gt;: 41 words&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;__ENCODING__
+__FILE__  and    def       end     in      or      self   unless
+__LINE__  begin  defined?  ensure  module  redo    super  until
+BEGIN     break  do        false   next    rescue  then   when
+END       case   else      for     nil     retry   true   while
+alias     class  elsif     if      not     return  undef  yield
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a href=&quot;https://golang.org/ref/spec#Keywords&quot;&gt;Golang&lt;/a&gt;: 25 words&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;break        default      func         interface    select
+case         defer        go           map          struct
+chan         else         goto         package      switch
+const        fallthrough  if           range        type
+continue     for          import       return       var
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a href=&quot;http://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html&quot;&gt;Java&lt;/a&gt;: 53 words&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;abstract    continue   for         new          switch
+assert***   default    goto*       package      synchronized
+boolean     do         if          private      this
+break       double     implements  protected    throw
+byte        else       import      public       throws
+case        enum****   instanceof  return       transient
+catch       extends    int         short        try
+char        final      interface   static       void
+class       finally    long        strictfp**   volatile
+const*      float      native      super        while
+
+Reserved words for literal values:
+false       true       null
+
+*       not used
+**      added in 1.2
+***     added in 1.4
+****    added in 5.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a href=&quot;https://www.scala-lang.org/files/archive/spec/2.11/01-lexical-syntax.html&quot;&gt;Scala&lt;/a&gt; : 50 words&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;abstract    case        catch       class       def
+do          else        extends     false       final
+finally     for         forSome     if          implicit
+import      lazy        macro       match       new
+null        object      override    package     private
+protected   return      sealed      super       this
+throw       trait       try         true        type
+val         var         while       with        yield
+_    :    =    =&amp;gt;    &amp;lt;-    &amp;lt;:    &amp;lt;%     &amp;gt;:    #    @
+&lt;/code&gt;&lt;/pre&gt;
+	</description>
+    </item>
     <item>
       <title>Who left Ruby Community?</title>
       <link>http://halyph.com/blog/2016/11/27/who-left-ruby-community.html</link>
