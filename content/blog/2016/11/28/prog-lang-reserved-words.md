@@ -1,4 +1,4 @@
-title=Programming language reserved words statistics
+title=Reserved Words of Programming languages 
 date=2016-11-28
 type=post
 tags=ruby, python, java, scala, golang, cpp, c
@@ -6,7 +6,7 @@ status=published
 ~~~~~~
 ![blog_post_image](/images/posts/2016-11-28/wordcloud-wide.png)
 
-Languges reserved words statistics:
+Amount of reserved words per programming language:
 
 * **C++** - 92
 * **C89** - 32
