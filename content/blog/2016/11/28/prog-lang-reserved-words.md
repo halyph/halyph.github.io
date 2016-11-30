@@ -4,20 +4,22 @@ type=post
 tags=ruby, python, java, scala, golang, cpp, c
 status=published
 ~~~~~~
+![blog_post_image](/images/posts/2016-11-28/wordcloud-wide.png)
 
 Languges reserved words statistics:
 
-* **C++** 92
-* **C89** 32
-* **C99** 37
-* **C11** 42
-* **Python 2** 31   
-* **Python 3** 33
-* **Ruby** 41
-* **Golang** 25
-* **Java** 53
-* **Scala** 50
+* **C++** - 92
+* **C89** - 32
+* **C99** - 37
+* **C11** - 42
+* **Python 2** - 31   
+* **Python 3** - 33
+* **Ruby** - 41
+* **Golang** - 25
+* **Java** - 53
+* **Scala** - 50
 
+As You can see **Golang** has the minimal amount of reserved words.
 
 ## [C++ keywords](http://en.cppreference.com/w/cpp/keyword): 92 words
 
@@ -153,8 +155,6 @@ catch       extends    int         short        try
 char        final      interface   static       void
 class       finally    long        strictfp**   volatile
 const*      float      native      super        while
-
-Reserved words for literal values:
 false       true       null
 
 *       not used
@@ -176,3 +176,5 @@ throw       trait       try         true        type
 val         var         while       with        yield
 _    :    =    =>    <-    <:    <%     >:    #    @
 ```
+
+**Scala**'s special symbols (`_    :    =    =>    <-    <:    <%     >:    #    @`) can be excluded and in this case **Scala** might have only 40 reserverd words.
