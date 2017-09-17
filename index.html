@@ -503,81 +503,372 @@ The noise around "Groovy vs Kotlin" for DSL implementation inside Gradle sounds 
 </div>
 </div>
 </div></p>
-  			<a href="blog/2015/11/08/java-day-kiev-2015-report.html"><h1>Java Day - Kiev, 2015 - Report</h1></a>
-  			<p>08 November 2015</p>
-  			<p><p><img src="/images/posts/conf/java_day_2015.png" alt="blog_post_image" /></p>
-<p><em>November 6-7, 2015</em> I visited <a href="http://javaday.org.ua/kyiv">Java Day Kyiv</a> conference. This report is for myself just to keep track talks I&rsquo;ve attended.</p>
-<h2><a href="#day-1" name="day-1">Day 1</a></h2>
+  			<a href="blog/2016/05/14/the-state-of-groovy-and-other-jvm-languages.html"><h1>The state of Groovy and other JVM Languages</h1></a>
+  			<p>14 May 2016</p>
+  			<p><div id="preamble">
+<div class="sectionbody">
+<div class="imageblock" style="float: right">
+<div class="content">
+<img src="/images/posts/2016-05-14/img1.png" alt="img1">
+</div>
+</div>
+<div class="paragraph">
+<p>Well, I like the <a href="http://groovy-lang.org/">Groovy</a> language in general. This language has nice pragmatic applications and all other related “cookie”, but it looks like other languages, Scala especially, are more popular or trendy.</p>
+</div>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="/images/posts/2016-05-14/img2.jpg" alt="img2">
+</div>
+<div class="title">Figure 1. JVM language History (image created by <a href="https://zeroturnaround.com/rebellabs/the-adventurous-developers-guide-to-jvm-languages-java-scala-groovy-fantom-clojure-ceylon-kotlin-xtend/">zeroturnaround</a> )</div>
+</div>
+<div class="paragraph">
+<p>The actual motivation was based on the numbers provided by <a href="https://libraries.io" class="bare">https://libraries.io</a></p>
+</div>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="/images/posts/2016-05-14/img3.jpeg" alt="img3">
+</div>
+</div>
+<div class="paragraph">
+<p>Here we have the next numbers projects per language (on Github):</p>
+</div>
+<div class="ulist">
 <ul>
-  <li>
-  <p>
-  <p><strong>Get Past the Syntax, the Real Scare&rsquo;s in the Semantics</strong> by <a href="https://twitter.com/@venkat_s">Venkat Subramaniam</a> </p>
-  <blockquote>
-    <p>We often hear programmers complain about the syntax, especially when learning a new language. It turns out that, while syntax plays a role in our ability to learn and use languages, the real force we have to deal with is in the semantics. Once we get past the syntax, the semantics is where the real power and the real scare is. Curious to learn more?</p>
-  </blockquote></p></li>
-  <li>
-  <p><strong>Enterprise Integration Patterns Revisited for the Era of Big Data, Internet of Things and Microservices</strong> by <a href="https://twitter.com/kaiwaehner">Kai Waehner</a> (<a href="http://www.slideshare.net/KaiWaehner/enterprise-integration-patterns-revisited-eip-for-the-era-of-big-data-internet-of-things-iot-and-cloud">slides</a>)</p>
-  <blockquote>
-    <p>Data exchanges between companies increase a lot. Hence, the number of applications, which must be integrated increases, too. The realization of these integration scenarios is a complex and time-consuming task because different applications and services do not use the same concepts, interfaces, data formats and technologies. Originated and published over ten years ago by Gregor Hohpe and Bobby Woolf, Enterprise Integration Patterns (EIP) became the world wide de facto standard for describing integration problems. They offer a standardized way to split huge, complex integration scenarios into smaller recurring problems. This session revisits EIPs and gives an overview about the status quo and its relevance regarding modern concepts such as Big Data, Internet of Things or Microservices. Fortunately, EIPs offer more possibilities than just being used for modeling integration problems in a standardized way. Several frameworks and tools already implement these patterns. The developer does not have to implement EIPs on his own. Therefore, the end of the session shows different open source frameworks and proprietary tools available, which can be used for modeling and implementing complex integration scenarios by using the EIPs.</p>
-  </blockquote></li>
-  <li>
-  <p><strong>Microservices at Proximus: Netflix OSS and HATEOAS deployed on production</strong> by <a href="https://twitter.com/andreasevers">Andreas Evers</a> (<a href="https://speakerdeck.com/krosan/microservices-with-netflix-oss-and-hypermedia-apis-javaday-kiev">slides</a>)</p>
-  <blockquote>
-    <p>At a major telco company in Belgium we have designed and implemented a cutting-edge architecture using microservices and hypermedia (REST level 3 / hateoas) for the entire customer- and business-facing web portfolio. Throughout this session you will learn what the microservices hype is all about, including its benefits and pitfalls based on our experiences of running microservices (including the Netflix OSS) in production at a major company in Belgium. To manage hundreds of microservices you need to apply certain patterns such as circuit breakers, gateways, service registries and so on. You will learn how these patterns work, how they are applied through the Netflix stack and how easy it is to use them in your architecture through code examples and demos. The contracts between these microservices should be well defined and loosely coupled. Using hypermedia as the engine of application state (hateoas), we can benefit from independent evolution and decoupled implementation. How we can implement these using Spring Hateoas, correctly document using Spring Restdocs, integrate with the HAL browser and version using JsonViews will become clear in the second part of this session.</p>
-  </blockquote></li>
-  <li>
-  <p><strong>Java in production for Data Mining Research projects</strong> by <a href="https://plus.google.com/110650159101065784429/posts">Alexey Zinoviev</a> (<a href="http://www.slideshare.net/zaleslaw/javadaykiev15-java-in-production-for-data-mining-research-projects">slide</a>)</p>
-  <blockquote>
-    <p>Java is often criticized for hard parsing CSV datasets, poor matrix and vectors manipulations. This makes it hard to easy and efficiently implement certain types of machine learning algorithms. In many cases data scientists choose R or Python languages for modeling and problem solution and you as a Java developer should rewrite R algorithms in Java or integrate many small Python scripts in Java application. But why so many highload tools like Cassandra, Hadoop, Giraph, Spark are written in Java or executed on JVM? What the secret of successful implementation and running? Maybe we should forget old manufacturing approach of dividing on developers and research engineers in production projects? During the report, we will discuss how to build full Java-stack Data Mining application, deploy it, make charts, integrate with databases, how to improve performance with JVM tuning and etc. Attendees of my talk will become familiar with the development and deploy of research Java projects, Hadoop/Spark — based Data Mining tools and will get useful tips about possible integration ways.</p>
-  </blockquote></li>
-  <li>
-  <p><strong>How Java developers should test their applications</strong> by <a href="https://twitter.com/xpinjection">Mikalai Alimenkou</a> <em>It was a real code sharing session where were demoed and discussed different testing approaches</em></p></li>
+<li>
+<p>Golang — 352K</p>
+</li>
+<li>
+<p>JavaScript — 232K</p>
+</li>
+<li>
+<p>Ruby - 73K</p>
+</li>
+<li>
+<p>Java — 44.5K</p>
+</li>
+<li>
+<p>Python — 35.9K</p>
+</li>
+<li>
+<p>Clojure — 11.2K</p>
+</li>
+<li>
+<p>Scala — 10.1K</p>
+</li>
+<li>
+<p>C — 5.29K</p>
+</li>
+<li>
+<p>Haskell — 4.71K</p>
+</li>
+<li>
+<p>Shell — 3.61K</p>
+</li>
+<li>
+<p><strong>Groovy — 729</strong> (WTF? What? Why?)</p>
+</li>
 </ul>
-<h2><a href="#day-2" name="day-2">Day 2</a></h2>
+</div>
+<div class="paragraph">
+<p>I do not understand why Github has so few Groovy based projects. But, let’s double check these numbers.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_about_groovy_language_ecosystem">About Groovy Language ecosystem</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If somebody asks you about Groovy the next projects come up to your mind:</p>
+</div>
+<div class="ulist">
 <ul>
-  <li>
-  <p>
-  <p><strong>The Future [Java] Developer</strong> by <a href="https://twitter.com/brjavaman">Bruno Souza</a>. <strong>Keynote</strong></p>
-  <blockquote>
-    <p>What kind of developer do you want to be? The kind that plans, organizes, prepares, and prepares&hellip; and prepares&hellip; Or the kind that focus on delivering and on transforming your customers&rsquo; lives? Software development is a creative and complex work. It is trully &ldquo;Meaningful Work&rdquo;. But&hellip; If we do it right! Java has allowed us to adventure into all kinds of new technologies, while improving our core knowledge. But how does the ever changing technology landscape and things like Cloud Computing, Internet of Things, BigData and DevOps impact our ability to deliver? This talk will take a look at the abilities of the Future [Java] Developer, and how open source, startups and containers play a role into our future careers.</p>
-  </blockquote></p></li>
-  <li>
-  <p><strong>20 Years of Java</strong> by <a href="https://twitter.com/lagergren">Marcus Lagergren</a>. <strong>Keynote</strong></p>
-  <blockquote>
-    <p>This keynote will be a historical trip down memory lane - going through 20 years of Java and JVM implementations. This will be partly from Marcus’s own perspective as one of the architects behind JRockit, with plenty of stories from the trenches, like the benchmarking competitions between BEA/Oracle, Sun and IBM. We will see how Java and the JVM turned into the robust high performance server side platform that it is today, partly through personal observations and partly through a more objective “what a long strange trip this has been”. He will take you back to 1995 in a time machine and slowly bring you to 2014, going over the major Java releases and the runtime innovations made in the JVM side to get us here. Finally, we will do a short trip into the future, even though the future is always fuzzy, to explore what might be coming next. With Java 8, the biggest release in Java history, Java is more vibrant and alive than ever before. This is an evolution that won’t be stopped.</p>
-  </blockquote></li>
-  <li>
-  <p><strong>Brand new proximus microservices architecture in production</strong> by <a href="https://twitter.com/andreasevers">Andreas Evers</a> (<a href="https://speakerdeck.com/krosan/lessons-learned-testimonial-of-a-brand-new-microservices-architecture-in-production-javaday-kiev">slides</a>)</p>
-  <blockquote>
-    <p>At a major telco company in Belgium we have designed and implemented a cutting-edge architecture using microservices and hypermedia (REST level 3 / hateoas) for the entire customer- and business-facing web portfolio. During this talk we will shed a light on the migration path we went through to get Spring Cloud microservices based on Netflix deployed to production. Migrating from a monolith to containerized microservices doesn&rsquo;t always go smoothly in a rigid regulated enterprise. This is not your regular microservice talk. This is a journey through our struggles to reform both technically and culturally (reverse Conway&rsquo;s law) towards a devops distributed architecture which actually runs on production. E.g. gradually evolving from a manual infrastructure deploying on JBoss and using dedicated apache load balancers, to a PaaS private cloud solution.</p>
-  </blockquote></li>
-  <li>
-  <p><strong>One VM To Rule Them All</strong> by <a href="http://www.wuerthinger.net/">Thomas Wuerthinger</a> (<a href="http://www.slideshare.net/ThomasWuerthinger/jazoon2014-slides">slides</a>)</p>
-  <blockquote>
-    <p>Running a multitude of programming languages is a common requirement for large scale applications. This talk presents a virtual machine architecture that allows to handle different programming languages and their interoperability while not sacrificing performance. It bases on partial evaluation of AST interpreters to automatically derive compiled code. A prototype of this architecture has been developed as part of the Graal OpenJDK project (<a href="http://openjdk.java.net/projects/graal/">http://openjdk.java.net/projects/graal/</a>) as well as the TruffleRuby, ZipPy, and FastR open source projects. The talk will be about the general principles behind our VM, special aspects of the Ruby, Python, and R implementations, and our vision for making language interoperability work efficiently.</p>
-  </blockquote></li>
-  <li>
-  <p><strong>Microservices Design Patterns for Java Application</strong> by <a href="https://twitter.com/arungupta">Arun Gupta</a> (<a href="https://dzone.com/refcardz/getting-started-with-microservices">DZone Refcard</a>)</p>
-  <blockquote>
-    <p>Microservices allow to decompose a monolithic application into cohesive and multiple decoupled services. Each service is running in its own process and communicate using lightweight mechanisms, such as HTTP API. These services are built around business capabilities or functional decomposition. Microservice also enables true polyglot architecture – both in terms of language and data. It truly allows you to employ the right tool for the right job. Each service is independently deployable and lends very well to fully automated deployment machinery. Can you take an existing Java EE application and decompose it into microservices? What tools are required to enable CI/CD? What are different design patterns for microservices? What tools do you need to manage such services? Is the complexity being pushed around from service implementation to orchestration? This talk will explain some of these concerns and provide guidance on how to leverage microservices in your Java applications.</p>
-  </blockquote></li>
-  <li>
-  <p><strong>Scaling Wix with microservices architecture and multi-cloud platform</strong> by <a href="http://www.aviransplace.com/">Aviran Mordo</a> (<a href="http://www.slideshare.net/aviranwix/scaling-wix-with-microservices-and-multi-cloud-2015">slides</a>)</p>
-  <blockquote>
-    <p>Many small startups build their systems on top of a traditional toolset like Tomcat, Hibernate, and MySQL. These systems are used because they facilitate easy development and fast progress, but many of them are monolithic and have limited scalability. So as a startup grows, the team is confronted with the problem of how to evolve the system and make it scalable. Facing the same dilemma, Wix.com grew from 0 to 70 million users in just a few years. Facing some interesting challenges, like performance and availability. Traditional performance solutions, such as caching, would not help due to a very long tail problem which causes caching to be highly inefficient. And because every minute of downtime means customers lose money, the product needed to have near 100% availability. Solving these issues required some interesting and out-of-the-box thinking, and this talk will discuss some of these strategies: building a highly preformant, highly available and highly scalable system; and leveraging microservices architecture and multi-cloud platforms to help build a very efficient and cost-effective system.</p>
-  </blockquote></li>
-  <li>
-  <p><strong>From CRUD to Hypermedia APIs with Spring</strong> by <a href="https://twitter.com/flushdia">Vladimir Tsukur</a></p>
-  <blockquote>
-    <p>Typical way to design and expose HTTP API today is a so called CRUD approach: come up with URL templates for resources, map create-read-update-delete operations to HTTP verbs and serialize domain model as JSON. Nice and easy, isn&rsquo;t it? This talk will present limitations of CRUD style APIs and how to address them using &ldquo;real&rdquo; REST and hypermedia, HAL and ALPS. We&rsquo;ll take a look how a set of libraries and tools from Spring helps building these APIs. All the talking is not worth it without an example, so Spring-based application will be our guide. Amazon, PayPal, GitHub and other API providers have already started embracing hypermedia and linking by enhancing their HTTP interfaces. Are you next? #rest #hypermedia #http #api #design #spring #spring-hateoas #java #hal #alps</p>
-  </blockquote></li>
+<li>
+<p><a href="https://gradle.org/">Gradle</a> — ☆3483</p>
+</li>
+<li>
+<p><a href="https://grails.org/">Grails</a> — ☆1789</p>
+</li>
+<li>
+<p><a href="https://github.com/spockframework/spock">Spock</a> - ☆1063</p>
+</li>
+<li>
+<p><a href="https://ratpack.io/">Ratpack</a> (Java/Groovy) — ☆1075</p>
+</li>
 </ul>
-<h2><a href="#references" name="references">References</a></h2>
+</div>
+<div class="paragraph">
+<p>Can you name some other “popular” Groovy projects? Well, maybe <a href="https://github.com/kdabir/awesome-groovy">awesome-groovy</a> can help.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_language_trends">Language Trends</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__a_href_https_www_tiobe_com_tiobe_index_tiobe_a"><a href="https://www.tiobe.com/tiobe-index/">Tiobe</a></h3>
+<div class="paragraph">
+<p>This language rating is very strange because it’s not aligned with other trends. But, it’s better to have it for comparison.
+Groovy is 17 , Scala — 32. It’s strange result.</p>
+</div>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="/images/posts/2016-05-14/img4.jpeg" alt="img4">
+</div>
+</div>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="/images/posts/2016-05-14/img5.jpeg" alt="img5">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__a_href_http_pypl_github_io_pypl_html_pypl_popularity_of_programming_language_a"><a href="http://pypl.github.io/PYPL.html">PYPL PopularitY of Programming Language</a></h3>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="/images/posts/2016-05-14/img6.jpeg" alt="img6">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__a_href_http_githut_info_githut_a_languages"><a href="http://githut.info/">GitHut</a> languages</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>GitHut is an attempt to visualize and explore the complexity of the universe of programming languages used across the repositories hosted on GitHub.</p>
+</div>
+</blockquote>
+</div>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="/images/posts/2016-05-14/img7.jpeg" alt="img7">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_indeed_job_trends">Indeed Job Trends</h3>
+<div class="paragraph">
+<p><a href="https://www.indeed.com/jobtrends/q-Scala-q-Groovy-q-Clojure.html">Scala, Groovy, Clojure Job Trends — <em>Absolute</em></a></p>
+</div>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="/images/posts/2016-05-14/img8.png" alt="img8">
+</div>
+</div>
+<div class="paragraph">
+<p><a href="https://www.indeed.com/jobtrends/q-Scala-q-Groovy-q-Clojure.html?relative=1">Scala, Groovy, Clojure Job Trends — <em>Relative</em></a></p>
+</div>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="/images/posts/2016-05-14/img9.png" alt="img9">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_stackoverflow_developer_survey">Stackoverflow Developer Survey</h3>
+<div class="sect3">
+<h4 id="__a_href_https_insights_stackoverflow_com_survey_2016_technology_most_popular_technologies_most_popular_technologies_a"><a href="https://insights.stackoverflow.com/survey/2016#technology-most-popular-technologies">Most Popular Technologies</a></h4>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="/images/posts/2016-05-14/img10.png" alt="img10">
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>More people use JavaScript than use any other programming language. PHP appears to be falling out of favor as Node and Angular emerge.</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect3">
+<h4 id="__a_href_https_insights_stackoverflow_com_survey_2016_technology_most_loved_dreaded_and_wanted_most_loved_dreaded_and_wanted_a"><a href="https://insights.stackoverflow.com/survey/2016#technology-most-loved-dreaded-and-wanted">Most Loved, Dreaded, and Wanted</a></h4>
+<div class="paragraph">
+<p><em>% of developers who are not developing with the language or tech but have expressed interest in developing with it</em></p>
+</div>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="/images/posts/2016-05-14/img11.png" alt="img11">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="__a_href_https_insights_stackoverflow_com_survey_2016_technology_top_paying_tech_top_paying_tech_a"><a href="https://insights.stackoverflow.com/survey/2016#technology-top-paying-tech">Top Paying Tech</a></h4>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="/images/posts/2016-05-14/img12.png" alt="img12">
+</div>
+</div>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="/images/posts/2016-05-14/img13.png" alt="img13">
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Make it rain! Cloud technology pays big bucks. So does tech frequently used in finance. Spark, Scala, Cassandra, and F# top the list of the top paying technologies. (This year’s list looks a lot like last year’s list.)</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_trends_summary">Trends Summary</h4>
+<div class="paragraph">
+<p>As you can see Groovy has some issues in popularity. I don’t understand why.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_github_repos_analysis">GitHub Repos Analysis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Let’s define some baseline for further analysis based on popular Java repos</p>
+</div>
+<div class="ulist">
 <ul>
-  <li><a href="https://speakerdeck.com/krosan/spring-rest-docs-documenting-restful-apis-using-your-tests">Spring REST Docs - Documenting RESTful APIs using your tests by Andreas Evers</a></li>
-  <li>Graal Compiler <a href="http://www.slideshare.net/ThomasWuerthinger/2015-cgo-graal">slides</a></li>
-  <li><a href="http://blog.arungupta.me/microservice-design-patterns/">Microservice Design Patterns</a></li>
-</ul></p>
+<li>
+<p>JUnit 4 — ☆4847, fork 1905</p>
+</li>
+<li>
+<p>JUnit 5— ☆419, fork 77</p>
+</li>
+<li>
+<p>Google Guava— ☆9108, fork 2109</p>
+</li>
+<li>
+<p>Spring Framework —☆ 8824, fork 7286</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_groovy_repos">Groovy Repos</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Apache Groovy — ☆ 1135, fork 409</p>
+</li>
+<li>
+<p>Netflix/asgard — ☆2091, fork 415 (Asgard is deprecated at Netflix)</p>
+</li>
+<li>
+<p>gradle/gradle — ☆ 3483, fork 1374</p>
+</li>
+<li>
+<p>grails/grails-core- ☆ 1789, fork 805</p>
+</li>
+<li>
+<p>ratpack/ratpack — ☆ 1075, fork 253</p>
+</li>
+<li>
+<p>rundeck/rundeck- ☆1332, fork 307 (Job scheduler and runbook automation)</p>
+</li>
+<li>
+<p>betamaxteam/betamax — ☆ 300, fork 107</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_scala_repos">Scala Repos</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>scala/scala — ☆6127 , fork 1541</p>
+</li>
+<li>
+<p>apache/spark — ☆ 8511, fork 7906</p>
+</li>
+<li>
+<p>playframework- ☆ 7855, fork 2726</p>
+</li>
+<li>
+<p>akka/akka- ☆5504 , fork1712</p>
+</li>
+<li>
+<p>twitter/finagle-☆4614, fork 870</p>
+</li>
+<li>
+<p>openzipkin/zipkin-☆3537, fork 493</p>
+</li>
+<li>
+<p>scalatra/scalatra-☆1924 , fork 274</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_jvm_languages">JVM Languages</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Clojure- ☆5310, fork 916</p>
+</li>
+<li>
+<p>Kotlin- ☆5083, fork 543</p>
+</li>
+<li>
+<p>JRuby-☆2519, fork 655</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_non_jvm_repos">Non-JVM Repos</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>rails/rails- ☆31119, fork 12608</p>
+</li>
+<li>
+<p>expressjs/express- ☆25105 , fork 4731</p>
+</li>
+<li>
+<p>docker/docker- ☆ 31206, fork 8874</p>
+</li>
+<li>
+<p>kubernetes/kubernetes — ☆ 14371, fork 4319</p>
+</li>
+<li>
+<p>github/hub-☆8447 , fork 754</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary">Summary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You should make your own conclusion base on this data.
+I don’t understand why Groovy is not in trend. But numbers show the general picture.
+Looking forward for your thoughts</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/kdabir/awesome-groovy" class="bare">https://github.com/kdabir/awesome-groovy</a></p>
+</li>
+<li>
+<p><a href="https://github.com/lauris/awesome-scala" class="bare">https://github.com/lauris/awesome-scala</a></p>
+</li>
+<li>
+<p><a href="https://www.linkedin.com/pulse/comprehensive-analysis-java-vs-scala-rassul-fazelat">A Comprehensive Analysis: Java vs Scala</a></p>
+</li>
+<li>
+<p><a href="https://zeroturnaround.com/rebellabs/the-adventurous-developers-guide-to-jvm-languages-java-scala-groovy-fantom-clojure-ceylon-kotlin-xtend/">The Adventurous Developer’s Guide to JVM Languages</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div></p>
 	
 	<hr />
 	
@@ -589,7 +880,7 @@ The noise around "Groovy vs Kotlin" for DSL implementation inside Gradle sounds 
     
     <div id="footer">
       <div class="container">
-        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.0</a></p>
+        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.1</a></p>
       </div>
     </div>
     

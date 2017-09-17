@@ -6,13 +6,13 @@
     <atom:link href="http://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Wed, 30 Nov 2016 11:14:05 +0200</pubDate>
-    <lastBuildDate>Wed, 30 Nov 2016 11:14:05 +0200</lastBuildDate>
+    <pubDate>Mon, 18 Sep 2017 00:30:37 +0200</pubDate>
+    <lastBuildDate>Mon, 18 Sep 2017 00:30:37 +0200</lastBuildDate>
 
     <item>
       <title>Reserved Words of Programming languages</title>
       <link>http://halyph.com/blog/2016/11/28/prog-lang-reserved-words.html</link>
-      <pubDate>Mon, 28 Nov 2016 00:00:00 +0200</pubDate>
+      <pubDate>Mon, 28 Nov 2016 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2016/11/28/prog-lang-reserved-words.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/posts/2016-11-28/wordcloud-wide.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -161,7 +161,7 @@ _    :    =    =&amp;gt;    &amp;lt;-    &amp;lt;:    &amp;lt;%     &amp;gt;:   
     <item>
       <title>Who left Ruby Community?</title>
       <link>http://halyph.com/blog/2016/11/27/who-left-ruby-community.html</link>
-      <pubDate>Sun, 27 Nov 2016 00:00:00 +0200</pubDate>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2016/11/27/who-left-ruby-community.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/ruby.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -270,7 +270,7 @@ _    :    =    =&amp;gt;    &amp;lt;-    &amp;lt;:    &amp;lt;%     &amp;gt;:   
     <item>
       <title>Gradle, Groovy, Kotlin. FTW?</title>
       <link>http://halyph.com/blog/2016/06/15/gradle-groovy-kotlin-ftw.html</link>
-      <pubDate>Wed, 15 Jun 2016 00:00:00 +0300</pubDate>
+      <pubDate>Wed, 15 Jun 2016 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2016/06/15/gradle-groovy-kotlin-ftw.html</guid>
       	<description>
 	&lt;div id=&quot;preamble&quot;&gt;
@@ -454,9 +454,381 @@ The noise around &quot;Groovy vs Kotlin&quot; for DSL implementation inside Grad
 	</description>
     </item>
     <item>
+      <title>The state of Groovy and other JVM Languages</title>
+      <link>http://halyph.com/blog/2016/05/14/the-state-of-groovy-and-other-jvm-languages.html</link>
+      <pubDate>Sat, 14 May 2016 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2016/05/14/the-state-of-groovy-and-other-jvm-languages.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2016-05-14/img1.png&quot; alt=&quot;img1&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Well, I like the &lt;a href=&quot;http://groovy-lang.org/&quot;&gt;Groovy&lt;/a&gt; language in general. This language has nice pragmatic applications and all other related “cookie”, but it looks like other languages, Scala especially, are more popular or trendy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2016-05-14/img2.jpg&quot; alt=&quot;img2&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;title&quot;&gt;Figure 1. JVM language History (image created by &lt;a href=&quot;https://zeroturnaround.com/rebellabs/the-adventurous-developers-guide-to-jvm-languages-java-scala-groovy-fantom-clojure-ceylon-kotlin-xtend/&quot;&gt;zeroturnaround&lt;/a&gt; )&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The actual motivation was based on the numbers provided by &lt;a href=&quot;https://libraries.io&quot; class=&quot;bare&quot;&gt;https://libraries.io&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2016-05-14/img3.jpeg&quot; alt=&quot;img3&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Here we have the next numbers projects per language (on Github):&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Golang — 352K&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JavaScript — 232K&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ruby - 73K&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Java — 44.5K&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Python — 35.9K&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clojure — 11.2K&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Scala — 10.1K&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C — 5.29K&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Haskell — 4.71K&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Shell — 3.61K&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Groovy — 729&lt;/strong&gt; (WTF? What? Why?)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I do not understand why Github has so few Groovy based projects. But, let’s double check these numbers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;_about_groovy_language_ecosystem&quot;&gt;About Groovy Language ecosystem&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If somebody asks you about Groovy the next projects come up to your mind:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://gradle.org/&quot;&gt;Gradle&lt;/a&gt; — ☆3483&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://grails.org/&quot;&gt;Grails&lt;/a&gt; — ☆1789&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/spockframework/spock&quot;&gt;Spock&lt;/a&gt; - ☆1063&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://ratpack.io/&quot;&gt;Ratpack&lt;/a&gt; (Java/Groovy) — ☆1075&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Can you name some other “popular” Groovy projects? Well, maybe &lt;a href=&quot;https://github.com/kdabir/awesome-groovy&quot;&gt;awesome-groovy&lt;/a&gt; can help.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;_language_trends&quot;&gt;Language Trends&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;__a_href_https_www_tiobe_com_tiobe_index_tiobe_a&quot;&gt;&lt;a href=&quot;https://www.tiobe.com/tiobe-index/&quot;&gt;Tiobe&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This language rating is very strange because it’s not aligned with other trends. But, it’s better to have it for comparison.
+Groovy is 17 , Scala — 32. It’s strange result.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2016-05-14/img4.jpeg&quot; alt=&quot;img4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2016-05-14/img5.jpeg&quot; alt=&quot;img5&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;__a_href_http_pypl_github_io_pypl_html_pypl_popularity_of_programming_language_a&quot;&gt;&lt;a href=&quot;http://pypl.github.io/PYPL.html&quot;&gt;PYPL PopularitY of Programming Language&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2016-05-14/img6.jpeg&quot; alt=&quot;img6&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;__a_href_http_githut_info_githut_a_languages&quot;&gt;&lt;a href=&quot;http://githut.info/&quot;&gt;GitHut&lt;/a&gt; languages&lt;/h3&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;GitHut is an attempt to visualize and explore the complexity of the universe of programming languages used across the repositories hosted on GitHub.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2016-05-14/img7.jpeg&quot; alt=&quot;img7&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_indeed_job_trends&quot;&gt;Indeed Job Trends&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.indeed.com/jobtrends/q-Scala-q-Groovy-q-Clojure.html&quot;&gt;Scala, Groovy, Clojure Job Trends — &lt;em&gt;Absolute&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2016-05-14/img8.png&quot; alt=&quot;img8&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.indeed.com/jobtrends/q-Scala-q-Groovy-q-Clojure.html?relative=1&quot;&gt;Scala, Groovy, Clojure Job Trends — &lt;em&gt;Relative&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2016-05-14/img9.png&quot; alt=&quot;img9&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_stackoverflow_developer_survey&quot;&gt;Stackoverflow Developer Survey&lt;/h3&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;__a_href_https_insights_stackoverflow_com_survey_2016_technology_most_popular_technologies_most_popular_technologies_a&quot;&gt;&lt;a href=&quot;https://insights.stackoverflow.com/survey/2016#technology-most-popular-technologies&quot;&gt;Most Popular Technologies&lt;/a&gt;&lt;/h4&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2016-05-14/img10.png&quot; alt=&quot;img10&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;More people use JavaScript than use any other programming language. PHP appears to be falling out of favor as Node and Angular emerge.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;__a_href_https_insights_stackoverflow_com_survey_2016_technology_most_loved_dreaded_and_wanted_most_loved_dreaded_and_wanted_a&quot;&gt;&lt;a href=&quot;https://insights.stackoverflow.com/survey/2016#technology-most-loved-dreaded-and-wanted&quot;&gt;Most Loved, Dreaded, and Wanted&lt;/a&gt;&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;em&gt;% of developers who are not developing with the language or tech but have expressed interest in developing with it&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2016-05-14/img11.png&quot; alt=&quot;img11&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;__a_href_https_insights_stackoverflow_com_survey_2016_technology_top_paying_tech_top_paying_tech_a&quot;&gt;&lt;a href=&quot;https://insights.stackoverflow.com/survey/2016#technology-top-paying-tech&quot;&gt;Top Paying Tech&lt;/a&gt;&lt;/h4&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2016-05-14/img12.png&quot; alt=&quot;img12&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2016-05-14/img13.png&quot; alt=&quot;img13&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Make it rain! Cloud technology pays big bucks. So does tech frequently used in finance. Spark, Scala, Cassandra, and F# top the list of the top paying technologies. (This year’s list looks a lot like last year’s list.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;_trends_summary&quot;&gt;Trends Summary&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As you can see Groovy has some issues in popularity. I don’t understand why.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;_github_repos_analysis&quot;&gt;GitHub Repos Analysis&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Let’s define some baseline for further analysis based on popular Java repos&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;JUnit 4 — ☆4847, fork 1905&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JUnit 5— ☆419, fork 77&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Google Guava— ☆9108, fork 2109&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Framework —☆ 8824, fork 7286&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_groovy_repos&quot;&gt;Groovy Repos&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Apache Groovy — ☆ 1135, fork 409&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Netflix/asgard — ☆2091, fork 415 (Asgard is deprecated at Netflix)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;gradle/gradle — ☆ 3483, fork 1374&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;grails/grails-core- ☆ 1789, fork 805&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ratpack/ratpack — ☆ 1075, fork 253&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;rundeck/rundeck- ☆1332, fork 307 (Job scheduler and runbook automation)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;betamaxteam/betamax — ☆ 300, fork 107&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_scala_repos&quot;&gt;Scala Repos&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;scala/scala — ☆6127 , fork 1541&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;apache/spark — ☆ 8511, fork 7906&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;playframework- ☆ 7855, fork 2726&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;akka/akka- ☆5504 , fork1712&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;twitter/finagle-☆4614, fork 870&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;openzipkin/zipkin-☆3537, fork 493&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;scalatra/scalatra-☆1924 , fork 274&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_jvm_languages&quot;&gt;JVM Languages&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Clojure- ☆5310, fork 916&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kotlin- ☆5083, fork 543&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JRuby-☆2519, fork 655&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_non_jvm_repos&quot;&gt;Non-JVM Repos&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;rails/rails- ☆31119, fork 12608&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;expressjs/express- ☆25105 , fork 4731&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;docker/docker- ☆ 31206, fork 8874&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;kubernetes/kubernetes — ☆ 14371, fork 4319&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;github/hub-☆8447 , fork 754&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;_summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You should make your own conclusion base on this data.
+I don’t understand why Groovy is not in trend. But numbers show the general picture.
+Looking forward for your thoughts&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;_references&quot;&gt;References&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/kdabir/awesome-groovy&quot; class=&quot;bare&quot;&gt;https://github.com/kdabir/awesome-groovy&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/lauris/awesome-scala&quot; class=&quot;bare&quot;&gt;https://github.com/lauris/awesome-scala&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/pulse/comprehensive-analysis-java-vs-scala-rassul-fazelat&quot;&gt;A Comprehensive Analysis: Java vs Scala&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://zeroturnaround.com/rebellabs/the-adventurous-developers-guide-to-jvm-languages-java-scala-groovy-fantom-clojure-ceylon-kotlin-xtend/&quot;&gt;The Adventurous Developer’s Guide to JVM Languages&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
       <title>Java Day - Kiev, 2015 - Report</title>
       <link>http://halyph.com/blog/2015/11/08/java-day-kiev-2015-report.html</link>
-      <pubDate>Sun, 8 Nov 2015 00:00:00 +0200</pubDate>
+      <pubDate>Sun, 8 Nov 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/11/08/java-day-kiev-2015-report.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/posts/conf/java_day_2015.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -537,7 +909,7 @@ The noise around &quot;Groovy vs Kotlin&quot; for DSL implementation inside Grad
     <item>
       <title>How to run Netflix Eureka via Webapp Runner?</title>
       <link>http://halyph.com/blog/2015/10/20/using-webrunner.html</link>
-      <pubDate>Tue, 20 Oct 2015 00:00:00 +0300</pubDate>
+      <pubDate>Tue, 20 Oct 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/10/20/using-webrunner.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/java.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -589,7 +961,7 @@ webapp-runner-8.0.24.0.jar
     <item>
       <title>Distribute application as Native Single binary</title>
       <link>http://halyph.com/blog/2015/09/25/programming-languages-to-native-code.html</link>
-      <pubDate>Fri, 25 Sep 2015 00:00:00 +0300</pubDate>
+      <pubDate>Fri, 25 Sep 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/09/25/programming-languages-to-native-code.html</guid>
       	<description>
 	&lt;div align=&quot;center&quot;&gt;&lt;span style=&quot;align: center; font-size: 64pt&quot;&gt;~&lt;/span&gt;&lt;/div&gt;
@@ -650,7 +1022,7 @@ webapp-runner-8.0.24.0.jar
     <item>
       <title>JDay - Lviv, 2015 - Report</title>
       <link>http://halyph.com/blog/2015/09/20/jday-lviv-2015-report.html</link>
-      <pubDate>Sun, 20 Sep 2015 00:00:00 +0300</pubDate>
+      <pubDate>Sun, 20 Sep 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/09/20/jday-lviv-2015-report.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/posts/conf/jday.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -688,7 +1060,7 @@ webapp-runner-8.0.24.0.jar
     <item>
       <title>Grails 2.x best practices collection</title>
       <link>http://halyph.com/blog/2015/07/20/grails-best-practices-collection.html</link>
-      <pubDate>Mon, 20 Jul 2015 00:00:00 +0300</pubDate>
+      <pubDate>Mon, 20 Jul 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/07/20/grails-best-practices-collection.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/grails.jpg&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -722,7 +1094,7 @@ webapp-runner-8.0.24.0.jar
     <item>
       <title>DevoxxPL - Krakow, 2015 - Report</title>
       <link>http://halyph.com/blog/2015/06/29/devoxxpl.html</link>
-      <pubDate>Mon, 29 Jun 2015 00:00:00 +0300</pubDate>
+      <pubDate>Mon, 29 Jun 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/06/29/devoxxpl.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/posts/2015-06/Devoxx-Poland-2015.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -808,7 +1180,7 @@ webapp-runner-8.0.24.0.jar
     <item>
       <title>JEEConf - Kiev, 2015 - Report</title>
       <link>http://halyph.com/blog/2015/05/25/jeeconf-kiev.html</link>
-      <pubDate>Mon, 25 May 2015 00:00:00 +0300</pubDate>
+      <pubDate>Mon, 25 May 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/05/25/jeeconf-kiev.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/jeeconf.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -861,7 +1233,7 @@ webapp-runner-8.0.24.0.jar
     <item>
       <title>Grails 2.5.0 debug in IntelliJ IDEA</title>
       <link>http://halyph.com/blog/2015/05/19/grails-2-dot-5-0-debug-in-intellij-idea.html</link>
-      <pubDate>Tue, 19 May 2015 00:00:00 +0300</pubDate>
+      <pubDate>Tue, 19 May 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/05/19/grails-2-dot-5-0-debug-in-intellij-idea.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/grails.jpg&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -904,7 +1276,7 @@ webapp-runner-8.0.24.0.jar
     <item>
       <title>Go presentation tool</title>
       <link>http://halyph.com/blog/2015/05/18/golang-presentation-tool.html</link>
-      <pubDate>Mon, 18 May 2015 00:00:00 +0300</pubDate>
+      <pubDate>Mon, 18 May 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/05/18/golang-presentation-tool.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/gopher.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -998,7 +1370,7 @@ Some Text
     <item>
       <title>Java full stack web framework</title>
       <link>http://halyph.com/blog/2015/04/06/java-full-stack-web-framework.html</link>
-      <pubDate>Mon, 6 Apr 2015 00:00:00 +0300</pubDate>
+      <pubDate>Mon, 6 Apr 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/04/06/java-full-stack-web-framework.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/java.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -1093,7 +1465,7 @@ Some Text
     <item>
       <title>Rails Architecture and Scalability</title>
       <link>http://halyph.com/blog/2015/04/04/rails-architecture-and-scalability-issues.html</link>
-      <pubDate>Sat, 4 Apr 2015 00:00:00 +0300</pubDate>
+      <pubDate>Sat, 4 Apr 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/04/04/rails-architecture-and-scalability-issues.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/ruby.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -1259,7 +1631,7 @@ Some Text
     <item>
       <title>How to download jars from Maven Central</title>
       <link>http://halyph.com/blog/2015/03/17/how-to-download-jars-from-maven-central.html</link>
-      <pubDate>Tue, 17 Mar 2015 00:00:00 +0200</pubDate>
+      <pubDate>Tue, 17 Mar 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/03/17/how-to-download-jars-from-maven-central.html</guid>
       	<description>
 	&lt;p&gt;We know how to download Java libraries with it&amp;rsquo;s dependencies (transitive included) via Maven &lt;em&gt;pom.xml&lt;/em&gt;, Ant/Ivy &lt;em&gt;build.xml&lt;/em&gt; script, Gradle &lt;em&gt;build.gradle&lt;/em&gt; script etc.&lt;br/&gt;But what if we need to download them without these scripts.&lt;/p&gt;
@@ -1360,7 +1732,7 @@ resolveArtifact( &amp;#39;log4j&amp;#39;, &amp;#39;log4j&amp;#39;, &amp;#39;1.2.
     <item>
       <title>How to Install Octopress on Windows?</title>
       <link>http://halyph.com/blog/2015/02/17/how-to-install-octopress-on-windows.html</link>
-      <pubDate>Tue, 17 Feb 2015 00:00:00 +0200</pubDate>
+      <pubDate>Tue, 17 Feb 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/02/17/how-to-install-octopress-on-windows.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/ruby.png&quot; alt=&quot;blog_post_image_штдшту&quot; /&gt;&lt;/p&gt;
@@ -1469,7 +1841,7 @@ D:/Tools/Ruby/Ruby21-x64/lib/ruby/2.1.0/rubygems.rb
     <item>
       <title>Maven Flow for Simple App Creation</title>
       <link>http://halyph.com/blog/2015/02/13/maven-flow-for-simple-app-creation.html</link>
-      <pubDate>Fri, 13 Feb 2015 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 13 Feb 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/02/13/maven-flow-for-simple-app-creation.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/java.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -1874,7 +2246,7 @@ $ target/appassembler/bin/app
     <item>
       <title>Do We Need Java for Everything?</title>
       <link>http://halyph.com/blog/2015/02/12/do-we-need-java-for-everything.html</link>
-      <pubDate>Thu, 12 Feb 2015 00:00:00 +0200</pubDate>
+      <pubDate>Thu, 12 Feb 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/02/12/do-we-need-java-for-everything.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/java.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -2024,7 +2396,7 @@ class Example {
     <item>
       <title>How to Generate PermGen leak?</title>
       <link>http://halyph.com/blog/2015/02/05/how-to-generate-permgen.html</link>
-      <pubDate>Thu, 5 Feb 2015 00:00:00 +0200</pubDate>
+      <pubDate>Thu, 5 Feb 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/02/05/how-to-generate-permgen.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/java.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -2202,7 +2574,7 @@ Exception in thread &amp;quot;main&amp;quot; java.lang.OutOfMemoryError: PermGen
     <item>
       <title>Scripting in Scala</title>
       <link>http://halyph.com/blog/2015/02/03/scripting-in-scala.html</link>
-      <pubDate>Mon, 2 Feb 2015 00:00:00 +0200</pubDate>
+      <pubDate>Mon, 2 Feb 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/02/03/scripting-in-scala.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/scala.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -2375,7 +2747,7 @@ exec scala -classpath &amp;quot;lib/lib.1.jar:lib/lib.2.jar&amp;quot; &amp;quot;
     <item>
       <title>How to Use Embedded H2 with web Console?</title>
       <link>http://halyph.com/blog/2015/01/22/how-to-use-embedded-h2-with-h2-console.html</link>
-      <pubDate>Thu, 22 Jan 2015 00:00:00 +0200</pubDate>
+      <pubDate>Thu, 22 Jan 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/01/22/how-to-use-embedded-h2-with-h2-console.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/java.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -2514,7 +2886,7 @@ Press [Enter] to stop.
     <item>
       <title>How to Fix Textmate OSX Yosemite ruby 1.8 issues?</title>
       <link>http://halyph.com/blog/2014/11/16/how-to-fix-textmate-osx-yosemite-ruby-1-dot-8-issues.html</link>
-      <pubDate>Sun, 16 Nov 2014 00:00:00 +0200</pubDate>
+      <pubDate>Sun, 16 Nov 2014 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2014/11/16/how-to-fix-textmate-osx-yosemite-ruby-1-dot-8-issues.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/textmate.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -2613,7 +2985,7 @@ Ruby was built without documentation, to build it run: rvm docs generate-ri
     <item>
       <title>Switching to Textmate 2</title>
       <link>http://halyph.com/blog/2014/10/20/switching-to-textmate-2.html</link>
-      <pubDate>Mon, 20 Oct 2014 00:00:00 +0300</pubDate>
+      <pubDate>Mon, 20 Oct 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2014/10/20/switching-to-textmate-2.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/textmate.png&quot; alt=&quot;blog_post_image&quot; /&gt;&lt;/p&gt;
@@ -2634,7 +3006,7 @@ Ruby was built without documentation, to build it run: rvm docs generate-ri
     <item>
       <title>How to use block comments in Bash Script</title>
       <link>http://halyph.com/blog/2014/10/09/bash-block-comments.html</link>
-      <pubDate>Thu, 9 Oct 2014 00:00:00 +0300</pubDate>
+      <pubDate>Thu, 9 Oct 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2014/10/09/bash-block-comments.html</guid>
       	<description>
 	&lt;p&gt;&lt;img src=&quot;/images/blog/bash.png&quot; alt=&quot;blog_post_image_inline&quot; /&gt;&lt;/p&gt;
@@ -2671,7 +3043,7 @@ echo &amp;quot;after block comment&amp;quot;
     <item>
       <title>Migration to Octopress</title>
       <link>http://halyph.com/blog/2014/09/07/migration-to-octopress.html</link>
-      <pubDate>Sun, 7 Sep 2014 00:00:00 +0300</pubDate>
+      <pubDate>Sun, 7 Sep 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2014/09/07/migration-to-octopress.html</guid>
       	<description>
 	&lt;h2&gt;&lt;a href=&quot;#objectives&quot; name=&quot;objectives&quot;&gt;Objectives&lt;/a&gt;&lt;/h2&gt;
@@ -2705,7 +3077,7 @@ echo &amp;quot;after block comment&amp;quot;
     <item>
       <title>Java Code Quality Tools - Overview</title>
       <link>http://halyph.com/blog/2011/08/31/java-code-quality-tools-overview.html</link>
-      <pubDate>Wed, 31 Aug 2011 00:00:00 +0300</pubDate>
+      <pubDate>Wed, 31 Aug 2011 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2011/08/31/java-code-quality-tools-overview.html</guid>
       	<description>
 	
