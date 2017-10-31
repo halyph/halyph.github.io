@@ -1,0 +1,48 @@
+= Reflection about the main scripting language
+Orest Ivasiv
+2017-10-31
+:jbake-type: post
+:jbake-status: draft
+:jbake-tags: python
+:source-highlighter: prettify
+:icons: font
+:my-image-dir: /images
+// :my-link-gradle-kotlin: http://gradle.org/blog/kotlin-meets-gradle/
+// :my-link-cedric: http://melix.github.io/blog/2016/05/gradle-kotlin.html
+
+test
+
+[source,ruby]
+----
+require 'sinatra' // <1>
+
+get '/hi' do // <2>
+  "Hello World!" // <3>
+end
+----
+<1> Library import
+<2> URL mapping
+<3> HTTP response body
+
+
+
+[source,xml]
+----
+<section>
+  <title>Section Title</title> <!--1-->
+</section>
+----
+<1> The section title is required.
+
+[source,python]
+---
+# Python 3: Fibonacci series up to n
+>>> def fib(n):
+>>>     a, b = 0, 1
+>>>     while a < n:
+>>>         print(a, end=' ')
+>>>         a, b = b, a+b
+>>>     print()
+>>> fib(1000)
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
+---
