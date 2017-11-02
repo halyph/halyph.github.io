@@ -11,6 +11,7 @@ Orest Ivasiv
 // :my-link-cedric: http://melix.github.io/blog/2016/05/gradle-kotlin.html
 
 test
+new text
 
 [source,ruby]
 ----
