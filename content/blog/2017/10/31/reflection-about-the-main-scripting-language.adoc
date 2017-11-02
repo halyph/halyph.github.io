@@ -1,49 +1,70 @@
-= Reflection about the main scripting language
+= Python: Reflection about my next main scripting language
 Orest Ivasiv
 2017-10-31
 :jbake-type: post
-:jbake-status: draft
+:jbake-status: published
 :jbake-tags: python
 :source-highlighter: prettify
 :icons: font
 :my-image-dir: /images
-// :my-link-gradle-kotlin: http://gradle.org/blog/kotlin-meets-gradle/
-// :my-link-cedric: http://melix.github.io/blog/2016/05/gradle-kotlin.html
+:post-img-dir: /images/posts/2017-10-31
+:ref-so: https://stackoverflow.blog/2017/09/06/incredible-growth-python/
+:ref-redmonk: http://redmonk.com/sogrady/2017/06/08/language-rankings-6-17/
+:ref-tiobe: https://www.tiobe.com/tiobe-index/
+:ref-pypl: http://pypl.github.io/PYPL.html
+:ref-ieee: https://spectrum.ieee.org/static/interactive-the-top-programming-languages-2017
+:ref-octoverse: https://octoverse.github.com/
+:ref-githut: https://madnight.github.io/githut/
 
-test
-new text
+image::{my-image-dir}/blog/python.png[float="right"]
 
-[source,ruby]
-----
-require 'sinatra' // <1>
-
-get '/hi' do // <2>
-  "Hello World!" // <3>
-end
-----
-<1> Library import
-<2> URL mapping
-<3> HTTP response body
+dsalskjldkjalssajd
 
 
 
-[source,xml]
-----
-<section>
-  <title>Section Title</title> <!--1-->
-</section>
-----
-<1> The section title is required.
+= Nice Languages Popularity Statistics
 
-[source,python]
----
-# Python 3: Fibonacci series up to n
->>> def fib(n):
->>>     a, b = 0, 1
->>>     while a < n:
->>>         print(a, end=' ')
->>>         a, b = b, a+b
->>>     print()
->>> fib(1000)
-0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
----
+== RedMonk
+.The RedMonk Programming Language Rankings: June 2017
+[#img-redmonk]
+[caption="Figure 1: ",link={ref-redmonk}]
+image::{post-img-dir}/redmonk-2017q3.png[Redmonk]
+
+== TIOBE Index
+.TIOBE Index for October 2017
+[#img-tiobe]
+[caption="Figure 2: ",link={ref-tiobe}]
+image::{post-img-dir}/tiobe-2017-oct.jpg[TIOBE, 1000]
+
+== PYPL
+.PYPL PopularitY of Programming Language
+[#img-pypl]
+[caption="Figure 3: ",link={ref-pypl}]
+image::{post-img-dir}/pypl-2017-oct.jpg[PYPL, 700]
+
+== IEEE Spectrum
+.Interactive: The Top Programming Languages 2017
+[#img-ieee]
+[caption="Figure 4: ",link={ref-ieee}]
+image::{post-img-dir}/ieee-2017-oct.jpg[IEEE, 700]
+
+== Stack Overflow
+.Growth of major programming languages
+[#img-so]
+[caption="Figure 5: ",link={ref-so}]
+image::{post-img-dir}/so-2017-sep.png[SO, 700]
+
+== Github
+.The fifteen most popular languages on GitHub (2017) by opened pull request
+[#img-github]
+[caption="Figure 6: ",link={ref-octoverse}]
+image::{post-img-dir}/github-2017.jpg[Github, 700]
+
+= References
+- {ref-redmonk}[The RedMonk Programming Language Rankings: June 2017]
+- {ref-tiobe}[TIOBE Index]
+- {ref-pypl}[PYPL PopularitY of Programming Language]
+- {ref-ieee}[Interactive: The Top Programming Languages 2017]
+- {ref-so}[The Incredible Growth of Python, published September 6, 2017]
+- {ref-octoverse}[The State of the Octoverse 2017, Github statistics]
+- {ref-githut}[GitHut 2.0. A small place to discover languages in Github]
