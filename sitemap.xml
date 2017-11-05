@@ -5,6 +5,10 @@
         <lastmod>2013-09-24</lastmod>
     </url>
     <url>
+        <loc>http://halyph.com/blog/2017/10/31/reflection-about-the-main-scripting-language.html</loc>
+        <lastmod>2017-10-31</lastmod>
+    </url>
+    <url>
         <loc>http://halyph.com/blog/2016/11/28/prog-lang-reserved-words.html</loc>
         <lastmod>2016-11-28</lastmod>
     </url>
@@ -115,5 +119,9 @@
     <url>
         <loc>http://halyph.com/blog/2011/08/31/java-code-quality-tools-overview.html</loc>
         <lastmod>2011-08-31</lastmod>
+    </url>
+    <url>
+        <loc>http://halyph.com/blog/2009/12/27/why-i-chosen-ruby-as-main-scripting.html</loc>
+        <lastmod>2009-12-27</lastmod>
     </url>
 </urlset>

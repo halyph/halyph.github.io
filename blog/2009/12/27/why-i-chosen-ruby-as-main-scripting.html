@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Reflection about the main scripting language</title>
+    <title>Why I have chosen Ruby as main scripting language for my toolbox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -74,72 +74,115 @@
     </div>
     <div class="container">	
 	<div class="page-header">
-		<h1>Reflection about the main scripting language</h1>
+		<h1>Why I have chosen Ruby as main scripting language for my toolbox</h1>
 	</div>
 
-	<p><em>31 October 2017</em></p>
+	<p><em>27 December 2009</em></p>
 
 	<p><em>Tags: </em>
-		<a href="/tags/python.html">python</a> | 
+		<a href="/tags/ruby.html">ruby</a> | 
 	</p>
 
-	<p><div class="paragraph">
-<p>test
-new text</p>
-</div>
-<div class="listingblock">
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="imageblock" style="float: right">
 <div class="content">
-<pre class="prettyprint highlight"><code class="language-ruby" data-lang="ruby">require 'sinatra' <i class="conum" data-value="1"></i><b>(1)</b>
-
-get '/hi' do <i class="conum" data-value="2"></i><b>(2)</b>
-  "Hello World!" <i class="conum" data-value="3"></i><b>(3)</b>
-end</code></pre>
+<img src="/images/blog/ruby.png" alt="ruby">
 </div>
 </div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Library import</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>URL mapping</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>HTTP response body</td>
-</tr>
-</table>
+<div class="paragraph">
+<p><strong>UPD</strong>: This post was written <a href="http://halyph.blogspot.de/2009/12/why-i-chosen-ruby-as-main-scripting.html">long time ago</a>. I have decided to re-publish it for historical reason</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code class="language-xml" data-lang="xml">&lt;section&gt;
-  &lt;title&gt;Section Title&lt;/title&gt; <i class="conum" data-value="1"></i><b>(1)</b>
-&lt;/section&gt;</code></pre>
+<div class="paragraph">
+<p>There are a lot of scripting languages: Perl, Python, Lua, Tcl, Ruby, JavaScript, Scala, Groovy, Erlang, Lisp, Scheme and Bash/Awk(as shell scripting).</p>
+</div>
+<div class="paragraph">
+<p>There are criteria I&#8217;ve tried to match for my scripting language of choice:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Easy to learn</p>
+</li>
+<li>
+<p>Active and big community</p>
+</li>
+<li>
+<p>Amount of books and tutorials which are available</p>
+</li>
+<li>
+<p>How many screencasts, conference videos are on-line?</p>
+</li>
+<li>
+<p>Can replace shell scripting?</p>
+</li>
+<li>
+<p>Number of text editors which support selected language</p>
+</li>
+<li>
+<p>Code for fun? Is it suitable for selected language</p>
+</li>
+<li>
+<p>Amount of useful frameworks and libraries</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s discuss each of them.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>JavaScript</strong>. I like this language, but it doesn&#8217;t have standard serve-side API. There are a lot of implementation, but community have to work a lot to get valuable result. Check <a href="http://wiki.commonjs.org/wiki/CommonJS">CommonJS</a> to get more info</p>
+</li>
+<li>
+<p><strong>Perl</strong>. I&#8217;ve never tried to dig deeply into this and code style doesn&#8217;t suitable for me. I can&#8217;t code for fun. Number of tutorials/books are huge. Community is big. But, it&#8217;s not my language of choice.</p>
+</li>
+<li>
+<p><strong>Lua</strong>. There are no killer features, as for me. In general language are cool and fast. Easy to learn.</p>
+</li>
+<li>
+<p><strong>Tcl</strong>. I just don&#8217;t like Tcl language. It&#8217;s main stopper for me. Community not so big in comparison with other languages. Amount the books is limited.</p>
+</li>
+<li>
+<p><strong>Lisp/Scheme</strong>. Great languages, but not for shell oriented scripting (It will be awkward to write shell scripts)</p>
+</li>
+<li>
+<p><strong>Erlang</strong>. Interesting language, but it&#8217;s not general purpose. Good for concurrency domain. I have to skip it.</p>
+</li>
+<li>
+<p><strong>Scala/Groovy</strong>. Yet another scripting languages. I can see hype near these languages, especially Scala in Java community. I can predict, that the next year will have got another hype language(s).</p>
+</li>
+<li>
+<p><strong>Bash/Awk</strong>. I&#8217;d like to learn these two, but I&#8217;m windows user and I don&#8217;t have a possibility to use these during my work. I can use Cygwin/MSYS, but it will be strange, awkward. It will be unnatural. I&#8217;m sure I need to get additional experience in Bash scripting, but not now. Time is my enemy.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Python vs Ruby</strong>. These two are very similar. Both have big and active community. Both are general purpose languages. Both are great.
+But I falling in love with Ruby blocks. I love <a href="http://railscasts.com/" class="bare">http://railscasts.com/</a>. I&#8217;m not web-developer, but Rails concept is super-productive. I just love Ruby community.</p>
+</div>
+<div class="paragraph">
+<p>But, there is one drawback. There is a ton of libraries and frameworks which are doing the same thing. Community super productive and it&#8217;s in developing. There is no consistency. So, I have to be aware of any big changes in my favorite libraries/frameworks. I know it sounds strange but it&#8217;s IMHO.</p>
+</div>
+<div class="paragraph">
+<p>Shell scripting and task automation is one of the main direction to be productive. From time to time I have to work on different OS&#8217;s (Windows, Linux, OS X) and environment. But my primary work station is Windows based. I&#8217;d like to have consistent scripting and automation tools for all these OS/environments. We can automate everything with Bash, etc. But what about Windows? So, choosing scripting language was good decision to create multi-platform toolbox. So, I can use my knowledge on any machine with minimal rework (if required).</p>
+</div>
+<div class="paragraph">
+<p>Any developer should have some scripting language in his arsenal. <strong>The right tool for the job.</strong> Keep follow this idea and you will be productive.</p>
 </div>
 </div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>The section title is required.</td>
-</tr>
-</table>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code class="language-python" data-lang="python">---
-# Python 3: Fibonacci series up to n
-&gt;&gt;&gt; def fib(n):
-&gt;&gt;&gt;     a, b = 0, 1
-&gt;&gt;&gt;     while a &lt; n:
-&gt;&gt;&gt;         print(a, end=' ')
-&gt;&gt;&gt;         a, b = b, a+b
-&gt;&gt;&gt;     print()
-&gt;&gt;&gt; fib(1000)
-0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
----</code></pre>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Original post: <a href="http://halyph.blogspot.de/2009/12/why-i-chosen-ruby-as-main-scripting.html" class="bare">http://halyph.blogspot.de/2009/12/why-i-chosen-ruby-as-main-scripting.html</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div></p>
 
@@ -148,7 +191,7 @@ end</code></pre>
 	<div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = 'kie-by-halyph';
-		var disqus_identifier = 'http://halyph.com/blog/2017/10/31/reflection-about-the-main-scripting-language.html';
+		var disqus_identifier = 'http://halyph.com/blog/2009/12/27/why-i-chosen-ruby-as-main-scripting.html';
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

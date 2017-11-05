@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Python: Reflection about my next main scripting language</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../css/asciidoctor.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link href="../../../../css/prettify.css" rel="stylesheet">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../../../">@halyph</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../../../../index.html">Home</a></li>
+            <li><a href="../../../../archive.html">Archive</a></li>
+            <li><a href="../../../../feed.xml">Subscribe</a></li>
+             <!--
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            -->
+          </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://github.com/halyph"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://twitter.com/halyph"><i class="fa fa-twitter"></i></a>
+            </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">	
+	<div class="page-header">
+		<h1>Python: Reflection about my next main scripting language</h1>
+	</div>
+
+	<p><em>31 October 2017</em></p>
+
+	<p><em>Tags: </em>
+		<a href="/tags/python.html">python</a> | 
+	</p>
+
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="imageblock" style="float: right">
+<div class="content">
+<img src="/images/blog/python.png" alt="python">
+</div>
+</div>
+<div class="paragraph">
+<p>I differentiate <em>normal programming language</em> and <em>scripting programming language</em>.</p>
+</div>
+<div class="paragraph">
+<p><em>Scripting language</em> must be used for quick prototyping, automation, has a nice integration with shell, etc.
+Also, it should be very quick at startup time.</p>
+</div>
+<div class="paragraph">
+<p>I have been using several languages which have such characteristics (or similar): <em>Ruby</em> and <em>Groovy</em>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ruby">Ruby</h3>
+<div class="paragraph">
+<p>I started using Ruby (as a scripting language) in 2008. It was cool. In that time Ruby community was "bashing" Java.
+The community was and is <em>Ruby on Rails</em> centric, mainly <em>non</em>-Windows. Almost nothing has happen outside of Rails (Vagrant, Chef and Puppet are exceptions). And it&#8217;s sad.
+There is a limited amount of scientific libraries.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_groovy">Groovy</h3>
+<div class="paragraph">
+<p>Groovy is nice JVM language which has own <em>pros &amp; cons</em>. But now, this language has some problems with popularity (<em>see</em> <a href="/blog/2016/05/14/the-state-of-groovy-and-other-jvm-languages.html">The state of Groovy and other JVM Languages</a>). And for me it&#8217;s a very important point.
+Also, due to JVM nature, the script startup  is very slow (I do not count <a href="https://kobo.github.io/groovyserv/quickstart.html">GroovyServ</a>).</p>
+</div>
+<div class="paragraph">
+<p>Groovy language syntax is much better for me than Ruby. I like Groovy <em>packages</em> and hate Ruby <em>Modules and Namespaces</em>. Again, it just a matter of taste.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_thoughts">Thoughts</h3>
+<div class="paragraph">
+<p>If we compare different scripting languages they are almost the same in terms of what can be implement using them.
+But, some of them have community problems, some - ecosystem problems, some - is just not well suited to your development approaches (e.g <em>Perl</em>, <em>Lua</em>, <em>Js/Node.js</em>).</p>
+</div>
+<div class="paragraph">
+<p>And as always there must be some shift or motivation to look around and try something new and hopefully better.
+The time invested in learning new <em>"tool"</em> must be rewarded in future.</p>
+</div>
+<div class="paragraph">
+<p>If we look around the decision of picking another better scripting language is very simple - it&#8217;s <em>Python</em>. And by <strong><em>"better"</em></strong> I don&#8217;t mean syntax.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_python">Python</h3>
+<div class="paragraph">
+<p>I have never used Python because Ruby (or Groovy) had the similar language features and I have not seen any benefits in switching to another language.
+On the another hand, Python has huge ecosystem, it has library for almost everything, it is not a framework-centric language (<em>see</em> Ruby on Rails, Groovy: Grails or Gradle).
+And the most important it has a momentum in terms of <em>Data Science</em>, <em>Machine Learning</em> and <em>Artificial Intelligence</em> (where I have big interests as the other people). Unfortunately, Ruby has lost this fight.</p>
+</div>
+<div class="paragraph">
+<p>For several month, I have been using a lot of Python-based tools (<a href="https://aws.amazon.com/cli/">AWS CLI</a>, <a href="https://zmon.io/">ZMON</a>, <a href="https://stups.io/">Stups</a>) during my work day
+and this is another big motivation for me to switch to Python as my main scripting language.</p>
+</div>
+<div class="paragraph">
+<p>There is a very interesting moment. I <strong>do not</strong> like Python syntax (I am not dogmatic), but for some reason this syntax is very ugly for me.
+And I am picking Python only because of pragmatism and not because I like it. I do not have any emotional feelings to this language.</p>
+</div>
+<div class="paragraph">
+<p><em>Python</em> is very popular right now (check the numbers below) and it&#8217;s a very good time to start using it.</p>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nice_languages_popularity_statistics">Nice Languages Popularity Statistics</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_redmonk">RedMonk</h3>
+<div id="img-redmonk" class="imageblock">
+<div class="content">
+<a class="image" href="http://redmonk.com/sogrady/2017/06/08/language-rankings-6-17/"><img src="/images/posts/2017-10-31/redmonk-2017q3.png" alt="Redmonk"></a>
+</div>
+<div class="title">Figure 1: The RedMonk Programming Language Rankings: June 2017</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tiobe_index">TIOBE Index</h3>
+<div id="img-tiobe" class="imageblock">
+<div class="content">
+<a class="image" href="https://www.tiobe.com/tiobe-index/"><img src="/images/posts/2017-10-31/tiobe-2017-oct.jpg" alt="TIOBE" width="1000"></a>
+</div>
+<div class="title">Figure 2: TIOBE Index for October 2017</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pypl">PYPL</h3>
+<div id="img-pypl" class="imageblock">
+<div class="content">
+<a class="image" href="http://pypl.github.io/PYPL.html"><img src="/images/posts/2017-10-31/pypl-2017-oct.jpg" alt="PYPL" width="700"></a>
+</div>
+<div class="title">Figure 3: PYPL PopularitY of Programming Language</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ieee_spectrum">IEEE Spectrum</h3>
+<div id="img-ieee" class="imageblock">
+<div class="content">
+<a class="image" href="https://spectrum.ieee.org/static/interactive-the-top-programming-languages-2017"><img src="/images/posts/2017-10-31/ieee-2017-oct.jpg" alt="IEEE" width="700"></a>
+</div>
+<div class="title">Figure 4: Interactive: The Top Programming Languages 2017</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_stack_overflow">Stack Overflow</h3>
+<div id="img-so" class="imageblock">
+<div class="content">
+<a class="image" href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/"><img src="/images/posts/2017-10-31/so-2017-sep.png" alt="SO" width="700"></a>
+</div>
+<div class="title">Figure 5: Growth of major programming languages</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_github">Github</h3>
+<div id="img-github" class="imageblock">
+<div class="content">
+<a class="image" href="https://octoverse.github.com/"><img src="/images/posts/2017-10-31/github-2017.jpg" alt="Github" width="700"></a>
+</div>
+<div class="title">Figure 6: The fifteen most popular languages on GitHub (2017) by opened pull request</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://redmonk.com/sogrady/2017/06/08/language-rankings-6-17/">The RedMonk Programming Language Rankings: June 2017</a></p>
+</li>
+<li>
+<p><a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a></p>
+</li>
+<li>
+<p><a href="http://pypl.github.io/PYPL.html">PYPL PopularitY of Programming Language</a></p>
+</li>
+<li>
+<p><a href="https://spectrum.ieee.org/static/interactive-the-top-programming-languages-2017">Interactive: The Top Programming Languages 2017</a></p>
+</li>
+<li>
+<p><a href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/">The Incredible Growth of Python, published September 6, 2017</a></p>
+</li>
+<li>
+<p><a href="https://octoverse.github.com/">The State of the Octoverse 2017, Github statistics</a></p>
+</li>
+<li>
+<p><a href="https://madnight.github.io/githut/">GitHut 2.0. A small place to discover languages in Github</a></p>
+</li>
+<li>
+<p><a href="/blog/2016/05/14/the-state-of-groovy-and-other-jvm-languages.html">The state of Groovy and other JVM Languages</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div></p>
+
+	<hr />
+
+	<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'kie-by-halyph';
+		var disqus_identifier = 'http://halyph.com/blog/2017/10/31/reflection-about-the-main-scripting-language.html';
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+	<hr>
+	
+		</div>
+		<div id="push"></div>
+    </div>
+    
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.1</a></p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../../../js/bootstrap.min.js"></script>
+    <script src="../../../../js/prettify.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-77422657-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>

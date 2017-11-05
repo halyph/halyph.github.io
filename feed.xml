@@ -6,9 +6,179 @@
     <atom:link href="http://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Wed, 1 Nov 2017 00:28:18 +0100</pubDate>
-    <lastBuildDate>Wed, 1 Nov 2017 00:28:18 +0100</lastBuildDate>
+    <pubDate>Sun, 5 Nov 2017 18:45:14 +0100</pubDate>
+    <lastBuildDate>Sun, 5 Nov 2017 18:45:14 +0100</lastBuildDate>
 
+    <item>
+      <title>Python: Reflection about my next main scripting language</title>
+      <link>http://halyph.com/blog/2017/10/31/reflection-about-the-main-scripting-language.html</link>
+      <pubDate>Tue, 31 Oct 2017 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2017/10/31/reflection-about-the-main-scripting-language.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/blog/python.png&quot; alt=&quot;python&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I differentiate &lt;em&gt;normal programming language&lt;/em&gt; and &lt;em&gt;scripting programming language&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;em&gt;Scripting language&lt;/em&gt; must be used for quick prototyping, automation, has a nice integration with shell, etc.
+Also, it should be very quick at startup time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I have been using several languages which have such characteristics (or similar): &lt;em&gt;Ruby&lt;/em&gt; and &lt;em&gt;Groovy&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_ruby&quot;&gt;Ruby&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I started using Ruby (as a scripting language) in 2008. It was cool. In that time Ruby community was &quot;bashing&quot; Java.
+The community was and is &lt;em&gt;Ruby on Rails&lt;/em&gt; centric, mainly &lt;em&gt;non&lt;/em&gt;-Windows. Almost nothing has happen outside of Rails (Vagrant, Chef and Puppet are exceptions). And it&amp;#8217;s sad.
+There is a limited amount of scientific libraries.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_groovy&quot;&gt;Groovy&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Groovy is nice JVM language which has own &lt;em&gt;pros &amp;amp; cons&lt;/em&gt;. But now, this language has some problems with popularity (&lt;em&gt;see&lt;/em&gt; &lt;a href=&quot;/blog/2016/05/14/the-state-of-groovy-and-other-jvm-languages.html&quot;&gt;The state of Groovy and other JVM Languages&lt;/a&gt;). And for me it&amp;#8217;s a very important point.
+Also, due to JVM nature, the script startup  is very slow (I do not count &lt;a href=&quot;https://kobo.github.io/groovyserv/quickstart.html&quot;&gt;GroovyServ&lt;/a&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Groovy language syntax is much better for me than Ruby. I like Groovy &lt;em&gt;packages&lt;/em&gt; and hate Ruby &lt;em&gt;Modules and Namespaces&lt;/em&gt;. Again, it just a matter of taste.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_thoughts&quot;&gt;Thoughts&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If we compare different scripting languages they are almost the same in terms of what can be implement using them.
+But, some of them have community problems, some - ecosystem problems, some - is just not well suited to your development approaches (e.g &lt;em&gt;Perl&lt;/em&gt;, &lt;em&gt;Lua&lt;/em&gt;, &lt;em&gt;Js/Node.js&lt;/em&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;And as always there must be some shift or motivation to look around and try something new and hopefully better.
+The time invested in learning new &lt;em&gt;&quot;tool&quot;&lt;/em&gt; must be rewarded in future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If we look around the decision of picking another better scripting language is very simple - it&amp;#8217;s &lt;em&gt;Python&lt;/em&gt;. And by &lt;strong&gt;&lt;em&gt;&quot;better&quot;&lt;/em&gt;&lt;/strong&gt; I don&amp;#8217;t mean syntax.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_python&quot;&gt;Python&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I have never used Python because Ruby (or Groovy) had the similar language features and I have not seen any benefits in switching to another language.
+On the another hand, Python has huge ecosystem, it has library for almost everything, it is not a framework-centric language (&lt;em&gt;see&lt;/em&gt; Ruby on Rails, Groovy: Grails or Gradle).
+And the most important it has a momentum in terms of &lt;em&gt;Data Science&lt;/em&gt;, &lt;em&gt;Machine Learning&lt;/em&gt; and &lt;em&gt;Artificial Intelligence&lt;/em&gt; (where I have big interests as the other people). Unfortunately, Ruby has lost this fight.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For several month, I have been using a lot of Python-based tools (&lt;a href=&quot;https://aws.amazon.com/cli/&quot;&gt;AWS CLI&lt;/a&gt;, &lt;a href=&quot;https://zmon.io/&quot;&gt;ZMON&lt;/a&gt;, &lt;a href=&quot;https://stups.io/&quot;&gt;Stups&lt;/a&gt;) during my work day
+and this is another big motivation for me to switch to Python as my main scripting language.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There is a very interesting moment. I &lt;strong&gt;do not&lt;/strong&gt; like Python syntax (I am not dogmatic), but for some reason this syntax is very ugly for me.
+And I am picking Python only because of pragmatism and not because I like it. I do not have any emotional feelings to this language.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;em&gt;Python&lt;/em&gt; is very popular right now (check the numbers below) and it&amp;#8217;s a very good time to start using it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;_nice_languages_popularity_statistics&quot;&gt;Nice Languages Popularity Statistics&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_redmonk&quot;&gt;RedMonk&lt;/h3&gt;
+&lt;div id=&quot;img-redmonk&quot; class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://redmonk.com/sogrady/2017/06/08/language-rankings-6-17/&quot;&gt;&lt;img src=&quot;/images/posts/2017-10-31/redmonk-2017q3.png&quot; alt=&quot;Redmonk&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;title&quot;&gt;Figure 1: The RedMonk Programming Language Rankings: June 2017&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_tiobe_index&quot;&gt;TIOBE Index&lt;/h3&gt;
+&lt;div id=&quot;img-tiobe&quot; class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://www.tiobe.com/tiobe-index/&quot;&gt;&lt;img src=&quot;/images/posts/2017-10-31/tiobe-2017-oct.jpg&quot; alt=&quot;TIOBE&quot; width=&quot;1000&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;title&quot;&gt;Figure 2: TIOBE Index for October 2017&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_pypl&quot;&gt;PYPL&lt;/h3&gt;
+&lt;div id=&quot;img-pypl&quot; class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://pypl.github.io/PYPL.html&quot;&gt;&lt;img src=&quot;/images/posts/2017-10-31/pypl-2017-oct.jpg&quot; alt=&quot;PYPL&quot; width=&quot;700&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;title&quot;&gt;Figure 3: PYPL PopularitY of Programming Language&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_ieee_spectrum&quot;&gt;IEEE Spectrum&lt;/h3&gt;
+&lt;div id=&quot;img-ieee&quot; class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://spectrum.ieee.org/static/interactive-the-top-programming-languages-2017&quot;&gt;&lt;img src=&quot;/images/posts/2017-10-31/ieee-2017-oct.jpg&quot; alt=&quot;IEEE&quot; width=&quot;700&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;title&quot;&gt;Figure 4: Interactive: The Top Programming Languages 2017&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_stack_overflow&quot;&gt;Stack Overflow&lt;/h3&gt;
+&lt;div id=&quot;img-so&quot; class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://stackoverflow.blog/2017/09/06/incredible-growth-python/&quot;&gt;&lt;img src=&quot;/images/posts/2017-10-31/so-2017-sep.png&quot; alt=&quot;SO&quot; width=&quot;700&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;title&quot;&gt;Figure 5: Growth of major programming languages&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_github&quot;&gt;Github&lt;/h3&gt;
+&lt;div id=&quot;img-github&quot; class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://octoverse.github.com/&quot;&gt;&lt;img src=&quot;/images/posts/2017-10-31/github-2017.jpg&quot; alt=&quot;Github&quot; width=&quot;700&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;title&quot;&gt;Figure 6: The fifteen most popular languages on GitHub (2017) by opened pull request&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;_references&quot;&gt;References&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://redmonk.com/sogrady/2017/06/08/language-rankings-6-17/&quot;&gt;The RedMonk Programming Language Rankings: June 2017&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.tiobe.com/tiobe-index/&quot;&gt;TIOBE Index&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://pypl.github.io/PYPL.html&quot;&gt;PYPL PopularitY of Programming Language&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://spectrum.ieee.org/static/interactive-the-top-programming-languages-2017&quot;&gt;Interactive: The Top Programming Languages 2017&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.blog/2017/09/06/incredible-growth-python/&quot;&gt;The Incredible Growth of Python, published September 6, 2017&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://octoverse.github.com/&quot;&gt;The State of the Octoverse 2017, Github statistics&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://madnight.github.io/githut/&quot;&gt;GitHut 2.0. A small place to discover languages in Github&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;/blog/2016/05/14/the-state-of-groovy-and-other-jvm-languages.html&quot;&gt;The state of Groovy and other JVM Languages&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Reserved Words of Programming languages</title>
       <link>http://halyph.com/blog/2016/11/28/prog-lang-reserved-words.html</link>
@@ -3488,6 +3658,116 @@ Recently, I had a chance to present the subject at the local IT community meetup
 &lt;br /&gt;This list includes open sourced and free tools. I intentionally have excluded commercial tools. I&apos;m sure there are much more tools. In case your know some of them which isn&apos;t listed here please add comment to this post.
 &lt;br /&gt;
 
+	</description>
+    </item>
+    <item>
+      <title>Why I have chosen Ruby as main scripting language for my toolbox</title>
+      <link>http://halyph.com/blog/2009/12/27/why-i-chosen-ruby-as-main-scripting.html</link>
+      <pubDate>Sun, 27 Dec 2009 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2009/12/27/why-i-chosen-ruby-as-main-scripting.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/blog/ruby.png&quot; alt=&quot;ruby&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;UPD&lt;/strong&gt;: This post was written &lt;a href=&quot;http://halyph.blogspot.de/2009/12/why-i-chosen-ruby-as-main-scripting.html&quot;&gt;long time ago&lt;/a&gt;. I have decided to re-publish it for historical reason&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There are a lot of scripting languages: Perl, Python, Lua, Tcl, Ruby, JavaScript, Scala, Groovy, Erlang, Lisp, Scheme and Bash/Awk(as shell scripting).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There are criteria I&amp;#8217;ve tried to match for my scripting language of choice:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Easy to learn&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Active and big community&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Amount of books and tutorials which are available&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How many screencasts, conference videos are on-line?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can replace shell scripting?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Number of text editors which support selected language&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Code for fun? Is it suitable for selected language&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Amount of useful frameworks and libraries&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Let&amp;#8217;s discuss each of them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;JavaScript&lt;/strong&gt;. I like this language, but it doesn&amp;#8217;t have standard serve-side API. There are a lot of implementation, but community have to work a lot to get valuable result. Check &lt;a href=&quot;http://wiki.commonjs.org/wiki/CommonJS&quot;&gt;CommonJS&lt;/a&gt; to get more info&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Perl&lt;/strong&gt;. I&amp;#8217;ve never tried to dig deeply into this and code style doesn&amp;#8217;t suitable for me. I can&amp;#8217;t code for fun. Number of tutorials/books are huge. Community is big. But, it&amp;#8217;s not my language of choice.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Lua&lt;/strong&gt;. There are no killer features, as for me. In general language are cool and fast. Easy to learn.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Tcl&lt;/strong&gt;. I just don&amp;#8217;t like Tcl language. It&amp;#8217;s main stopper for me. Community not so big in comparison with other languages. Amount the books is limited.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Lisp/Scheme&lt;/strong&gt;. Great languages, but not for shell oriented scripting (It will be awkward to write shell scripts)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Erlang&lt;/strong&gt;. Interesting language, but it&amp;#8217;s not general purpose. Good for concurrency domain. I have to skip it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Scala/Groovy&lt;/strong&gt;. Yet another scripting languages. I can see hype near these languages, especially Scala in Java community. I can predict, that the next year will have got another hype language(s).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Bash/Awk&lt;/strong&gt;. I&amp;#8217;d like to learn these two, but I&amp;#8217;m windows user and I don&amp;#8217;t have a possibility to use these during my work. I can use Cygwin/MSYS, but it will be strange, awkward. It will be unnatural. I&amp;#8217;m sure I need to get additional experience in Bash scripting, but not now. Time is my enemy.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;Python vs Ruby&lt;/strong&gt;. These two are very similar. Both have big and active community. Both are general purpose languages. Both are great.
+But I falling in love with Ruby blocks. I love &lt;a href=&quot;http://railscasts.com/&quot; class=&quot;bare&quot;&gt;http://railscasts.com/&lt;/a&gt;. I&amp;#8217;m not web-developer, but Rails concept is super-productive. I just love Ruby community.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;But, there is one drawback. There is a ton of libraries and frameworks which are doing the same thing. Community super productive and it&amp;#8217;s in developing. There is no consistency. So, I have to be aware of any big changes in my favorite libraries/frameworks. I know it sounds strange but it&amp;#8217;s IMHO.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Shell scripting and task automation is one of the main direction to be productive. From time to time I have to work on different OS&amp;#8217;s (Windows, Linux, OS X) and environment. But my primary work station is Windows based. I&amp;#8217;d like to have consistent scripting and automation tools for all these OS/environments. We can automate everything with Bash, etc. But what about Windows? So, choosing scripting language was good decision to create multi-platform toolbox. So, I can use my knowledge on any machine with minimal rework (if required).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Any developer should have some scripting language in his arsenal. &lt;strong&gt;The right tool for the job.&lt;/strong&gt; Keep follow this idea and you will be productive.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;_references&quot;&gt;References&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Original post: &lt;a href=&quot;http://halyph.blogspot.de/2009/12/why-i-chosen-ruby-as-main-scripting.html&quot; class=&quot;bare&quot;&gt;http://halyph.blogspot.de/2009/12/why-i-chosen-ruby-as-main-scripting.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 	</description>
     </item>
 
