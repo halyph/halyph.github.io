@@ -6,9 +6,75 @@
     <atom:link href="http://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sun, 5 Nov 2017 18:45:14 +0100</pubDate>
-    <lastBuildDate>Sun, 5 Nov 2017 18:45:14 +0100</lastBuildDate>
+    <pubDate>Mon, 6 Nov 2017 23:13:32 +0100</pubDate>
+    <lastBuildDate>Mon, 6 Nov 2017 23:13:32 +0100</lastBuildDate>
 
+    <item>
+      <title>My Favorite Podcasts</title>
+      <link>http://halyph.com/blog/2017/11/05/my-favorite-podcasts.html</link>
+      <pubDate>Sun, 5 Nov 2017 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2017/11/05/my-favorite-podcasts.html</guid>
+      	<description>
+	&lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/blog/podcast.png&quot; alt=&quot;podcast&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I’ve been listening podcasts for many years. Mostly (99%) technical podcasts. Here is the list in my favorite order
+(Please note, some of them are not in English)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(RUS) &lt;a href=&quot;http://devzen.ru/&quot;&gt;DevZen&lt;/a&gt;: Very interesting. It covers broad range of different technical topics&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(RUS) &lt;a href=&quot;http://scalalaz.ru/&quot;&gt;Scalaz Podcast&lt;/a&gt;: Podcast about Scala&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(RUS) &lt;a href=&quot;https://radio-t.com/&quot;&gt;Radio-t&lt;/a&gt;: Tech podcast. Sometimes might be boring because it has a lot of blaming and trolling&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(RUS) &lt;a href=&quot;http://golangshow.com/&quot;&gt;GolangShow&lt;/a&gt;: only #Golang, only hardcore&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(ENG) &lt;a href=&quot;https://devchat.tv/ruby-rogues&quot;&gt;The Ruby Rogues&lt;/a&gt;: broad range of topics, not only #Ruby&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(ENG) &lt;a href=&quot;https://www.functionalgeekery.com/&quot;&gt;Functional Geekery&lt;/a&gt;: A podcast on Functional Programming, covering topics across multiple languages&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(ENG) &lt;a href=&quot;http://www.podcasts.com/lambdacast-99&quot;&gt;LambdaCast&lt;/a&gt;: LambdaCast is a podcast about functional programming for working developers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(ENG) &lt;a href=&quot;https://www.mappingthejourney.com&quot;&gt;Mapping The Journey&lt;/a&gt;: interviews with famous people from IT&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(ENG) &lt;a href=&quot;https://changelog.com/&quot;&gt;The Chanelog&lt;/a&gt;: broad range of topics&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(RUS) &lt;a href=&quot;http://ctocast.com/&quot;&gt;CTOcast&lt;/a&gt;: mostly interviews, tech podcast with different guests from different companies&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(RUS) &lt;a href=&quot;https://sdcast.ksdaemon.ru/&quot;&gt;SDCast&lt;/a&gt;: mostly interviews, tech podcast with different guests from different companies&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(RUS) &lt;a href=&quot;https://americhka.us/&quot;&gt;Americhka.us&lt;/a&gt;: non-technical podcast about life&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(ENG) &lt;a href=&quot;http://chariotsolutions.com/podcasts/show/techcast/&quot;&gt;The Chariot TechCast&lt;/a&gt;: “The Chariot TechCast is an interview show that covers emerging and important tends in the world of software development.”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(ENG) &lt;a href=&quot;http://www.se-radio.net/&quot;&gt;Software Engineering Radio&lt;/a&gt;: different tech topics&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(RUS) &lt;a href=&quot;http://razbor-poletov.com/&quot;&gt;Razbor poletov&lt;/a&gt;: Java-related talks&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Python: Reflection about my next main scripting language</title>
       <link>http://halyph.com/blog/2017/10/31/reflection-about-the-main-scripting-language.html</link>

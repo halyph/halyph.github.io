@@ -77,6 +77,66 @@
 		<h1>Blog</h1>
 	</div>
 
+  			<a href="blog/2017/11/05/my-favorite-podcasts.html"><h1>My Favorite Podcasts</h1></a>
+  			<p>05 November 2017</p>
+  			<p><div class="imageblock" style="float: right">
+<div class="content">
+<img src="/images/blog/podcast.png" alt="podcast">
+</div>
+</div>
+<div class="paragraph">
+<p>I’ve been listening podcasts for many years. Mostly (99%) technical podcasts. Here is the list in my favorite order
+(Please note, some of them are not in English)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(RUS) <a href="http://devzen.ru/">DevZen</a>: Very interesting. It covers broad range of different technical topics</p>
+</li>
+<li>
+<p>(RUS) <a href="http://scalalaz.ru/">Scalaz Podcast</a>: Podcast about Scala</p>
+</li>
+<li>
+<p>(RUS) <a href="https://radio-t.com/">Radio-t</a>: Tech podcast. Sometimes might be boring because it has a lot of blaming and trolling</p>
+</li>
+<li>
+<p>(RUS) <a href="http://golangshow.com/">GolangShow</a>: only #Golang, only hardcore</p>
+</li>
+<li>
+<p>(ENG) <a href="https://devchat.tv/ruby-rogues">The Ruby Rogues</a>: broad range of topics, not only #Ruby</p>
+</li>
+<li>
+<p>(ENG) <a href="https://www.functionalgeekery.com/">Functional Geekery</a>: A podcast on Functional Programming, covering topics across multiple languages</p>
+</li>
+<li>
+<p>(ENG) <a href="http://www.podcasts.com/lambdacast-99">LambdaCast</a>: LambdaCast is a podcast about functional programming for working developers</p>
+</li>
+<li>
+<p>(ENG) <a href="https://www.mappingthejourney.com">Mapping The Journey</a>: interviews with famous people from IT</p>
+</li>
+<li>
+<p>(ENG) <a href="https://changelog.com/">The Chanelog</a>: broad range of topics</p>
+</li>
+<li>
+<p>(RUS) <a href="http://ctocast.com/">CTOcast</a>: mostly interviews, tech podcast with different guests from different companies</p>
+</li>
+<li>
+<p>(RUS) <a href="https://sdcast.ksdaemon.ru/">SDCast</a>: mostly interviews, tech podcast with different guests from different companies</p>
+</li>
+<li>
+<p>(RUS) <a href="https://americhka.us/">Americhka.us</a>: non-technical podcast about life</p>
+</li>
+<li>
+<p>(ENG) <a href="http://chariotsolutions.com/podcasts/show/techcast/">The Chariot TechCast</a>: “The Chariot TechCast is an interview show that covers emerging and important tends in the world of software development.”</p>
+</li>
+<li>
+<p>(ENG) <a href="http://www.se-radio.net/">Software Engineering Radio</a>: different tech topics</p>
+</li>
+<li>
+<p>(RUS) <a href="http://razbor-poletov.com/">Razbor poletov</a>: Java-related talks</p>
+</li>
+</ul>
+</div></p>
   			<a href="blog/2017/10/31/reflection-about-the-main-scripting-language.html"><h1>Python: Reflection about my next main scripting language</h1></a>
   			<p>31 October 2017</p>
   			<p><div id="preamble">
@@ -487,186 +547,6 @@ _    :    =    =&gt;    &lt;-    &lt;:    &lt;%     &gt;:    #    @
 </table>
 <p>It&rsquo;s very interesting aspect of any community.</p>
 <p>Please comment/correct me if this table has incorrect info.</p></p>
-  			<a href="blog/2016/06/15/gradle-groovy-kotlin-ftw.html"><h1>Gradle, Groovy, Kotlin. FTW?</h1></a>
-  			<p>15 June 2016</p>
-  			<p><div id="preamble">
-<div class="sectionbody">
-<div class="imageblock" style="float: right">
-<div class="content">
-<img src="/images/blog/gradle.png" alt="gradle">
-</div>
-</div>
-<div class="paragraph">
-<p>You’ve probably heard about <a href="http://gradle.org/blog/kotlin-meets-gradle/"><em>"Kotlin-based approach to writing Gradle build scripts"</em></a>. A lot of noise was produced based on this announcement and Cédric Champeau tried to explain the real state of <a href="http://melix.github.io/blog/2016/05/gradle-kotlin.html">Groovy, Gradle and their future relationship</a>.</p>
-</div>
-<div class="paragraph">
-<p>Just to avoid different speculation about <em>"Gradle is written in Groovy"</em> and now <em>"it will be re-written in Kotlin"</em> here are some <strong>numbers</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Let&#8217;s check the <a href="https://github.com/gradle/gradle">Gradle repo</a> language statistic provided by  GitHub</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="/images/posts/2016-06-15/gradle-github.jpg" alt="gradle github">
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Gradle root folder has several very important sub-folders:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><code>buildSrc</code> - <a href="https://docs.gradle.org/current/userguide/organizing_build_logic.html#sec:build_sources">It&#8217;s related to Gradle build process</a></p>
-</li>
-<li>
-<p><code>config</code> - nothing interesting: <code>condenarc</code> and <code>checkstyle</code> configs</p>
-</li>
-<li>
-<p><code>design-docs</code> - markdown documentation</p>
-</li>
-<li>
-<p><code>gradle</code> - Gradle scripts</p>
-</li>
-<li>
-<p><code>subprojects</code> - Gradle sources. It&#8217;s our goal to analyze this folder and understand the language statistics</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><code><strong>subprojects</strong></code> contains several interesting sub-folders:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><code>src/main</code> - actual "gradle" source code</p>
-</li>
-<li>
-<p><code>src/test</code>, <code>src/integTest</code> and <code>src/testFixtures</code> test source code.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Now, count the language stats by <a href="https://github.com/AlDanial/cloc">cloc</a> tool:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><code>src/main</code>:</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>$ cloc-1.66.exe  --match-d="src/main/" --found=oicloc2.log .
-    6052 text files.
-Wrote oicloc2.log
-    5975 unique files.
-    1881 files ignored.
-
-https://github.com/AlDanial/cloc v 1.66  T=19.50 s (298.2 files/s, 23192.5 lines/s)
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-Java                          5466          56689         128109         238097
-Groovy                         278           3100           5179          14336
-JavaScript                       3            160            272           4528
-XML                             15              8              0            669
-CSS                              6             64             38            354
-XSLT                             1             24             31            140
-C++                              7              7              0             51
-C                                6             22             22             50
-Scala                           15             12             39             50
-C/C++ Header                     6              9              4             33
-HTML                             3              9             17             24
-Objective C++                    2              7              0             18
-Assembly                         2              1              0             17
-JSP                              3              0              0             14
-IDL                              1              2              0             14
-Objective C                      1              3              0              7
--------------------------------------------------------------------------------
-SUM:                          5815          60117         133711         258402
--------------------------------------------------------------------------------</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Based on this raw analysis we have <strong>93% Java</strong> files and <strong>4.7% Groovy</strong> files.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Let&#8217;s add <strong><em>test</em></strong> ( <code>src/test</code>, <code>src/integTest</code> and <code>src/testFixtures</code>) folders to our statistics:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>$ cloc-1.66.exe  --match-d="src/(test|integTest|testFixtures)/" --found=oicloc3.log .
-    3867 text files.
-Wrote oicloc3.log
-    3775 unique files.
-    2657 files ignored.
-
-https://github.com/AlDanial/cloc v 1.66  T=15.24 s (243.1 files/s, 29213.4 lines/s)
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-Groovy                        3043          65654          47398         291716
-Java                           536           5830           7278          23568
-XML                             57             19             36           1845
-Maven                           22             57             20            571
-HTML                            10             18             10            430
-Scala                           24             48            122            162
-JavaScript                       5             14             13            105
-CSS                              1             19              0             91
-DTD                              1             54            164             33
-XSLT                             2              6              0             20
-CoffeeScript                     1              7              8             13
-YAML                             1              0              0              7
-JSP                              1              0              0              6
-SQL                              1              2              1              2
-C                                1              0              0              1
--------------------------------------------------------------------------------
-SUM:                          3706          71728          55050         318570
--------------------------------------------------------------------------------</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>As You can see we have <strong>14.5% Java</strong> files and <strong>82% Groovy</strong> files.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_summary">Summary</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><strong>Gradle</strong> is <em>Java</em>-based project and it uses <em>Groovy</em> for testing and as a DSL implementation tool, nothing more.
-The noise around "Groovy vs Kotlin" for DSL implementation inside Gradle sounds strange. <em>Gradle Inc.</em> has just made pragmatic decision. That&#8217;s it.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_references">References</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="http://melix.github.io/blog/2016/05/gradle-kotlin.html">Cédric Champeau&#8217;s blog - Gradle and Kotlin, a personal perspective</a></p>
-</li>
-<li>
-<p><a href="http://gradle.org/blog/kotlin-meets-gradle/">Gradle Blog - Kotlin Meets Gradle</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div></p>
 	
 	<hr />
 	
