@@ -1,0 +1,30 @@
+= My Favorite Podcasts
+Orest Ivasiv
+2017-11-05
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: podcast
+:source-highlighter: prettify
+:icons: font
+:my-image-dir: /images
+
+image::{my-image-dir}/blog/podcast.png[float="right"]
+
+I’ve been listening podcasts for many years. Mostly (99%) technical podcasts. Here is the list in my favorite order
+(Please note, some of them are not in English)
+
+- (RUS) http://devzen.ru/[DevZen]: Very interesting. It covers broad range of different technical topics
+- (RUS) http://scalalaz.ru/[Scalaz Podcast]: Podcast about Scala
+- (RUS) https://radio-t.com/[Radio-t]: Tech podcast. Sometimes might be boring because it has a lot of blaming and trolling
+- (RUS) http://golangshow.com/[GolangShow]: only #Golang, only hardcore
+- (ENG) https://devchat.tv/ruby-rogues[The Ruby Rogues]: broad range of topics, not only #Ruby
+- (ENG) https://www.functionalgeekery.com/[Functional Geekery]: A podcast on Functional Programming, covering topics across multiple languages
+- (ENG) http://www.podcasts.com/lambdacast-99[LambdaCast]: LambdaCast is a podcast about functional programming for working developers
+- (ENG) https://www.mappingthejourney.com[Mapping The Journey]: interviews with famous people from IT
+- (ENG) https://changelog.com/[The Chanelog]: broad range of topics
+- (RUS) http://ctocast.com/[CTOcast]: mostly interviews, tech podcast with different guests from different companies
+- (RUS) https://sdcast.ksdaemon.ru/[SDCast]: mostly interviews, tech podcast with different guests from different companies
+- (RUS) https://americhka.us/[Americhka.us]: non-technical podcast about life
+- (ENG) http://chariotsolutions.com/podcasts/show/techcast/[The Chariot TechCast]: “The Chariot TechCast is an interview show that covers emerging and important tends in the world of software development.”
+- (ENG) http://www.se-radio.net/[Software Engineering Radio]: different tech topics
+- (RUS) http://razbor-poletov.com/[Razbor poletov]: Java-related talks
