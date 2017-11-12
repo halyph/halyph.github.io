@@ -6,8 +6,8 @@
     <atom:link href="http://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Mon, 6 Nov 2017 23:13:32 +0100</pubDate>
-    <lastBuildDate>Mon, 6 Nov 2017 23:13:32 +0100</lastBuildDate>
+    <pubDate>Mon, 13 Nov 2017 00:42:26 +0100</pubDate>
+    <lastBuildDate>Mon, 13 Nov 2017 00:42:26 +0100</lastBuildDate>
 
     <item>
       <title>My Favorite Podcasts</title>
@@ -76,7 +76,7 @@
 	</description>
     </item>
     <item>
-      <title>Python: Reflection about my next main scripting language</title>
+      <title>Python: Reflection about the next main scripting language</title>
       <link>http://halyph.com/blog/2017/10/31/reflection-about-the-main-scripting-language.html</link>
       <pubDate>Tue, 31 Oct 2017 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2017/10/31/reflection-about-the-main-scripting-language.html</guid>
@@ -96,6 +96,22 @@
 Also, it should be very quick at startup time.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;So, any automation task can have the next implementations evolution, &lt;em&gt;e.g.&lt;/em&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;bash&lt;/code&gt; script&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;then any scripting language (&lt;code&gt;Python&lt;/code&gt;, &lt;code&gt;Ruby&lt;/code&gt;, &lt;code&gt;Groovy&lt;/code&gt;, &lt;code&gt;Perl&lt;/code&gt;, etc.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Command-line_interface&quot;&gt;CLI&lt;/a&gt; application&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I have been using several languages which have such characteristics (or similar): &lt;em&gt;Ruby&lt;/em&gt; and &lt;em&gt;Groovy&lt;/em&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -104,8 +120,8 @@ Also, it should be very quick at startup time.&lt;/p&gt;
 &lt;h3 id=&quot;_ruby&quot;&gt;Ruby&lt;/h3&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I started using Ruby (as a scripting language) in 2008. It was cool. In that time Ruby community was &quot;bashing&quot; Java.
-The community was and is &lt;em&gt;Ruby on Rails&lt;/em&gt; centric, mainly &lt;em&gt;non&lt;/em&gt;-Windows. Almost nothing has happen outside of Rails (Vagrant, Chef and Puppet are exceptions). And it&amp;#8217;s sad.
-There is a limited amount of scientific libraries.&lt;/p&gt;
+The community was and is &lt;em&gt;Ruby on Rails&lt;/em&gt; centric, mainly &lt;em&gt;non&lt;/em&gt;-Windows. Almost nothing has happen outside of Rails (Vagrant, Chef and Puppet are exceptions), and it&amp;#8217;s sad.
+But this language has a &lt;em&gt;&quot;soul&quot;&lt;/em&gt;. I could not explain, but I feel &lt;em&gt;happiness&lt;/em&gt; while I am writing something in Ruby :-)&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;sect2&quot;&gt;
@@ -137,22 +153,24 @@ The time invested in learning new &lt;em&gt;&quot;tool&quot;&lt;/em&gt; must be 
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I have never used Python because Ruby (or Groovy) had the similar language features and I have not seen any benefits in switching to another language.
 On the another hand, Python has huge ecosystem, it has library for almost everything, it is not a framework-centric language (&lt;em&gt;see&lt;/em&gt; Ruby on Rails, Groovy: Grails or Gradle).
-And the most important it has a momentum in terms of &lt;em&gt;Data Science&lt;/em&gt;, &lt;em&gt;Machine Learning&lt;/em&gt; and &lt;em&gt;Artificial Intelligence&lt;/em&gt; (where I have big interests as the other people). Unfortunately, Ruby has lost this fight.&lt;/p&gt;
+And the most important it has a momentum in terms of &lt;em&gt;Data Science&lt;/em&gt;, &lt;em&gt;Machine Learning&lt;/em&gt; and &lt;em&gt;Artificial Intelligence&lt;/em&gt; (where I have big interests as the other people).
+Unfortunately, Ruby has lost this fight.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;For several month, I have been using a lot of Python-based tools (&lt;a href=&quot;https://aws.amazon.com/cli/&quot;&gt;AWS CLI&lt;/a&gt;, &lt;a href=&quot;https://zmon.io/&quot;&gt;ZMON&lt;/a&gt;, &lt;a href=&quot;https://stups.io/&quot;&gt;Stups&lt;/a&gt;) during my work day
-and this is another big motivation for me to switch to Python as my main scripting language.&lt;/p&gt;
+and this is another big motivation for me to look into the Python as my potential next scripting language.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;There is a very interesting moment. I &lt;strong&gt;do not&lt;/strong&gt; like Python syntax (I am not dogmatic), but for some reason this syntax is very ugly for me.
-And I am picking Python only because of pragmatism and not because I like it. I do not have any emotional feelings to this language.&lt;/p&gt;
+&lt;p&gt;There is a very interesting moment. I &lt;strong&gt;do not&lt;/strong&gt; like Python syntax (I am not dogmatic). For some reason Python syntax (and language features) is very &lt;strong&gt;&lt;em&gt;ugly&lt;/em&gt;&lt;/strong&gt; for me.
+And I would pick Python only because of pragmatism and not because I like it.
+But, I am not sure whether Python will be my main scripting language since Python is &lt;strong&gt;not&lt;/strong&gt; equal to &quot;happiness&quot; :-(&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;em&gt;Python&lt;/em&gt; is very popular right now (check the numbers below) and it&amp;#8217;s a very good time to start using it.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Python&lt;/em&gt; is very popular right now (check the numbers below) and it&amp;#8217;s a very good time to start using it if you don&amp;#8217;t have biases like I have.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;_nice_languages_popularity_statistics&quot;&gt;Nice Languages Popularity Statistics&lt;/h2&gt;
+&lt;h2 id=&quot;_languages_popularity_statistics&quot;&gt;Languages Popularity Statistics&lt;/h2&gt;
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;sect2&quot;&gt;
 &lt;h3 id=&quot;_redmonk&quot;&gt;RedMonk&lt;/h3&gt;
