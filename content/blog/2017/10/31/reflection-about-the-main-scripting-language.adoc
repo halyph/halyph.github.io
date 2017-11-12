@@ -1,4 +1,4 @@
-= Python: Reflection about my next main scripting language
+= Python: Reflection about the next main scripting language
 Orest Ivasiv
 2017-10-31
 :jbake-type: post
@@ -24,13 +24,19 @@ I differentiate _normal programming language_ and _scripting programming languag
 _Scripting language_ must be used for quick prototyping, automation, has a nice integration with shell, etc.
 Also, it should be very quick at startup time.
 
+So, any automation task can have the next implementations evolution, _e.g._:
+
+. `bash` script
+. then any scripting language (`Python`, `Ruby`, `Groovy`, `Perl`, etc.)
+. https://en.wikipedia.org/wiki/Command-line_interface[CLI] application
+
 I have been using several languages which have such characteristics (or similar): _Ruby_ and _Groovy_.
 
 === Ruby
 
 I started using Ruby (as a scripting language) in 2008. It was cool. In that time Ruby community was "bashing" Java.
-The community was and is _Ruby on Rails_ centric, mainly _non_-Windows. Almost nothing has happen outside of Rails (Vagrant, Chef and Puppet are exceptions). And it's sad.
-There is a limited amount of scientific libraries.
+The community was and is _Ruby on Rails_ centric, mainly _non_-Windows. Almost nothing has happen outside of Rails (Vagrant, Chef and Puppet are exceptions), and it's sad.
+But this language has a _"soul"_. I could not explain, but I feel _happiness_ while I am writing something in Ruby :-)
 
 === Groovy
 
@@ -53,17 +59,19 @@ If we look around the decision of picking another better scripting language is v
 
 I have never used Python because Ruby (or Groovy) had the similar language features and I have not seen any benefits in switching to another language.
 On the another hand, Python has huge ecosystem, it has library for almost everything, it is not a framework-centric language (_see_ Ruby on Rails, Groovy: Grails or Gradle).
-And the most important it has a momentum in terms of _Data Science_, _Machine Learning_ and _Artificial Intelligence_ (where I have big interests as the other people). Unfortunately, Ruby has lost this fight.
+And the most important it has a momentum in terms of _Data Science_, _Machine Learning_ and _Artificial Intelligence_ (where I have big interests as the other people).
+Unfortunately, Ruby has lost this fight.
 
 For several month, I have been using a lot of Python-based tools (https://aws.amazon.com/cli/[AWS CLI], https://zmon.io/[ZMON], https://stups.io/[Stups]) during my work day
-and this is another big motivation for me to switch to Python as my main scripting language.
+and this is another big motivation for me to look into the Python as my potential next scripting language.
 
-There is a very interesting moment. I *do not* like Python syntax (I am not dogmatic), but for some reason this syntax is very ugly for me.
-And I am picking Python only because of pragmatism and not because I like it. I do not have any emotional feelings to this language.
+There is a very interesting moment. I *do not* like Python syntax (I am not dogmatic). For some reason Python syntax (and language features) is very *_ugly_* for me.
+And I would pick Python only because of pragmatism and not because I like it.
+But, I am not sure whether Python will be my main scripting language since Python is *not* equal to "happiness" :-(
 
-_Python_ is very popular right now (check the numbers below) and it's a very good time to start using it.
+_Python_ is very popular right now (check the numbers below) and it's a very good time to start using it if you don't have biases like I have.
 
-== Nice Languages Popularity Statistics
+== Languages Popularity Statistics
 
 === RedMonk
 .The RedMonk Programming Language Rankings: June 2017
