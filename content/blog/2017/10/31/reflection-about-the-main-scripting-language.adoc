@@ -1,9 +1,9 @@
-= Python: Reflection about the next main scripting language
+= Reflection about the next main scripting language
 Orest Ivasiv
 2017-10-31
 :jbake-type: post
 :jbake-status: published
-:jbake-tags: python
+:jbake-tags: python, ruby, groovy
 :source-highlighter: prettify
 :icons: font
 :my-image-dir: /images
