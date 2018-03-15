@@ -6,9 +6,114 @@
     <atom:link href="http://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sat, 20 Jan 2018 17:54:59 +0100</pubDate>
-    <lastBuildDate>Sat, 20 Jan 2018 17:54:59 +0100</lastBuildDate>
+    <pubDate>Thu, 15 Mar 2018 01:17:01 +0100</pubDate>
+    <lastBuildDate>Thu, 15 Mar 2018 01:17:01 +0100</lastBuildDate>
 
+    <item>
+      <title>REST API Guidelines</title>
+      <link>http://halyph.com/blog/2018/03/15/rest-api-guidelines.html</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2018/03/15/rest-api-guidelines.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/blog/rest_api.png&quot; alt=&quot;rest api&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;REST API is the most popular interface for communication between different component of the system.
+There are a lot of different common sense approaches to design RESTful API.
+Despite this fact it is always better to have something written as a reference to follow common principles during API design of the system.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Here I have collected some REST API guidelines and API References. It&amp;#8217;s nice start point for your &lt;em&gt;inspiration&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_rest_api_guidelines&quot;&gt;REST API Guidelines&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md&quot;&gt;Microsoft&lt;/a&gt;&lt;/strong&gt; - REST API Guidelines&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design&quot;&gt;Microsoft&lt;/a&gt;&lt;/strong&gt; - Best Practices - API Design&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/zalando/restful-api-guidelines&quot;&gt;Zalando&lt;/a&gt;&lt;/strong&gt; - REST API Guidelines&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/paypal/api-standards/blob/master/api-style-guide.md&quot;&gt;Paypal&lt;/a&gt;&lt;/strong&gt; - REST API Guidelines&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://developer.atlassian.com/server/framework/atlassian-sdk/atlassian-rest-api-design-guidelines-version-1/&quot;&gt;Atlassian&lt;/a&gt;&lt;/strong&gt; - REST API design guidelines version 1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://developers.digitalocean.com/documentation/v2/&quot;&gt;Digital Ocean&lt;/a&gt;&lt;/strong&gt; - API v2 Introduction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://cloud.google.com/apis/design/&quot;&gt;Google Cloud Platform&lt;/a&gt;&lt;/strong&gt; - API Design Guide&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://restful-api-design.readthedocs.io/en/latest/&quot;&gt;Red Hat&lt;/a&gt;&lt;/strong&gt; Lessons learnt from designing the Red Hat Enterprise Virtualization API&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/AusDTO/apiguide&quot;&gt;Australian Government Agencies&lt;/a&gt;&lt;/strong&gt; - AusDTO API Design Guide&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/cloudfoundry/cc-api-v3-style-guide&quot;&gt;Cloud Foundry&lt;/a&gt;&lt;/strong&gt; - Cloud Controller API v3 Style Guide (Proposal)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://geemus.gitbooks.io/http-api-design/content/en/&quot;&gt;Heroku&lt;/a&gt;&lt;/strong&gt; - API Design Guide&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.restapitutorial.com/&quot;&gt;A RESTful Tutorial&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_sample_apis&quot;&gt;Sample APIs&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.github.com/v3/&quot;&gt;GitHub REST API v3&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.twitter.com/en/docs/basics/getting-started&quot;&gt;Twitter API&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://developers.google.com/drive/v2/reference/&quot;&gt;Google Drive APIs&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://developers.trello.com/reference/&quot;&gt;Trello API&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://api.stackexchange.com/docs&quot;&gt;Stack Exchange API v2.2&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.atlassian.com/cloud/jira/platform/rest/&quot;&gt;Jira API&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://stripe.com/docs/api&quot;&gt;Stripe API&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://devcenter.heroku.com/articles/platform-api-reference&quot;&gt;Heroku API&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.travis-ci.com/api&quot;&gt;Travis CI API&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Also, &lt;strong&gt;Apigee&lt;/strong&gt; provides huge list of different API providers in one place: &lt;a href=&quot;https://apigee.com/providers&quot; class=&quot;bare&quot;&gt;https://apigee.com/providers&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>My Favorite Podcasts</title>
       <link>http://halyph.com/blog/2017/11/05/my-favorite-podcasts.html</link>
