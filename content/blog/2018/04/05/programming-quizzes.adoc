@@ -1,0 +1,31 @@
+= Programming Quizzes
+Orest Ivasiv
+2018-04-05
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: ruby, scala, js
+:source-highlighter: prettify
+:icons: font
+:my-image-dir: /images
+
+image::{my-image-dir}/posts/2018-04-05/quizzes.png[float="right"]
+
+Many years ago there was a site with collection of *Ruby Quizzes*: http://rubyquiz.com.
+
+____
+*What Is Ruby Quiz?*
+
+Ruby Quiz is a weekly programming challenge for Ruby programmers
+____
+
+Idea is superb. So, I have decided to look around and collect here similar _resources_:
+
+* http://rubyquiz.com[*Ruby Quiz*: 1 - 156 quizzes]
+** https://pragprog.com/titles/fr_quiz/index.html["Best of Ruby Quiz" by _James Edward Gray II_]. This book contains 25 problems from Ruby Quiz
+** https://wiki.haskell.org/Haskell_Quiz[*Haskell* Solutions]
+* http://rubyquiz.strd6.com[*Ruby Quiz*: 157 - 234 quizzes]
+* http://aperiodic.net/phil/scala/s-99[*S-99: Ninety-Nine Scala Problems*: 99 quizzes]
+* https://30secondsofcode.org[*JavaScript* snippets that you can understand in 30 seconds or less].
+This huge list of snippets is not like "original" Ruby Quiz, but it might be used as quiz list.
+
+The current list is not very impressive. But, I am going to maintain it and I hope it will be bigger.
