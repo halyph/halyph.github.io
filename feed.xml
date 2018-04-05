@@ -6,9 +6,68 @@
     <atom:link href="http://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Thu, 15 Mar 2018 01:17:01 +0100</pubDate>
-    <lastBuildDate>Thu, 15 Mar 2018 01:17:01 +0100</lastBuildDate>
+    <pubDate>Thu, 5 Apr 2018 23:27:20 +0200</pubDate>
+    <lastBuildDate>Thu, 5 Apr 2018 23:27:20 +0200</lastBuildDate>
 
+    <item>
+      <title>Programming Quizzes</title>
+      <link>http://halyph.com/blog/2018/04/05/programming-quizzes.html</link>
+      <pubDate>Thu, 5 Apr 2018 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2018/04/05/programming-quizzes.html</guid>
+      	<description>
+	&lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/images/posts/2018-04-05/quizzes.png&quot; alt=&quot;quizzes&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Many years ago there was a site with collection of &lt;strong&gt;Ruby Quizzes&lt;/strong&gt;: &lt;a href=&quot;http://rubyquiz.com&quot; class=&quot;bare&quot;&gt;http://rubyquiz.com&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;What Is Ruby Quiz?&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ruby Quiz is a weekly programming challenge for Ruby programmers&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Idea is superb. So, I have decided to look around and collect here similar &lt;em&gt;resources&lt;/em&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://rubyquiz.com&quot;&gt;&lt;strong&gt;Ruby Quiz&lt;/strong&gt;: 1 - 156 quizzes&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://pragprog.com/titles/fr_quiz/index.html&quot;&gt;&quot;Best of Ruby Quiz&quot; by &lt;em&gt;James Edward Gray II&lt;/em&gt;&lt;/a&gt;. This book contains 25 problems from Ruby Quiz&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://wiki.haskell.org/Haskell_Quiz&quot;&gt;&lt;strong&gt;Haskell&lt;/strong&gt; Solutions&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://rubyquiz.strd6.com&quot;&gt;&lt;strong&gt;Ruby Quiz&lt;/strong&gt;: 157 - 234 quizzes&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://aperiodic.net/phil/scala/s-99&quot;&gt;&lt;strong&gt;S-99: Ninety-Nine Scala Problems&lt;/strong&gt;: 99 quizzes&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://30secondsofcode.org&quot;&gt;&lt;strong&gt;JavaScript&lt;/strong&gt; snippets that you can understand in 30 seconds or less&lt;/a&gt;.
+This huge list of snippets is not like &quot;original&quot; Ruby Quiz, but it might be used as quiz list.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The current list is not very impressive. But, I am going to maintain it and I hope it will be bigger.&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>REST API Guidelines</title>
       <link>http://halyph.com/blog/2018/03/15/rest-api-guidelines.html</link>
