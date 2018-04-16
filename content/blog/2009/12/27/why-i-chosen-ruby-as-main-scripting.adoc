@@ -10,7 +10,7 @@ Orest Ivasiv
 
 image::{my-image-dir}/blog/ruby.png[float="right"]
 
-*UPD*: This post was written http://halyph.blogspot.de/2009/12/why-i-chosen-ruby-as-main-scripting.html[long time ago]. I have decided to re-publish it for historical reason
+*UPD*: This post was written http://halyph.blogspot.com/2009/12/why-i-chosen-ruby-as-main-scripting.html[long time ago]. I have decided to re-publish it for historical reason
 
 There are a lot of scripting languages: Perl, Python, Lua, Tcl, Ruby, JavaScript, Scala, Groovy, Erlang, Lisp, Scheme and Bash/Awk(as shell scripting).
 

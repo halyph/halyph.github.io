@@ -1,0 +1,38 @@
+= *nix-like environments for Windows
+Orest Ivasiv
+2009-11-18
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: Cygwin, Linux, MinGW
+:source-highlighter: prettify
+:icons: font
+
+*nix like environment is good for developer and sysadmins, and really
+useful for end-user. That's why we've got KDE, Gnome and similar. But, I
+like it a lot even if I'm Windows user ;-). There are several cases to
+set up *nix environment on Windows: +
+
+* setup Virtual Machine with some Linux distributive and you've got
+fully functional Linux. You can use http://www.vmware.com/[VMware] or
+http://www.virtualbox.org/[VirtualBox]. 
+* or you can setup Linux-like environment in Windows (i.e. bash, gcc,
+make, grep, find, sed, etc.).
+
+Here is "my" list of choice for such environments:
+
+1. http://www.mingw.org/[MinGW] - Minimalist GNU for Windows. My top
+choice if you need GNU development programming tool set. Additional, if
+you need bash and similar tools install MSYS - general purpose command
+line environment.
+2. http://cygwin.com/[Cygwin] -  is a Linux-like environment for
+Windows. It's very powerful if you need to develop OS-portable
+application on windows (it's provide substantial Linux API
+functionality). 
+3. http://gnuwin32.sourceforge.net/[GnuWin32] - provides ports of tools
+with a http://www.gnu.org/[GNU] or similar open source licenses. Check
+package list on their home page.
+4. http://www2.research.att.com/sw/tools/uwin/[UWIN] - it's the
+similar to MinGW and GnuWin32, but less popular.
+
+I prefer to use MinGW/MSYS and Cygwin because they have great community
+support.

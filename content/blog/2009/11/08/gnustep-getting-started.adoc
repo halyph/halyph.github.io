@@ -1,18 +1,21 @@
-= Syntax Highlighting Code in Blogger
+= GNUstep Getting Started
 Orest Ivasiv
-2009-08-29
+2009-11-08
 :jbake-type: post
 :jbake-status: published
-:jbake-tags: blogging
+:jbake-tags: GNUstep, Objective-C
 :source-highlighter: prettify
 :icons: font
-:my-image-dir: /images
 
 Objective-C popularity aggressively increased based on
 http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html[TIOBE
-Index] (for October 2009) \{% img center /images/posts/TIOBE.gif %} 
+Index] (for October 2009) 
 
-Thereason is simple -- iPhone and all related stuff. We should be ready to
+
+image::./TIOBE-objc-2009.gif[float="center"]
+
+
+The reason is simple -- iPhone and all related stuff. We should be ready to
 develop Objective-C based application in future. The worst thing I don't
 have a Mac, so I don't have development environment. I need to get basic
 Objective-C knowledge, and here several solutions:
@@ -34,7 +37,7 @@ run on Windows.
 * http://www.gnustep.org/[GNUstep] -- this project supports many
 platforms (Windows included).
 
-My choice is \{% img /images/posts/gnustep-header14.png %}
+My choice is image:./gnustep-header14.png[GNUstep]
 
 Here is the useful links for quick start:
 
@@ -59,12 +62,9 @@ Apps
 tutorials and articles on GNUstep.
 * http://wiki.gnustep.org/[GNUstepWiki] -- just _wiki_
 
-*How to build your first GNUstep application in Windows?* In general
-it's simple, but if you have some troubles with it here is the links:
+=== How to build your first GNUstep application in Windows?
+In general it's simple, but if you have some troubles with it here is the links:
 
-1.  http://www.techotopia.com/index.php/Installing_and_using_GNUstep_and_Objective-C_on_Windows#Downloading_the_GNUstep_Packages[Installing
-and using GNUstep and Objective-C on Windows]
-2.  http://www.gnustep.it/nicola/Tutorials/WritingMakefiles/[Writing
-GNUstep Makefiles] (I highly recommend it)
-3.  [Compile Objective-C Programs Using
-gcc](http://blog.lyxite.com/2008/01/compile-objec
+1. http://www.techotopia.com/index.php/Installing_and_using_GNUstep_and_Objective-C_on_Windows#Downloading_the_GNUstep_Packages[Installing and using GNUstep and Objective-C on Windows]
+2. http://www.gnustep.it/nicola/Tutorials/WritingMakefiles/[Writing GNUstep Makefiles] (I highly recommend it)
+3. http://blog.lyxite.com/2008/01/compile-objective-c-programs-using-gcc.html[Compile Objective-C Programs Using gcc]
