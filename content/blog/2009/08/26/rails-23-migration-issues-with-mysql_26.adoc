@@ -1,0 +1,57 @@
+= Rails 2.3 migration issues with MySQL 5.1.3
+Orest Ivasiv
+2009-08-26
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: ruby, rails
+:source-highlighter: prettify
+:icons: font
+:my-image-dir: /images
+
+----
+depot>rake db:migrate --trace
+(in D:/Projects/RoR/depot)
+** Invoke db:migrate (first_time)
+** Invoke environment (first_time)
+** Execute environment
+** Execute db:migrate
+rake aborted!
+Mysql::Error: query: not connected: CREATE TABLE `schema_migrations` (`version`
+varchar(255) NOT NULL) ENGINE=InnoDB
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connetion_adapters/abstract_adapter.rb:212:in `log'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connetion_adapters/mysql_adapter.rb:320:in `execute'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connetion_adapters/abstract/schema_statements.rb:114:in `create_table'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connetion_adapters/mysql_adapter.rb:473:in `create_table'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connetion_adapters/abstract/schema_statements.rb:320:in `initialize_schema_migration_table'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/migraion.rb:436:in `initialize'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/migraion.rb:400:in `new'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/migraion.rb:400:in `up'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/migraion.rb:383:in `migrate'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/tasks/databases.rake:116
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `call'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `execute'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `each'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `execute'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:597:in `invoke_with call_chain'
+d:/tools/Ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:590:in `invoke_with call_chain'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:583:in `invoke'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2051:in `invoke_tas'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `each'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2023:in `top_level'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2001:in `run'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:1998:in `run'
+d:/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/bin/rake:31
+d:/Tools/Ruby/bin/rake:19:in `load'
+d:/Tools/Ruby/bin/rake:19
+----
+
+As I understood the client MySQL library doesn't work well with Rails
+2.3. We can resolve this by using the older MySQL client library
+(libmySQL.dll). You can get it here
+http://forums.aptana.com/viewtopic.php?f=20&t=7563&p=27407&hilit=libmysql.dll#p27407[http://instantrails.rubyforge.org/svn/trunk/InstantRails-win/InstantRails/mysql/bin/libmySQL.dll].
+Just put it in `<ruby base dir>\bin\` and restart MySQL service.

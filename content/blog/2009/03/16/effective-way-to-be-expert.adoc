@@ -1,0 +1,24 @@
+= Effective way to be an Expert
+Orest Ivasiv
+2009-03-16
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: review
+:source-highlighter: prettify
+:icons: font
+:my-image-dir: /images
+
+I've found great post about
+http://softwarecreation.org/2009/how-to-become-an-expert-the-effective-way[How
+to Become an Expert. The Effective Way.] +
+The core idea is: +
+
+____
+Experts are made, not born. *Experts are made by themselves.* It is a
+long, thorny and hard road. But this road makes their life interesting,
+positive, meaningful and brings
+http://softwarecreation.org/2008/the-happiness-programmers-edition/[happiness]
+from achieving a rare gift - mastery in the field they love.
+____
+
+I invite you to read that post. Enjoy

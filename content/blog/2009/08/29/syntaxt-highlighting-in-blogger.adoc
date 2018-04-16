@@ -1,0 +1,31 @@
+= Syntax Highlighting Code in Blogger
+Orest Ivasiv
+2009-08-29
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: blogging
+:source-highlighter: prettify
+:icons: font
+:my-image-dir: /images
+
+How to highlight code in Blogger? You can use http://alexgorbatchev.com/wiki/SyntaxHighlighter[SyntaxHighlighter]. 
+I don't want to repeat other useful posts about adjusting Blogger for http://en.wikipedia.org/wiki/Syntax_highlighting[code syntax
+highlighter], so take look at these:
+
+* http://alexgorbatchev.com/wiki/SyntaxHighlighter:Integration
+* http://yacoding.blogspot.com/2008/05/how-to-add-syntax-highlight-to-blogger.html
+* http://fahdshariff.blogspot.com/2008/07/syntax-highlighting-code-in-webpages.html
+
+There is one useful feature in
+http://alexgorbatchev.com/wiki/SyntaxHighlighter[SyntaxHighlighter] --
+http://alexgorbatchev.com/wiki/SyntaxHighlighter:Themes[Bundled themes].
+
+
+Here is small example:
+[source,java]
+----
+<pre class="brush: java;">public void printHello() {  
+     System.out.println("Hello World");  
+ }  
+</pre>
+----
