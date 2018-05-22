@@ -1,0 +1,12 @@
+= Scala - Conference Videos and Popular Screencasts
+Orest Ivasiv
+2018-04-17
+:jbake-type: post
+:jbake-status: draft
+:jbake-tags: scala
+:source-highlighter: prettify
+:icons: font
+:my-image-dir: /images
+
+image::{my-image-dir}/blog/scala.png[float="right"]
+

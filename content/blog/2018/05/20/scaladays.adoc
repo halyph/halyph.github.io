@@ -1,0 +1,68 @@
+= Scala Days - Berlin, 2018 - Report
+Orest Ivasiv
+2018-05-20
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: scala
+:source-highlighter: prettify
+:icons: font
+:my-image-dir: /images
+
+image::{my-image-dir}/blog/scaladays.jpg[float="right"]
+
+Day 1
+
+Opening Keynote: 2.13 And Beyond
+https://eu.scaladays.org/lect-6900-opening-keynote%3A-2.13-and-beyond.html
+
+
+Day 2
+
+Keynote: Functionalist programming language design
+https://eu.scaladays.org/lect-7037-keynote%3A-functionalist-programming-language-design.html
+
+Akka: Present and Future
+https://eu.scaladays.org/lect-6905-akka%3A-present-and-future.html
+
+What can Lagom do for you?
+https://eu.scaladays.org/lect-6950-what-can-lagom-do-for-you.html
+
+Dive into Deep Learning with Scala
+https://eu.scaladays.org/lect-6912-dive-into-deep-learning-with-scala.html
+
+A pragmatic introduction to Category Theory
+https://eu.scaladays.org/lect-6917-a-pragmatic-introduction-to-category-theory.html
+
+sbt 1
+https://eu.scaladays.org/lect-6919-sbt-1.html
+
+Starting from Scratch with Scala Native
+https://eu.scaladays.org/lect-6923-starting-from-scratch-with-scala-native.html
+
+Compiling Scala Faster with GraalVM
+https://eu.scaladays.org/lect-6928-compiling-scala-faster-with-graalvm.html
+
+Day 3
+
+Keynote: Where Teams Choose: Autonomy, Accountability & Scaling a Platform
+https://eu.scaladays.org/lect-7071-keynote%3A-where-teams-choose%3A-autonomy%2C-accountability-%26-scaling-a-platform.html
+
+Functional interpreters and you
+https://eu.scaladays.org/lect-6933-functional-interpreters-and-you.html
+
+Very bad talk
+
+Effective Scala
+https://eu.scaladays.org/lect-6937-effective-scala.html
+
+Strings are Evil: Methods to hide the use of primitive types
+https://eu.scaladays.org/lect-6941-strings-are-evil%3A-methods-to-hide-the-use-of-primitive-types.html
+
+Full Stack Scala
+https://eu.scaladays.org/lect-6946-full-stack-scala.html
+
+
+Applications of Implicit Function Types
+https://eu.scaladays.org/lect-6906-applications-of-implicit-function-types.html
+
+Closing Panel
