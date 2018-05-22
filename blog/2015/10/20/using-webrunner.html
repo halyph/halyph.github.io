@@ -83,49 +83,43 @@
 		<a href="/tags/java.html">java</a> | 
 	</p>
 
-	<p><p><img src="/images/blog/java.png" alt="blog_post_image" /></p>
-<p>Some time ago I had to run <a href="https://github.com/Netflix/eureka">Netflix Eureka server</a> (to be more specific itwas version 1.1.151) not using Spring Boot.</p>
-<p>There were several ways: </p>
-<ul>
-  <li>simply deploy <strong>eureka-server.war</strong> into Tomcat</li>
-  <li>
-  <p>use <a href="http://www.eclipse.org/jetty/documentation/current/runner.html">Jetty runner</a>. </p>
-  <blockquote>
-    <p>The idea of the jetty-runner is extremely simple – run a webapp directly from the command line using a single jar and as much default configuration as possible. Of course, if your webapp is not so straightforward, the jetty-runner has command line options which allow you to customize the execution environment.</p>
-  </blockquote></li>
-  <li>
-  <p>use <a href="https://github.com/jsimone/webapp-runner">Webapp Runner</a>. </p>
-  <blockquote>
-    <p>Webapp runner is designed to allow you to launch an exploded or compressed war that is on your filesystem into a tomcat container with a simple java -jar command.</p>
-  </blockquote></li>
-</ul>
-<p>I decided to go with <em>Webapp Runner</em>.</p>
-<p>So, here is the list of steps:</p>
-<ol>
-  <li>Download <strong>eureka-server</strong> war from maven central (e.g. <a href="http://mvnrepository.com/artifact/com.netflix.eureka/eureka-server/1.1.151)">http://mvnrepository.com/artifact/com.netflix.eureka/eureka-server/1.1.151)</a>. Also, we can clone the Netflix Eureka github repo and perform build locally. But, our intent is just get ready to use war file as quick as possible.</li>
-  <li>Rename <strong>eureka-server-1.1.151.war</strong> to <strong>eureka-server.war</strong>.</li>
-  <li>Download <strong>webapp-runnner</strong> jar from maven central (e.g. <a href="http://mvnrepository.com/artifact/com.github.jsimone/webapp-runner/8.0.24.0">http://mvnrepository.com/artifact/com.github.jsimone/webapp-runner/8.0.24.0</a>)</li>
-  <li>I assume that <strong>eureka-server.war</strong> and <strong>webapp-runner-8.0.24.0.jar</strong> are located in the same directory. Now we can simply run the <em>eureka-server</em> on port 4000 via <code>runme.bat</code> file:</li>
-</ol>
+	<p><p><img src="http://halyph.com/images/blog/java.png" alt="blog_post_image"></p> 
+<p>Some time ago I had to run <a href="https://github.com/Netflix/eureka">Netflix Eureka server</a> (to be more specific itwas version 1.1.151) not using Spring Boot.</p> 
+<p>There were several ways:</p> 
+<ul> 
+ <li>simply deploy <strong>eureka-server.war</strong> into Tomcat</li> 
+ <li>use <a href="http://www.eclipse.org/jetty/documentation/current/runner.html">Jetty runner</a>.</li> 
+</ul> 
+<blockquote> 
+ <p>The idea of the jetty-runner is extremely simple – run a webapp directly from the command line using a single jar and as much default configuration as possible. Of course, if your webapp is not so straightforward, the jetty-runner has command line options which allow you to customize the execution environment.<br> - use <a href="https://github.com/jsimone/webapp-runner">Webapp Runner</a>.<br> Webapp runner is designed to allow you to launch an exploded or compressed war that is on your filesystem into a tomcat container with a simple java -jar command.</p> 
+</blockquote> 
+<p>I decided to go with <em>Webapp Runner</em>.</p> 
+<p>So, here is the list of steps:</p> 
+<ol> 
+ <li>Download <strong>eureka-server</strong> war from maven central (e.g. <a href="http://mvnrepository.com/artifact/com.netflix.eureka/eureka-server/1.1.151">http://mvnrepository.com/artifact/com.netflix.eureka/eureka-server/1.1.151</a>). Also, we can clone the Netflix Eureka github repo and perform build locally. But, our intent is just get ready to use war file as quick as possible.</li> 
+ <li>Rename <strong>eureka-server-1.1.151.war</strong> to <strong>eureka-server.war</strong>.</li> 
+ <li>Download <strong>webapp-runnner</strong> jar from maven central (e.g. <a href="http://mvnrepository.com/artifact/com.github.jsimone/webapp-runner/8.0.24.0">http://mvnrepository.com/artifact/com.github.jsimone/webapp-runner/8.0.24.0</a>)</li> 
+ <li>I assume that <strong>eureka-server.war</strong> and <strong>webapp-runner-8.0.24.0.jar</strong> are located in the same directory. Now we can simply run the <em>eureka-server</em> on port 4000 via <code>runme.bat</code> file:</li> 
+</ol> 
 <pre><code>$ cat runme.bat
 java -jar webapp-runner-8.0.24.0.jar eureka.war --path /eureka --port 4000
-</code></pre>
-<p>Local directory should have the next files/folders:</p>
+</code></pre> 
+<p>Local directory should have the next files/folders:</p> 
 <pre><code>$ dir /b
 eureka-server-1.1.151.war
 eureka.war
 runme.bat
 target/
 webapp-runner-8.0.24.0.jar
-</code></pre>
-<p>The server is up and running: check Eureka UI <a href="http://localhost:4000/eureka/">http://localhost:4000/eureka/</a> or registered apps <a href="http://localhost:4000/eureka/v2/apps/">http://localhost:4000/eureka/v2/apps/</a> XML output.</p>
-<h2><a href="#references" name="references">References</a></h2>
-<ul>
-  <li>Github <a href="https://github.com/jsimone/webapp-runner">Webapp Runner</a></li>
-  <li>Github <a href="https://github.com/Netflix/eureka">Netflix Eureka</a></li>
-  <li><a href="https://github.com/heroku/devcenter-jetty-runner">Deploy a Java Web Application that launches with Jetty Runner</a></li>
-  <li><a href="https://devcenter.heroku.com/articles/java-webapp-runner">Deploying Tomcat-based Java Web Applications with Webapp Runner</a></li>
-  <li><a href="http://www.java-allandsundry.com/2015/02/standing-up-local-netflix-eureka.html">Standing up a local Netflix Eureka</a></li>
+</code></pre> 
+<p>The server is up and running: check Eureka UI <a href="http://localhost:4000/eureka/">http://localhost:4000/eureka/</a> or registered apps <a href="http://localhost:4000/eureka/v2/apps/">http://localhost:4000/eureka/v2/apps/</a> XML output.</p> 
+<h2><a href="#references" id="references">References</a></h2> 
+<ul> 
+ <li>Github <a href="https://github.com/jsimone/webapp-runner">Webapp Runner</a></li> 
+ <li>Github <a href="https://github.com/Netflix/eureka">Netflix Eureka</a></li> 
+ <li><a href="https://github.com/heroku/devcenter-jetty-runner">Deploy a Java Web Application that launches with Jetty Runner</a></li> 
+ <li><a href="https://devcenter.heroku.com/articles/java-webapp-runner">Deploying Tomcat-based Java Web Applications with Webapp Runner</a></li> 
+ <li><a href="http://www.java-allandsundry.com/2015/02/standing-up-local-netflix-eureka.html">Standing up a local Netflix Eureka</a></li> 
 </ul></p>
 
 	<hr />
@@ -152,7 +146,7 @@ webapp-runner-8.0.24.0.jar
     
     <div id="footer">
       <div class="container">
-        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.1</a></p>
+        <p class="muted credit">&copy; 2018 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.6.1</a></p>
       </div>
     </div>
     

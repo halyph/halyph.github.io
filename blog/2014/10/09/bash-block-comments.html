@@ -85,34 +85,34 @@
 		<a href="/tags/shell.html">shell</a> | 
 	</p>
 
-	<p><p><img src="/images/blog/bash.png" alt="blog_post_image_inline" /></p>
-<p>What is the simplest way to define block comment in Bash script?</p>
-<p>I&rsquo;ve selected two approaches for myself:</p>
-<ul>
-  <li>Use here document</li>
-</ul>
-<pre><code class="bash">#!/usr/bin/env bash
+	<p><p><img src="http://halyph.com/images/blog/bash.png" alt="blog_post_image_inline"></p> 
+<p>What is the simplest way to define block comment in Bash script?</p> 
+<p>I’ve selected two approaches for myself:</p> 
+<ul> 
+ <li>Use here document</li> 
+</ul> 
+<pre><code class="language-bash">#!/usr/bin/env bash
 
-echo &quot;before block comment&quot;
-: &lt;&lt;&#39;END&#39;
+echo "before block comment"
+: &lt;&lt;'END'
 Some long 
 myltiline 
 text
 END
-echo &quot;after block comment&quot;
-</code></pre>
-<ul>
-  <li>Use <strong>&ldquo;if&rdquo;</strong> false block</li>
-</ul>
-<pre><code class="bash">#!/usr/bin/env bash
+echo "after block comment"
+</code></pre> 
+<ul> 
+ <li>Use <strong>“if”</strong> false block</li> 
+</ul> 
+<pre><code class="language-bash">#!/usr/bin/env bash
 
-echo &quot;before block comment&quot;
+echo "before block comment"
 if [ ]; then 
 Some long 
 myltiline 
 text
 fi
-echo &quot;after block comment&quot;
+echo "after block comment"
 </code></pre></p>
 
 	<hr />
@@ -139,7 +139,7 @@ echo &quot;after block comment&quot;
     
     <div id="footer">
       <div class="container">
-        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.1</a></p>
+        <p class="muted credit">&copy; 2018 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.6.1</a></p>
       </div>
     </div>
     

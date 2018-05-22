@@ -87,83 +87,59 @@
 		<a href="/tags/kotlin.html">kotlin</a> | 
 	</p>
 
-	<p><div id="preamble">
-<div class="sectionbody">
-<div class="imageblock" style="float: right">
-<div class="content">
-<img src="/images/blog/gradle.png" alt="gradle">
-</div>
-</div>
-<div class="paragraph">
-<p>You’ve probably heard about <a href="http://gradle.org/blog/kotlin-meets-gradle/"><em>"Kotlin-based approach to writing Gradle build scripts"</em></a>. A lot of noise was produced based on this announcement and Cédric Champeau tried to explain the real state of <a href="http://melix.github.io/blog/2016/05/gradle-kotlin.html">Groovy, Gradle and their future relationship</a>.</p>
-</div>
-<div class="paragraph">
-<p>Just to avoid different speculation about <em>"Gradle is written in Groovy"</em> and now <em>"it will be re-written in Kotlin"</em> here are some <strong>numbers</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Let&#8217;s check the <a href="https://github.com/gradle/gradle">Gradle repo</a> language statistic provided by  GitHub</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="/images/posts/2016-06-15/gradle-github.jpg" alt="gradle github">
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Gradle root folder has several very important sub-folders:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><code>buildSrc</code> - <a href="https://docs.gradle.org/current/userguide/organizing_build_logic.html#sec:build_sources">It&#8217;s related to Gradle build process</a></p>
-</li>
-<li>
-<p><code>config</code> - nothing interesting: <code>condenarc</code> and <code>checkstyle</code> configs</p>
-</li>
-<li>
-<p><code>design-docs</code> - markdown documentation</p>
-</li>
-<li>
-<p><code>gradle</code> - Gradle scripts</p>
-</li>
-<li>
-<p><code>subprojects</code> - Gradle sources. It&#8217;s our goal to analyze this folder and understand the language statistics</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><code><strong>subprojects</strong></code> contains several interesting sub-folders:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><code>src/main</code> - actual "gradle" source code</p>
-</li>
-<li>
-<p><code>src/test</code>, <code>src/integTest</code> and <code>src/testFixtures</code> test source code.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Now, count the language stats by <a href="https://github.com/AlDanial/cloc">cloc</a> tool:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><code>src/main</code>:</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>$ cloc-1.66.exe  --match-d="src/main/" --found=oicloc2.log .
+	<p><div id="preamble"> 
+ <div class="sectionbody"> 
+  <div class="imageblock" style="float: right"> 
+   <div class="content"> 
+    <img src="http://halyph.com/images/blog/gradle.png" alt="gradle"> 
+   </div> 
+  </div> 
+  <div class="paragraph"> 
+   <p>You’ve probably heard about <a href="http://gradle.org/blog/kotlin-meets-gradle/"><em>"Kotlin-based approach to writing Gradle build scripts"</em></a>. A lot of noise was produced based on this announcement and Cédric Champeau tried to explain the real state of <a href="http://melix.github.io/blog/2016/05/gradle-kotlin.html">Groovy, Gradle and their future relationship</a>.</p> 
+  </div> 
+  <div class="paragraph"> 
+   <p>Just to avoid different speculation about <em>"Gradle is written in Groovy"</em> and now <em>"it will be re-written in Kotlin"</em> here are some <strong>numbers</strong>:</p> 
+  </div> 
+  <div class="ulist"> 
+   <ul> 
+    <li> <p>Let’s check the <a href="https://github.com/gradle/gradle">Gradle repo</a> language statistic provided by GitHub</p> </li> 
+   </ul> 
+  </div> 
+  <div class="imageblock"> 
+   <div class="content"> 
+    <img src="http://halyph.com/images/posts/2016-06-15/gradle-github.jpg" alt="gradle github"> 
+   </div> 
+  </div> 
+  <div class="ulist"> 
+   <ul> 
+    <li> <p>Gradle root folder has several very important sub-folders:</p> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>buildSrc</code> - <a href="https://docs.gradle.org/current/userguide/organizing_build_logic.html#sec:build_sources">It’s related to Gradle build process</a></p> </li> 
+       <li> <p><code>config</code> - nothing interesting: <code>condenarc</code> and <code>checkstyle</code> configs</p> </li> 
+       <li> <p><code>design-docs</code> - markdown documentation</p> </li> 
+       <li> <p><code>gradle</code> - Gradle scripts</p> </li> 
+       <li> <p><code>subprojects</code> - Gradle sources. It’s our goal to analyze this folder and understand the language statistics</p> </li> 
+      </ul> 
+     </div> </li> 
+    <li> <p><code><strong>subprojects</strong></code> contains several interesting sub-folders:</p> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>src/main</code> - actual "gradle" source code</p> </li> 
+       <li> <p><code>src/test</code>, <code>src/integTest</code> and <code>src/testFixtures</code> test source code.</p> </li> 
+      </ul> 
+     </div> </li> 
+    <li> <p>Now, count the language stats by <a href="https://github.com/AlDanial/cloc">cloc</a> tool:</p> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>src/main</code>:</p> </li> 
+      </ul> 
+     </div> </li> 
+   </ul> 
+  </div> 
+  <div class="listingblock"> 
+   <div class="content"> 
+    <pre>$ cloc-1.66.exe  --match-d="src/main/" --found=oicloc2.log .
     6052 text files.
 Wrote oicloc2.log
     5975 unique files.
@@ -191,22 +167,20 @@ IDL                              1              2              0             14
 Objective C                      1              3              0              7
 -------------------------------------------------------------------------------
 SUM:                          5815          60117         133711         258402
--------------------------------------------------------------------------------</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Based on this raw analysis we have <strong>93% Java</strong> files and <strong>4.7% Groovy</strong> files.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Let&#8217;s add <strong><em>test</em></strong> ( <code>src/test</code>, <code>src/integTest</code> and <code>src/testFixtures</code>) folders to our statistics:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>$ cloc-1.66.exe  --match-d="src/(test|integTest|testFixtures)/" --found=oicloc3.log .
+-------------------------------------------------------------------------------</pre> 
+   </div> 
+  </div> 
+  <div class="paragraph"> 
+   <p>Based on this raw analysis we have <strong>93% Java</strong> files and <strong>4.7% Groovy</strong> files.</p> 
+  </div> 
+  <div class="ulist"> 
+   <ul> 
+    <li> <p>Let’s add <strong><em>test</em></strong> ( <code>src/test</code>, <code>src/integTest</code> and <code>src/testFixtures</code>) folders to our statistics:</p> </li> 
+   </ul> 
+  </div> 
+  <div class="listingblock"> 
+   <div class="content"> 
+    <pre>$ cloc-1.66.exe  --match-d="src/(test|integTest|testFixtures)/" --found=oicloc3.log .
     3867 text files.
 Wrote oicloc3.log
     3775 unique files.
@@ -233,37 +207,32 @@ SQL                              1              2              1              2
 C                                1              0              0              1
 -------------------------------------------------------------------------------
 SUM:                          3706          71728          55050         318570
--------------------------------------------------------------------------------</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>As You can see we have <strong>14.5% Java</strong> files and <strong>82% Groovy</strong> files.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_summary">Summary</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><strong>Gradle</strong> is <em>Java</em>-based project and it uses <em>Groovy</em> for testing and as a DSL implementation tool, nothing more.
-The noise around "Groovy vs Kotlin" for DSL implementation inside Gradle sounds strange. <em>Gradle Inc.</em> has just made pragmatic decision. That&#8217;s it.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_references">References</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="http://melix.github.io/blog/2016/05/gradle-kotlin.html">Cédric Champeau&#8217;s blog - Gradle and Kotlin, a personal perspective</a></p>
-</li>
-<li>
-<p><a href="http://gradle.org/blog/kotlin-meets-gradle/">Gradle Blog - Kotlin Meets Gradle</a></p>
-</li>
-</ul>
-</div>
-</div>
+-------------------------------------------------------------------------------</pre> 
+   </div> 
+  </div> 
+  <div class="paragraph"> 
+   <p>As You can see we have <strong>14.5% Java</strong> files and <strong>82% Groovy</strong> files.</p> 
+  </div> 
+ </div> 
+</div> 
+<div class="sect1"> 
+ <h2 id="_summary">Summary</h2> 
+ <div class="sectionbody"> 
+  <div class="paragraph"> 
+   <p><strong>Gradle</strong> is <em>Java</em>-based project and it uses <em>Groovy</em> for testing and as a DSL implementation tool, nothing more. The noise around "Groovy vs Kotlin" for DSL implementation inside Gradle sounds strange. <em>Gradle Inc.</em> has just made pragmatic decision. That’s it.</p> 
+  </div> 
+ </div> 
+</div> 
+<div class="sect1"> 
+ <h2 id="_references">References</h2> 
+ <div class="sectionbody"> 
+  <div class="ulist"> 
+   <ul> 
+    <li> <p><a href="http://melix.github.io/blog/2016/05/gradle-kotlin.html">Cédric Champeau’s blog - Gradle and Kotlin, a personal perspective</a></p> </li> 
+    <li> <p><a href="http://gradle.org/blog/kotlin-meets-gradle/">Gradle Blog - Kotlin Meets Gradle</a></p> </li> 
+   </ul> 
+  </div> 
+ </div> 
 </div></p>
 
 	<hr />
@@ -290,7 +259,7 @@ The noise around "Groovy vs Kotlin" for DSL implementation inside Gradle sounds 
     
     <div id="footer">
       <div class="container">
-        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.1</a></p>
+        <p class="muted credit">&copy; 2018 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.6.1</a></p>
       </div>
     </div>
     

@@ -83,92 +83,87 @@
 		<a href="/tags/java.html">java</a> | 
 	</p>
 
-	<p><p><img src="/images/blog/java.png" alt="blog_post_image" /></p>
-<p>I believe that everybody knows the most popular full-stack web framework - <a href="http://rubyonrails.org">Ruby on Rails</a>. Of course there are other frameworks for Ruby language, but Rails is the number one. Now, the question: how many full-stack web frameworks exist for Java?</p>
-<p><strong>UPDATE (2016-11-20)</strong>: <a href="https://www.cuba-platform.com/blog-tags/open-source">CUBA Platform is open sourced under Apache License 2.0</a></p>
-<h2><a href="#overview" name="overview">Overview</a></h2>
-<p>Let&rsquo;s define the desired items for full-stack web framework:</p>
-<ul>
-  <li>CoC - <a href="http://en.wikipedia.org/wiki/Convention_over_configuration">Convention over configuration</a></li>
-  <li>MVC - <a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Model-view-controller</a></li>
-  <li>DRY - <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">Don&rsquo;t repeat yourself</a></li>
-  <li>Scaffolding (_it was one of the major selling point on the early stage of Rails_)
-    <ul>
-      <li>Easy prototyping</li>
-    </ul>
-  </li>
-  <li>Data/Persistent Layer / ORM</li>
-  <li>DB schema migration</li>
-  <li>URI Routing</li>
-  <li>HTML Rendering / Template engines</li>
-  <li>Testing</li>
-  <li>REST API</li>
-  <li>Security</li>
-  <li>Caching</li>
-  <li>Request Filtering</li>
-  <li>Session Management</li>
-  <li>Form Validation</li>
-  <li>i18n/l10n</li>
-</ul>
-<h2><a href="#grails" name="grails">Grails</a></h2>
-<p>I think <a href="https://grails.org">Grails</a> was and is the single &ldquo;true&rdquo; Rails reincarnation on JVM. Grails is based on <a href="http://www.groovy-lang.org/">Groovy</a> language. It support all concepts Rails supports. It&rsquo;s based on Spring/Hibernate and Gradle since v.3.0 (Grails v.3.0.0 was released on <strong>Mar 31, 2015</strong>).</p>
-<p>Grails v.3 is build on <a href="http://projects.spring.io/spring-boot/">Spring Boot</a>.</p>
-<p>Some people arguing that Grails v.3 acts as simple wrapper on top of Spring Boot and now it does not worth any investments. But, we must not agree as CoC and DRY principles are very vague.</p>
-<h2><a href="#play-framework-2" name="play-framework-2">Play Framework 2</a></h2>
-<p><a href="https://www.playframework.com/">Play Framework 2</a> is a special player. It has two implementations: Java and Scala. Actually Java version is not as powerful as Scala due to Java, as a language, &ldquo;limitation&rdquo;. This framework lives under <a href="http://typesafe.com/">Typesafe</a> umbrella, aka <strong>&ldquo;Typesafe Reactive Platform&rdquo;</strong>.</p>
-<p>Play is just different. It&rsquo;s not Servlet-based and is built on <a href="http://netty.io/">Netty</a> async framework. A lot of people claiming that Play is very cool and productive. I haven&rsquo;t tried it yet. But it looks promising and interesting.</p>
-<h2><a href="#code-generation-frameworks" name="code-generation-frameworks">Code Generation Frameworks</a></h2>
-<p>I decided to define the special category &ldquo;Code Generation&rdquo;. Frameworks which are related to this category are not full stack, but can be called as RAD (Rapid Application Development) frameworks.</p>
-<h3><a href="#spring-roo" name="spring-roo">Spring Roo</a></h3>
-<p><a href="http://projects.spring.io/spring-roo/">Spring Roo</a> was very popular some time ago and had a lot of investments from VMWare (former Spring stack owner). Later, the ownership was transferred to <a href="http://www.disid.com">DISIG</a>.</p>
-<p>Spring Roo is code generation framework, built on top of Spring stack. It&rsquo;s useful for quick prototyping.</p>
-<h3><a href="#jboss-forge" name="jboss-forge">JBoss Forge</a></h3>
-<p><a href="http://forge.jboss.org/">JBoss Forge</a> is conceptually equal to Spring Roo, but linked to Java EE stack (like <a href="http://wildfly.org/">Wildfly</a>, <a href="http://tomee.apache.org/apache-tomee.html">TomEE</a>) and Maven. It&rsquo;s relly cool if you work with Java EE a lot. Forge is shine in prototyping and code generation. Community looks vibrant and active.</p>
-<h3><a href="#appfuse" name="appfuse">AppFuse</a></h3>
-<p><a href="http://appfuse.org/">AppFuse</a> can be called as ramp-up framework. The main goal is to quickly generate project with pre-onfigured functionality (see <code>mvn archetype:generate</code>).</p>
-<h3><a href="#jhipster" name="jhipster">JHipster</a></h3>
-<p><a href="https://jhipster.github.io/">JHipster</a> is brand new and based on Spring Boot and Angular.js v.1.x. Classical code generation like in Forge or Spring Roo. But, code generation is build on top of node.js tool <a href="http://yeoman.io/">Yeoman</a>. Concept is very interesting, especially when it uses so hipster&rsquo;s technologies ;-).<br/>It can generate both back-end (REST endpoint) and front-end (Angular.js Single-page application), even <a href="http://www.liquibase.org/">Liquibase</a> migrations (which is cool too).</p>
-<h2>Domain-driven Frameworks</h2>
-<p>There is a very special category Domain-driven frameworks. For this category I&rsquo;ve selected two most popular frameworks: <a href="http://www.openxava.org/">OpenXava</a> and <a href="http://isis.apache.org/">Apache Isis</a>. The main idea is that they can generate views and RESTs based on domain entities. Both frameworks have active community. They have &ldquo;own&rdquo; concepts and no hipsters technologies. The usage domain is very narrow, I guess they can be easily used to quickly general application&rsquo;s back-offices (aka admin pages) and prototyping.</p>
-<h2><a href="#others" name="others">Others</a></h2>
-<p>There are several others frameworks <a href="http://www.ninjaframework.org/">Ninja</a>, <a href="http://javalite.io/">Javalight</a>, <a href="http://joddframework.org/">Jodd</a>, <a href="http://jooby.org/">Jobby</a> and <a href="https://github.com/airlift/airlift">airlift</a>. They are build by small communities (or my single developer) and have some applications. But, it&rsquo;s risky to invest in them. You can look into because of curiosity, but not more. As for me it&rsquo;s much safe to use Play/Grails than some unpopular frameworks.</p>
-<h2><a href="#summary" name="summary">Summary</a></h2>
-<p>So, Java ecosystem has two full stack frameworks which use Java language minimally: <strong>Grails</strong> (Groovy/Java) and <strong>Play</strong> (Scala/Java). Also, we have a bunch of code generation frameworks and domain-driven frameworks (which occupy really special niche).</p>
-<h2><a href="#references" name="references">References</a></h2>
-<ul>
-  <li>Full stack
-    <ul>
-      <li><a href="https://grails.org/">Grails</a></li>
-      <li><a href="https://www.playframework.com/">Play Framework 2</a></li>
-      <li><a href="https://www.cuba-platform.com">Cuba-platform</a> - CUBA Platform (Apache License 2.0)</li>
-    </ul>
-  </li>
-  <li>Code Generation
-    <ul>
-      <li><a href="http://projects.spring.io/spring-roo/">Spring Roo</a></li>
-      <li><a href="http://forge.jboss.org/">JBoss Forge</a></li>
-      <li><a href="http://appfuse.org/">AppFuse</a></li>
-      <li><a href="https://jhipster.github.io/">JHipster</a></li>
-    </ul>
-  </li>
-  <li>DD Frameworks
-    <ul>
-      <li><a href="http://www.openxava.org/">OpenXava</a></li>
-      <li><del><a href="https://www.cuba-platform.com">Cuba-platform</a> - CUBA Platform is free for applications with up to 5 concurrent sessions.</del></li>
-      <li><a href="http://isis.apache.org/">Apache Isis</a></li>
-    </ul>
-  </li>
-  <li>Others
-    <ul>
-      <li><a href="http://www.ninjaframework.org/">Ninja</a></li>
-      <li><a href="http://javalite.io/">Javalight</a></li>
-      <li><a href="http://jodd.org/">Jodd</a> and <a href="http://joddframework.org/">Jodd µicro frameworks</a></li>
-      <li><a href="http://jooby.org/">Jobby</a></li>
-      <li><a href="https://github.com/airlift/airlift">airlift</a></li>
-      <li><a href="http://www.web4j.com/">Web4j</a></li>
-      <li><a href="http://rifers.org/">Rife</a> - dead</li>
-    </ul>
-  </li>
+	<p><p><img src="http://halyph.com/images/blog/java.png" alt="blog_post_image"></p> 
+<p>I believe that everybody knows the most popular full-stack web framework - <a href="http://rubyonrails.org">Ruby on Rails</a>. Of course there are other frameworks for Ruby language, but Rails is the number one. Now, the question: how many full-stack web frameworks exist for Java?</p> 
+<p><strong>UPDATE (2016-11-20)</strong>: <a href="https://www.cuba-platform.com/blog-tags/open-source">CUBA Platform is open sourced under Apache License 2.0</a></p> 
+<h2><a href="#overview" id="overview">Overview</a></h2> 
+<p>Let’s define the desired items for full-stack web framework:</p> 
+<ul> 
+ <li>CoC - <a href="http://en.wikipedia.org/wiki/Convention_over_configuration">Convention over configuration</a></li> 
+ <li>MVC - <a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Model-view-controller</a></li> 
+ <li>DRY - <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">Don’t repeat yourself</a></li> 
+ <li>Scaffolding (<em>it was one of the major selling point on the early stage of Rails</em>) 
+  <ul> 
+   <li>Easy prototyping</li> 
+  </ul> </li> 
+ <li>Data/Persistent Layer / ORM</li> 
+ <li>DB schema migration</li> 
+ <li>URI Routing</li> 
+ <li>HTML Rendering / Template engines</li> 
+ <li>Testing</li> 
+ <li>REST API</li> 
+ <li>Security</li> 
+ <li>Caching</li> 
+ <li>Request Filtering</li> 
+ <li>Session Management</li> 
+ <li>Form Validation</li> 
+ <li>i18n/l10n</li> 
+</ul> 
+<h2><a href="#grails" id="grails">Grails</a></h2> 
+<p>I think <a href="https://grails.org">Grails</a> was and is the single “true” Rails reincarnation on JVM. Grails is based on <a href="http://www.groovy-lang.org/">Groovy</a> language. It support all concepts Rails supports. It’s based on Spring/Hibernate and Gradle since v.3.0 (Grails v.3.0.0 was released on <strong>Mar 31, 2015</strong>).</p> 
+<p>Grails v.3 is build on <a href="http://projects.spring.io/spring-boot/">Spring Boot</a>.</p> 
+<p>Some people arguing that Grails v.3 acts as simple wrapper on top of Spring Boot and now it does not worth any investments. But, we must not agree as CoC and DRY principles are very vague.</p> 
+<h2><a href="#play-framework-2" id="play-framework-2">Play Framework 2</a></h2> 
+<p><a href="https://www.playframework.com/">Play Framework 2</a> is a special player. It has two implementations: Java and Scala. Actually Java version is not as powerful as Scala due to Java, as a language, “limitation”. This framework lives under <a href="http://typesafe.com/">Typesafe</a> umbrella, aka <strong>“Typesafe Reactive Platform”</strong>.</p> 
+<p>Play is just different. It’s not Servlet-based and is built on <a href="http://netty.io/">Netty</a> async framework. A lot of people claiming that Play is very cool and productive. I haven’t tried it yet. But it looks promising and interesting.</p> 
+<h2><a href="#code-generation-frameworks" id="code-generation-frameworks">Code Generation Frameworks</a></h2> 
+<p>I decided to define the special category “Code Generation”. Frameworks which are related to this category are not full stack, but can be called as RAD (Rapid Application Development) frameworks.</p> 
+<h3><a href="#spring-roo" id="spring-roo">Spring Roo</a></h3> 
+<p><a href="http://projects.spring.io/spring-roo/">Spring Roo</a> was very popular some time ago and had a lot of investments from VMWare (former Spring stack owner). Later, the ownership was transferred to <a href="http://www.disid.com">DISIG</a>.</p> 
+<p>Spring Roo is code generation framework, built on top of Spring stack. It’s useful for quick prototyping.</p> 
+<h3><a href="#jboss-forge" id="jboss-forge">JBoss Forge</a></h3> 
+<p><a href="http://forge.jboss.org/">JBoss Forge</a> is conceptually equal to Spring Roo, but linked to Java EE stack (like <a href="http://wildfly.org/">Wildfly</a>, <a href="http://tomee.apache.org/apache-tomee.html">TomEE</a>) and Maven. It’s relly cool if you work with Java EE a lot. Forge is shine in prototyping and code generation. Community looks vibrant and active.</p> 
+<h3><a href="#appfuse" id="appfuse">AppFuse</a></h3> 
+<p><a href="http://appfuse.org/">AppFuse</a> can be called as ramp-up framework. The main goal is to quickly generate project with pre-onfigured functionality (see <code>mvn archetype:generate</code>).</p> 
+<h3><a href="#jhipster" id="jhipster">JHipster</a></h3> 
+<p><a href="https://jhipster.github.io/">JHipster</a> is brand new and based on Spring Boot and Angular.js v.1.x. Classical code generation like in Forge or Spring Roo. But, code generation is build on top of node.js tool <a href="http://yeoman.io/">Yeoman</a>. Concept is very interesting, especially when it uses so hipster’s technologies ;-).<br> It can generate both back-end (REST endpoint) and front-end (Angular.js Single-page application), even <a href="http://www.liquibase.org/">Liquibase</a> migrations (which is cool too).</p> 
+<h2><a href="#domain-driven-frameworks" id="domain-driven-frameworks">Domain-driven Frameworks</a></h2> 
+<p>There is a very special category Domain-driven frameworks. For this category I’ve selected two most popular frameworks: <a href="http://www.openxava.org/">OpenXava</a> and <a href="http://isis.apache.org/">Apache Isis</a>. The main idea is that they can generate views and RESTs based on domain entities. Both frameworks have active community. They have “own” concepts and no hipsters technologies. The usage domain is very narrow, I guess they can be easily used to quickly general application’s back-offices (aka admin pages) and prototyping.</p> 
+<h2><a href="#others" id="others">Others</a></h2> 
+<p>There are several others frameworks <a href="http://www.ninjaframework.org/">Ninja</a>, <a href="http://javalite.io/">Javalight</a>, <a href="http://joddframework.org/">Jodd</a>, <a href="http://jooby.org/">Jobby</a> and <a href="https://github.com/airlift/airlift">airlift</a>. They are build by small communities (or my single developer) and have some applications. But, it’s risky to invest in them. You can look into because of curiosity, but not more. As for me it’s much safe to use Play/Grails than some unpopular frameworks.</p> 
+<h2><a href="#summary" id="summary">Summary</a></h2> 
+<p>So, Java ecosystem has two full stack frameworks which use Java language minimally: <strong>Grails</strong> (Groovy/Java) and <strong>Play</strong> (Scala/Java). Also, we have a bunch of code generation frameworks and domain-driven frameworks (which occupy really special niche).</p> 
+<h2><a href="#references" id="references">References</a></h2> 
+<ul> 
+ <li>Full stack 
+  <ul> 
+   <li><a href="https://grails.org/">Grails</a></li> 
+   <li><a href="https://www.playframework.com/">Play Framework 2</a></li> 
+   <li><a href="https://www.cuba-platform.com">Cuba-platform</a> - CUBA Platform (Apache License 2.0)</li> 
+  </ul> </li> 
+ <li>Code Generation 
+  <ul> 
+   <li><a href="http://projects.spring.io/spring-roo/">Spring Roo</a></li> 
+   <li><a href="http://forge.jboss.org/">JBoss Forge</a></li> 
+   <li><a href="http://appfuse.org/">AppFuse</a></li> 
+   <li><a href="https://jhipster.github.io/">JHipster</a></li> 
+  </ul> </li> 
+ <li>DD Frameworks 
+  <ul> 
+   <li><a href="http://www.openxava.org/">OpenXava</a></li> 
+   <li><del><a href="https://www.cuba-platform.com">Cuba-platform</a> - CUBA Platform is free for applications with up to 5 concurrent sessions.</del></li> 
+   <li><a href="http://isis.apache.org/">Apache Isis</a></li> 
+  </ul> </li> 
+ <li>Others 
+  <ul> 
+   <li><a href="http://www.ninjaframework.org/">Ninja</a></li> 
+   <li><a href="http://javalite.io/">Javalight</a></li> 
+   <li><a href="http://jodd.org/">Jodd</a> and <a href="http://joddframework.org/">Jodd µicro frameworks</a></li> 
+   <li><a href="http://jooby.org/">Jobby</a></li> 
+   <li><a href="https://github.com/airlift/airlift">airlift</a></li> 
+   <li><a href="http://www.web4j.com/">Web4j</a></li> 
+   <li><a href="http://rifers.org/">Rife</a> - dead</li> 
+  </ul> </li> 
 </ul></p>
 
 	<hr />
@@ -195,7 +190,7 @@
     
     <div id="footer">
       <div class="container">
-        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.1</a></p>
+        <p class="muted credit">&copy; 2018 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.6.1</a></p>
       </div>
     </div>
     
