@@ -10,3 +10,39 @@ Orest Ivasiv
 
 image::{my-image-dir}/blog/scala.png[float="right"]
 
+
+
+https://typelevel.org/events/
+
+By the Bay
+http://scala.bythebay.io/about.html read about page
+https://www.youtube.com/user/FunctionalTV
+
+
+47 Degrees
+https://www.youtube.com/channel/UCatg8Vf2cgX5ZV30RFZe-gg
+
+Lambda World
+http://www.lambda.world/
+https://www.youtube.com/channel/UCEBcDOjv-bhAmLavY71RMHA
+
+
+Scala Days
+https://www.youtube.com/channel/UCOHg8YCiyMVRRxb3mJT_0Mg
+
+BeeScala
+https://www.youtube.com/channel/UC5oDIjYXEkmQDpIcdrmUVqw/videos
+
+ChariotSolutions
+https://www.youtube.com/user/ChariotSolutions/videos
+
+LambdaConf
+https://www.youtube.com/channel/UCEtohQeDqMSebi2yvLMUItg
+
+Northeast Scala Symposium
+https://www.youtube.com/channel/UC8F-eU3OSAzQhtwzhr13BSA/videos
+
+
+http://scalar-conf.com/
+http://scalawave.io/
+https://scala.sphere.it/

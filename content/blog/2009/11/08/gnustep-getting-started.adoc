@@ -62,7 +62,7 @@ Apps
 tutorials and articles on GNUstep.
 * http://wiki.gnustep.org/[GNUstepWiki] -- just _wiki_
 
-=== How to build your first GNUstep application in Windows?
+== How to build your first GNUstep application in Windows?
 In general it's simple, but if you have some troubles with it here is the links:
 
 1. http://www.techotopia.com/index.php/Installing_and_using_GNUstep_and_Objective-C_on_Windows#Downloading_the_GNUstep_Packages[Installing and using GNUstep and Objective-C on Windows]

@@ -17,7 +17,7 @@ All buzzwords were on this conference: reactiveness, cloud, big data, nosql, sca
 
 This report is for myself just to keep track talks I’ve attended.
 
-= Day 1 (May 20, 2016)
+== Day 1 (May 20, 2016)
 
 === *Search and analyze your data with ElasticSearch* by Anton Udovychenko (http://www.slideshare.net/AntonUdovychenko/search-and-analyze-your-data-with-elasticsearch-62204515[slides])
 
@@ -97,7 +97,7 @@ Working with Scala can be compared to experiencing the “forth dimension”. Ma
 ____
 Very interesting and clear sample of Scala’s polymorphism.
 
-= Day 2 (May 21, 2016)
+== Day 2 (May 21, 2016)
 
 === *How to cook Apache Kafka with Camel and Spring Boot* by Ivan Vasyliev
 ____
@@ -174,7 +174,7 @@ ____
 As the popularity of any event-driven application increases, the number of concurrent connections may increase. Applications that employ thread-per-client architecture, frustrate scalability by exhausting a server’s memory with excessive allocations and by exhausting a server’s CPU with excessive context-switching. One of obvious solutions, is exorcising blocking operations from such applications. Vert.x is event driven and non blocking toolkit, which may help you to achive this goal. In this talk, we are going to cover it’s core features and develop a primitive application using WebSockets, RxJava and Vert.x.
 ____
 
-= References
+== References
 
 - link:{2015-post}[JEEConf — Kiev, 2015 — Report]
 - http://halyph.com/old-octopress-blog/2014/05/jeeconf-kiev-2014-report.html[JEEConf — Kiev, 2014 — Report]

@@ -19,7 +19,7 @@ Despite this fact it is always better to have something written as a reference t
 
 Here I have collected some REST API guidelines and API References. It's nice start point for your _inspiration_.
 
-=== REST API Guidelines
+== REST API Guidelines
 - *{ref-microsoft}[Microsoft]* - REST API Guidelines
 - *https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design[Microsoft]* - Best Practices - API Design
 - *{ref-zalando}[Zalando]* - REST API Guidelines
@@ -34,7 +34,7 @@ Here I have collected some REST API guidelines and API References. It's nice sta
 - *http://www.restapitutorial.com/[A RESTful Tutorial]*
 
 
-=== Sample APIs
+== Sample APIs
 - https://developer.github.com/v3/[GitHub REST API v3]
 - https://developer.twitter.com/en/docs/basics/getting-started[Twitter API]
 - https://developers.google.com/drive/v2/reference/[Google Drive APIs]
