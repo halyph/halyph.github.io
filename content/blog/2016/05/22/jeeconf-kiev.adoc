@@ -177,7 +177,7 @@ ____
 == References
 
 - link:{2015-post}[JEEConf — Kiev, 2015 — Report]
-- http://halyph.com/old-octopress-blog/2014/05/jeeconf-kiev-2014-report.html[JEEConf — Kiev, 2014 — Report]
-- http://halyph.com/old-octopress-blog/blog/2013/05/27/jeeconf-kiev-2013-report/[JEEConf — Kiev, 2013 — Report]
-- http://halyph.com/old-octopress-blog/blog/2012/05/20/this-year-we-had-second-jeeconf/[JEEConf — Kiev, 2012 — Report]
-- http://halyph.com/old-octopress-blog/blog/2011/05/24/jeeconf-kiev-2011-report/[JEEConf — Kiev, 2011 — Report]
+- https://halyph.com/old-octopress-blog/2014/05/jeeconf-kiev-2014-report.html[JEEConf — Kiev, 2014 — Report]
+- https://halyph.com/old-octopress-blog/blog/2013/05/27/jeeconf-kiev-2013-report/[JEEConf — Kiev, 2013 — Report]
+- https://halyph.com/old-octopress-blog/blog/2012/05/20/this-year-we-had-second-jeeconf/[JEEConf — Kiev, 2012 — Report]
+- https://halyph.com/old-octopress-blog/blog/2011/05/24/jeeconf-kiev-2011-report/[JEEConf — Kiev, 2011 — Report]
