@@ -1,167 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>http://halyph.com/about.html</loc>
+        <loc>https://halyph.com/about.html</loc>
         <lastmod>2013-09-24</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2018/05/20/scaladays.html</loc>
+        <loc>https://halyph.com/blog/2018/05/20/scaladays.html</loc>
         <lastmod>2018-05-20</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2018/04/05/programming-quizzes.html</loc>
+        <loc>https://halyph.com/blog/2018/04/05/programming-quizzes.html</loc>
         <lastmod>2018-04-05</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2018/03/15/rest-api-guidelines.html</loc>
+        <loc>https://halyph.com/blog/2018/03/15/rest-api-guidelines.html</loc>
         <lastmod>2018-03-15</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2017/11/05/my-favorite-podcasts.html</loc>
+        <loc>https://halyph.com/blog/2017/11/05/my-favorite-podcasts.html</loc>
         <lastmod>2017-11-05</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2017/10/31/reflection-about-the-main-scripting-language.html</loc>
+        <loc>https://halyph.com/blog/2017/10/31/reflection-about-the-main-scripting-language.html</loc>
         <lastmod>2017-10-31</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2016/11/28/prog-lang-reserved-words.html</loc>
+        <loc>https://halyph.com/blog/2016/11/28/prog-lang-reserved-words.html</loc>
         <lastmod>2016-11-28</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2016/11/27/who-left-ruby-community.html</loc>
+        <loc>https://halyph.com/blog/2016/11/27/who-left-ruby-community.html</loc>
         <lastmod>2016-11-27</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2016/06/15/gradle-groovy-kotlin-ftw.html</loc>
+        <loc>https://halyph.com/blog/2016/06/15/gradle-groovy-kotlin-ftw.html</loc>
         <lastmod>2016-06-15</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2016/05/22/jeeconf-kiev.html</loc>
+        <loc>https://halyph.com/blog/2016/05/22/jeeconf-kiev.html</loc>
         <lastmod>2016-05-22</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2016/05/14/the-state-of-groovy-and-other-jvm-languages.html</loc>
+        <loc>https://halyph.com/blog/2016/05/14/the-state-of-groovy-and-other-jvm-languages.html</loc>
         <lastmod>2016-05-14</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/11/08/java-day-kiev-2015-report.html</loc>
+        <loc>https://halyph.com/blog/2015/11/08/java-day-kiev-2015-report.html</loc>
         <lastmod>2015-11-08</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/10/20/using-webrunner.html</loc>
+        <loc>https://halyph.com/blog/2015/10/20/using-webrunner.html</loc>
         <lastmod>2015-10-20</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/09/25/programming-languages-to-native-code.html</loc>
+        <loc>https://halyph.com/blog/2015/09/25/programming-languages-to-native-code.html</loc>
         <lastmod>2015-09-25</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/09/20/jday-lviv-2015-report.html</loc>
+        <loc>https://halyph.com/blog/2015/09/20/jday-lviv-2015-report.html</loc>
         <lastmod>2015-09-20</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/07/20/grails-best-practices-collection.html</loc>
+        <loc>https://halyph.com/blog/2015/07/20/grails-best-practices-collection.html</loc>
         <lastmod>2015-07-20</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/06/29/devoxxpl.html</loc>
+        <loc>https://halyph.com/blog/2015/06/29/devoxxpl.html</loc>
         <lastmod>2015-06-29</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/05/25/jeeconf-kiev.html</loc>
+        <loc>https://halyph.com/blog/2015/05/25/jeeconf-kiev.html</loc>
         <lastmod>2015-05-25</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/05/19/grails-2-dot-5-0-debug-in-intellij-idea.html</loc>
+        <loc>https://halyph.com/blog/2015/05/19/grails-2-dot-5-0-debug-in-intellij-idea.html</loc>
         <lastmod>2015-05-19</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/05/18/golang-presentation-tool.html</loc>
+        <loc>https://halyph.com/blog/2015/05/18/golang-presentation-tool.html</loc>
         <lastmod>2015-05-18</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/04/06/java-full-stack-web-framework.html</loc>
+        <loc>https://halyph.com/blog/2015/04/06/java-full-stack-web-framework.html</loc>
         <lastmod>2015-04-06</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/04/04/rails-architecture-and-scalability-issues.html</loc>
+        <loc>https://halyph.com/blog/2015/04/04/rails-architecture-and-scalability-issues.html</loc>
         <lastmod>2015-04-04</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/03/17/how-to-download-jars-from-maven-central.html</loc>
+        <loc>https://halyph.com/blog/2015/03/17/how-to-download-jars-from-maven-central.html</loc>
         <lastmod>2015-03-17</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/02/17/how-to-install-octopress-on-windows.html</loc>
+        <loc>https://halyph.com/blog/2015/02/17/how-to-install-octopress-on-windows.html</loc>
         <lastmod>2015-02-17</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/02/13/maven-flow-for-simple-app-creation.html</loc>
+        <loc>https://halyph.com/blog/2015/02/13/maven-flow-for-simple-app-creation.html</loc>
         <lastmod>2015-02-13</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/02/12/do-we-need-java-for-everything.html</loc>
+        <loc>https://halyph.com/blog/2015/02/12/do-we-need-java-for-everything.html</loc>
         <lastmod>2015-02-12</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/02/05/how-to-generate-permgen.html</loc>
+        <loc>https://halyph.com/blog/2015/02/05/how-to-generate-permgen.html</loc>
         <lastmod>2015-02-05</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/02/03/scripting-in-scala.html</loc>
+        <loc>https://halyph.com/blog/2015/02/03/scripting-in-scala.html</loc>
         <lastmod>2015-02-02</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2015/01/22/how-to-use-embedded-h2-with-h2-console.html</loc>
+        <loc>https://halyph.com/blog/2015/01/22/how-to-use-embedded-h2-with-h2-console.html</loc>
         <lastmod>2015-01-22</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2014/11/16/how-to-fix-textmate-osx-yosemite-ruby-1-dot-8-issues.html</loc>
+        <loc>https://halyph.com/blog/2014/11/16/how-to-fix-textmate-osx-yosemite-ruby-1-dot-8-issues.html</loc>
         <lastmod>2014-11-16</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2014/10/20/switching-to-textmate-2.html</loc>
+        <loc>https://halyph.com/blog/2014/10/20/switching-to-textmate-2.html</loc>
         <lastmod>2014-10-20</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2014/10/09/bash-block-comments.html</loc>
+        <loc>https://halyph.com/blog/2014/10/09/bash-block-comments.html</loc>
         <lastmod>2014-10-09</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2014/09/07/migration-to-octopress.html</loc>
+        <loc>https://halyph.com/blog/2014/09/07/migration-to-octopress.html</loc>
         <lastmod>2014-09-07</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2011/08/31/java-code-quality-tools-overview.html</loc>
+        <loc>https://halyph.com/blog/2011/08/31/java-code-quality-tools-overview.html</loc>
         <lastmod>2011-08-31</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2009/12/27/why-i-chosen-ruby-as-main-scripting.html</loc>
+        <loc>https://halyph.com/blog/2009/12/27/why-i-chosen-ruby-as-main-scripting.html</loc>
         <lastmod>2009-12-27</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2009/11/18/nix-like-environments-for-windows.html</loc>
+        <loc>https://halyph.com/blog/2009/11/18/nix-like-environments-for-windows.html</loc>
         <lastmod>2009-11-18</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2009/11/08/gnustep-getting-started.html</loc>
+        <loc>https://halyph.com/blog/2009/11/08/gnustep-getting-started.html</loc>
         <lastmod>2009-11-08</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2009/08/29/syntaxt-highlighting-in-blogger.html</loc>
+        <loc>https://halyph.com/blog/2009/08/29/syntaxt-highlighting-in-blogger.html</loc>
         <lastmod>2009-08-29</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2009/08/26/rails-23-migration-issues-with-mysql_26.html</loc>
+        <loc>https://halyph.com/blog/2009/08/26/rails-23-migration-issues-with-mysql_26.html</loc>
         <lastmod>2009-08-26</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2009/06/03/ruby-screencast-resources.html</loc>
+        <loc>https://halyph.com/blog/2009/06/03/ruby-screencast-resources.html</loc>
         <lastmod>2009-06-03</lastmod>
     </url>
     <url>
-        <loc>http://halyph.com/blog/2009/03/16/effective-way-to-be-expert.html</loc>
+        <loc>https://halyph.com/blog/2009/03/16/effective-way-to-be-expert.html</loc>
         <lastmod>2009-03-16</lastmod>
     </url>
 </urlset>

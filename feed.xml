@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HalypH's Blog</title>
-    <link>http://halyph.com</link>
-    <atom:link href="http://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://halyph.com</link>
+    <atom:link href="https://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sun, 27 May 2018 15:56:05 +0200</pubDate>
-    <lastBuildDate>Sun, 27 May 2018 15:56:05 +0200</lastBuildDate>
+    <pubDate>Wed, 10 Oct 2018 23:58:55 +0200</pubDate>
+    <lastBuildDate>Wed, 10 Oct 2018 23:58:55 +0200</lastBuildDate>
 
     <item>
       <title>Scala Days - Berlin, 2018 - Report</title>
-      <link>http://halyph.com/blog/2018/05/20/scaladays.html</link>
+      <link>https://halyph.com/blog/2018/05/20/scaladays.html</link>
       <pubDate>Sun, 20 May 2018 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2018/05/20/scaladays.html</guid>
       	<description>
@@ -19,7 +19,7 @@
  &lt;div class=&quot;sectionbody&quot;&gt; 
   &lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt; 
    &lt;div class=&quot;content&quot;&gt; 
-    &lt;img src=&quot;http://halyph.com/images/blog/scaladays.jpg&quot; alt=&quot;scaladays&quot;&gt; 
+    &lt;img src=&quot;https://halyph.com/images/blog/scaladays.jpg&quot; alt=&quot;scaladays&quot;&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
   &lt;div class=&quot;paragraph&quot;&gt; 
@@ -66,7 +66,7 @@
    &lt;/div&gt; 
    &lt;div class=&quot;imageblock&quot; style=&quot;float: center&quot;&gt; 
     &lt;div class=&quot;content&quot;&gt; 
-     &lt;img src=&quot;http://halyph.com/blog/2018/05/20/scala3.jpeg&quot; alt=&quot;scala3&quot;&gt; 
+     &lt;img src=&quot;https://halyph.com/blog/2018/05/20/scala3.jpeg&quot; alt=&quot;scala3&quot;&gt; 
     &lt;/div&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
@@ -250,13 +250,13 @@
     </item>
     <item>
       <title>Programming Quizzes</title>
-      <link>http://halyph.com/blog/2018/04/05/programming-quizzes.html</link>
+      <link>https://halyph.com/blog/2018/04/05/programming-quizzes.html</link>
       <pubDate>Thu, 5 Apr 2018 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2018/04/05/programming-quizzes.html</guid>
       	<description>
 	&lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt; 
  &lt;div class=&quot;content&quot;&gt; 
-  &lt;img src=&quot;http://halyph.com/images/posts/2018-04-05/quizzes.png&quot; alt=&quot;quizzes&quot;&gt; 
+  &lt;img src=&quot;https://halyph.com/images/posts/2018-04-05/quizzes.png&quot; alt=&quot;quizzes&quot;&gt; 
  &lt;/div&gt; 
 &lt;/div&gt; 
 &lt;div class=&quot;paragraph&quot;&gt; 
@@ -296,7 +296,7 @@
     </item>
     <item>
       <title>REST API Guidelines</title>
-      <link>http://halyph.com/blog/2018/03/15/rest-api-guidelines.html</link>
+      <link>https://halyph.com/blog/2018/03/15/rest-api-guidelines.html</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2018/03/15/rest-api-guidelines.html</guid>
       	<description>
@@ -304,7 +304,7 @@
  &lt;div class=&quot;sectionbody&quot;&gt; 
   &lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt; 
    &lt;div class=&quot;content&quot;&gt; 
-    &lt;img src=&quot;http://halyph.com/images/blog/rest_api.png&quot; alt=&quot;rest api&quot;&gt; 
+    &lt;img src=&quot;https://halyph.com/images/blog/rest_api.png&quot; alt=&quot;rest api&quot;&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
   &lt;div class=&quot;paragraph&quot;&gt; 
@@ -361,13 +361,13 @@
     </item>
     <item>
       <title>My Favorite Podcasts</title>
-      <link>http://halyph.com/blog/2017/11/05/my-favorite-podcasts.html</link>
+      <link>https://halyph.com/blog/2017/11/05/my-favorite-podcasts.html</link>
       <pubDate>Sun, 5 Nov 2017 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2017/11/05/my-favorite-podcasts.html</guid>
       	<description>
 	&lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt; 
  &lt;div class=&quot;content&quot;&gt; 
-  &lt;img src=&quot;http://halyph.com/images/blog/podcast.png&quot; alt=&quot;podcast&quot;&gt; 
+  &lt;img src=&quot;https://halyph.com/images/blog/podcast.png&quot; alt=&quot;podcast&quot;&gt; 
  &lt;/div&gt; 
 &lt;/div&gt; 
 &lt;div class=&quot;paragraph&quot;&gt; 
@@ -396,7 +396,7 @@
     </item>
     <item>
       <title>Reflection about the next main scripting language</title>
-      <link>http://halyph.com/blog/2017/10/31/reflection-about-the-main-scripting-language.html</link>
+      <link>https://halyph.com/blog/2017/10/31/reflection-about-the-main-scripting-language.html</link>
       <pubDate>Tue, 31 Oct 2017 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2017/10/31/reflection-about-the-main-scripting-language.html</guid>
       	<description>
@@ -404,7 +404,7 @@
  &lt;div class=&quot;sectionbody&quot;&gt; 
   &lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt; 
    &lt;div class=&quot;content&quot;&gt; 
-    &lt;img src=&quot;http://halyph.com/images/blog/python.png&quot; alt=&quot;python&quot;&gt; 
+    &lt;img src=&quot;https://halyph.com/images/blog/python.png&quot; alt=&quot;python&quot;&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
   &lt;div class=&quot;paragraph&quot;&gt; 
@@ -485,7 +485,7 @@
    &lt;h3 id=&quot;_redmonk&quot;&gt;RedMonk&lt;/h3&gt; 
    &lt;div id=&quot;img-redmonk&quot; class=&quot;imageblock&quot;&gt; 
     &lt;div class=&quot;content&quot;&gt; 
-     &lt;a class=&quot;image&quot; href=&quot;http://redmonk.com/sogrady/2017/06/08/language-rankings-6-17/&quot;&gt;&lt;img src=&quot;http://halyph.com/images/posts/2017-10-31/redmonk-2017q3.png&quot; alt=&quot;Redmonk&quot;&gt;&lt;/a&gt; 
+     &lt;a class=&quot;image&quot; href=&quot;http://redmonk.com/sogrady/2017/06/08/language-rankings-6-17/&quot;&gt;&lt;img src=&quot;https://halyph.com/images/posts/2017-10-31/redmonk-2017q3.png&quot; alt=&quot;Redmonk&quot;&gt;&lt;/a&gt; 
     &lt;/div&gt; 
     &lt;div class=&quot;title&quot;&gt;
      Figure 1: The RedMonk Programming Language Rankings: June 2017
@@ -496,7 +496,7 @@
    &lt;h3 id=&quot;_tiobe_index&quot;&gt;TIOBE Index&lt;/h3&gt; 
    &lt;div id=&quot;img-tiobe&quot; class=&quot;imageblock&quot;&gt; 
     &lt;div class=&quot;content&quot;&gt; 
-     &lt;a class=&quot;image&quot; href=&quot;https://www.tiobe.com/tiobe-index/&quot;&gt;&lt;img src=&quot;http://halyph.com/images/posts/2017-10-31/tiobe-2017-oct.jpg&quot; alt=&quot;TIOBE&quot; width=&quot;1000&quot;&gt;&lt;/a&gt; 
+     &lt;a class=&quot;image&quot; href=&quot;https://www.tiobe.com/tiobe-index/&quot;&gt;&lt;img src=&quot;https://halyph.com/images/posts/2017-10-31/tiobe-2017-oct.jpg&quot; alt=&quot;TIOBE&quot; width=&quot;1000&quot;&gt;&lt;/a&gt; 
     &lt;/div&gt; 
     &lt;div class=&quot;title&quot;&gt;
      Figure 2: TIOBE Index for October 2017
@@ -507,7 +507,7 @@
    &lt;h3 id=&quot;_pypl&quot;&gt;PYPL&lt;/h3&gt; 
    &lt;div id=&quot;img-pypl&quot; class=&quot;imageblock&quot;&gt; 
     &lt;div class=&quot;content&quot;&gt; 
-     &lt;a class=&quot;image&quot; href=&quot;http://pypl.github.io/PYPL.html&quot;&gt;&lt;img src=&quot;http://halyph.com/images/posts/2017-10-31/pypl-2017-oct.jpg&quot; alt=&quot;PYPL&quot; width=&quot;700&quot;&gt;&lt;/a&gt; 
+     &lt;a class=&quot;image&quot; href=&quot;http://pypl.github.io/PYPL.html&quot;&gt;&lt;img src=&quot;https://halyph.com/images/posts/2017-10-31/pypl-2017-oct.jpg&quot; alt=&quot;PYPL&quot; width=&quot;700&quot;&gt;&lt;/a&gt; 
     &lt;/div&gt; 
     &lt;div class=&quot;title&quot;&gt;
      Figure 3: PYPL PopularitY of Programming Language
@@ -518,7 +518,7 @@
    &lt;h3 id=&quot;_ieee_spectrum&quot;&gt;IEEE Spectrum&lt;/h3&gt; 
    &lt;div id=&quot;img-ieee&quot; class=&quot;imageblock&quot;&gt; 
     &lt;div class=&quot;content&quot;&gt; 
-     &lt;a class=&quot;image&quot; href=&quot;https://spectrum.ieee.org/static/interactive-the-top-programming-languages-2017&quot;&gt;&lt;img src=&quot;http://halyph.com/images/posts/2017-10-31/ieee-2017-oct.jpg&quot; alt=&quot;IEEE&quot; width=&quot;700&quot;&gt;&lt;/a&gt; 
+     &lt;a class=&quot;image&quot; href=&quot;https://spectrum.ieee.org/static/interactive-the-top-programming-languages-2017&quot;&gt;&lt;img src=&quot;https://halyph.com/images/posts/2017-10-31/ieee-2017-oct.jpg&quot; alt=&quot;IEEE&quot; width=&quot;700&quot;&gt;&lt;/a&gt; 
     &lt;/div&gt; 
     &lt;div class=&quot;title&quot;&gt;
      Figure 4: Interactive: The Top Programming Languages 2017
@@ -529,7 +529,7 @@
    &lt;h3 id=&quot;_stack_overflow&quot;&gt;Stack Overflow&lt;/h3&gt; 
    &lt;div id=&quot;img-so&quot; class=&quot;imageblock&quot;&gt; 
     &lt;div class=&quot;content&quot;&gt; 
-     &lt;a class=&quot;image&quot; href=&quot;https://stackoverflow.blog/2017/09/06/incredible-growth-python/&quot;&gt;&lt;img src=&quot;http://halyph.com/images/posts/2017-10-31/so-2017-sep.png&quot; alt=&quot;SO&quot; width=&quot;700&quot;&gt;&lt;/a&gt; 
+     &lt;a class=&quot;image&quot; href=&quot;https://stackoverflow.blog/2017/09/06/incredible-growth-python/&quot;&gt;&lt;img src=&quot;https://halyph.com/images/posts/2017-10-31/so-2017-sep.png&quot; alt=&quot;SO&quot; width=&quot;700&quot;&gt;&lt;/a&gt; 
     &lt;/div&gt; 
     &lt;div class=&quot;title&quot;&gt;
      Figure 5: Growth of major programming languages
@@ -540,7 +540,7 @@
    &lt;h3 id=&quot;_github&quot;&gt;Github&lt;/h3&gt; 
    &lt;div id=&quot;img-github&quot; class=&quot;imageblock&quot;&gt; 
     &lt;div class=&quot;content&quot;&gt; 
-     &lt;a class=&quot;image&quot; href=&quot;https://octoverse.github.com/&quot;&gt;&lt;img src=&quot;http://halyph.com/images/posts/2017-10-31/github-2017.jpg&quot; alt=&quot;Github&quot; width=&quot;700&quot;&gt;&lt;/a&gt; 
+     &lt;a class=&quot;image&quot; href=&quot;https://octoverse.github.com/&quot;&gt;&lt;img src=&quot;https://halyph.com/images/posts/2017-10-31/github-2017.jpg&quot; alt=&quot;Github&quot; width=&quot;700&quot;&gt;&lt;/a&gt; 
     &lt;/div&gt; 
     &lt;div class=&quot;title&quot;&gt;
      Figure 6: The fifteen most popular languages on GitHub (2017) by opened pull request
@@ -570,11 +570,11 @@
     </item>
     <item>
       <title>Reserved Words of Programming languages</title>
-      <link>http://halyph.com/blog/2016/11/28/prog-lang-reserved-words.html</link>
+      <link>https://halyph.com/blog/2016/11/28/prog-lang-reserved-words.html</link>
       <pubDate>Mon, 28 Nov 2016 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2016/11/28/prog-lang-reserved-words.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2016-11-28/wordcloud-wide.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2016-11-28/wordcloud-wide.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;Amount of reserved words per programming language:&lt;/p&gt; 
 &lt;ul&gt; 
  &lt;li&gt;&lt;strong&gt;C++&lt;/strong&gt; - 92&lt;/li&gt; 
@@ -719,11 +719,11 @@ _    :    =    =&amp;gt;    &amp;lt;-    &amp;lt;:    &amp;lt;%     &amp;gt;:   
     </item>
     <item>
       <title>Who left Ruby Community?</title>
-      <link>http://halyph.com/blog/2016/11/27/who-left-ruby-community.html</link>
+      <link>https://halyph.com/blog/2016/11/27/who-left-ruby-community.html</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2016/11/27/who-left-ruby-community.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/ruby.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/ruby.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;I’ve been listening &lt;a href=&quot;https://devchat.tv/ruby-rogues&quot;&gt;The Ruby Rogues&lt;/a&gt; podcast for several years. Despite the fact the I’m not a Ruby developer ;-). I’m Ruby user if You will.&lt;/p&gt; 
 &lt;p&gt;So, there was one very interesting episode &lt;a href=&quot;https://devchat.tv/ruby-rogues/283-rr-is-ruby-dying&quot;&gt;“#283 - Is Ruby Dying?”&lt;/a&gt;.&lt;br&gt; I’m in Java community and it’s very common to hear that &lt;em&gt;“Java is Dying”&lt;/em&gt; ;-). But, it’s very uncommon to hear such statement in Ruby-related podcast.&lt;/p&gt; 
 &lt;p&gt;The most interesting part is:&lt;/p&gt; 
@@ -828,7 +828,7 @@ _    :    =    =&amp;gt;    &amp;lt;-    &amp;lt;:    &amp;lt;%     &amp;gt;:   
     </item>
     <item>
       <title>Gradle, Groovy, Kotlin. FTW?</title>
-      <link>http://halyph.com/blog/2016/06/15/gradle-groovy-kotlin-ftw.html</link>
+      <link>https://halyph.com/blog/2016/06/15/gradle-groovy-kotlin-ftw.html</link>
       <pubDate>Wed, 15 Jun 2016 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2016/06/15/gradle-groovy-kotlin-ftw.html</guid>
       	<description>
@@ -836,7 +836,7 @@ _    :    =    =&amp;gt;    &amp;lt;-    &amp;lt;:    &amp;lt;%     &amp;gt;:   
  &lt;div class=&quot;sectionbody&quot;&gt; 
   &lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt; 
    &lt;div class=&quot;content&quot;&gt; 
-    &lt;img src=&quot;http://halyph.com/images/blog/gradle.png&quot; alt=&quot;gradle&quot;&gt; 
+    &lt;img src=&quot;https://halyph.com/images/blog/gradle.png&quot; alt=&quot;gradle&quot;&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
   &lt;div class=&quot;paragraph&quot;&gt; 
@@ -852,7 +852,7 @@ _    :    =    =&amp;gt;    &amp;lt;-    &amp;lt;:    &amp;lt;%     &amp;gt;:   
   &lt;/div&gt; 
   &lt;div class=&quot;imageblock&quot;&gt; 
    &lt;div class=&quot;content&quot;&gt; 
-    &lt;img src=&quot;http://halyph.com/images/posts/2016-06-15/gradle-github.jpg&quot; alt=&quot;gradle github&quot;&gt; 
+    &lt;img src=&quot;https://halyph.com/images/posts/2016-06-15/gradle-github.jpg&quot; alt=&quot;gradle github&quot;&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
   &lt;div class=&quot;ulist&quot;&gt; 
@@ -983,7 +983,7 @@ SUM:                          3706          71728          55050         318570
     </item>
     <item>
       <title>JEEConf - Kiev, 2016 - Report</title>
-      <link>http://halyph.com/blog/2016/05/22/jeeconf-kiev.html</link>
+      <link>https://halyph.com/blog/2016/05/22/jeeconf-kiev.html</link>
       <pubDate>Sun, 22 May 2016 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2016/05/22/jeeconf-kiev.html</guid>
       	<description>
@@ -991,7 +991,7 @@ SUM:                          3706          71728          55050         318570
  &lt;div class=&quot;sectionbody&quot;&gt; 
   &lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt; 
    &lt;div class=&quot;content&quot;&gt; 
-    &lt;img src=&quot;http://halyph.com/images/blog/jeeconf.png&quot; alt=&quot;jeeconf&quot;&gt; 
+    &lt;img src=&quot;https://halyph.com/images/blog/jeeconf.png&quot; alt=&quot;jeeconf&quot;&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
   &lt;div class=&quot;paragraph&quot;&gt; 
@@ -1256,7 +1256,7 @@ SUM:                          3706          71728          55050         318570
     </item>
     <item>
       <title>The state of Groovy and other JVM Languages</title>
-      <link>http://halyph.com/blog/2016/05/14/the-state-of-groovy-and-other-jvm-languages.html</link>
+      <link>https://halyph.com/blog/2016/05/14/the-state-of-groovy-and-other-jvm-languages.html</link>
       <pubDate>Sat, 14 May 2016 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2016/05/14/the-state-of-groovy-and-other-jvm-languages.html</guid>
       	<description>
@@ -1264,7 +1264,7 @@ SUM:                          3706          71728          55050         318570
  &lt;div class=&quot;sectionbody&quot;&gt; 
   &lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt; 
    &lt;div class=&quot;content&quot;&gt; 
-    &lt;img src=&quot;http://halyph.com/images/posts/2016-05-14/img1.png&quot; alt=&quot;img1&quot;&gt; 
+    &lt;img src=&quot;https://halyph.com/images/posts/2016-05-14/img1.png&quot; alt=&quot;img1&quot;&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
   &lt;div class=&quot;paragraph&quot;&gt; 
@@ -1272,7 +1272,7 @@ SUM:                          3706          71728          55050         318570
   &lt;/div&gt; 
   &lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt; 
    &lt;div class=&quot;content&quot;&gt; 
-    &lt;img src=&quot;http://halyph.com/images/posts/2016-05-14/img2.jpg&quot; alt=&quot;img2&quot;&gt; 
+    &lt;img src=&quot;https://halyph.com/images/posts/2016-05-14/img2.jpg&quot; alt=&quot;img2&quot;&gt; 
    &lt;/div&gt; 
    &lt;div class=&quot;title&quot;&gt;
     Figure 1. JVM language History (image created by 
@@ -1284,7 +1284,7 @@ SUM:                          3706          71728          55050         318570
   &lt;/div&gt; 
   &lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt; 
    &lt;div class=&quot;content&quot;&gt; 
-    &lt;img src=&quot;http://halyph.com/images/posts/2016-05-14/img3.jpeg&quot; alt=&quot;img3&quot;&gt; 
+    &lt;img src=&quot;https://halyph.com/images/posts/2016-05-14/img3.jpeg&quot; alt=&quot;img3&quot;&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
   &lt;div class=&quot;paragraph&quot;&gt; 
@@ -1339,12 +1339,12 @@ SUM:                          3706          71728          55050         318570
    &lt;/div&gt; 
    &lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt; 
     &lt;div class=&quot;content&quot;&gt; 
-     &lt;img src=&quot;http://halyph.com/images/posts/2016-05-14/img4.jpeg&quot; alt=&quot;img4&quot;&gt; 
+     &lt;img src=&quot;https://halyph.com/images/posts/2016-05-14/img4.jpeg&quot; alt=&quot;img4&quot;&gt; 
     &lt;/div&gt; 
    &lt;/div&gt; 
    &lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt; 
     &lt;div class=&quot;content&quot;&gt; 
-     &lt;img src=&quot;http://halyph.com/images/posts/2016-05-14/img5.jpeg&quot; alt=&quot;img5&quot;&gt; 
+     &lt;img src=&quot;https://halyph.com/images/posts/2016-05-14/img5.jpeg&quot; alt=&quot;img5&quot;&gt; 
     &lt;/div&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
@@ -1352,7 +1352,7 @@ SUM:                          3706          71728          55050         318570
    &lt;h3 id=&quot;_a_href_http_pypl_github_io_pypl_html_pypl_popularity_of_programming_language_a&quot;&gt;&lt;a href=&quot;http://pypl.github.io/PYPL.html&quot;&gt;PYPL PopularitY of Programming Language&lt;/a&gt;&lt;/h3&gt; 
    &lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt; 
     &lt;div class=&quot;content&quot;&gt; 
-     &lt;img src=&quot;http://halyph.com/images/posts/2016-05-14/img6.jpeg&quot; alt=&quot;img6&quot;&gt; 
+     &lt;img src=&quot;https://halyph.com/images/posts/2016-05-14/img6.jpeg&quot; alt=&quot;img6&quot;&gt; 
     &lt;/div&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
@@ -1367,7 +1367,7 @@ SUM:                          3706          71728          55050         318570
    &lt;/div&gt; 
    &lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt; 
     &lt;div class=&quot;content&quot;&gt; 
-     &lt;img src=&quot;http://halyph.com/images/posts/2016-05-14/img7.jpeg&quot; alt=&quot;img7&quot;&gt; 
+     &lt;img src=&quot;https://halyph.com/images/posts/2016-05-14/img7.jpeg&quot; alt=&quot;img7&quot;&gt; 
     &lt;/div&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
@@ -1378,7 +1378,7 @@ SUM:                          3706          71728          55050         318570
    &lt;/div&gt; 
    &lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt; 
     &lt;div class=&quot;content&quot;&gt; 
-     &lt;img src=&quot;http://halyph.com/images/posts/2016-05-14/img8.png&quot; alt=&quot;img8&quot;&gt; 
+     &lt;img src=&quot;https://halyph.com/images/posts/2016-05-14/img8.png&quot; alt=&quot;img8&quot;&gt; 
     &lt;/div&gt; 
    &lt;/div&gt; 
    &lt;div class=&quot;paragraph&quot;&gt; 
@@ -1386,7 +1386,7 @@ SUM:                          3706          71728          55050         318570
    &lt;/div&gt; 
    &lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt; 
     &lt;div class=&quot;content&quot;&gt; 
-     &lt;img src=&quot;http://halyph.com/images/posts/2016-05-14/img9.png&quot; alt=&quot;img9&quot;&gt; 
+     &lt;img src=&quot;https://halyph.com/images/posts/2016-05-14/img9.png&quot; alt=&quot;img9&quot;&gt; 
     &lt;/div&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
@@ -1396,7 +1396,7 @@ SUM:                          3706          71728          55050         318570
     &lt;h4 id=&quot;_a_href_https_insights_stackoverflow_com_survey_2016_technology_most_popular_technologies_most_popular_technologies_a&quot;&gt;&lt;a href=&quot;https://insights.stackoverflow.com/survey/2016#technology-most-popular-technologies&quot;&gt;Most Popular Technologies&lt;/a&gt;&lt;/h4&gt; 
     &lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt; 
      &lt;div class=&quot;content&quot;&gt; 
-      &lt;img src=&quot;http://halyph.com/images/posts/2016-05-14/img10.png&quot; alt=&quot;img10&quot;&gt; 
+      &lt;img src=&quot;https://halyph.com/images/posts/2016-05-14/img10.png&quot; alt=&quot;img10&quot;&gt; 
      &lt;/div&gt; 
     &lt;/div&gt; 
     &lt;div class=&quot;quoteblock&quot;&gt; 
@@ -1414,7 +1414,7 @@ SUM:                          3706          71728          55050         318570
     &lt;/div&gt; 
     &lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt; 
      &lt;div class=&quot;content&quot;&gt; 
-      &lt;img src=&quot;http://halyph.com/images/posts/2016-05-14/img11.png&quot; alt=&quot;img11&quot;&gt; 
+      &lt;img src=&quot;https://halyph.com/images/posts/2016-05-14/img11.png&quot; alt=&quot;img11&quot;&gt; 
      &lt;/div&gt; 
     &lt;/div&gt; 
    &lt;/div&gt; 
@@ -1422,12 +1422,12 @@ SUM:                          3706          71728          55050         318570
     &lt;h4 id=&quot;_a_href_https_insights_stackoverflow_com_survey_2016_technology_top_paying_tech_top_paying_tech_a&quot;&gt;&lt;a href=&quot;https://insights.stackoverflow.com/survey/2016#technology-top-paying-tech&quot;&gt;Top Paying Tech&lt;/a&gt;&lt;/h4&gt; 
     &lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt; 
      &lt;div class=&quot;content&quot;&gt; 
-      &lt;img src=&quot;http://halyph.com/images/posts/2016-05-14/img12.png&quot; alt=&quot;img12&quot;&gt; 
+      &lt;img src=&quot;https://halyph.com/images/posts/2016-05-14/img12.png&quot; alt=&quot;img12&quot;&gt; 
      &lt;/div&gt; 
     &lt;/div&gt; 
     &lt;div class=&quot;imageblock&quot; style=&quot;text-align: left&quot;&gt; 
      &lt;div class=&quot;content&quot;&gt; 
-      &lt;img src=&quot;http://halyph.com/images/posts/2016-05-14/img13.png&quot; alt=&quot;img13&quot;&gt; 
+      &lt;img src=&quot;https://halyph.com/images/posts/2016-05-14/img13.png&quot; alt=&quot;img13&quot;&gt; 
      &lt;/div&gt; 
     &lt;/div&gt; 
     &lt;div class=&quot;quoteblock&quot;&gt; 
@@ -1538,11 +1538,11 @@ SUM:                          3706          71728          55050         318570
     </item>
     <item>
       <title>Java Day - Kiev, 2015 - Report</title>
-      <link>http://halyph.com/blog/2015/11/08/java-day-kiev-2015-report.html</link>
+      <link>https://halyph.com/blog/2015/11/08/java-day-kiev-2015-report.html</link>
       <pubDate>Sun, 8 Nov 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/11/08/java-day-kiev-2015-report.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/conf/java_day_2015.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/conf/java_day_2015.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;&lt;em&gt;November 6-7, 2015&lt;/em&gt; I visited &lt;a href=&quot;http://javaday.org.ua/kyiv&quot;&gt;Java Day Kyiv&lt;/a&gt; conference. This report is for myself just to keep track talks I’ve attended.&lt;/p&gt; 
 &lt;h2&gt;&lt;a href=&quot;#day-1&quot; id=&quot;day-1&quot;&gt;Day 1&lt;/a&gt;&lt;/h2&gt; 
 &lt;ul&gt; 
@@ -1625,11 +1625,11 @@ SUM:                          3706          71728          55050         318570
     </item>
     <item>
       <title>How to run Netflix Eureka via Webapp Runner?</title>
-      <link>http://halyph.com/blog/2015/10/20/using-webrunner.html</link>
+      <link>https://halyph.com/blog/2015/10/20/using-webrunner.html</link>
       <pubDate>Tue, 20 Oct 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/10/20/using-webrunner.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;Some time ago I had to run &lt;a href=&quot;https://github.com/Netflix/eureka&quot;&gt;Netflix Eureka server&lt;/a&gt; (to be more specific itwas version 1.1.151) not using Spring Boot.&lt;/p&gt; 
 &lt;p&gt;There were several ways:&lt;/p&gt; 
 &lt;ul&gt; 
@@ -1671,7 +1671,7 @@ webapp-runner-8.0.24.0.jar
     </item>
     <item>
       <title>Distribute application as Native Single binary</title>
-      <link>http://halyph.com/blog/2015/09/25/programming-languages-to-native-code.html</link>
+      <link>https://halyph.com/blog/2015/09/25/programming-languages-to-native-code.html</link>
       <pubDate>Fri, 25 Sep 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/09/25/programming-languages-to-native-code.html</guid>
       	<description>
@@ -1730,11 +1730,11 @@ webapp-runner-8.0.24.0.jar
     </item>
     <item>
       <title>JDay - Lviv, 2015 - Report</title>
-      <link>http://halyph.com/blog/2015/09/20/jday-lviv-2015-report.html</link>
+      <link>https://halyph.com/blog/2015/09/20/jday-lviv-2015-report.html</link>
       <pubDate>Sun, 20 Sep 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/09/20/jday-lviv-2015-report.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/conf/jday.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/conf/jday.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;&lt;em&gt;September 19, 2015&lt;/em&gt; I visited &lt;a href=&quot;http://www.jday.com.ua&quot;&gt;JDay Lviv&lt;/a&gt; Java conference. This report is for myself just to keep track talks I’ve attended.&lt;/p&gt; 
 &lt;ul&gt; 
  &lt;li&gt;&lt;strong&gt;Put Your Thinking CAP On&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/tomerg&quot;&gt;Tomer Gabel&lt;/a&gt; (&lt;a href=&quot;http://www.slideshare.net/holograph/scaling-out-data-stores-and-the-cap-theorem&quot;&gt;slides&lt;/a&gt;)&lt;/li&gt; 
@@ -1770,11 +1770,11 @@ webapp-runner-8.0.24.0.jar
     </item>
     <item>
       <title>Grails 2.x best practices collection</title>
-      <link>http://halyph.com/blog/2015/07/20/grails-best-practices-collection.html</link>
+      <link>https://halyph.com/blog/2015/07/20/grails-best-practices-collection.html</link>
       <pubDate>Mon, 20 Jul 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/07/20/grails-best-practices-collection.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/grails.jpg&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/grails.jpg&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;Recently, I had a pleasure to look into several Grails v.2.3+ projects. Despite the fact that I’m not a Grails developer I discovered some anti-patterns.&lt;br&gt; Then I started looking around to find some &lt;em&gt;Grails projects best practices&lt;/em&gt;. And they are well known and people still doing mistakes.&lt;br&gt; However, I’ve found several nice resources and I’m (&lt;em&gt;going to quate&lt;/em&gt;) quoting them here. I keep references back to original source and use “copy-paste” approach to have aggregated post in single place.&lt;/p&gt; 
 &lt;h2&gt;&lt;a href=&quot;#references&quot; id=&quot;references&quot;&gt;References&lt;/a&gt;&lt;/h2&gt; 
 &lt;ul&gt; 
@@ -1804,11 +1804,11 @@ webapp-runner-8.0.24.0.jar
     </item>
     <item>
       <title>DevoxxPL - Krakow, 2015 - Report</title>
-      <link>http://halyph.com/blog/2015/06/29/devoxxpl.html</link>
+      <link>https://halyph.com/blog/2015/06/29/devoxxpl.html</link>
       <pubDate>Mon, 29 Jun 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/06/29/devoxxpl.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-06/Devoxx-Poland-2015.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-06/Devoxx-Poland-2015.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;This summer I’ve decided to attend my 1&lt;sup&gt;st&lt;/sup&gt; foreign conference - &lt;a href=&quot;http://devoxx.pl&quot;&gt;DevoxxPL - Krakow, Poland, 22-25 June 2015&lt;/a&gt;. It was very important experience, because I wanted to compare it with our local Ukrainian conferences. Long story short - the quality is equal. Any conference is based on speakers (I’d like to be “Captain Obvious”). And even awesome conference location can’t make conference &lt;strong&gt;great&lt;/strong&gt;.&lt;/p&gt; 
 &lt;p&gt;So, I’ve attended the next talks:&lt;/p&gt; 
 &lt;h2&gt;&lt;a href=&quot;#day-1&quot; id=&quot;day-1&quot;&gt;Day 1&lt;/a&gt;&lt;/h2&gt; 
@@ -1883,11 +1883,11 @@ webapp-runner-8.0.24.0.jar
     </item>
     <item>
       <title>JEEConf - Kiev, 2015 - Report</title>
-      <link>http://halyph.com/blog/2015/05/25/jeeconf-kiev.html</link>
+      <link>https://halyph.com/blog/2015/05/25/jeeconf-kiev.html</link>
       <pubDate>Mon, 25 May 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/05/25/jeeconf-kiev.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/jeeconf.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/jeeconf.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;It happened again - I attend &lt;a href=&quot;http://jeeconf.com&quot;&gt;JEEConf&lt;/a&gt;, May 22-23, 2015. And as usual it was inspiring. Also, I can say that &lt;a href=&quot;http://www.scala-lang.org/&quot;&gt;“Scala”&lt;/a&gt; was the most dominated buzz word at this conference.&lt;/p&gt; 
 &lt;p&gt;So, I attended the next talks:&lt;/p&gt; 
 &lt;ul&gt; 
@@ -1922,11 +1922,11 @@ webapp-runner-8.0.24.0.jar
     </item>
     <item>
       <title>Grails 2.5.0 debug in IntelliJ IDEA</title>
-      <link>http://halyph.com/blog/2015/05/19/grails-2-dot-5-0-debug-in-intellij-idea.html</link>
+      <link>https://halyph.com/blog/2015/05/19/grails-2-dot-5-0-debug-in-intellij-idea.html</link>
       <pubDate>Tue, 19 May 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/05/19/grails-2-dot-5-0-debug-in-intellij-idea.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/grails.jpg&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/grails.jpg&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;I’ve been using Grails v.2.5.0 and tried to debug Grails app via traditional Intellij IDEA 14 Debug with no success.&lt;/p&gt; 
 &lt;p&gt;&lt;em&gt;To be short&lt;/em&gt;: using IDEA &lt;em&gt;Debug&lt;/em&gt; allows us debug Grails build system &lt;strong&gt;only&lt;/strong&gt;. Why?&lt;/p&gt; 
 &lt;blockquote&gt; 
@@ -1942,7 +1942,7 @@ webapp-runner-8.0.24.0.jar
 &lt;ul&gt; 
  &lt;li&gt;Create simple Grails &lt;em&gt;Run&lt;/em&gt; configuration with &lt;code&gt;--debug-fork&lt;/code&gt; parameter: &lt;code&gt;run-app --debug-fork&lt;/code&gt;.&lt;br&gt; E.g.&lt;/li&gt; 
 &lt;/ul&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-05-19/idea1.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-05-19/idea1.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;And run this Configuration. We should get the next output&lt;/p&gt; 
 &lt;pre&gt;&lt;code&gt;Listening for transport dt_socket at address: 5005
 |Server running. Browse to http://localhost:8080/TekDays
@@ -1951,7 +1951,7 @@ webapp-runner-8.0.24.0.jar
 &lt;ul&gt; 
  &lt;li&gt;Create IDEA &lt;code&gt;Remote&lt;/code&gt; Configuration (&lt;em&gt;Run/Debug Configuration&lt;/em&gt; -&amp;gt; &lt;em&gt;Remote&lt;/em&gt;)&lt;/li&gt; 
 &lt;/ul&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-05-19/idea2.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-05-19/idea2.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;And run this Configuation. Now, we are able to &lt;em&gt;debug&lt;/em&gt; our application.&lt;/p&gt; 
 &lt;p&gt;The main idea is that we should have two running &lt;em&gt;Configurations&lt;/em&gt;!&lt;/p&gt; 
 &lt;h2&gt;&lt;a href=&quot;#references&quot; id=&quot;references&quot;&gt;References&lt;/a&gt;&lt;/h2&gt; 
@@ -1965,11 +1965,11 @@ webapp-runner-8.0.24.0.jar
     </item>
     <item>
       <title>Go presentation tool</title>
-      <link>http://halyph.com/blog/2015/05/18/golang-presentation-tool.html</link>
+      <link>https://halyph.com/blog/2015/05/18/golang-presentation-tool.html</link>
       <pubDate>Mon, 18 May 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/05/18/golang-presentation-tool.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/gopher.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/gopher.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;Have you ever noticed how Go community presents Go-related talks? Their slides are very simple and without any fancy animation features: see &lt;a href=&quot;http://talks.golang.org&quot;&gt;Go talks&lt;/a&gt;. You might say that they are no so feature-rich as &lt;a href=&quot;https://github.com/hakimel/reveal.js/&quot;&gt;Reveal.js&lt;/a&gt;. And it’s true. But, simplicity is beauty, as for me. Also, it’s very well aligned with Go language philosophy.&lt;/p&gt; 
 &lt;p&gt;So, here is listed steps required to &lt;em&gt;setup&lt;/em&gt; and &lt;em&gt;run&lt;/em&gt; Go &lt;strong&gt;present&lt;/strong&gt; tool.&lt;/p&gt; 
 &lt;h2&gt;&lt;a href=&quot;#install-go&quot; id=&quot;install-go&quot;&gt;Install Go&lt;/a&gt;&lt;/h2&gt; 
@@ -2042,8 +2042,8 @@ Some Text
 2015/05/19 00:55:33 Open your web browser and visit http://127.0.0.1:3999
 &lt;/code&gt;&lt;/pre&gt; 
 &lt;p&gt;You should see something like this:&lt;/p&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-05-19/pic1.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-05-19/pic2.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-05-19/pic1.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-05-19/pic2.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;Go &lt;strong&gt;present&lt;/strong&gt; works and you are ready to produce &lt;em&gt;Go-fashion&lt;/em&gt; slides.&lt;/p&gt; 
 &lt;h2&gt;&lt;a href=&quot;#references&quot; id=&quot;references&quot;&gt;References&lt;/a&gt;&lt;/h2&gt; 
 &lt;ul&gt; 
@@ -2059,11 +2059,11 @@ Some Text
     </item>
     <item>
       <title>Java full stack web framework</title>
-      <link>http://halyph.com/blog/2015/04/06/java-full-stack-web-framework.html</link>
+      <link>https://halyph.com/blog/2015/04/06/java-full-stack-web-framework.html</link>
       <pubDate>Mon, 6 Apr 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/04/06/java-full-stack-web-framework.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;I believe that everybody knows the most popular full-stack web framework - &lt;a href=&quot;http://rubyonrails.org&quot;&gt;Ruby on Rails&lt;/a&gt;. Of course there are other frameworks for Ruby language, but Rails is the number one. Now, the question: how many full-stack web frameworks exist for Java?&lt;/p&gt; 
 &lt;p&gt;&lt;strong&gt;UPDATE (2016-11-20)&lt;/strong&gt;: &lt;a href=&quot;https://www.cuba-platform.com/blog-tags/open-source&quot;&gt;CUBA Platform is open sourced under Apache License 2.0&lt;/a&gt;&lt;/p&gt; 
 &lt;h2&gt;&lt;a href=&quot;#overview&quot; id=&quot;overview&quot;&gt;Overview&lt;/a&gt;&lt;/h2&gt; 
@@ -2149,11 +2149,11 @@ Some Text
     </item>
     <item>
       <title>Rails Architecture and Scalability</title>
-      <link>http://halyph.com/blog/2015/04/04/rails-architecture-and-scalability-issues.html</link>
+      <link>https://halyph.com/blog/2015/04/04/rails-architecture-and-scalability-issues.html</link>
       <pubDate>Sat, 4 Apr 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2015/04/04/rails-architecture-and-scalability-issues.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/ruby.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/ruby.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;Everybody know when this &lt;em&gt;“Rails doesn’t scale”&lt;/em&gt; has been begun:&lt;/p&gt; 
 &lt;ul&gt; 
  &lt;li&gt;&lt;strong&gt;2009&lt;/strong&gt; &lt;a href=&quot;http://www.artima.com/scalazine/articles/twitter_on_scala.html&quot;&gt;Twitter message queue back-end moved from Ruby to Scala&lt;/a&gt;&lt;/li&gt; 
@@ -2175,7 +2175,7 @@ Some Text
 &lt;p&gt;Let’s review the common Rails deployment approaches (see &lt;a href=&quot;http://www.slideshare.net/jweiss/deployment-with-ruby-on-rails&quot;&gt;Deployment with Ruby on Rails&lt;/a&gt;)&lt;/p&gt; 
 &lt;h3&gt;&lt;a href=&quot;#simple-rails-setup&quot; id=&quot;simple-rails-setup&quot;&gt;Simple Rails Setup&lt;/a&gt;&lt;/h3&gt; 
 &lt;p&gt;One Rails instance handles all requests. Rails is single-threaded: There is only one concurrent request.&lt;/p&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-04-04/pic1.jpg&quot; alt=&quot;blog_post_image_inline_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-04-04/pic1.jpg&quot; alt=&quot;blog_post_image_inline_inline&quot;&gt;&lt;/p&gt; 
 &lt;h3&gt;&lt;a href=&quot;#typical-rails-setup&quot; id=&quot;typical-rails-setup&quot;&gt;Typical Rails Setup&lt;/a&gt;&lt;/h3&gt; 
 &lt;ul&gt; 
  &lt;li&gt;A load-balancer distributes the incoming requests&lt;/li&gt; 
@@ -2183,7 +2183,7 @@ Some Text
  &lt;li&gt;Several Rails instances handle all requests&lt;/li&gt; 
  &lt;li&gt;Number of concurrent requests equals number of Rails instances&lt;/li&gt; 
 &lt;/ul&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-04-04/pic2.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-04-04/pic2.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;h3&gt;&lt;a href=&quot;#application-server-phusion-passenger&quot; id=&quot;application-server-phusion-passenger&quot;&gt;Application server (Phusion Passenger)&lt;/a&gt;&lt;/h3&gt; 
 &lt;ul&gt; 
  &lt;li&gt;Involving Phusion Passenger application server&lt;/li&gt; 
@@ -2192,36 +2192,36 @@ Some Text
  &lt;li&gt;Suitable for mass-hosting&lt;/li&gt; 
  &lt;li&gt;upcoming standard way of deploying Rails&lt;/li&gt; 
 &lt;/ul&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-04-04/pic3.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-04-04/pic3.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;h2&gt;&lt;a href=&quot;#recommended-rails-application-setups&quot; id=&quot;recommended-rails-application-setups&quot;&gt;Recommended Rails Application Setups&lt;/a&gt;&lt;/h2&gt; 
 &lt;h3&gt;&lt;a href=&quot;#small-site&quot; id=&quot;small-site&quot;&gt;Small Site&lt;/a&gt;&lt;/h3&gt; 
 &lt;p&gt;Apache with mod_rails/Phusion Passenger&lt;/p&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-04-04/pic4.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-04-04/pic4.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;h3&gt;&lt;a href=&quot;#medium-site&quot; id=&quot;medium-site&quot;&gt;Medium Site&lt;/a&gt;&lt;/h3&gt; 
 &lt;ul&gt; 
  &lt;li&gt;Apache/Nginx as frontend proxy&lt;/li&gt; 
  &lt;li&gt;Passanger as backend&lt;/li&gt; 
  &lt;li&gt;Deliver static files with Apache/Nginx&lt;/li&gt; 
 &lt;/ul&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-04-04/pic5.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-04-04/pic5.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;h3&gt;&lt;a href=&quot;#large-site&quot; id=&quot;large-site&quot;&gt;Large Site&lt;/a&gt;&lt;/h3&gt; 
 &lt;ul&gt; 
  &lt;li&gt;Redundant load-ballancer&lt;/li&gt; 
  &lt;li&gt;Redundant proxy&lt;/li&gt; 
  &lt;li&gt;Phusion Passenger/mod_rails&lt;/li&gt; 
 &lt;/ul&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-04-04/pic6.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-04-04/pic6.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;h2&gt;&lt;a href=&quot;#scale-up-traditional-rails-application&quot; id=&quot;scale-up-traditional-rails-application&quot;&gt;Scale up Traditional Rails Application&lt;/a&gt;&lt;/h2&gt; 
 &lt;h3&gt;&lt;a href=&quot;#caching&quot; id=&quot;caching&quot;&gt;Caching&lt;/a&gt;&lt;/h3&gt; 
 &lt;p&gt;There might be the cases when it’s not enought and in this case we should start looking in “cashing” direction via involving Memcahed and/or Redis &lt;em&gt;(based on Konstantin’s Gredeskoul slides)&lt;/em&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-04-04/pic7.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-04-04/pic7.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;h3&gt;&lt;a href=&quot;#long-runnint-task-scaling&quot; id=&quot;long-runnint-task-scaling&quot;&gt;Long-runnint task scaling&lt;/a&gt;&lt;/h3&gt; 
 &lt;p&gt;&lt;em&gt;(based on Konstantin’s Gredeskoul slides)&lt;/em&gt;&lt;/p&gt; 
 &lt;ul&gt; 
  &lt;li&gt;Background jobs with Reques (it sits on top of Redis)&lt;/li&gt; 
  &lt;li&gt;Use Solr/Elasticsearch instead of doing complex joins&lt;/li&gt; 
 &lt;/ul&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-04-04/pic8.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-04-04/pic8.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;h2&gt;&lt;a href=&quot;#rails-moving-towards-soa-and-micro-services&quot; id=&quot;rails-moving-towards-soa-and-micro-services&quot;&gt;Rails moving towards SOA and micro services&lt;/a&gt;&lt;/h2&gt; 
 &lt;p&gt;The shown above architectures are related to &lt;strong&gt;Monolith Architecture&lt;/strong&gt;. This type of architecture has some problems:&lt;/p&gt; 
 &lt;ul&gt; 
@@ -2257,15 +2257,15 @@ Some Text
    &lt;li&gt;Create shared based client gem library&lt;/li&gt; 
   &lt;/ul&gt; &lt;/li&gt; 
 &lt;/ul&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-04-04/pic9.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-04-04/pic9.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;h3&gt;&lt;a href=&quot;#reference-sample-service-orienter-micro-service-architecture&quot; id=&quot;reference-sample-service-orienter-micro-service-architecture&quot;&gt;Reference (sample) service orienter / micro service architecture&lt;/a&gt;&lt;/h3&gt; 
 &lt;p&gt;Now, we have more than one Rails application and many service which are communicating using messaging, distributed cashed, etc.&lt;/p&gt; 
 &lt;h4&gt;&lt;a href=&quot;#groupon&quot; id=&quot;groupon&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/halyph/architecture-case-study/blob/master/groupon.md&quot;&gt;Groupon&lt;/a&gt;&lt;/h4&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-04-04/pic10.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-04-04/pic10.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;h4&gt;&lt;a href=&quot;#flipcart&quot; id=&quot;flipcart&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/halyph/architecture-case-study/blob/master/flipcart.md&quot;&gt;Flipcart&lt;/a&gt;&lt;/h4&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-04-04/pic11.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-04-04/pic11.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;h4&gt;&lt;a href=&quot;#gilt&quot; id=&quot;gilt&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/halyph/architecture-case-study/blob/master/gilt.md&quot;&gt;Gilt&lt;/a&gt;&lt;/h4&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/2015-04-04/pic12.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/2015-04-04/pic12.jpg&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;I’ve collect much more case studies, see &lt;a href=&quot;https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies&quot;&gt;here&lt;/a&gt;.&lt;/p&gt; 
 &lt;h2&gt;&lt;a href=&quot;#conclusion&quot; id=&quot;conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/h2&gt; 
 &lt;p&gt;Moving Monolith Rails application to micro service architecture it’s not one shot action. It’s long run with lots of trade offs. And more over, micro service architecture is not silver bullet, it’s just one alternative way to scale your application (see [Recommended Rails Application Setups][#Recommended.Rails.Application.Setups]).&lt;/p&gt; 
@@ -2309,7 +2309,7 @@ Some Text
     </item>
     <item>
       <title>How to download jars from Maven Central</title>
-      <link>http://halyph.com/blog/2015/03/17/how-to-download-jars-from-maven-central.html</link>
+      <link>https://halyph.com/blog/2015/03/17/how-to-download-jars-from-maven-central.html</link>
       <pubDate>Tue, 17 Mar 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/03/17/how-to-download-jars-from-maven-central.html</guid>
       	<description>
@@ -2410,11 +2410,11 @@ resolveArtifact( &apos;log4j&apos;, &apos;log4j&apos;, &apos;1.2.16&apos; )
     </item>
     <item>
       <title>How to Install Octopress on Windows?</title>
-      <link>http://halyph.com/blog/2015/02/17/how-to-install-octopress-on-windows.html</link>
+      <link>https://halyph.com/blog/2015/02/17/how-to-install-octopress-on-windows.html</link>
       <pubDate>Tue, 17 Feb 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/02/17/how-to-install-octopress-on-windows.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/ruby.png&quot; alt=&quot;blog_post_image_штдшту&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/ruby.png&quot; alt=&quot;blog_post_image_штдшту&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;I’ve been using &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; on Mac OS X (i.e. have no problem). But, recently I’ve decided to run my blog on Windows machine and felt pain. Ahh, &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; uses bunch of native extentions which actually cause a lot of cross-platform issues. My first attempt was to try &lt;a href=&quot;http://jruby.org/&quot;&gt;JRuby&lt;/a&gt; due to his better Windows support, but got this:&lt;/p&gt; 
 &lt;pre&gt;&lt;code&gt;$ bundle install
 Fetching gem metadata from https://rubygems.org/.........
@@ -2516,11 +2516,11 @@ D:/Tools/Ruby/Ruby21-x64/lib/ruby/2.1.0/rubygems.rb
     </item>
     <item>
       <title>Maven Flow for Simple App Creation</title>
-      <link>http://halyph.com/blog/2015/02/13/maven-flow-for-simple-app-creation.html</link>
+      <link>https://halyph.com/blog/2015/02/13/maven-flow-for-simple-app-creation.html</link>
       <pubDate>Fri, 13 Feb 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/02/13/maven-flow-for-simple-app-creation.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;I provided my reflections about &lt;em&gt;“Java for Everything”&lt;/em&gt; in the previous &lt;a href=&quot;/blog/2015/02/13/do-we-need-java-for-everything&quot;&gt;post&lt;/a&gt;.&lt;br&gt; Here we will review other implementation of this concept.&lt;/p&gt; 
 &lt;p&gt;I have the next concerns about any Java application (big or small):&lt;/p&gt; 
 &lt;ul&gt; 
@@ -2917,11 +2917,11 @@ $ target/appassembler/bin/app
     </item>
     <item>
       <title>Do We Need Java for Everything?</title>
-      <link>http://halyph.com/blog/2015/02/12/do-we-need-java-for-everything.html</link>
+      <link>https://halyph.com/blog/2015/02/12/do-we-need-java-for-everything.html</link>
       <pubDate>Thu, 12 Feb 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/02/12/do-we-need-java-for-everything.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;Some time ago one guy wrote a post &lt;a href=&quot;http://www.teamten.com/lawrence/writings/java-for-everything.html&quot;&gt;Java for Everything&lt;/a&gt;. The main idea is to use Java even for shell scripting.&lt;/p&gt; 
 &lt;blockquote&gt; 
  &lt;p&gt;I’m even taking this to an extreme and using Java for shell scripts. I’ve found that anything other than a simple wrapper shell script eventually grows to the point where I’m looking up the arcane syntax for removing some middle element from an array in bash … Write it in Java to start with. If shelling out to run commands is clumsy, write a utility function to make it easy.&lt;br&gt; I’ve also written a &lt;em&gt;java_launcher&lt;/em&gt; shell script that allows me to write this at the top of Java programs:&lt;/p&gt; 
@@ -3065,11 +3065,11 @@ class Example {
     </item>
     <item>
       <title>How to Generate PermGen leak?</title>
-      <link>http://halyph.com/blog/2015/02/05/how-to-generate-permgen.html</link>
+      <link>https://halyph.com/blog/2015/02/05/how-to-generate-permgen.html</link>
       <pubDate>Thu, 5 Feb 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/02/05/how-to-generate-permgen.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;I’m sure that a lot of Java developers experienced &lt;code&gt;java.lang.OutOfMemoryError: PermGen space&lt;/code&gt; (OOME PermGen). It was very common to get this error after multiple WAR re-deploys on Tomcat v.6.x. Permanent generation (PermGen) region of memory is used to store the internal representation of loaded classes (and much more, see here &lt;a href=&quot;1&quot;&gt;1&lt;/a&gt; and &lt;a href=&quot;2&quot;&gt;2&lt;/a&gt;).&lt;/p&gt; 
 &lt;p&gt;So, we can get &lt;strong&gt;OOME PermGen&lt;/strong&gt; when ClassLoader whats to store class definition, but there is not enough space in PermGen - i.e. loaded too many classes.&lt;/p&gt; 
 &lt;p&gt;Based on this &lt;strong&gt;OOME PermGen&lt;/strong&gt; error can be generated via:&lt;/p&gt; 
@@ -3249,11 +3249,11 @@ Exception in thread &quot;main&quot; java.lang.OutOfMemoryError: PermGen space
     </item>
     <item>
       <title>Scripting in Scala</title>
-      <link>http://halyph.com/blog/2015/02/03/scripting-in-scala.html</link>
+      <link>https://halyph.com/blog/2015/02/03/scripting-in-scala.html</link>
       <pubDate>Mon, 2 Feb 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/02/03/scripting-in-scala.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/scala.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/scala.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;Scala language compiles sources code to Java bytecode. But, it has some nice scripting facilities. Let’s review them.&lt;/p&gt; 
 &lt;p&gt;So, the &lt;code&gt;scala&lt;/code&gt; command is also a shell-script wrapper around the java command.&lt;/p&gt; 
 &lt;p&gt;According to official &lt;a href=&quot;http://www.scala-lang.org/files/archive/nightly/docs-2.10.1/manual/html/scala.html&quot;&gt;scala utility&lt;/a&gt; documentation (here highlighted only post-related notes):&lt;/p&gt; 
@@ -3421,11 +3421,11 @@ exec scala -classpath &quot;lib/lib.1.jar:lib/lib.2.jar&quot; &quot;$0&quot; &qu
     </item>
     <item>
       <title>How to Use Embedded H2 with web Console?</title>
-      <link>http://halyph.com/blog/2015/01/22/how-to-use-embedded-h2-with-h2-console.html</link>
+      <link>https://halyph.com/blog/2015/01/22/how-to-use-embedded-h2-with-h2-console.html</link>
       <pubDate>Thu, 22 Jan 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/01/22/how-to-use-embedded-h2-with-h2-console.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/java.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;There are several Java SQL databases which supports both server and embedded modes: &lt;a href=&quot;http://www.h2database.com/&quot;&gt;H2&lt;/a&gt;, &lt;a href=&quot;http://hsqldb.org/&quot;&gt;HSQLDB&lt;/a&gt; and &lt;a href=&quot;http://db.apache.org/derby/&quot;&gt;Derby&lt;/a&gt;. The most interesting for me is H2 with own web &lt;a href=&quot;http://www.h2database.com/html/quickstart.html#h2_console&quot;&gt;Console&lt;/a&gt;.&lt;/p&gt; 
 &lt;p&gt;The aim of this post is to show how to connect from H2 Console to embedded in-memory H2.&lt;/p&gt; 
 &lt;blockquote&gt; 
@@ -3514,9 +3514,9 @@ Press [Enter] to stop.
    &lt;li&gt;&lt;strong&gt;Username:&lt;/strong&gt; sa&lt;/li&gt; 
    &lt;li&gt;&lt;strong&gt;Password:&lt;/strong&gt; sa&lt;/li&gt; 
   &lt;/ul&gt; &lt;/li&gt; 
- &lt;li&gt;Login window (opened from shell by &lt;code&gt;org.h2.tools.Console&lt;/code&gt;)&lt;br&gt; &lt;img src=&quot;http://halyph.com/images/posts/h2console_login.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/li&gt; 
+ &lt;li&gt;Login window (opened from shell by &lt;code&gt;org.h2.tools.Console&lt;/code&gt;)&lt;br&gt; &lt;img src=&quot;https://halyph.com/images/posts/h2console_login.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/li&gt; 
 &lt;/ul&gt; 
-&lt;p&gt;Verify that our custom table contains just inserted values&lt;br&gt; &lt;img src=&quot;http://halyph.com/images/posts/h2console_sqlwindow.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;Verify that our custom table contains just inserted values&lt;br&gt; &lt;img src=&quot;https://halyph.com/images/posts/h2console_sqlwindow.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;h3&gt;&lt;a href=&quot;#add-embedded-tcp-and-web-servers&quot; id=&quot;add-embedded-tcp-and-web-servers&quot;&gt;Add Embedded TCP and Web Servers&lt;/a&gt;&lt;/h3&gt; 
 &lt;p&gt;Now, it’s time to add small improvements.&lt;br&gt; The idea is to switch &lt;em&gt;on&lt;/em&gt; H2 Console &lt;strong&gt;Web Server&lt;/strong&gt; and &lt;strong&gt;TCP Server&lt;/strong&gt; to have external access.&lt;br&gt; We should add/update item (4) in previous code snippets like this&lt;/p&gt; 
 &lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class App {
@@ -3546,7 +3546,7 @@ Press [Enter] to stop.
    &lt;li&gt;access to &lt;strong&gt;TCP Server&lt;/strong&gt;&lt;/li&gt; 
   &lt;/ul&gt; &lt;/li&gt; 
 &lt;/ul&gt; 
-&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/posts/h2console_idea.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/posts/h2console_idea.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;h2&gt;&lt;a href=&quot;#references&quot; id=&quot;references&quot;&gt;References&lt;/a&gt;&lt;/h2&gt; 
 &lt;ol&gt; 
  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/5077584/h2-database-in-memory-mode-cannot-be-accessed-by-console&quot;&gt;H2 database in memory mode cannot be accessed by Console&lt;/a&gt;&lt;/li&gt; 
@@ -3558,11 +3558,11 @@ Press [Enter] to stop.
     </item>
     <item>
       <title>How to Fix Textmate OSX Yosemite ruby 1.8 issues?</title>
-      <link>http://halyph.com/blog/2014/11/16/how-to-fix-textmate-osx-yosemite-ruby-1-dot-8-issues.html</link>
+      <link>https://halyph.com/blog/2014/11/16/how-to-fix-textmate-osx-yosemite-ruby-1-dot-8-issues.html</link>
       <pubDate>Sun, 16 Nov 2014 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2014/11/16/how-to-fix-textmate-osx-yosemite-ruby-1-dot-8-issues.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/textmate.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/textmate.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;Textmate 2.0 is using Ruby 1.8 in own bundles. OSX Yosemite dropped Ruby 1.8 as default Ruby implementation, now it’s Ruby 2.0. Based on this all Textmate ruby-based (legacy) bundles do not work. It can be fixed in several steps:&lt;/p&gt; 
 &lt;ul&gt; 
  &lt;li&gt;Install Ruby 1.8.x via some Ruby version manager (e.g. rvm)&lt;/li&gt; 
@@ -3648,18 +3648,18 @@ Please consider upgrading to ruby-2.1.4 which will have all of the latest securi
 Ruby was built without documentation, to build it run: rvm docs generate-ri
 &lt;/code&gt;&lt;/pre&gt; 
 &lt;ul&gt; 
- &lt;li&gt; &lt;p&gt;Update Textmate preferences&lt;br&gt; &lt;img src=&quot;http://halyph.com/images/posts/textmate_prefs_ruby.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;Update Textmate preferences&lt;br&gt; &lt;img src=&quot;https://halyph.com/images/posts/textmate_prefs_ruby.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; &lt;/li&gt; 
  &lt;li&gt; &lt;p&gt;Verify “updated” Textmate settings via some ruby-based bundles,&lt;br&gt; e.g. &lt;code&gt;Bundles-&amp;gt;Text-&amp;gt;Duplicate Line&lt;/code&gt;&lt;/p&gt; &lt;/li&gt; 
 &lt;/ul&gt;
 	</description>
     </item>
     <item>
       <title>Switching to Textmate 2</title>
-      <link>http://halyph.com/blog/2014/10/20/switching-to-textmate-2.html</link>
+      <link>https://halyph.com/blog/2014/10/20/switching-to-textmate-2.html</link>
       <pubDate>Mon, 20 Oct 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2014/10/20/switching-to-textmate-2.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/textmate.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/textmate.png&quot; alt=&quot;blog_post_image&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;Recently I’ve decided to switch from Sublime Text editor to &lt;a href=&quot;http://macromates.com&quot;&gt;TextMate 2&lt;/a&gt;. At the beginning of &lt;a href=&quot;http://rubyonrails.org/&quot;&gt;Rails&lt;/a&gt; “era” it was the sexiest text editor in the world. But, at that time, I was a Windows user ;-)&lt;/p&gt; 
 &lt;p&gt;I was inspired by &lt;a href=&quot;http://blog.agiledeveloper.com/&quot;&gt;Venkat Subramaniam&lt;/a&gt; to make this switch in 2014. Dr. Venkant is using Textmate during his conference live coding for years.&lt;/p&gt; 
 &lt;p&gt;Additional argument for switching is the fact that Textmate 2 is &lt;a href=&quot;https://github.com/textmate/textmate&quot;&gt;open sourced&lt;/a&gt;.&lt;/p&gt; 
@@ -3676,11 +3676,11 @@ Ruby was built without documentation, to build it run: rvm docs generate-ri
     </item>
     <item>
       <title>How to use block comments in Bash Script</title>
-      <link>http://halyph.com/blog/2014/10/09/bash-block-comments.html</link>
+      <link>https://halyph.com/blog/2014/10/09/bash-block-comments.html</link>
       <pubDate>Thu, 9 Oct 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2014/10/09/bash-block-comments.html</guid>
       	<description>
-	&lt;p&gt;&lt;img src=&quot;http://halyph.com/images/blog/bash.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
+	&lt;p&gt;&lt;img src=&quot;https://halyph.com/images/blog/bash.png&quot; alt=&quot;blog_post_image_inline&quot;&gt;&lt;/p&gt; 
 &lt;p&gt;What is the simplest way to define block comment in Bash script?&lt;/p&gt; 
 &lt;p&gt;I’ve selected two approaches for myself:&lt;/p&gt; 
 &lt;ul&gt; 
@@ -3713,7 +3713,7 @@ echo &quot;after block comment&quot;
     </item>
     <item>
       <title>Migration to Octopress</title>
-      <link>http://halyph.com/blog/2014/09/07/migration-to-octopress.html</link>
+      <link>https://halyph.com/blog/2014/09/07/migration-to-octopress.html</link>
       <pubDate>Sun, 7 Sep 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2014/09/07/migration-to-octopress.html</guid>
       	<description>
@@ -3747,7 +3747,7 @@ echo &quot;after block comment&quot;
     </item>
     <item>
       <title>Java Code Quality Tools - Overview</title>
-      <link>http://halyph.com/blog/2011/08/31/java-code-quality-tools-overview.html</link>
+      <link>https://halyph.com/blog/2011/08/31/java-code-quality-tools-overview.html</link>
       <pubDate>Wed, 31 Aug 2011 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2011/08/31/java-code-quality-tools-overview.html</guid>
       	<description>
@@ -3909,7 +3909,7 @@ echo &quot;after block comment&quot;
     </item>
     <item>
       <title>Why I have chosen Ruby as main scripting language for my toolbox</title>
-      <link>http://halyph.com/blog/2009/12/27/why-i-chosen-ruby-as-main-scripting.html</link>
+      <link>https://halyph.com/blog/2009/12/27/why-i-chosen-ruby-as-main-scripting.html</link>
       <pubDate>Sun, 27 Dec 2009 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2009/12/27/why-i-chosen-ruby-as-main-scripting.html</guid>
       	<description>
@@ -3917,7 +3917,7 @@ echo &quot;after block comment&quot;
  &lt;div class=&quot;sectionbody&quot;&gt; 
   &lt;div class=&quot;imageblock&quot; style=&quot;float: right&quot;&gt; 
    &lt;div class=&quot;content&quot;&gt; 
-    &lt;img src=&quot;http://halyph.com/images/blog/ruby.png&quot; alt=&quot;ruby&quot;&gt; 
+    &lt;img src=&quot;https://halyph.com/images/blog/ruby.png&quot; alt=&quot;ruby&quot;&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
   &lt;div class=&quot;paragraph&quot;&gt; 
@@ -3984,7 +3984,7 @@ echo &quot;after block comment&quot;
     </item>
     <item>
       <title>*nix-like environments for Windows</title>
-      <link>http://halyph.com/blog/2009/11/18/nix-like-environments-for-windows.html</link>
+      <link>https://halyph.com/blog/2009/11/18/nix-like-environments-for-windows.html</link>
       <pubDate>Wed, 18 Nov 2009 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2009/11/18/nix-like-environments-for-windows.html</guid>
       	<description>
@@ -4015,7 +4015,7 @@ echo &quot;after block comment&quot;
     </item>
     <item>
       <title>GNUstep Getting Started</title>
-      <link>http://halyph.com/blog/2009/11/08/gnustep-getting-started.html</link>
+      <link>https://halyph.com/blog/2009/11/08/gnustep-getting-started.html</link>
       <pubDate>Sun, 8 Nov 2009 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2009/11/08/gnustep-getting-started.html</guid>
       	<description>
@@ -4026,7 +4026,7 @@ echo &quot;after block comment&quot;
   &lt;/div&gt; 
   &lt;div class=&quot;imageblock&quot; style=&quot;float: center&quot;&gt; 
    &lt;div class=&quot;content&quot;&gt; 
-    &lt;img src=&quot;http://halyph.com/blog/2009/11/08/TIOBE-objc-2009.gif&quot; alt=&quot;TIOBE objc 2009&quot;&gt; 
+    &lt;img src=&quot;https://halyph.com/blog/2009/11/08/TIOBE-objc-2009.gif&quot; alt=&quot;TIOBE objc 2009&quot;&gt; 
    &lt;/div&gt; 
   &lt;/div&gt; 
   &lt;div class=&quot;paragraph&quot;&gt; 
@@ -4052,7 +4052,7 @@ echo &quot;after block comment&quot;
    &lt;/ul&gt; 
   &lt;/div&gt; 
   &lt;div class=&quot;paragraph&quot;&gt; 
-   &lt;p&gt;My choice is &lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://halyph.com/blog/2009/11/08/gnustep-header14.png&quot; alt=&quot;GNUstep&quot;&gt;&lt;/span&gt;&lt;/p&gt; 
+   &lt;p&gt;My choice is &lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;https://halyph.com/blog/2009/11/08/gnustep-header14.png&quot; alt=&quot;GNUstep&quot;&gt;&lt;/span&gt;&lt;/p&gt; 
   &lt;/div&gt; 
   &lt;div class=&quot;paragraph&quot;&gt; 
    &lt;p&gt;Here is the useful links for quick start:&lt;/p&gt; 
@@ -4091,7 +4091,7 @@ echo &quot;after block comment&quot;
     </item>
     <item>
       <title>Syntax Highlighting Code in Blogger</title>
-      <link>http://halyph.com/blog/2009/08/29/syntaxt-highlighting-in-blogger.html</link>
+      <link>https://halyph.com/blog/2009/08/29/syntaxt-highlighting-in-blogger.html</link>
       <pubDate>Sat, 29 Aug 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2009/08/29/syntaxt-highlighting-in-blogger.html</guid>
       	<description>
@@ -4123,7 +4123,7 @@ echo &quot;after block comment&quot;
     </item>
     <item>
       <title>Rails 2.3 migration issues with MySQL 5.1.3</title>
-      <link>http://halyph.com/blog/2009/08/26/rails-23-migration-issues-with-mysql_26.html</link>
+      <link>https://halyph.com/blog/2009/08/26/rails-23-migration-issues-with-mysql_26.html</link>
       <pubDate>Wed, 26 Aug 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2009/08/26/rails-23-migration-issues-with-mysql_26.html</guid>
       	<description>
@@ -4177,7 +4177,7 @@ d:/Tools/Ruby/bin/rake:19&lt;/pre&gt;
     </item>
     <item>
       <title>Top Ruby screencast resources</title>
-      <link>http://halyph.com/blog/2009/06/03/ruby-screencast-resources.html</link>
+      <link>https://halyph.com/blog/2009/06/03/ruby-screencast-resources.html</link>
       <pubDate>Wed, 3 Jun 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">blog/2009/06/03/ruby-screencast-resources.html</guid>
       	<description>
@@ -4212,7 +4212,7 @@ d:/Tools/Ruby/bin/rake:19&lt;/pre&gt;
     </item>
     <item>
       <title>Effective way to be an Expert</title>
-      <link>http://halyph.com/blog/2009/03/16/effective-way-to-be-expert.html</link>
+      <link>https://halyph.com/blog/2009/03/16/effective-way-to-be-expert.html</link>
       <pubDate>Mon, 16 Mar 2009 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2009/03/16/effective-way-to-be-expert.html</guid>
       	<description>

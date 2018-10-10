@@ -87,7 +87,7 @@
 		<a href="/tags/architecture.html">architecture</a> | 
 	</p>
 
-	<p><p><img src="http://halyph.com/images/blog/ruby.png" alt="blog_post_image"></p> 
+	<p><p><img src="https://halyph.com/images/blog/ruby.png" alt="blog_post_image"></p> 
 <p>Everybody know when this <em>“Rails doesn’t scale”</em> has been begun:</p> 
 <ul> 
  <li><strong>2009</strong> <a href="http://www.artima.com/scalazine/articles/twitter_on_scala.html">Twitter message queue back-end moved from Ruby to Scala</a></li> 
@@ -109,7 +109,7 @@
 <p>Let’s review the common Rails deployment approaches (see <a href="http://www.slideshare.net/jweiss/deployment-with-ruby-on-rails">Deployment with Ruby on Rails</a>)</p> 
 <h3><a href="#simple-rails-setup" id="simple-rails-setup">Simple Rails Setup</a></h3> 
 <p>One Rails instance handles all requests. Rails is single-threaded: There is only one concurrent request.</p> 
-<p><img src="http://halyph.com/images/posts/2015-04-04/pic1.jpg" alt="blog_post_image_inline_inline"></p> 
+<p><img src="https://halyph.com/images/posts/2015-04-04/pic1.jpg" alt="blog_post_image_inline_inline"></p> 
 <h3><a href="#typical-rails-setup" id="typical-rails-setup">Typical Rails Setup</a></h3> 
 <ul> 
  <li>A load-balancer distributes the incoming requests</li> 
@@ -117,7 +117,7 @@
  <li>Several Rails instances handle all requests</li> 
  <li>Number of concurrent requests equals number of Rails instances</li> 
 </ul> 
-<p><img src="http://halyph.com/images/posts/2015-04-04/pic2.jpg" alt="blog_post_image_inline"></p> 
+<p><img src="https://halyph.com/images/posts/2015-04-04/pic2.jpg" alt="blog_post_image_inline"></p> 
 <h3><a href="#application-server-phusion-passenger" id="application-server-phusion-passenger">Application server (Phusion Passenger)</a></h3> 
 <ul> 
  <li>Involving Phusion Passenger application server</li> 
@@ -126,36 +126,36 @@
  <li>Suitable for mass-hosting</li> 
  <li>upcoming standard way of deploying Rails</li> 
 </ul> 
-<p><img src="http://halyph.com/images/posts/2015-04-04/pic3.jpg" alt="blog_post_image_inline"></p> 
+<p><img src="https://halyph.com/images/posts/2015-04-04/pic3.jpg" alt="blog_post_image_inline"></p> 
 <h2><a href="#recommended-rails-application-setups" id="recommended-rails-application-setups">Recommended Rails Application Setups</a></h2> 
 <h3><a href="#small-site" id="small-site">Small Site</a></h3> 
 <p>Apache with mod_rails/Phusion Passenger</p> 
-<p><img src="http://halyph.com/images/posts/2015-04-04/pic4.jpg" alt="blog_post_image_inline"></p> 
+<p><img src="https://halyph.com/images/posts/2015-04-04/pic4.jpg" alt="blog_post_image_inline"></p> 
 <h3><a href="#medium-site" id="medium-site">Medium Site</a></h3> 
 <ul> 
  <li>Apache/Nginx as frontend proxy</li> 
  <li>Passanger as backend</li> 
  <li>Deliver static files with Apache/Nginx</li> 
 </ul> 
-<p><img src="http://halyph.com/images/posts/2015-04-04/pic5.jpg" alt="blog_post_image_inline"></p> 
+<p><img src="https://halyph.com/images/posts/2015-04-04/pic5.jpg" alt="blog_post_image_inline"></p> 
 <h3><a href="#large-site" id="large-site">Large Site</a></h3> 
 <ul> 
  <li>Redundant load-ballancer</li> 
  <li>Redundant proxy</li> 
  <li>Phusion Passenger/mod_rails</li> 
 </ul> 
-<p><img src="http://halyph.com/images/posts/2015-04-04/pic6.jpg" alt="blog_post_image_inline"></p> 
+<p><img src="https://halyph.com/images/posts/2015-04-04/pic6.jpg" alt="blog_post_image_inline"></p> 
 <h2><a href="#scale-up-traditional-rails-application" id="scale-up-traditional-rails-application">Scale up Traditional Rails Application</a></h2> 
 <h3><a href="#caching" id="caching">Caching</a></h3> 
 <p>There might be the cases when it’s not enought and in this case we should start looking in “cashing” direction via involving Memcahed and/or Redis <em>(based on Konstantin’s Gredeskoul slides)</em></p> 
-<p><img src="http://halyph.com/images/posts/2015-04-04/pic7.jpg" alt="blog_post_image_inline"></p> 
+<p><img src="https://halyph.com/images/posts/2015-04-04/pic7.jpg" alt="blog_post_image_inline"></p> 
 <h3><a href="#long-runnint-task-scaling" id="long-runnint-task-scaling">Long-runnint task scaling</a></h3> 
 <p><em>(based on Konstantin’s Gredeskoul slides)</em></p> 
 <ul> 
  <li>Background jobs with Reques (it sits on top of Redis)</li> 
  <li>Use Solr/Elasticsearch instead of doing complex joins</li> 
 </ul> 
-<p><img src="http://halyph.com/images/posts/2015-04-04/pic8.jpg" alt="blog_post_image_inline"></p> 
+<p><img src="https://halyph.com/images/posts/2015-04-04/pic8.jpg" alt="blog_post_image_inline"></p> 
 <h2><a href="#rails-moving-towards-soa-and-micro-services" id="rails-moving-towards-soa-and-micro-services">Rails moving towards SOA and micro services</a></h2> 
 <p>The shown above architectures are related to <strong>Monolith Architecture</strong>. This type of architecture has some problems:</p> 
 <ul> 
@@ -191,15 +191,15 @@
    <li>Create shared based client gem library</li> 
   </ul> </li> 
 </ul> 
-<p><img src="http://halyph.com/images/posts/2015-04-04/pic9.jpg" alt="blog_post_image_inline"></p> 
+<p><img src="https://halyph.com/images/posts/2015-04-04/pic9.jpg" alt="blog_post_image_inline"></p> 
 <h3><a href="#reference-sample-service-orienter-micro-service-architecture" id="reference-sample-service-orienter-micro-service-architecture">Reference (sample) service orienter / micro service architecture</a></h3> 
 <p>Now, we have more than one Rails application and many service which are communicating using messaging, distributed cashed, etc.</p> 
 <h4><a href="#groupon" id="groupon"></a><a href="https://github.com/halyph/architecture-case-study/blob/master/groupon.md">Groupon</a></h4> 
-<p><img src="http://halyph.com/images/posts/2015-04-04/pic10.png" alt="blog_post_image_inline"></p> 
+<p><img src="https://halyph.com/images/posts/2015-04-04/pic10.png" alt="blog_post_image_inline"></p> 
 <h4><a href="#flipcart" id="flipcart"></a><a href="https://github.com/halyph/architecture-case-study/blob/master/flipcart.md">Flipcart</a></h4> 
-<p><img src="http://halyph.com/images/posts/2015-04-04/pic11.jpg" alt="blog_post_image_inline"></p> 
+<p><img src="https://halyph.com/images/posts/2015-04-04/pic11.jpg" alt="blog_post_image_inline"></p> 
 <h4><a href="#gilt" id="gilt"></a><a href="https://github.com/halyph/architecture-case-study/blob/master/gilt.md">Gilt</a></h4> 
-<p><img src="http://halyph.com/images/posts/2015-04-04/pic12.jpg" alt="blog_post_image_inline"></p> 
+<p><img src="https://halyph.com/images/posts/2015-04-04/pic12.jpg" alt="blog_post_image_inline"></p> 
 <p>I’ve collect much more case studies, see <a href="https://github.com/halyph/architecture-case-study#ruby-on-rails-architecture-case-studies">here</a>.</p> 
 <h2><a href="#conclusion" id="conclusion">Conclusion</a></h2> 
 <p>Moving Monolith Rails application to micro service architecture it’s not one shot action. It’s long run with lots of trade offs. And more over, micro service architecture is not silver bullet, it’s just one alternative way to scale your application (see [Recommended Rails Application Setups][#Recommended.Rails.Application.Setups]).</p> 
@@ -245,7 +245,7 @@
 	<div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = 'kie-by-halyph';
-		var disqus_identifier = 'http://halyph.com/blog/2015/04/04/rails-architecture-and-scalability-issues.html';
+		var disqus_identifier = 'https://halyph.com/blog/2015/04/04/rails-architecture-and-scalability-issues.html';
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
