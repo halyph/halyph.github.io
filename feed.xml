@@ -6,8 +6,8 @@
     <atom:link href="https://halyph.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Wed, 10 Oct 2018 23:58:55 +0200</pubDate>
-    <lastBuildDate>Wed, 10 Oct 2018 23:58:55 +0200</lastBuildDate>
+    <pubDate>Thu, 11 Oct 2018 00:05:42 +0200</pubDate>
+    <lastBuildDate>Thu, 11 Oct 2018 00:05:42 +0200</lastBuildDate>
 
     <item>
       <title>Scala Days - Berlin, 2018 - Report</title>
@@ -1244,10 +1244,10 @@ SUM:                          3706          71728          55050         318570
   &lt;div class=&quot;ulist&quot;&gt; 
    &lt;ul&gt; 
     &lt;li&gt; &lt;p&gt;&lt;a href=&quot;/blog/2015/05/25/jeeconf-kiev.html&quot;&gt;JEEConf — Kiev, 2015 — Report&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; 
-    &lt;li&gt; &lt;p&gt;&lt;a href=&quot;http://halyph.com/old-octopress-blog/2014/05/jeeconf-kiev-2014-report.html&quot;&gt;JEEConf — Kiev, 2014 — Report&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; 
-    &lt;li&gt; &lt;p&gt;&lt;a href=&quot;http://halyph.com/old-octopress-blog/blog/2013/05/27/jeeconf-kiev-2013-report/&quot;&gt;JEEConf — Kiev, 2013 — Report&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; 
-    &lt;li&gt; &lt;p&gt;&lt;a href=&quot;http://halyph.com/old-octopress-blog/blog/2012/05/20/this-year-we-had-second-jeeconf/&quot;&gt;JEEConf — Kiev, 2012 — Report&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; 
-    &lt;li&gt; &lt;p&gt;&lt;a href=&quot;http://halyph.com/old-octopress-blog/blog/2011/05/24/jeeconf-kiev-2011-report/&quot;&gt;JEEConf — Kiev, 2011 — Report&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; 
+    &lt;li&gt; &lt;p&gt;&lt;a href=&quot;https://halyph.com/old-octopress-blog/2014/05/jeeconf-kiev-2014-report.html&quot;&gt;JEEConf — Kiev, 2014 — Report&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; 
+    &lt;li&gt; &lt;p&gt;&lt;a href=&quot;https://halyph.com/old-octopress-blog/blog/2013/05/27/jeeconf-kiev-2013-report/&quot;&gt;JEEConf — Kiev, 2013 — Report&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; 
+    &lt;li&gt; &lt;p&gt;&lt;a href=&quot;https://halyph.com/old-octopress-blog/blog/2012/05/20/this-year-we-had-second-jeeconf/&quot;&gt;JEEConf — Kiev, 2012 — Report&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; 
+    &lt;li&gt; &lt;p&gt;&lt;a href=&quot;https://halyph.com/old-octopress-blog/blog/2011/05/24/jeeconf-kiev-2011-report/&quot;&gt;JEEConf — Kiev, 2011 — Report&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; 
    &lt;/ul&gt; 
   &lt;/div&gt; 
  &lt;/div&gt; 
@@ -1913,10 +1913,10 @@ webapp-runner-8.0.24.0.jar
 &lt;p&gt;&lt;strong&gt;Have fun, love Java!&lt;/strong&gt;&lt;/p&gt; 
 &lt;h2&gt;&lt;a href=&quot;#references&quot; id=&quot;references&quot;&gt;References&lt;/a&gt;&lt;/h2&gt; 
 &lt;ul&gt; 
- &lt;li&gt;&lt;a href=&quot;http://halyph.com/2014/05/jeeconf-kiev-2014-report.html&quot;&gt;JEEConf - Kiev, 2014 - Report&lt;/a&gt;&lt;/li&gt; 
- &lt;li&gt;&lt;a href=&quot;http://halyph.blogspot.com/2013/05/jeeconf-kiev-2013-report.html&quot;&gt;JEEConf - Kiev, 2013 - Report&lt;/a&gt;&lt;/li&gt; 
- &lt;li&gt;&lt;a href=&quot;http://halyph.blogspot.com/2012/05/this-year-we-had-second-jeeconf.html&quot;&gt;JEEConf - Kiev, 2012 - Report&lt;/a&gt;&lt;/li&gt; 
- &lt;li&gt;&lt;a href=&quot;http://halyph.blogspot.com/2011/05/jeeconf-kiev-2011-report.html&quot;&gt;JEEConf - Kiev, 2011 - Report&lt;/a&gt;&lt;/li&gt; 
+ &lt;li&gt;&lt;a href=&quot;https://halyph.com/2014/05/jeeconf-kiev-2014-report.html&quot;&gt;JEEConf - Kiev, 2014 - Report&lt;/a&gt;&lt;/li&gt; 
+ &lt;li&gt;&lt;a href=&quot;https://halyph.blogspot.com/2013/05/jeeconf-kiev-2013-report.html&quot;&gt;JEEConf - Kiev, 2013 - Report&lt;/a&gt;&lt;/li&gt; 
+ &lt;li&gt;&lt;a href=&quot;https://halyph.blogspot.com/2012/05/this-year-we-had-second-jeeconf.html&quot;&gt;JEEConf - Kiev, 2012 - Report&lt;/a&gt;&lt;/li&gt; 
+ &lt;li&gt;&lt;a href=&quot;https://halyph.blogspot.com/2011/05/jeeconf-kiev-2011-report.html&quot;&gt;JEEConf - Kiev, 2011 - Report&lt;/a&gt;&lt;/li&gt; 
 &lt;/ul&gt;
 	</description>
     </item>
