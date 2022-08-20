@@ -2960,6 +2960,53 @@
 
             
           
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_15" type="checkbox" id="__nav_2_15" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_15">
+          2022
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2022" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_15">
+          <span class="md-nav__icon md-icon"></span>
+          2022
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/2022-08-20-mkdocs-gh-actions/" class="md-nav__link">
+        MkDocs and GitHub Actions
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -3293,57 +3340,72 @@
 <p>| java |</p>
 </blockquote>
 <p>These notes are copy of <a href="https://github.com/xpinjection/java8-misuses">xpinjection/java8-misuses</a> repository.</p>
-<p><strong>Table of Contents</strong>
-- <a href="#domain-model">Domain Model</a>
-- <a href="#1---optional">1 - Optional</a>
-  - <a href="#11---internal-optional-usage">1.1 - Internal Optional Usage</a>
-  - <a href="#12---optional-constructor-parameters">1.2 - Optional Constructor Parameters</a>
-  - <a href="#13---optional-for-resulted-method-returns-collections">1.3 - Optional for resulted (method returns) Collections</a>
-  - <a href="#14---use-flatmap-for-getting-nested-optional-values">1.4 - Use <code>flatMap</code> for getting nested Optional values</a>
-  - <a href="#15---if-statement-with-optional-is-not-always-bad-thing">1.5 - <code>if</code> statement with <code>Optional</code> is not always bad thing</a>
-  - <a href="#16---optional-elvis">1.6 - Optional &ldquo;elvis&rdquo;</a>
-  - <a href="#17---optional-over-engineering-if-not-null-might-be-simpler">1.7 - Optional Over Engineering (<code>if</code> not <code>null</code> might be <em>simpler</em>)</a>
-  - <a href="#18---value-presence-strict-check-chained-ifpresent">1.8 - Value presence strict check (chained <code>ifPresent</code>)</a>
-- <a href="#2---lambdas">2 - Lambdas</a>
-  - <a href="#21---avoid-complex-lambdas">2.1 - Avoid Complex Lambdas</a>
-  - <a href="#22---avoid-long-lambdas">2.2 - Avoid Long Lambdas</a>
-  - <a href="#23---class-design-methods-naming">2.3 - Class Design (methods&rsquo; naming)</a>
-  - <a href="#24---lambdas-are-not-always-the-best-option-method-reference-works-as-well">2.4 - Lambdas are not always the best option (method reference works as well)</a>
-  - <a href="#25---lazy-calculations-improve-performance-log-if-loggerisdebugenabled">2.5 - Lazy calculations improve performance (<em>log</em> if <code>logger.isDebugEnabled()</code>)</a>
-  - <a href="#26---emulate-multimap">2.6 - Emulate Multimap</a>
-  - <a href="#27---sorting-the-list-using-existing-predefined-comparator">2.7 - Sorting the list using existing predefined comparator</a>
-  - <a href="#28---iterating-the-map-foreach-and-map-transform">2.8 - Iterating the map (<code>forEach</code> and map transform)</a>
-  - <a href="#29---remove-with-predicate">2.9 - Remove with predicate</a>
-  - <a href="#210---avoid-code-duplication-with-lambdas">2.10 - Avoid code-duplication with lambdas</a>
-  - <a href="#211---list-of-optionals">2.11 - List of optionals</a>
-  - <a href="#212---checked-exceptions--lambda">2.12 - Checked Exceptions &amp; Lambda</a>
-- <a href="#3---stream-api">3 - Stream API</a>
-  - <a href="#incorrect-usage">Incorrect usage</a>
-    - <a href="#31---forgotten-termin-operation">3.1 - Forgotten termin operation</a>
-    - <a href="#32---infinite-stream">3.2 - Infinite stream</a>
-    - <a href="#33---use-stream-more-than-once">3.3 - Use stream more than once</a>
-  - <a href="#collectors">Collectors</a>
-    - <a href="#34---avoid-foreach-and-apply-mapping-to-target-type">3.4 - Avoid <code>forEach</code> and apply mapping to target type</a>
-    - <a href="#35---collectors-chain">3.5 - Collectors chain</a>
-    - <a href="#36---do-not-use-external-collection-for-grouping">3.6 - Do not use external collection for grouping</a>
-    - <a href="#37---calculate-statistics-in-single-run-with-collector">3.7 - Calculate statistics in single run with collector</a>
-    - <a href="#38---convert-stream-to-array">3.8 - Convert stream to array</a>
-    - <a href="#39---use-functional-approach-when-%22map-reduce%22">3.9 - Use functional approach when &ldquo;map-reduce&rdquo;</a>
-  - <a href="#misuses">Misuses</a>
-    - <a href="#310---stream-generation">3.10 - Stream generation</a>
-    - <a href="#311---use-data-structure-features">3.11 - Use data structure features</a>
-    - <a href="#312---do-not-mix-imperative-code-with-streams">3.12 - Do not mix imperative code with streams</a>
-    - <a href="#313---match-element-in-functional-style">3.13 - Match element in functional style</a>
-    - <a href="#314---nested-foreach-is-anti-pattern">3.14 - Nested <code>forEach</code> is <em>anti-pattern</em></a>
-    - <a href="#315---prefer-specialized-streams">3.15 - Prefer specialized streams</a>
-    - <a href="#316---poor-domain-model-causes-complex-data-access-code">3.16 - Poor Domain Model causes complex Data Access code</a>
-    - <a href="#317---do-not-use-old-style-code-with-new-constructs">3.17 - Do not use old-style code with new constructs</a>
-    - <a href="#318---know-when-to-use-skip-and-limit">3.18 - Know when to use <code>skip</code> and <code>limit</code></a>
-    - <a href="#319---type-of-stream-could-be-changed">3.19 - Type of stream could be changed</a>
-    - <a href="#320---use-stream-to-build-map-is-over-complication">3.20 - Use stream to build map is over-complication</a>
-- <a href="#4---time-api">4 - Time API</a>
-  - <a href="#41---ignore-java-8-time-api">4.1 - Ignore Java 8 Time API</a>
-- <a href="#references">References</a></p>
+<ul>
+<li><a href="#domain-model">Domain Model</a></li>
+<li><a href="#1---optional">1 - Optional</a><ul>
+<li><a href="#11---internal-optional-usage">1.1 - Internal Optional Usage</a></li>
+<li><a href="#12---optional-constructor-parameters">1.2 - Optional Constructor Parameters</a></li>
+<li><a href="#13---optional-for-resulted-method-returns-collections">1.3 - Optional for resulted (method returns) Collections</a></li>
+<li><a href="#14---use-flatmap-for-getting-nested-optional-values">1.4 - Use <code>flatMap</code> for getting nested Optional values</a></li>
+<li><a href="#15---if-statement-with-optional-is-not-always-bad-thing">1.5 - <code>if</code> statement with <code>Optional</code> is not always bad thing</a></li>
+<li><a href="#16---optional-elvis">1.6 - Optional &ldquo;elvis&rdquo;</a></li>
+<li><a href="#17---optional-over-engineering-if-not-null-might-be-simpler">1.7 - Optional Over Engineering (<code>if</code> not <code>null</code> might be <em>simpler</em>)</a></li>
+<li><a href="#18---value-presence-strict-check-chained-ifpresent">1.8 - Value presence strict check (chained <code>ifPresent</code>)</a></li>
+</ul>
+</li>
+<li><a href="#2---lambdas">2 - Lambdas</a><ul>
+<li><a href="#21---avoid-complex-lambdas">2.1 - Avoid Complex Lambdas</a></li>
+<li><a href="#22---avoid-long-lambdas">2.2 - Avoid Long Lambdas</a></li>
+<li><a href="#23---class-design-methods-naming">2.3 - Class Design (methods&rsquo; naming)</a></li>
+<li><a href="#24---lambdas-are-not-always-the-best-option-method-reference-works-as-well">2.4 - Lambdas are not always the best option (method reference works as well)</a></li>
+<li><a href="#25---lazy-calculations-improve-performance-log-if-loggerisdebugenabled">2.5 - Lazy calculations improve performance (<em>log</em> if <code>logger.isDebugEnabled()</code>)</a></li>
+<li><a href="#26---emulate-multimap">2.6 - Emulate Multimap</a></li>
+<li><a href="#27---sorting-the-list-using-existing-predefined-comparator">2.7 - Sorting the list using existing predefined comparator</a></li>
+<li><a href="#28---iterating-the-map-foreach-and-map-transform">2.8 - Iterating the map (<code>forEach</code> and map transform)</a></li>
+<li><a href="#29---remove-with-predicate">2.9 - Remove with predicate</a></li>
+<li><a href="#210---avoid-code-duplication-with-lambdas">2.10 - Avoid code-duplication with lambdas</a></li>
+<li><a href="#211---list-of-optionals">2.11 - List of optionals</a></li>
+<li><a href="#212---checked-exceptions--lambda">2.12 - Checked Exceptions &amp; Lambda</a></li>
+</ul>
+</li>
+<li><a href="#3---stream-api">3 - Stream API</a><ul>
+<li><a href="#incorrect-usage">Incorrect usage</a><ul>
+<li><a href="#31---forgotten-termin-operation">3.1 - Forgotten termin operation</a></li>
+<li><a href="#32---infinite-stream">3.2 - Infinite stream</a></li>
+<li><a href="#33---use-stream-more-than-once">3.3 - Use stream more than once</a></li>
+</ul>
+</li>
+<li><a href="#collectors">Collectors</a><ul>
+<li><a href="#34---avoid-foreach-and-apply-mapping-to-target-type">3.4 - Avoid <code>forEach</code> and apply mapping to target type</a></li>
+<li><a href="#35---collectors-chain">3.5 - Collectors chain</a></li>
+<li><a href="#36---do-not-use-external-collection-for-grouping">3.6 - Do not use external collection for grouping</a></li>
+<li><a href="#37---calculate-statistics-in-single-run-with-collector">3.7 - Calculate statistics in single run with collector</a></li>
+<li><a href="#38---convert-stream-to-array">3.8 - Convert stream to array</a></li>
+<li><a href="#39---use-functional-approach-when-map-reduce">3.9 - Use functional approach when &ldquo;map-reduce&rdquo;</a></li>
+</ul>
+</li>
+<li><a href="#misuses">Misuses</a><ul>
+<li><a href="#310---stream-generation">3.10 - Stream generation</a></li>
+<li><a href="#311---use-data-structure-features">3.11 - Use data structure features</a></li>
+<li><a href="#312---do-not-mix-imperative-code-with-streams">3.12 - Do not mix imperative code with streams</a></li>
+<li><a href="#313---match-element-in-functional-style">3.13 - Match element in functional style</a></li>
+<li><a href="#314---nested-foreach-is-anti-pattern">3.14 - Nested <code>forEach</code> is <em>anti-pattern</em></a></li>
+<li><a href="#315---prefer-specialized-streams">3.15 - Prefer specialized streams</a></li>
+<li><a href="#316---poor-domain-model-causes-complex-data-access-code">3.16 - Poor Domain Model causes complex Data Access code</a></li>
+<li><a href="#317---do-not-use-old-style-code-with-new-constructs">3.17 - Do not use old-style code with new constructs</a></li>
+<li><a href="#318---know-when-to-use-skip-and-limit">3.18 - Know when to use <code>skip</code> and <code>limit</code></a></li>
+<li><a href="#319---type-of-stream-could-be-changed">3.19 - Type of stream could be changed</a></li>
+<li><a href="#320---use-stream-to-build-map-is-over-complication">3.20 - Use stream to build map is over-complication</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#4---time-api">4 - Time API</a><ul>
+<li><a href="#41---ignore-java-8-time-api">4.1 - Ignore Java 8 Time API</a></li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+</ul>
 <hr />
 <h2 id="domain-model">Domain Model</h2>
 <p>All the cases are based on the next domain model:</p>

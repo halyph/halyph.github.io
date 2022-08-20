@@ -2949,6 +2949,53 @@
 
             
           
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_15" type="checkbox" id="__nav_2_15" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_15">
+          2022
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2022" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_15">
+          <span class="md-nav__icon md-icon"></span>
+          2022
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/2022-08-20-mkdocs-gh-actions/" class="md-nav__link">
+        MkDocs and GitHub Actions
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -3271,36 +3318,57 @@
 <p>| java | kotlin | vs | comparison |</p>
 </blockquote>
 <p>This page is just collection of notes from <a href="https://www.youtube.com/watch?v=MsMejigb1Zk">&ldquo;Kotlin vs Scala&rdquo; by Urs Peter &amp; Joost Heijkoop</a></p>
-<p><strong>Table of Contents</strong>
-- <a href="#object-orientation">Object Orientation</a>
-  - <a href="#class">Class</a>
-  - <a href="#comparing-oo-between">Comparing OO between</a>
-  - <a href="#inheritance">Inheritance</a>
-  - <a href="#value-classes">Value Classes</a>
-- <a href="#functional-programming">Functional Programming</a>
-  - <a href="#declaring-and-calling-functions">Declaring and Calling Functions</a>
-  - <a href="#curring-and-partially-applied-functions">Curring and partially applied functions</a>
-  - <a href="#functions-under-the-hood-and-types">Functions under the hood and Types</a>
-  - <a href="#type-aliases">Type Aliases</a>
-- <a href="#null-safety">Null Safety</a>
-  - <a href="#optional-value">Optional Value</a>
-    - <a href="#nullable-types">Nullable Types</a>
-- <a href="#pattern-matching">Pattern Matching</a>
-  - <a href="#destructuring">Destructuring</a>
-- <a href="#composition">Composition</a>
-  - <a href="#composition-with-traits">Composition with Traits</a>
-  - <a href="#composition-with-delegation">Composition with Delegation</a>
-- <a href="#extensions">Extensions</a>
-  - <a href="#extensions--function-types-with-receiver">Extensions ++ (Function types with receiver)</a>
-- <a href="#collections">Collections</a>
-  - <a href="#collection-examples">Collection Examples</a>
-- <a href="#concurrency">Concurrency</a>
-  - <a href="#scala-futures">Scala Futures</a>
-  - <a href="#kotlin-coroutines">Kotlin Coroutines</a>
-    - <a href="#kotlin-coroutines-to-the-rescue">Kotlin Coroutines to the rescue</a>
-    - <a href="#kotlin-coroutines-under-the-hood">Kotlin Coroutines under the hood</a>
-    - <a href="#kotlin-coroutines-interoperability">Kotlin Coroutines Interoperability</a>
-  - <a href="#some-final-words-on-coroutines">Some final words on Coroutines</a></p>
+<ul>
+<li><a href="#object-orientation">Object Orientation</a><ul>
+<li><a href="#class">Class</a></li>
+<li><a href="#comparing-oo-between">Comparing OO between</a></li>
+<li><a href="#inheritance">Inheritance</a></li>
+<li><a href="#value-classes">Value Classes</a></li>
+</ul>
+</li>
+<li><a href="#functional-programming">Functional Programming</a><ul>
+<li><a href="#declaring-and-calling-functions">Declaring and Calling Functions</a></li>
+<li><a href="#curring-and-partially-applied-functions">Curring and partially applied functions</a></li>
+<li><a href="#functions-under-the-hood-and-types">Functions under the hood and Types</a></li>
+<li><a href="#type-aliases">Type Aliases</a></li>
+</ul>
+</li>
+<li><a href="#null-safety">Null Safety</a><ul>
+<li><a href="#optional-value">Optional Value</a><ul>
+<li><a href="#nullable-types">Nullable Types</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#pattern-matching">Pattern Matching</a><ul>
+<li><a href="#destructuring">Destructuring</a></li>
+</ul>
+</li>
+<li><a href="#composition">Composition</a><ul>
+<li><a href="#composition-with-traits">Composition with Traits</a></li>
+<li><a href="#composition-with-delegation">Composition with Delegation</a></li>
+</ul>
+</li>
+<li><a href="#extensions">Extensions</a><ul>
+<li><a href="#extensions--function-types-with-receiver">Extensions ++ (Function types with receiver)</a></li>
+</ul>
+</li>
+<li><a href="#collections">Collections</a><ul>
+<li><a href="#collection-examples">Collection Examples</a></li>
+</ul>
+</li>
+<li><a href="#concurrency">Concurrency</a><ul>
+<li><a href="#scala-futures">Scala Futures</a></li>
+<li><a href="#kotlin-coroutines">Kotlin Coroutines</a><ul>
+<li><a href="#kotlin-coroutines-to-the-rescue">Kotlin Coroutines to the rescue</a></li>
+<li><a href="#kotlin-coroutines-under-the-hood">Kotlin Coroutines under the hood</a></li>
+<li><a href="#kotlin-coroutines-interoperability">Kotlin Coroutines Interoperability</a></li>
+</ul>
+</li>
+<li><a href="#some-final-words-on-coroutines">Some final words on Coroutines</a></li>
+</ul>
+</li>
+</ul>
 <hr />
 <h2 id="object-orientation">Object Orientation</h2>
 <h3 id="class">Class</h3>
