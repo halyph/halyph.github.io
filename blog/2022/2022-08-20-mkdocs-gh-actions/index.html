@@ -13,7 +13,7 @@
     
     
       
-        <title>MkDocs and GitHub Actions - Mind~Flow</title>
+        <title>Rethinking Bloging - Mind~Flow</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mkdocs-and-github-actions" class="md-skip">
+        <a href="#rethinking-bloging" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MkDocs and GitHub Actions
+              Rethinking Bloging
             
           </span>
         </div>
@@ -2733,9 +2733,68 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Rethinking Bloging
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        MkDocs and GitHub Actions
+        Rethinking Bloging
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#initial-thoughts" class="md-nav__link">
+    Initial thoughts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repo-as-a-blog-concept" class="md-nav__link">
+    repo-as-a-blog concept
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material-for-mkdocs" class="md-nav__link">
+    Material for MkDocs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-action" class="md-nav__link">
+    Github Action
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epilogue" class="md-nav__link">
+    Epilogue
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2823,6 +2882,49 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#initial-thoughts" class="md-nav__link">
+    Initial thoughts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repo-as-a-blog-concept" class="md-nav__link">
+    repo-as-a-blog concept
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material-for-mkdocs" class="md-nav__link">
+    Material for MkDocs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-action" class="md-nav__link">
+    Github Action
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epilogue" class="md-nav__link">
+    Epilogue
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2835,8 +2937,63 @@
                 
 
 
-<h1 id="mkdocs-and-github-actions">MkDocs and GitHub Actions</h1>
-<p>New Content must be added here</p>
+<h1 id="rethinking-bloging">Rethinking Bloging</h1>
+<blockquote>
+<p>| blog |</p>
+</blockquote>
+<p><em>Rethinking Bloging with simplest possible tools: Git repo, Markdown, MkDocs and GitHub Actions</em></p>
+<p>See my previous posts:</p>
+<ul>
+<li><a href="../../2018/2018-12-31-about-blogging/">2018-12-31 - Thoughts about Blogging</a></li>
+<li><a href="../../2014/2014-09-07-migration-to-octopress/">2014-09-07 - Migration to Octopress</a></li>
+</ul>
+<h2 id="initial-thoughts">Initial thoughts</h2>
+<p><a href="https://github.com/halyph/mind-flow"><strong>Mind-flow</strong></a> <em>repo-as-a-blog</em> was and is really cool idea.
+I can concentrate on content only. I can write with a hope it will be useful for other people.</p>
+<p>Unfortunately, the reality is different. I was/is lazy and didn&rsquo;t write enough and content is cheap.</p>
+<p>My initial though that <em>repo-as-a-blog</em> is enough - didn&rsquo;t work. It&rsquo;s more convenient for readers to have some site.</p>
+<p>I had several criterias for my next static site generator:</p>
+<ol>
+<li>Git <em>repo-as-a-blog</em> is the main concept and I don’t want changing repo layout and page meta data (the status quo is <em>&ldquo;there must be no meta data&rdquo;</em>) to satisfy some static site generation engine (like <a href="https://gohugo.io">Hugo</a> or <a href="https://jekyllrb.com">Jekyll</a>)</li>
+<li>Rendered site must have simple design, close to Github Readme</li>
+<li>Site rendering speed must be acceptable</li>
+<li>I must like selected tool</li>
+</ol>
+<h2 id="repo-as-a-blog-concept"><em>repo-as-a-blog</em> concept</h2>
+<p>Static site generators come and go, but repo with content remains. I like the feeling:<br />
+<em>open editor, write something and you are done. You have a new post even without static site generator.</em></p>
+<p>Site generator doesn&rsquo;t work, who cares. I still have my repo with my blog posts.</p>
+<h2 id="material-for-mkdocs">Material for MkDocs</h2>
+<p>And I found <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>. This tool is designed for wiki-like documentation, but not for blogging.
+Nevertheless I like it a lot. It is simple and powerful at the same time. I can adjust it to my minimal needs and it just works.</p>
+<p>The most important MkDocs feature: it does not need page related metadata, it simply renders folder&rsquo;s content, amazing.</p>
+<p>When I am saying <em>&ldquo;meta data&rdquo;</em> I mean this:</p>
+<ul>
+<li>Hugo</li>
+</ul>
+<div class="highlight"><pre><span></span><code>---
+layout: post
+title: &quot;My awesome blog post&quot;
+date: 2015-12-15 00:00:01
+description: &quot;An insightful description for this page that Google will like&quot;
+---
+</code></pre></div>
+<ul>
+<li>JBake</li>
+</ul>
+<div class="highlight"><pre><span></span><code>title=Weekly Links #2
+date=2013-02-01
+type=post
+tags=weekly links, java
+status=published
+~~~~~~
+</code></pre></div>
+<p>Of cause, MkDocs has meta data section, but it is not mandatory and I can skip it if I want/need.</p>
+<h2 id="github-action">Github Action</h2>
+<p>I host my rendered site via Github Pages. I could deploy it manually, but it&rsquo;s 2022 and I can easily use Github actions for free deployment.
+Just write post, commit and push to repo and site generation will be done automatically and transparent for me. Profit!</p>
+<h2 id="epilogue">Epilogue</h2>
+<p>I don&rsquo;t think I made any valuable contribution to the world via writing this post. It&rsquo;s just my <em>mind flow</em> and I like it.</p>
 
 
 
