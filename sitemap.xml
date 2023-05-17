@@ -751,6 +751,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://halyph.github.io/wiki/</loc>
+         <lastmod>2023-05-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://halyph.github.io/wiki/howtos/make/</loc>
          <lastmod>2023-05-17</lastmod>
          <changefreq>daily</changefreq>
