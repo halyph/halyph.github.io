@@ -761,6 +761,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://halyph.github.io/wiki/tags/</loc>
+         <lastmod>2023-10-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://halyph.github.io/wiki/Go/Cookbook/map/</loc>
          <lastmod>2023-10-06</lastmod>
          <changefreq>daily</changefreq>
@@ -867,6 +872,11 @@
     </url>
     <url>
          <loc>https://halyph.github.io/wiki/misc/worth-reading/</loc>
+         <lastmod>2023-10-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://halyph.github.io/wiki/tags/</loc>
          <lastmod>2023-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
