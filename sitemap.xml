@@ -796,6 +796,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://halyph.github.io/wiki/Java/</loc>
+         <lastmod>2023-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://halyph.github.io/wiki/Java/java-frameworks/</loc>
+         <lastmod>2023-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://halyph.github.io/wiki/Python/</loc>
          <lastmod>2023-10-08</lastmod>
          <changefreq>daily</changefreq>
@@ -842,11 +852,6 @@
     </url>
     <url>
          <loc>https://halyph.github.io/wiki/misc/cheatsheets/</loc>
-         <lastmod>2023-10-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://halyph.github.io/wiki/misc/java-frameworks/</loc>
          <lastmod>2023-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
