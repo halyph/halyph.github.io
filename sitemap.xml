@@ -756,6 +756,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://halyph.github.io/blog/2023/2023-10-14-macos-make/</loc>
+         <lastmod>2023-10-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://halyph.github.io/wiki/</loc>
          <lastmod>2023-10-14</lastmod>
          <changefreq>daily</changefreq>
