@@ -771,6 +771,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://halyph.github.io/wiki/Lang-Go/Cookbook/container/</loc>
+         <lastmod>2023-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://halyph.github.io/wiki/Lang-Go/Cookbook/map/</loc>
          <lastmod>2023-10-16</lastmod>
          <changefreq>daily</changefreq>
