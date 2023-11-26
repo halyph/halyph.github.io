@@ -936,6 +936,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://halyph.github.io/wiki/misc/hot-sauses/</loc>
+         <lastmod>2023-11-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://halyph.github.io/wiki/misc/leetcode/</loc>
          <lastmod>2023-11-26</lastmod>
          <changefreq>daily</changefreq>
