@@ -886,6 +886,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://halyph.github.io/wiki/howtos/joplin/</loc>
+         <lastmod>2023-11-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://halyph.github.io/wiki/howtos/jq/</loc>
          <lastmod>2023-11-26</lastmod>
          <changefreq>daily</changefreq>
