@@ -717,10 +717,6 @@
          <lastmod>2025-05-21</lastmod>
     </url>
     <url>
-         <loc>https://halyph.github.io/wiki/Lang-Ocaml/sml-vs-ocaml/</loc>
-         <lastmod>2025-05-21</lastmod>
-    </url>
-    <url>
          <loc>https://halyph.github.io/wiki/Lang-Python/</loc>
          <lastmod>2025-05-21</lastmod>
     </url>
@@ -817,10 +813,6 @@
          <lastmod>2025-05-21</lastmod>
     </url>
     <url>
-         <loc>https://halyph.github.io/wiki/misc/prog-lang-ranking/</loc>
-         <lastmod>2025-05-21</lastmod>
-    </url>
-    <url>
          <loc>https://halyph.github.io/wiki/misc/site-generators/</loc>
          <lastmod>2025-05-21</lastmod>
     </url>
@@ -842,6 +834,14 @@
     </url>
     <url>
          <loc>https://halyph.github.io/wiki/misc/worth-reading/</loc>
+         <lastmod>2025-05-21</lastmod>
+    </url>
+    <url>
+         <loc>https://halyph.github.io/wiki/misc/Languages/prog-lang-ranking/</loc>
+         <lastmod>2025-05-21</lastmod>
+    </url>
+    <url>
+         <loc>https://halyph.github.io/wiki/misc/Languages/sml-vs-ocaml/</loc>
          <lastmod>2025-05-21</lastmod>
     </url>
 </urlset>
