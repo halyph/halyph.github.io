@@ -745,10 +745,6 @@
          <lastmod>2025-05-25</lastmod>
     </url>
     <url>
-         <loc>https://halyph.github.io/wiki/Lang-Scala/</loc>
-         <lastmod>2025-05-25</lastmod>
-    </url>
-    <url>
          <loc>https://halyph.github.io/wiki/howtos/git/</loc>
          <lastmod>2025-05-25</lastmod>
     </url>
@@ -845,15 +841,19 @@
          <lastmod>2025-05-25</lastmod>
     </url>
     <url>
-         <loc>https://halyph.github.io/wiki/misc/Languages/Lang-Zig/</loc>
-         <lastmod>2025-05-25</lastmod>
-    </url>
-    <url>
          <loc>https://halyph.github.io/wiki/misc/Languages/prog-lang-ranking/</loc>
          <lastmod>2025-05-25</lastmod>
     </url>
     <url>
          <loc>https://halyph.github.io/wiki/misc/Languages/sml-vs-ocaml/</loc>
+         <lastmod>2025-05-25</lastmod>
+    </url>
+    <url>
+         <loc>https://halyph.github.io/wiki/misc/Languages/Lang-Scala/</loc>
+         <lastmod>2025-05-25</lastmod>
+    </url>
+    <url>
+         <loc>https://halyph.github.io/wiki/misc/Languages/Lang-Zig/</loc>
          <lastmod>2025-05-25</lastmod>
     </url>
 </urlset>
