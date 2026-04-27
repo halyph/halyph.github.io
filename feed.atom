@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://halyph.github.io/</id>
   <title>Mind~Flow</title>
-  <updated>2026-04-27T13:24:44.294068+00:00</updated>
+  <updated>2026-04-27T13:37:42.549814+00:00</updated>
   <author>
     <name>Orest Ivasiv</name>
     <email>halyph@gmail.com</email>
@@ -10,6 +10,8 @@
   <link href="https://halyph.github.io/" rel="alternate"/>
   <link href="https://halyph.github.io/feed.atom" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <icon>https://halyph.github.io/assets/images/favicon.ico</icon>
+  <logo>https://halyph.github.io/assets/images/logo.png</logo>
   <subtitle>Blog and/or personal knowledge base</subtitle>
   <entry>
     <id>https://halyph.github.io/blog/2025/2025-04-24-tiobe/</id>
